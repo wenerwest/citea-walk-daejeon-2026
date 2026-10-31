@@ -104,6 +104,20 @@ try {
   const hash = createHash('sha256');
   for (const file of await filesUnder(dist)) { hash.update(path.relative(dist, file)); hash.update(await readFile(file)); }
   const buildId = hash.digest('hex').slice(0, 16);
+  if (await exists(path.join(dist, 'index.html'))) {
+    const html = await readFile(path.join(dist, 'index.html'), 'utf8');
+    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:app\.js|styles\.css)(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
+      const hashIndex = reference.indexOf('#');
+      const fragment = hashIndex === -1 ? '' : reference.slice(hashIndex);
+      const withoutFragment = hashIndex === -1 ? reference : reference.slice(0, hashIndex);
+      const queryIndex = withoutFragment.indexOf('?');
+      const file = queryIndex === -1 ? withoutFragment : withoutFragment.slice(0, queryIndex);
+      const query = new URLSearchParams(queryIndex === -1 ? '' : withoutFragment.slice(queryIndex + 1).replaceAll('&amp;', '&'));
+      query.set('v', buildId);
+      return `${attribute}${quote}${file}?${query.toString().replaceAll('&', '&amp;')}${fragment}${quote}`;
+    });
+    await writeFile(path.join(dist, 'index.html'), versioned);
+  }
   if (await exists(path.join(dist, 'sw.js'))) {
     const worker = await readFile(path.join(dist, 'sw.js'), 'utf8');
     await writeFile(path.join(dist, 'sw.js'), worker.replaceAll('__BUILD_ID__', buildId));
