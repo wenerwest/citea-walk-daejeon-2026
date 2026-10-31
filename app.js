@@ -36,7 +36,7 @@ const icon = (name, size=20) => {
 };
 const href = path => `#${path}`;
 const link = (path, text, cls='', ico='arrow') => `<a class="${cls}" href="${href(path)}">${esc(text)}${ico?icon(ico):''}</a>`;
-const safeUrl = value => { try { const u = new URL(value, document.baseURI); return ['http:','https:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } };
+const safeUrl = value => { if(typeof value!=='string'||!value.trim())return ''; try { const u = new URL(value, document.baseURI); return ['http:','https:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } };
 const ext = (url, label, cls='text-link') => safeUrl(url) ? `<a class="${cls}" href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)}${icon('arrow')}<span class="sr-only"> ${t('externalLink')}</span></a>` : '';
 const byId = id => data?.places?.find(p=>p.id===id);
 const route = () => location.hash.startsWith('#/') ? location.hash.slice(1).split('/').filter(Boolean) : [];
