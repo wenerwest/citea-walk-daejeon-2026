@@ -1,0 +1,22 @@
+{
+  "publicUrl": "https://wenerwest.github.io/citea-walk-daejeon-2026/",
+  "name": "CiTEA Walk in Junggu, Daejeon 2026",
+  "mode": "event",
+  "updatedAt": "2026-11-01",
+  "hero": {
+    "src": "assets/uam-hero.webp",
+    "alt": {
+      "ko": "연못과 전통건축이 어우러진 대전 우암사적공원",
+      "tw": "大田尤菴史蹟公園的池塘與傳統建築",
+      "cn": "大田尤庵史迹公园的池塘与传统建筑"
+    },
+    "caption": {
+      "ko": "우암사적공원 · 봄에 촬영한 자료 사진",
+      "tw": "尤菴史蹟公園・春季資料照片",
+      "cn": "尤庵史迹公园・春季资料照片"
+    },
+    "credit": "Jo / Wikimedia Commons · CC BY 2.0 · resized / cropped / color adjusted",
+    "source": "https://commons.wikimedia.org/wiki/File:Korea-Daejeon-Uam_Historic_Park-01.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/"
+  }
+}
