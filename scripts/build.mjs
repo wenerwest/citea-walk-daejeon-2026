@@ -132,7 +132,7 @@ try {
   const buildId = hash.digest('hex').slice(0, 16);
   if (await exists(path.join(dist, 'index.html'))) {
     const html = await readFile(path.join(dist, 'index.html'), 'utf8');
-    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:app\.js|styles\.css|assets\/fonts\/fonts\.css)(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
+    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:app\.js|styles\.css|manifest\.webmanifest|assets\/fonts\/fonts\.css|assets\/icons\/[a-z0-9-]+\.(?:png|ico))(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
       const hashIndex = reference.indexOf('#');
       const fragment = hashIndex === -1 ? '' : reference.slice(hashIndex);
       const withoutFragment = hashIndex === -1 ? reference : reference.slice(0, hashIndex);
