@@ -2,24 +2,31 @@
   "publicUrl": "https://wenerwest.github.io/citea-walk-daejeon-2026/",
   "name": "CiTEA Walk in Junggu, Daejeon 2026",
   "mode": "event",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "hero": {
-    "src": "assets/uam-hero.webp",
+    "src": "assets/supplied/bomunsanseong-hero.jpg",
     "alt": {
-      "ko": "연못과 전통건축이 어우러진 대전 우암사적공원",
-      "tw": "大田尤菴史蹟公園的池塘與傳統建築",
-      "cn": "大田尤庵史迹公园的池塘与传统建筑",
-      "en": "A pond and traditional architecture at Uam Historical Park, Daejeon"
+      "ko": "보문산성 정자와 꽃이 핀 산자락 너머로 펼쳐진 대전 도심 전경",
+      "en": "The pavilion at Bomunsanseong Fortress, flowering hillsides, and the Daejeon cityscape beyond",
+      "tw": "寶文山城涼亭、花開的山坡與遠方的大田市區全景",
+      "cn": "宝文山城凉亭、花开的山坡与远方的大田城区全景"
     },
     "caption": {
-      "ko": "우암사적공원 · 봄에 촬영한 자료 사진",
-      "tw": "尤菴史蹟公園・春季資料照片",
-      "cn": "尤庵史迹公园・春季资料照片",
-      "en": "Uam Historical Park · Archive photo taken in spring"
+      "ko": "보문산성 · 대전 도심 전경",
+      "en": "Bomunsanseong Fortress · Daejeon cityscape",
+      "tw": "寶文山城・大田市區全景",
+      "cn": "宝文山城・大田城区全景"
     },
-    "credit": "Jo / Wikimedia Commons · CC BY 2.0 · resized / cropped / color adjusted",
-    "source": "https://commons.wikimedia.org/wiki/File:Korea-Daejeon-Uam_Historic_Park-01.jpg",
-    "license": "https://creativecommons.org/licenses/by/2.0/"
+    "credit": {
+      "ko": "사용자 제공 사진",
+      "en": "Photo supplied by the user",
+      "tw": "使用者提供照片",
+      "cn": "用户提供照片"
+    },
+    "source": null,
+    "license": null,
+    "width": 1280,
+    "height": 748
   },
   "footerLogos": [
     {

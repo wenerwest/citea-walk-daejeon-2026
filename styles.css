@@ -284,3 +284,21 @@ body { -webkit-text-size-adjust: 100%; }
   .menu-button { display: none !important; }
   .mobile-nav { display: none; }
 }
+
+/* Linked itinerary introductions and the event-wide Live Voice announcement. */
+.schedule-place-title { display: inline-flex; align-items: center; gap: 9px; }
+.schedule-place-title:hover, .timeline-body .category a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.schedule-photo-link { display: block; min-width: 0; align-self: start; }
+.schedule-photo-link .place-photo { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+.live-voice-notices { display: grid; gap: 20px; padding-bottom: 28px; }
+.live-voice-notices .notice-box { padding: 28px; }
+.live-voice-notices strong { font-size: 20px; }
+.live-voice-notices p { font-size: 16px; line-height: 1.9; }
+.live-voice-notices .earphones-required { border-left: 4px solid var(--green); }
+.hero-image { filter: none; }
+@media (max-width: 600px) {
+  .live-voice-notices .notice-box { padding: 22px 18px; }
+  .schedule-photo-link .place-photo { aspect-ratio: 1; }
+}
+
+@media (max-width: 360px) { .schedule-photo-link .place-photo { aspect-ratio: 2 / 1; } }

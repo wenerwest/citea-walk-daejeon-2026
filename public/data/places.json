@@ -63,12 +63,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/naraegwan.webp",
       "alt": {
@@ -153,12 +147,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/uam.webp",
       "alt": {
@@ -232,12 +220,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/temiorae.webp",
       "alt": {
@@ -318,12 +300,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/temi-literature.webp",
       "alt": {
@@ -400,12 +376,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/temi-park.webp",
       "alt": {
@@ -481,12 +451,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/bomunsan.webp",
       "alt": {
@@ -553,12 +517,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/baking-yoga.webp",
       "alt": {
@@ -624,13 +582,7 @@
     "sources": [],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    }
+    "meetingPoint": null
   },
   {
     "id": "yuseong-footbath",
@@ -688,12 +640,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/yuseong-footbath.webp",
       "alt": {
@@ -769,12 +715,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/wine-expo.webp",
       "alt": {
@@ -846,12 +786,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "tw": null,
-      "cn": null,
-      "en": null
-    },
     "image": {
       "src": "assets/supplied/local-wellness.webp",
       "alt": {
@@ -929,12 +863,6 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null,
-    "audio": {
-      "ko": null,
-      "en": null,
-      "tw": null,
-      "cn": null
-    },
     "image": {
       "src": "assets/filming/exhibition-hall.jpg",
       "width": 938,
@@ -955,5 +883,345 @@
       "source": null,
       "license": null
     }
+  },
+  {
+    "id": "hanbat-arboretum",
+    "koreanName": "한밭수목원",
+    "names": {
+      "ko": "한밭수목원",
+      "en": "Hanbat Arboretum",
+      "cn": "Hanbat树木园",
+      "tw": "Hanbat樹木園"
+    },
+    "category": {
+      "ko": "수목원 · 자연",
+      "en": "Arboretum · Nature",
+      "cn": "树木园 · 自然",
+      "tw": "樹木園 · 自然"
+    },
+    "intro": {
+      "ko": "도심에서 나무와 꽃을 만나는 수목원입니다. 식물 보전과 자연 체험, 산책을 위한 공간을 갖추고 있습니다.",
+      "en": "An urban arboretum with trees and flowers. It offers spaces for plant conservation, nature learning and walking.",
+      "cn": "城市中的树木园，可欣赏树木与花卉。这里兼具植物保护、自然学习与散步空间。",
+      "tw": "城市中的樹木園，可欣賞樹木與花卉。這裡兼具植物保育、自然學習與散步空間。"
+    },
+    "history": {
+      "ko": "동원·서원과 열대식물원으로 구성됩니다.",
+      "en": "Its grounds include East and West Gardens and a tropical greenhouse.",
+      "cn": "园区包括东园、西园与热带植物园。",
+      "tw": "園區包括東園、西園與熱帶植物園。"
+    },
+    "purpose": {
+      "ko": "제공 일정표의 11월 8일 13:00 한밭수목원 방문 장소입니다.",
+      "en": "The supplied schedule lists a visit on November 8 at 13:00.",
+      "cn": "提供的行程表安排于11月8日13:00参访。",
+      "tw": "提供的行程表安排於11月8日13:00參訪。"
+    },
+    "address": {
+      "ko": "대전광역시 서구 둔산대로 169",
+      "en": "169, Dunsan-daero, Seo-gu, Daejeon",
+      "cn": "大田广域市西区 Dunsan-daero 169",
+      "tw": "大田廣域市西區 Dunsan-daero 169"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "주소와 기본소개는 공식 자료를 확인했습니다. 관람 구역과 집합 지점은 운영진 안내를 따르세요.",
+      "en": "The address and introduction follow official sources. Follow the organizers’ guidance for the garden area and meeting point.",
+      "cn": "地址与简介已参考官方资料。参观区域与集合点请依主办方公告。",
+      "tw": "地址與簡介已參考官方資料。參觀區域與集合點請依主辦團隊公告。"
+    },
+    "naverQuery": "한밭수목원 대전 서구 둔산대로 169",
+    "sources": [
+      {
+        "label": "대전광역시 · 한밭수목원",
+        "url": "https://www.daejeon.go.kr/gar/index.do"
+      },
+      {
+        "label": "대전관광 · 한밭수목원 소개",
+        "url": "https://dst.daejeon.go.kr/kr/html/sub04/0401_pop.php?i_mng_no=bd9450a4e07706dd8f3bae0aebbb881c&item_idx=4"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
+  },
+  {
+    "id": "daecheong-lake-trail",
+    "koreanName": "대청호 오백리길",
+    "names": {
+      "ko": "대청호 오백리길",
+      "en": "Daecheong Lake Obaengni Trail",
+      "cn": "大清湖五百里路",
+      "tw": "大清湖五百里路"
+    },
+    "category": {
+      "ko": "호수 · 걷기",
+      "en": "Lake · Walking",
+      "cn": "湖泊 · 步行",
+      "tw": "湖泊 · 步行"
+    },
+    "intro": {
+      "ko": "대청호 주변의 물가와 마을을 잇는 걷기 길입니다. 호수 풍경과 계절에 따라 달라지는 수변 식생을 만날 수 있습니다.",
+      "en": "Walking routes connect lakeside landscapes and villages around Daecheong Lake. The scenery includes the lake and seasonal waterside plants.",
+      "cn": "步行路线连接大清湖畔的景观与村落。沿途可欣赏湖景及随季节变化的水边植物。",
+      "tw": "步行路線連接大清湖畔的景觀與村落。沿途可欣賞湖景及隨季節變化的水邊植物。"
+    },
+    "history": {
+      "ko": "여러 구간으로 나뉘며, 동구 공식 관광안내는 3·4·5구간의 호반 산책길을 소개합니다.",
+      "en": "The trail has multiple sections; Dong-gu’s guide introduces lakeside walks in sections 3, 4 and 5.",
+      "cn": "路线分为多个区段，东区官方指南介绍了第3、4、5区段的湖畔步道。",
+      "tw": "路線分為多個區段，東區官方指南介紹了第3、4、5區段的湖畔步道。"
+    },
+    "purpose": {
+      "ko": "제공 일정표의 11월 8일 16:30 대청호 오백리길 억새밭 방문과 연결됩니다.",
+      "en": "Linked to the November 8, 16:30 silver-grass visit in the supplied schedule.",
+      "cn": "对应提供行程表中11月8日16:30的大清湖五百里路芒草地参访。",
+      "tw": "對應提供行程表中11月8日16:30的大清湖五百里路芒草地參訪。"
+    },
+    "address": null,
+    "verified": false,
+    "verificationNote": {
+      "ko": "정확한 억새밭 구간·입구·집합 지점은 일정표에 없습니다. 이 소개는 전체 길의 개요이며 특정 구간 방문을 확정하지 않습니다.",
+      "en": "The exact silver-grass section, entrance and meeting point are unspecified. This overview does not confirm a particular route.",
+      "cn": "行程表未注明芒草地的具体区段、入口与集合点。本介绍为路线概况，并不确认特定区段。",
+      "tw": "行程表未註明芒草地的確切區段、入口與集合點。本介紹為路線概況，並不確認特定區段。"
+    },
+    "naverQuery": "대청호 오백리길",
+    "sources": [
+      {
+        "label": "대전 동구 · 대청호나들이",
+        "url": "https://www.donggu.go.kr/dg/tour/contents/574"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
+  },
+  {
+    "id": "daejeon-jungang-market",
+    "koreanName": "대전중앙시장",
+    "names": {
+      "ko": "대전중앙시장",
+      "en": "Daejeon Jungang Market",
+      "cn": "大田中央市场",
+      "tw": "大田中央市場"
+    },
+    "category": {
+      "ko": "전통시장 · 생활문화",
+      "en": "Traditional market · Local life",
+      "cn": "传统市场 · 生活文化",
+      "tw": "傳統市場 · 生活文化"
+    },
+    "intro": {
+      "ko": "대전역 맞은편에 있는 전통시장입니다. 먹거리와 생활용품, 다양한 테마 골목을 통해 지역의 일상을 만납니다.",
+      "en": "A traditional market opposite Daejeon Station. Food, everyday goods and themed alleys offer a glimpse of local life.",
+      "cn": "位于大田站对面的传统市场。可通过美食、日用品与主题街巷感受当地生活。",
+      "tw": "位於大田站對面的傳統市場。可透過美食、日用品與主題街巷感受在地生活。"
+    },
+    "history": {
+      "ko": "헌책방·생선·그릇 등 품목별 골목이 모여 시장을 이룹니다.",
+      "en": "Its lanes include areas for used books, fish and tableware.",
+      "cn": "市场内分布着旧书、鲜鱼及餐具等商品街巷。",
+      "tw": "市場內分布著舊書、鮮魚與餐具等商品街巷。"
+    },
+    "purpose": {
+      "ko": "제공 일정표의 11월 9일 12:30 중앙시장–소제동 시티워크와 쌍화차 일정에 포함됩니다.",
+      "en": "Part of the November 9, 12:30 Jungang Market–Soje-dong walk and ssanghwa tea program.",
+      "cn": "属于11月9日12:30中央市场至苏堤洞步行及双和茶行程。",
+      "tw": "屬於11月9日12:30中央市場至蘇堤洞步行及雙和茶行程。"
+    },
+    "address": {
+      "ko": "대전광역시 동구 대전로 783",
+      "en": "783, Daejeon-ro, Dong-gu, Daejeon",
+      "cn": "大田广域市东区 Daejeon-ro 783",
+      "tw": "大田廣域市東區 Daejeon-ro 783"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "주소는 동구 공식 관광안내의 대표 위치입니다. 쌍화차를 마실 점포와 집합 지점은 별도 안내를 확인하세요.",
+      "en": "The address is the representative location in Dong-gu’s official guide. The tea shop and meeting point need separate guidance.",
+      "cn": "地址为东区官方指南的代表位置。双和茶店铺与集合点须另行确认。",
+      "tw": "地址為東區官方指南的代表位置。雙和茶店舖與集合點須另行確認。"
+    },
+    "naverQuery": "대전중앙시장 대전 동구 대전로 783",
+    "sources": [
+      {
+        "label": "대전 동구 · 중앙시장",
+        "url": "https://www.donggu.go.kr/dg/tour/84/7/sights"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
+  },
+  {
+    "id": "soje-dong",
+    "koreanName": "소제동",
+    "names": {
+      "ko": "소제동",
+      "en": "Soje-dong",
+      "cn": "苏堤洞",
+      "tw": "蘇堤洞"
+    },
+    "category": {
+      "ko": "골목 · 근대 생활사",
+      "en": "Alleys · Modern local history",
+      "cn": "街巷 · 近代生活史",
+      "tw": "街巷 · 近代生活史"
+    },
+    "intro": {
+      "ko": "대전역 뒤편 철도관사촌의 흔적이 남아 있는 동네입니다. 옛 건물을 활용한 카페와 식당이 골목 풍경을 이어갑니다.",
+      "en": "A neighborhood behind Daejeon Station with traces of former railway staff housing. Cafés and restaurants reuse older buildings along its lanes.",
+      "cn": "大田站后方保留铁路员工宿舍痕迹的街区。利用老建筑开设的咖啡馆与餐厅延续了街巷风景。",
+      "tw": "大田站後方保留鐵路員工宿舍痕跡的街區。利用老建築開設的咖啡館與餐廳延續了街巷風景。"
+    },
+    "history": {
+      "ko": "철도 직원들을 위한 관사촌이 1920~30년대 조성되었습니다.",
+      "en": "Railway staff housing was developed here in the 1920s and 1930s.",
+      "cn": "铁路员工宿舍区建于1920至1930年代。",
+      "tw": "鐵路員工宿舍區建於1920至1930年代。"
+    },
+    "purpose": {
+      "ko": "제공 일정표의 11월 9일 12:30 중앙시장–소제동 시티워크 방문 지역입니다.",
+      "en": "A destination in the November 9, 12:30 Jungang Market–Soje-dong city walk.",
+      "cn": "是11月9日12:30中央市场至苏堤洞城市步行的参访区域。",
+      "tw": "是11月9日12:30中央市場至蘇堤洞城市步行的參訪區域。"
+    },
+    "address": null,
+    "verified": false,
+    "verificationNote": {
+      "ko": "소제동 일대 소개입니다. 특정 카페·건물·출발 지점을 확정하지 않으며 상세 동선은 운영진 안내를 따릅니다.",
+      "en": "This is an area overview. Specific cafés, buildings and the starting point follow the organizers’ route.",
+      "cn": "本介绍为苏堤洞区域概况，未确定特定咖啡馆、建筑或出发点；详细路线依主办方公告。",
+      "tw": "本介紹為蘇堤洞區域概況，未確定特定咖啡館、建築或出發點；詳細路線依主辦團隊公告。"
+    },
+    "naverQuery": "소제동 철도관사촌 대전",
+    "sources": [
+      {
+        "label": "대전 동구 · 소제동카페거리",
+        "url": "https://www.donggu.go.kr/dg/tour/103/14/sights"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
+  },
+  {
+    "id": "ppuri-park",
+    "koreanName": "뿌리공원",
+    "names": {
+      "ko": "뿌리공원",
+      "en": "Ppuri Park",
+      "cn": "根公园",
+      "tw": "根公園"
+    },
+    "category": {
+      "ko": "공원 · 가족문화",
+      "en": "Park · Family culture",
+      "cn": "公园 · 家族文化",
+      "tw": "公園 · 家族文化"
+    },
+    "intro": {
+      "ko": "성씨와 가족의 뿌리를 주제로 한 공원입니다. 성씨별 조형물과 수변 공간을 둘러보며 한국의 가족문화를 살펴봅니다.",
+      "en": "A park themed around family names and roots. Surname sculptures and riverside spaces introduce Korean family culture.",
+      "cn": "以姓氏与家族渊源为主题的公园。可通过姓氏雕塑及水边空间了解韩国家族文化。",
+      "tw": "以姓氏與家族淵源為主題的公園。可透過姓氏雕塑及水邊空間認識韓國家族文化。"
+    },
+    "history": {
+      "ko": "1997년 문을 연 효문화 테마공원입니다.",
+      "en": "It opened in 1997 as a park themed around filial respect.",
+      "cn": "1997年开放，以孝文化为主题。",
+      "tw": "1997年開放，以孝文化為主題。"
+    },
+    "purpose": {
+      "ko": "11월 10일 09:30의 대안 일정인 ‘뿌리공원 또는 현충원 방문’ 중 한 곳입니다.",
+      "en": "One alternative in the November 10, 09:30 program: Ppuri Park or the national cemetery.",
+      "cn": "是11月10日09:30“根公园或显忠院参访”的备选地点之一。",
+      "tw": "是11月10日09:30「根公園或顯忠院參訪」的備選地點之一。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 뿌리공원로 79",
+      "en": "79, Ppurigongwon-ro, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Ppurigongwon-ro 79",
+      "tw": "大田廣域市中區 Ppurigongwon-ro 79"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "공식 공원소개로 주소와 기본정보를 확인했습니다. 실제 방문지는 운영진이 확정하며 두 대안 장소를 모두 방문한다는 뜻은 아닙니다.",
+      "en": "Official information confirms the address and introduction. The organizers will choose the destination; both alternatives are not confirmed visits.",
+      "cn": "地址与简介已由官方资料确认。实际地点由主办方确定，不代表两个备选地点均会参访。",
+      "tw": "地址與簡介已由官方資料確認。實際地點由主辦團隊確定，不代表兩個備選地點均會參訪。"
+    },
+    "naverQuery": "뿌리공원 대전 중구 뿌리공원로 79",
+    "sources": [
+      {
+        "label": "대전 중구 효월드 · 뿌리공원 소개",
+        "url": "https://www.djjunggu.go.kr/hyo/sub03_01_01.do"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
+  },
+  {
+    "id": "daejeon-national-cemetery",
+    "koreanName": "국립대전현충원",
+    "names": {
+      "ko": "국립대전현충원",
+      "en": "Daejeon National Cemetery",
+      "cn": "国立大田显忠院",
+      "tw": "國立大田顯忠院"
+    },
+    "category": {
+      "ko": "추모 · 역사",
+      "en": "Remembrance · History",
+      "cn": "追思 · 历史",
+      "tw": "追思 · 歷史"
+    },
+    "intro": {
+      "ko": "대한민국을 위해 희생한 이들을 기리는 국립묘지입니다. 묘역과 추모시설을 통해 역사와 추모 문화를 만납니다.",
+      "en": "A national cemetery honoring those who sacrificed for Korea. Its burial grounds and memorial facilities offer a place for remembrance.",
+      "cn": "纪念为韩国作出牺牲者的国立墓园。墓区与纪念设施提供了解历史及追思的空间。",
+      "tw": "紀念為韓國作出犧牲者的國立墓園。墓區與紀念設施提供認識歷史及追思的空間。"
+    },
+    "history": {
+      "ko": "순국선열과 호국영령의 희생을 알리는 체험교육도 운영합니다.",
+      "en": "It also offers educational programs about those commemorated here.",
+      "cn": "也提供介绍先烈与护国英灵牺牲精神的教育项目。",
+      "tw": "也提供介紹先烈與護國英靈犧牲精神的教育活動。"
+    },
+    "purpose": {
+      "ko": "11월 10일 09:30의 대안 일정인 ‘뿌리공원 또는 현충원 방문’ 중 한 곳입니다.",
+      "en": "One alternative in the November 10, 09:30 program: Ppuri Park or the national cemetery.",
+      "cn": "是11月10日09:30“根公园或显忠院参访”的备选地点之一。",
+      "tw": "是11月10日09:30「根公園或顯忠院參訪」的備選地點之一。"
+    },
+    "address": {
+      "ko": "대전광역시 유성구 현충원로 251",
+      "en": "251, Hyeonchungwon-ro, Yuseong-gu, Daejeon",
+      "cn": "大田广域市儒城区 Hyeonchungwon-ro 251",
+      "tw": "大田廣域市儒城區 Hyeonchungwon-ro 251"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "주소와 소개는 공식 자료를 확인했습니다. 대안 방문지이며, 참배 동선과 집합 장소는 운영진 안내를 따르세요.",
+      "en": "The address and introduction follow official sources. This is an alternative destination; follow the organizers’ route and meeting guidance.",
+      "cn": "地址与简介已参考官方资料。此处为备选地点，参拜路线与集合点依主办方公告。",
+      "tw": "地址與簡介已參考官方資料。此處為備選地點，參拜路線與集合點依主辦團隊公告。"
+    },
+    "naverQuery": "국립대전현충원 대전 유성구 현충원로 251",
+    "sources": [
+      {
+        "label": "국립대전현충원 · 나라사랑 체험교육",
+        "url": "https://www.dnc.go.kr/design/theme/portal/html/dj-4001.html"
+      },
+      {
+        "label": "국가보훈부 · 기관주소록",
+        "url": "https://www.mpva.go.kr/mpva/contents.do?key=235"
+      }
+    ],
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null
   }
 ]

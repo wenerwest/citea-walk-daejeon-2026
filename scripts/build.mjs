@@ -92,10 +92,6 @@ try {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(place.id || '')) fail('places.json: each place needs a unique lowercase-hyphen id.');
     if (ids.has(place.id)) fail(`places.json: duplicate place id ${place.id}`);
     ids.add(place.id);
-    for (const [lang, audio] of Object.entries(place.audio || {})) {
-      if (!langs.includes(lang)) fail(`${place.id}.audio: unsupported language ${lang}`);
-      if (audio) await localAsset(typeof audio === 'string' ? audio : audio.src, `${place.id}.audio.${lang}`, false);
-    }
     const image = typeof place.image === 'string' ? place.image : place.image?.src;
     if (image) await localAsset(image, `${place.id}.image`);
   }

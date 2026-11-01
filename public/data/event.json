@@ -6,12 +6,12 @@
   "timezone": "Asia/Seoul",
   "status": "published-from-source",
   "scheduleSource": null,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "description": {
-    "ko": "차 문화와 도시 탐험, 근대건축과 웰니스를 잇는 대전의 나흘. 스마트폰으로 일정을 확인하고, 개인 이어폰으로 도시의 이야기를 만나세요.",
-    "tw": "用四天時間，串起茶文化、城市探索、近代建築與身心療癒。用手機查看行程，戴上自己的耳機，聽見大田的故事。",
-    "cn": "用四天时间，串联茶文化、城市探索、近代建筑与身心康养。用手机查看行程，戴上自己的耳机，聆听大田的故事。",
-    "en": "Four days in Daejeon connecting tea culture, city exploration, modern architecture and wellness. Check the schedule on your phone and hear the city’s stories through your own earphones."
+    "ko": "차 문화와 도시 탐험, 근대건축과 웰니스를 잇는 대전의 나흘. 스마트폰으로 일정을 확인하고 Live Voice 웹을 통해 해설을 들으세요. 개인 이어폰은 필수입니다.",
+    "tw": "用四天時間，串起茶文化、城市探索、近代建築與身心療癒。用手機查看行程，透過Live Voice網頁收聽解說。必須自備入耳式耳機。",
+    "cn": "用四天时间，串联茶文化、城市探索、近代建筑与身心康养。用手机查看行程，通过Live Voice网页收听讲解。必须自备入耳式耳机。",
+    "en": "Four days in Daejeon connecting tea culture, city exploration, modern architecture and wellness. Check the schedule on your phone and listen through the Live Voice website. Your own earphones or earbuds are required."
   },
   "scheduleExplanation": {
     "ko": "제공된 수정 일정표 1의 날짜·시작 시각·프로그램을 반영했습니다. 원본에 없는 종료 시각·주소는 추가하지 않았습니다.",
@@ -373,7 +373,8 @@
             "cn": "Hanbat 树木园（한밭수목원）",
             "en": "Hanbat Arboretum"
           },
-          "mapQuery": "한밭수목원 대전"
+          "mapQuery": "한밭수목원 대전",
+          "placeId": "hanbat-arboretum"
         },
         {
           "id": "2026-11-08-1330",
@@ -407,7 +408,8 @@
             "cn": "参观常设展与温泉主题展。",
             "en": "Visit the permanent exhibition and hot springs exhibition."
           },
-          "mapQuery": "대전근현대사전시관"
+          "mapQuery": "대전근현대사전시관",
+          "placeId": "daejeon-modern-history"
         },
         {
           "id": "2026-11-08-1430",
@@ -452,7 +454,10 @@
             "tw": "原行程註明在 안도르 咖啡館停留 30 分鐘。",
             "cn": "原行程表标注在 Andor Café 停留30分钟。",
             "en": "The source indicates 30 minutes at Andor Café."
-          }
+          },
+          "relatedPlaceIds": [
+            "architecture-bakery"
+          ]
         },
         {
           "id": "2026-11-08-1600",
@@ -484,7 +489,8 @@
             "tw": "原行程未註明芒草田的確切參訪地點。",
             "cn": "原行程表未注明芒草地的具体游览位置。",
             "en": "The source does not specify the exact location of the silver grass fields to visit."
-          }
+          },
+          "placeId": "daecheong-lake-trail"
         },
         {
           "id": "2026-11-08-1800",
@@ -667,7 +673,11 @@
             "tw": "漫步中央市場與蘇堤洞，並在中央市場品嚐雙和茶。",
             "cn": "步行游览中央市场与苏堤洞，并在中央市场品尝双和茶。",
             "en": "Walk through Jungang Market and Soje-dong, and enjoy ssanghwa herbal tea at Jungang Market."
-          }
+          },
+          "placeId": "daejeon-jungang-market",
+          "relatedPlaceIds": [
+            "soje-dong"
+          ]
         },
         {
           "id": "2026-11-09-1430",
@@ -795,7 +805,11 @@
             "tw": "原行程列出二擇一安排：參訪根公園或顯忠院。",
             "cn": "此项为原行程表中的备选安排，参访地点为根公园或显忠院。",
             "en": "The source lists alternative destinations: Ppuri Park or the National Cemetery."
-          }
+          },
+          "relatedPlaceIds": [
+            "ppuri-park",
+            "daejeon-national-cemetery"
+          ]
         },
         {
           "id": "2026-11-10-1000",
@@ -864,32 +878,32 @@
       "id": "personal-earphones",
       "type": "important",
       "title": {
-        "ko": "개인 이어폰을 꼭 준비해 주세요",
-        "tw": "請務必攜帶個人耳機",
-        "cn": "请务必携带个人耳机",
-        "en": "Please bring your own earphones"
+        "ko": "개인 이어폰 필수",
+        "tw": "必須自備入耳式耳機",
+        "cn": "必须自备入耳式耳机",
+        "en": "Personal earphones or earbuds required"
       },
       "body": {
-        "ko": "도시 도보 탐방의 해설은 각자의 휴대전화와 개인 이어폰으로 듣습니다. 가벼운 이어폰을 권장하며, 출발 전 연결 상태와 휴대전화·이어폰의 배터리를 확인해 주세요.",
-        "tw": "城市步行導覽將透過自己的手機與耳機收聽。建議攜帶輕便耳機，出發前請確認連線狀態，以及手機與耳機的電量。",
-        "cn": "城市步行导览将通过自己的手机和耳机收听。建议携带轻便耳机，出发前请确认连接状态，以及手机和耳机的电量。",
-        "en": "Listen to the walking tour commentary on your own phone with your own earphones. Lightweight earphones are recommended. Check the connection and charge your phone and earphones before departure."
+        "ko": "헤드셋이 아닌 개인 이어폰을 반드시 준비해 주세요. 출발 전 휴대전화 연결과 휴대전화·이어폰의 배터리를 확인해 주세요.",
+        "tw": "請務必自備入耳式耳機，不使用頭戴式耳機。出發前，請確認手機連線狀態，以及手機與耳機的電量。",
+        "cn": "请务必自备入耳式耳机，不使用头戴式耳机。出发前，请检查手机连接状态，以及手机和耳机的电量。",
+        "en": "Bring your own earphones or earbuds, not a headset. Before departure, check the connection to your phone and charge your phone and earphones."
       }
     },
     {
-      "id": "audio-pending",
+      "id": "live-voice-web",
       "type": "notice",
       "title": {
-        "ko": "언어별 오디오 가이드를 준비하고 있습니다",
-        "tw": "各語言的語音導覽準備中",
-        "cn": "各语言的语音导览准备中",
-        "en": "Audio guides in each language are being prepared"
+        "ko": "Live Voice 웹으로 제공",
+        "tw": "透過Live Voice網頁提供",
+        "cn": "通过Live Voice网页提供",
+        "en": "Provided through Live Voice online"
       },
       "body": {
-        "ko": "현재 오디오 파일은 등록되어 있지 않습니다. 파일이 준비되면 해당 언어의 재생 및 다운로드 기능이 활성화됩니다. 오디오는 재생 버튼을 눌러야 시작됩니다.",
-        "tw": "目前尚未上傳語音檔。檔案就緒後，對應語言的播放與下載功能就會開放。按下播放鍵才會開始播放。",
-        "cn": "目前尚未上传音频文件。文件准备好后，将开放对应语言的播放与下载功能。点击播放才会开始播放。",
-        "en": "No audio files have been uploaded yet. Playback and download will become available for each language when its files are ready. Audio starts only when you press play."
+        "ko": "오디오 가이드는 Live Voice 웹에서 제공됩니다. 각자의 휴대전화로 해설을 들어 주세요.",
+        "tw": "語音導覽透過Live Voice網頁提供，請使用自己的手機收聽解說。",
+        "cn": "语音导览通过Live Voice网页提供，请使用自己的手机收听讲解。",
+        "en": "The audio guide is provided through the Live Voice website. Listen to the commentary on your own phone."
       }
     },
     {
@@ -1007,16 +1021,16 @@
         "en": "Audio guide"
       },
       "title": {
-        "ko": "개인 이어폰",
-        "tw": "個人耳機",
-        "cn": "个人耳机",
-        "en": "Your own earphones"
+        "ko": "개인 이어폰 (헤드셋 제외)",
+        "tw": "個人入耳式耳機（非頭戴式）",
+        "cn": "个人入耳式耳机（非头戴式）",
+        "en": "Personal earphones / earbuds (no headsets)"
       },
       "detail": {
-        "ko": "도보 탐방 해설은 개인 이어폰으로 듣습니다. 큰 헤드셋보다 가벼운 이어폰을 권장합니다. 휴대전화 연결과 휴대전화·이어폰의 충전 상태를 확인해 주세요.",
-        "tw": "步行導覽將透過個人耳機收聽。建議使用輕便耳機，較方便隨身攜帶。請確認手機連線，以及手機與耳機的電量。",
-        "cn": "步行导览将通过个人耳机收听。建议使用轻便耳机，方便随身携带。请确认手机连接，以及手机和耳机的电量。",
-        "en": "Use your own earphones for walking tour commentary. Lightweight earphones are recommended over large headsets. Check the phone connection and charge both your phone and earphones."
+        "ko": "Live Voice 웹으로 제공되는 도보 탐방 해설을 들으려면 개인 이어폰이 반드시 필요합니다. 헤드셋은 제외합니다. 출발 전 휴대전화 연결과 휴대전화·이어폰의 배터리를 확인해 주세요.",
+        "tw": "收聽Live Voice網頁提供的步行導覽解說，必須自備入耳式耳機，請勿以頭戴式耳機代替。出發前，請確認手機連線狀態，以及手機與耳機的電量。",
+        "cn": "收听Live Voice网页提供的步行导览讲解，必须自备入耳式耳机，请勿以头戴式耳机代替。出发前，请检查手机连接状态，以及手机和耳机的电量。",
+        "en": "Your own earphones or earbuds are required for walking tour commentary provided through the Live Voice website. Please do not bring a headset instead. Before departure, check the phone connection and charge your phone and earphones."
       },
       "essential": true
     },
