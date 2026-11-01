@@ -88,6 +88,12 @@ node scripts/dev.mjs --dist --port 4174
 
 사진 파일은 용량을 줄인 WebP/JPEG 등을 사용하고 `places.json`의 `image.src`, `image.alt`, `image.source`, `image.credit`를 함께 갱신합니다. 홈 사진은 `site.json`의 `hero`에서 수정합니다. 첨부된 장소 이미지 9개는 `public/assets/supplied/`에 WebP로 최적화하여 연결했습니다. 기관 로고 2개는 `site.json`의 `footerLogos`로 관리합니다. 우암사적공원 사진(Jo, CC BY 2.0)의 출처·라이선스 링크는 상세 페이지에서 확인할 수 있습니다. 현재 대표 이미지는 우암사적공원의 봄 자료사진이며, 화면에 촬영 계절과 출처·라이선스를 표시합니다. 사진이 없는 장소는 `사진 준비 중`으로 표시하므로 행사 전에 사용 허락을 확보한 실제 장소 사진을 추가할 수 있습니다.
 
+### 색상·폰트·반응형 화면
+
+`styles.css` 상단의 색상 변수로 기본 배경 `#F9FBF8`, 본문 `#2B302A`, 주요 버튼 `#1C3A27`, 라임 강조색 `#75F014`를 관리합니다. 라임은 작은 본문 글씨 대신 선택 표시·진행 막대 등에 사용합니다. 모바일 본문은 14–15px 이상, 주요 버튼은 높이 44px 이상이며, 480px 이하에서는 장소 카드를 한 열로 보여 줍니다.
+
+영문·숫자는 Poppins, 한글은 Pretendard Variable을 사용합니다. 번체·간체 화면은 해당 지역의 시스템 중국어 글꼴을 우선합니다. 폰트는 `public/assets/fonts/`에 저장되어 외부 폰트 서비스 호출 없이 제공됩니다. `fonts.css`는 필요한 글꼴만 불러오고, 다운로드 중에는 시스템 글꼴을 먼저 표시합니다. 원본 라이선스와 출처는 같은 폴더의 `*-OFL.txt`, `SOURCES.md`에 보관합니다. 폰트 파일을 교체할 때 라이선스도 함께 유지하세요.
+
 ## GitHub Pages 무료 배포
 
 이 폴더의 **내용 전체**를 공개 GitHub 저장소의 루트에 올립니다. `.github/workflows/pages.yml`도 포함해야 합니다. GitHub Free의 공개 저장소에서 Pages를 사용할 수 있으며, 별도 도메인을 살 필요가 없습니다. 절차와 워크플로는 [GitHub Pages 공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)를 기준으로 구성했습니다.
