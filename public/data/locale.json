@@ -148,7 +148,10 @@
     "daySun": "일",
     "dayMon": "월",
     "dayTue": "화",
-    "institutionLogos": "기관 로고"
+    "institutionLogos": "기관 로고",
+    "appDownloads": "앱 다운로드",
+    "androidDownload": "Android 다운로드",
+    "iphoneDownload": "iPhone 다운로드"
   },
   "tw": {
     "langName": "繁體中文（台灣）",
@@ -299,7 +302,10 @@
     "daySun": "日",
     "dayMon": "一",
     "dayTue": "二",
-    "institutionLogos": "機構標誌"
+    "institutionLogos": "機構標誌",
+    "appDownloads": "下載App",
+    "androidDownload": "Android 下載",
+    "iphoneDownload": "iPhone 下載"
   },
   "cn": {
     "langName": "简体中文（中国大陆）",
@@ -450,6 +456,9 @@
     "daySun": "日",
     "dayMon": "一",
     "dayTue": "二",
-    "institutionLogos": "机构标志"
+    "institutionLogos": "机构标志",
+    "appDownloads": "下载应用",
+    "androidDownload": "Android 下载",
+    "iphoneDownload": "iPhone 下载"
   }
 }

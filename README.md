@@ -94,6 +94,12 @@ node scripts/dev.mjs --dist --port 4174
 
 영문·숫자는 Poppins, 한글은 Pretendard Variable을 사용합니다. 번체·간체 화면은 해당 지역의 시스템 중국어 글꼴을 우선합니다. 폰트는 `public/assets/fonts/`에 저장되어 외부 폰트 서비스 호출 없이 제공됩니다. `fonts.css`는 필요한 글꼴만 불러오고, 다운로드 중에는 시스템 글꼴을 먼저 표시합니다. 원본 라이선스와 출처는 같은 폴더의 `*-OFL.txt`, `SOURCES.md`에 보관합니다. 폰트 파일을 교체할 때 라이선스도 함께 유지하세요.
 
+### 준비물 카테고리·추천 앱
+
+준비물 카테고리는 모바일과 데스크톱 모두 굵은 20px, 항목명은 18px, 설명은 16px입니다. `event.json`의 `checklist`에서 각 항목을 수정합니다. 추천 앱 항목의 `app.icon`에는 `public/` 기준 아이콘 경로, `app.downloads.android`와 `app.downloads.ios`에는 공식 스토어 주소를 넣습니다. `app.paragraphs`는 언어별 소개 단락, `app.sources`는 공식 출처 목록입니다. 아이콘은 `public/assets/apps/`에 보관하며 앱 다운로드 버튼은 체크박스 영역 밖에 있어 링크를 눌러도 체크 상태가 바뀌지 않습니다.
+
+타슈 소개는 대전시 공식 자료를 대조해 수상 정보를 **2015년 한국교통연구원 ‘지속가능 교통대상’**으로 표기했습니다. 기존 해외 휴대전화 번호의 인증·이용 가능 여부 확인 안내는 유지합니다. 스토어 링크는 외부 서비스이므로 인터넷 연결이 필요합니다.
+
 ## GitHub Pages 무료 배포
 
 이 폴더의 **내용 전체**를 공개 GitHub 저장소의 루트에 올립니다. `.github/workflows/pages.yml`도 포함해야 합니다. GitHub Free의 공개 저장소에서 Pages를 사용할 수 있으며, 별도 도메인을 살 필요가 없습니다. 절차와 워크플로는 [GitHub Pages 공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)를 기준으로 구성했습니다.

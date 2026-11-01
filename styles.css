@@ -245,3 +245,32 @@ body { -webkit-text-size-adjust: 100%; }
   .timeline-body.has-photo { grid-template-columns: minmax(0, 1fr); }
   .timeline-body > .place-photo { width: 100%; aspect-ratio: 2 / 1; }
 }
+
+/* Preparation checklist: prominent category labels and app links outside checkbox labels. */
+.checklist-entry { border-bottom: 1px solid var(--line); }
+.checklist-entry .check-item { border-bottom: 0; }
+.check-copy { min-width: 0; flex: 1; }
+.check-copy .category { font-size: 20px; font-weight: 700; line-height: 1.5; letter-spacing: 0; margin-bottom: 7px; }
+.check-copy strong { font-size: 18px; font-weight: 600; line-height: 1.6; }
+.check-copy .required { font-size: 14px; vertical-align: middle; }
+.check-description { font-size: 16px; }
+.check-item.checked .check-copy strong { color: var(--muted); }
+.check-app-title { display: flex; align-items: center; gap: 16px; margin: 4px 0; }
+.app-icon { width: 72px; height: 72px; flex-shrink: 0; object-fit: contain; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.app-resources { margin: 0 6px 28px 49px; padding: 24px; background: var(--white); border: 1px solid var(--line); border-radius: 10px; }
+.app-description p { font-size: 16px; line-height: 1.9; color: var(--ink); margin-top: 16px; overflow-wrap: anywhere; }
+.app-description p:first-child { margin-top: 0; }
+.app-description .app-preparation-note { margin-top: 20px; padding: 14px 16px; background: var(--sage); border-left: 3px solid var(--green); }
+.app-download-caption { font-size: 18px; font-weight: 600; margin: 24px 0 12px; }
+.app-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.app-store-link { min-width: 0; min-height: 76px; padding: 14px 16px; gap: 12px; text-align: left; justify-content: flex-start; }
+.app-store-link > span { display: flex; flex: 1; min-width: 0; flex-direction: column; font-size: 16px; line-height: 1.6; }
+.app-download-platform { font-weight: 600; }
+.app-store-name { color: var(--muted); }
+.app-sources { margin-top: 18px; }
+@media (max-width: 600px) {
+  .check-app-title { gap: 12px; }
+  .app-icon { width: 64px; height: 64px; }
+  .app-resources { margin-left: 0; margin-right: 0; padding: 20px 16px; }
+  .app-downloads { grid-template-columns: minmax(0, 1fr); }
+}

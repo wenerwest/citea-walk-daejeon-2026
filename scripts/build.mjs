@@ -75,6 +75,21 @@ try {
     if (image) await localAsset(image, `${place.id}.image`);
   }
   const schedule = parsed.get('schedule.json') || parsed.get('event.json');
+  const checkIds = new Set();
+  for (const item of schedule?.checklist || []) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id || '') || checkIds.has(item.id)) fail('checklist: each item needs a unique lowercase-hyphen id.');
+    checkIds.add(item.id);
+    if (item.app) {
+      if (!item.app.icon) fail(`checklist.${item.id}: an app icon is required.`);
+      await localAsset(item.app.icon, `checklist.${item.id}.app.icon`, false);
+      for (const [platform, address] of Object.entries(item.app.downloads || {})) {
+        const hosts = { android: 'play.google.com', ios: 'apps.apple.com' };
+        let url;
+        try { url = new URL(address); } catch { fail(`checklist.${item.id}: invalid ${platform} download link.`); }
+        if (!hosts[platform] || url.protocol !== 'https:' || url.hostname !== hosts[platform]) fail(`checklist.${item.id}: use the official app store for ${platform}.`);
+      }
+    }
+  }
   const days = Array.isArray(schedule) ? schedule : schedule?.days || schedule?.dates || schedule?.schedule || [];
   for (const day of days) {
     const date = day.date || day.id;
