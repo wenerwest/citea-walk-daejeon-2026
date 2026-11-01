@@ -95,6 +95,15 @@ try {
     const date = day.date || day.id;
     if (date && !/^2026-11-(07|08|09|10)$/.test(date)) fail(`Schedule: date outside the event: ${date}`);
     for (const item of day.items || day.programs || []) {
+      if (item.image) {
+        if (!item.image.src) fail(`schedule.${item.id}: image.src is required.`);
+        await localAsset(item.image.src, `schedule.${item.id}.image`);
+      }
+      if (item.mapUrl) {
+        let url;
+        try { url = new URL(item.mapUrl); } catch { fail(`schedule.${item.id}: invalid mapUrl.`); }
+        if (url.protocol !== 'https:') fail(`schedule.${item.id}: mapUrl must use HTTPS.`);
+      }
       if (item.placeId && !ids.has(item.placeId)) fail(`schedule.json: unknown placeId ${item.placeId}`);
       for (const placeId of item.relatedPlaceIds || []) if (!ids.has(placeId)) fail(`schedule.json: unknown related placeId ${placeId}`);
       if (item.time && !/^([01]\d|2[0-3]):[0-5]\d(?:\s*[–-]\s*([01]\d|2[0-3]):[0-5]\d)?$/.test(item.time)) fail(`schedule.json: use HH:MM or HH:MM–HH:MM for time: ${item.time}`);

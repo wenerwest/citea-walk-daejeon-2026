@@ -59,6 +59,8 @@ node scripts/dev.mjs --dist --port 4174
 
 일정 항목의 `meetingPoint`에는 세 언어 집합 안내를 넣을 수 있습니다. 장소 자체의 집합 지점은 `places.json`의 `meetingPoint`로 관리합니다.
 
+일정 항목에 `mapUrl`을 넣으면 지도 검색어와 장소 기본 링크보다 해당 HTTPS 주소를 우선합니다. 항목별 사진은 `image` 객체(`src`, 3개 언어 `alt`, `width`, `height`)로 지정하며, 없으면 연결된 장소의 대표 사진을 사용합니다. 현재 11/7 13:00 카페 폴레폴레는 제공된 NAVER 공유 링크를, 18:00 일몰 감상은 `assets/supplied/bomunsan-sunset.webp`를 사용합니다.
+
 ### 공지
 
 `notices`의 `title`과 `body`를 세 언어로 수정합니다. 집합 장소와 시간은 원본 일정과 현장 운영을 확인한 뒤 입력하세요. 연락처와 긴급안내 영역은 표시하지 않습니다.
