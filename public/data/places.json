@@ -811,10 +811,10 @@
       "en": "An expo celebrating wine and food culture. Official public visiting dates are November 6–8, 2026, at Daejeon Convention Center (DCC) and the surrounding area."
     },
     "history": {
-      "ko": "대전관광공사가 주최·주관하며 전시와 관련 문화 프로그램을 안내합니다. 연계행사의 운영 기간은 일반 관람일과 구분해야 합니다.",
-      "tw": "由大田觀光公社主辦，規劃展覽及相關文化活動。周邊專業活動的期間，須與一般觀眾參觀日分開理解。",
-      "cn": "由大田观光公社主办，设有展览及相关文化活动。配套专业活动的时间，应与公众参观日期区分。",
-      "en": "Hosted and organized by the Daejeon Tourism Organization, with exhibitions and related cultural programs. Associated event dates should be distinguished from general public visiting dates."
+      "ko": "대전이 한국 와인 역사의 출발점으로 손꼽힌다는 사실을 아시나요? 1969년 7월, 대전 월평동 공장에서 산내 포도로 빚은 ‘선리포트와인(SUNRY PORT WINE)’이 출시되었습니다. 국산 포도로 만든 국내 최초 와인으로 소개되는 이 와인은 대전과 와인의 깊은 인연을 보여줍니다.\n\n축제도 도시와 함께 성장해 왔습니다. 1993년 대전엑스포의 30주년을 맞은 2023년, ‘대전국제와인페스티벌’은 ‘대전국제와인EXPO’로 이름을 바꾸었습니다. 와인과 문화, 교류를 함께 만나는 축제의 새로운 장을 열었습니다.\n\n아시아와인트로피와 한국 국가대표 소믈리에 경기대회 등 전문 행사, 와인 전시와 문화 프로그램이 어우러지며 국제적인 문화·교역의 장으로 성장했습니다. 대전의 대표 가을축제에서 세계의 와인을 알아가고, 도시의 또 다른 매력을 발견해 보세요.",
+      "en": "Daejeon holds a special place in the story of Korean wine. In July 1969, a factory in Wolpyeong produced SUNRY PORT WINE using grapes grown in Sannae. Described as Korea’s first wine made from locally grown grapes, it marks an important starting point in the city’s relationship with wine.\n\nThe festival has grown alongside the city. In 2023, the 30th anniversary of Daejeon Expo 1993, the Daejeon International Wine Festival was renamed the Daejeon International Wine EXPO. The new name opened another chapter in a celebration bringing together wine, culture and exchange.\n\nProfessional events such as the Asia Wine Trophy and the Korea National Sommelier Competition join wine exhibitions and cultural programs, making the EXPO an international meeting place for culture and trade. Discover wines from around the world and another side of the city at one of Daejeon’s signature autumn festivals.",
+      "cn": "大田是韩国葡萄酒历史的重要起点之一。1969年7月，大田Wolpyeong（월평）工厂使用Sannae（산내）地区出产的葡萄，推出了SUNRY PORT WINE（선리포트와인）。这款酒被介绍为韩国首款以本土葡萄酿制的葡萄酒，见证了大田与葡萄酒的深厚渊源。\n\n节庆也与城市一同成长。2023年，适逢1993年大田世博会30周年，“大田国际葡萄酒节”更名为“大田国际葡萄酒EXPO”，为葡萄酒、文化与交流相聚的庆典开启了新篇章。\n\n亚洲葡萄酒大赛（Asia Wine Trophy）、韩国国家代表侍酒师大赛等专业活动，与葡萄酒展览和文化项目相互交织，使EXPO成为国际文化与贸易交流的平台。在大田代表性的秋季庆典中，认识世界各地的葡萄酒，也发现这座城市的另一面。",
+      "tw": "大田是韓國葡萄酒歷史的重要起點之一。1969年7月，大田Wolpyeong（월평）工廠使用Sannae（산내）地區出產的葡萄，推出了SUNRY PORT WINE（선리포트와인）。這款酒被介紹為韓國首款以本土葡萄釀製的葡萄酒，見證了大田與葡萄酒的深厚淵源。\n\n節慶也與城市一同成長。2023年，適逢1993年大田世博會30週年，「大田國際葡萄酒節」更名為「大田國際葡萄酒EXPO」，為葡萄酒、文化與交流相聚的慶典開啟了新篇章。\n\n亞洲葡萄酒大賽（Asia Wine Trophy）、韓國國家代表侍酒師大賽等專業活動，與葡萄酒展覽和文化節目相互交織，讓EXPO成為國際文化與貿易交流的平台。在大田具代表性的秋季節慶中，認識世界各地的葡萄酒，也發現這座城市的另一面。"
     },
     "purpose": {
       "ko": "제공 일정표에는 11월 8일 12:00 와인페스티벌 방문으로 기재되어 있습니다. CiTEA 단체 입장권·정확한 전시장과 집합 게이트는 별도 확인이 필요합니다.",
@@ -833,6 +833,26 @@
       {
         "label": "대전국제와인EXPO 공식 · 찾아오는 길",
         "url": "https://www.djwinefair.com/1104"
+      },
+      {
+        "label": "대전국제와인EXPO 공식 · 대전의 와인 역사",
+        "url": "https://www.djwinefair.com/0101"
+      },
+      {
+        "label": "한국문화원연합회 · 대전 와인 생산 역사",
+        "url": "https://ncms.nculture.org/local/story/195"
+      },
+      {
+        "label": "연구개발특구진흥재단 · 2023 대전국제와인EXPO 개최 안내",
+        "url": "https://www.innopolis.or.kr/board/view?linkId=49081&menuId=MENU00530&no1=10629"
+      },
+      {
+        "label": "대전국제와인EXPO 공식 · 아시아와인트로피",
+        "url": "https://www.djwinefair.com/0801"
+      },
+      {
+        "label": "대전국제와인EXPO 공식 · 한국 국가대표 소믈리에 경기대회",
+        "url": "https://www.djwinefair.com/0803"
       }
     ],
     "naverUrl": null,
@@ -864,7 +884,21 @@
       "en": "Expo · Food culture"
     },
     "categoryId": "festival",
-    "categoryBasis": "schedule-color"
+    "categoryBasis": "schedule-color",
+    "headline": {
+      "ko": "대한민국 와인의 시작점, 대전에서 즐기는 세계적인 축제",
+      "en": "A Global Celebration in Daejeon, Where Korean Wine Began",
+      "cn": "在韩国葡萄酒的起点大田，畅享国际葡萄酒盛会",
+      "tw": "在韓國葡萄酒的起點大田，享受國際葡萄酒盛會"
+    },
+    "sectionTitles": {
+      "history": {
+        "ko": "한국 와인의 시작과 축제의 성장",
+        "en": "Korean Wine Origins & the Festival’s Growth",
+        "cn": "韩国葡萄酒的起点与节庆的发展",
+        "tw": "韓國葡萄酒的起點與節慶的成長"
+      }
+    }
   },
   {
     "id": "local-wellness",
