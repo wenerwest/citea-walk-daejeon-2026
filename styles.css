@@ -274,3 +274,13 @@ body { -webkit-text-size-adjust: 100%; }
   .app-resources { margin-left: 0; margin-right: 0; padding: 20px 16px; }
   .app-downloads { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Keep every desktop destination directly accessible, including longer translations. */
+@media (min-width: 1201px) {
+  .desktop-nav { display: flex; flex: 1; min-width: 0; flex-wrap: wrap; justify-content: flex-end; gap: 2px 16px; }
+  .desktop-nav a { flex: 0 0 auto; padding: 8px 0; min-height: 44px; line-height: 1.4; display: inline-flex; align-items: center; }
+  .desktop-nav a[aria-current]:after { bottom: 3px; }
+  .header-actions { flex-shrink: 0; }
+  .menu-button { display: none !important; }
+  .mobile-nav { display: none; }
+}

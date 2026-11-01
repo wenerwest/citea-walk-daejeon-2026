@@ -51,9 +51,3 @@
   .shopping-map-button { font-size: 16px; }
   .schedule-shopping { padding: 20px; }
 }
-/* The added navigation item needs the existing mobile menu at tablet widths. */
-@media (min-width: 1201px) and (max-width: 1540px) {
-  .desktop-nav { display: none; }
-  .header-actions { margin-left: auto; }
-  .menu-button { display: inline-flex !important; }
-}
