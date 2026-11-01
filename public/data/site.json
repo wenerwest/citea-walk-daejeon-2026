@@ -18,5 +18,27 @@
     "credit": "Jo / Wikimedia Commons · CC BY 2.0 · resized / cropped / color adjusted",
     "source": "https://commons.wikimedia.org/wiki/File:Korea-Daejeon-Uam_Historic_Park-01.jpg",
     "license": "https://creativecommons.org/licenses/by/2.0/"
-  }
+  },
+  "footerLogos": [
+    {
+      "src": "assets/supplied/ministry-interior-safety.png",
+      "alt": {
+        "ko": "행정안전부",
+        "tw": "韓國行政安全部",
+        "cn": "韩国行政安全部"
+      },
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "src": "assets/supplied/junggu.png",
+      "alt": {
+        "ko": "대전광역시 중구",
+        "tw": "大田廣域市中區",
+        "cn": "大田广域市中区"
+      },
+      "width": 340,
+      "height": 322
+    }
+  ]
 }

@@ -60,6 +60,7 @@ try {
   }
   const site = parsed.get('site.json');
   if (site?.hero?.src) await localAsset(site.hero.src, 'site.hero.src');
+  for (const logo of site?.footerLogos || []) await localAsset(logo.src, 'site.footerLogos.src');
   const places = rows(parsed.get('places.json'), 'places');
   const ids = new Set();
   for (const place of places) {
@@ -80,6 +81,7 @@ try {
     if (date && !/^2026-11-(07|08|09|10)$/.test(date)) fail(`Schedule: date outside the event: ${date}`);
     for (const item of day.items || day.programs || []) {
       if (item.placeId && !ids.has(item.placeId)) fail(`schedule.json: unknown placeId ${item.placeId}`);
+      for (const placeId of item.relatedPlaceIds || []) if (!ids.has(placeId)) fail(`schedule.json: unknown related placeId ${placeId}`);
       if (item.time && !/^([01]\d|2[0-3]):[0-5]\d(?:\s*[–-]\s*([01]\d|2[0-3]):[0-5]\d)?$/.test(item.time)) fail(`schedule.json: use HH:MM or HH:MM–HH:MM for time: ${item.time}`);
     }
   }

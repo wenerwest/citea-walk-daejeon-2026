@@ -2,7 +2,7 @@
 const VERSION = 'citea-guide-__BUILD_ID__';
 const AUDIO = 'citea-audio-v1';
 const ROOT = new URL('./', self.location.href);
-const FILES = ['','index.html','app.js','styles.css','assets/icon.svg','assets/citea-walk-logo.png','assets/uam-hero.webp','assets/uam.webp','assets/temiorae.webp','assets/yuseong.webp','manifest.webmanifest','data/locale.json','data/event.json','data/places.json','data/site.json'];
+const FILES = ['','index.html','app.js','styles.css','assets/icon.svg','assets/citea-walk-logo.png','assets/supplied/local-wellness.webp','assets/supplied/wine-expo.webp','assets/supplied/temi-literature.webp','assets/supplied/bomunsan.webp','assets/supplied/yuseong-footbath.webp','assets/supplied/temi-park.webp','assets/supplied/temiorae.webp','assets/supplied/baking-yoga.webp','assets/supplied/naraegwan.webp','assets/supplied/ministry-interior-safety.png','assets/supplied/junggu.png','assets/uam-hero.webp','assets/uam.webp','assets/temiorae.webp','assets/yuseong.webp','manifest.webmanifest','data/locale.json','data/event.json','data/places.json','data/site.json'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(VERSION).then(cache=>cache.addAll(FILES.map(p=>new Request(new URL(p,ROOT).href,{cache:'reload'})))).then(()=>self.skipWaiting()));});
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('citea-guide-')&&k!==VERSION).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 async function audioResponse(request){
