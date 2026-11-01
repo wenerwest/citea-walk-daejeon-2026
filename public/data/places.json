@@ -582,7 +582,33 @@
     "sources": [],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "image": {
+      "src": "assets/supplied/architecture-bakery-citywalk.jpg",
+      "width": 1776,
+      "height": 1184,
+      "fit": "contain",
+      "alt": {
+        "ko": "건축·빵집 시티워크 참가자들이 실내 계단을 내려오는 모습",
+        "en": "Architecture and bakery city walk participants descending an indoor staircase",
+        "cn": "建筑与面包店城市漫步的参与者走下室内楼梯",
+        "tw": "建築與麵包店城市漫步的參與者走下室內樓梯"
+      },
+      "caption": {
+        "ko": "CiTEA Walk 근대건축·빵집 투어",
+        "en": "CiTEA Walk Architecture & Bakery Tour",
+        "cn": "CiTEA Walk 近代建筑与面包店漫步",
+        "tw": "CiTEA Walk 近代建築與麵包店散策"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    }
   },
   {
     "id": "andor-cafe",
