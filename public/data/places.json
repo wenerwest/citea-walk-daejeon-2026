@@ -1104,7 +1104,33 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "image": {
+      "src": "assets/supplied/daecheong-lake-silver-grass.jpg",
+      "width": 1920,
+      "height": 778,
+      "fit": "contain",
+      "alt": {
+        "ko": "대청호 호숫가의 가을 억새밭과 나무 전망데크",
+        "en": "Autumn silver grass and a wooden viewing deck beside Daecheong Lake",
+        "cn": "大清湖畔的秋日芒草地与木制观景平台",
+        "tw": "大清湖畔的秋日芒草地與木製觀景平台"
+      },
+      "caption": {
+        "ko": "대청호 억새밭",
+        "en": "Silver grass fields beside Daecheong Lake",
+        "cn": "大清湖芒草地",
+        "tw": "大清湖芒草地"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    }
   },
   {
     "id": "daejeon-jungang-market",
