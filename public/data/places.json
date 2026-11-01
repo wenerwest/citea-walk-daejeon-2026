@@ -733,10 +733,10 @@
       "en": "An outdoor hot spring foot bath in Bongmyeong-dong, Yuseong-gu. A place to pause and relax after walking around the city."
     },
     "history": {
-      "ko": "유성구는 천연 온천수를 이용하는 무료 야외 족욕시설로 안내합니다. 당일 점검이나 운영 제한 여부는 방문 전에 확인합니다.",
-      "tw": "儒城區官方將此介紹為使用天然溫泉水的免費戶外足湯設施。出發前仍須確認當日是否維護或限制使用。",
-      "cn": "儒城区官方将其介绍为使用天然温泉水的免费户外足浴设施。出发前仍需确认当天是否维护或限制使用。",
-      "en": "Yuseong-gu describes this as a free outdoor foot bath using natural hot spring water. Check for maintenance or operating restrictions before visiting."
+      "ko": "유성온천은 삼국시대까지 거슬러 전해지는 오랜 역사를 품은 온천 지역입니다. 조선 태조가 계룡산 일대를 새 도읍 후보지로 살피던 때 이곳을 찾았다는 기록이 남아 있고, 태종도 1413년 유성온천을 방문했습니다. 왕의 발걸음이 머문 이야기는 이 지역의 깊은 시간을 보여줍니다.\n\n근대에 들어 온천 관광의 모습도 달라졌습니다. 1907년 일본인 스즈키의 상업적 개발이 시작되었고, 철도 교통의 발달과 더불어 유성은 여행객을 맞는 온천 관광지로 모습을 갖추어 갔습니다.\n\n1912년에는 김갑순이 이곳의 땅을 사들여 개발하고 그해 12월 온천장을 열었습니다. 이어 1932년 충남도청이 대전으로 이전하면서, 유성온천 관광도 새로운 발전의 계기를 맞았습니다.\n\n오늘의 야외 족욕체험장은 천연 온천수를 무료로 즐기며 이 지역의 오랜 이야기를 떠올릴 수 있는 쉼터입니다. 도시를 걸은 뒤 따뜻한 온천수에 발을 담그고, 여행의 속도를 조금 늦춰보세요. 방문 전 당일 운영·정비 안내를 확인해 주세요.",
+      "en": "Yuseong is a hot spring district whose long history is said to reach back to the Three Kingdoms period. Records describe a visit by Joseon’s King Taejo while he was considering the Gyeryongsan area as a site for a new capital; King Taejong also visited the springs in 1413. These royal footsteps offer a glimpse of the area’s deep history.\n\nHot spring tourism took on a new shape in the modern era. In 1907, a Japanese developer named Suzuki began commercial development of the springs. As rail travel expanded, Yuseong gradually developed into a hot spring destination welcoming travelers.\n\nIn 1912, Kim Gap-sun purchased land and developed hot spring facilities, opening them that December. The move of the Chungcheongnam-do provincial government to Daejeon in 1932 gave tourism at Yuseong Hot Springs further momentum.\n\nToday’s free outdoor foot bath uses natural spring water, offering a place to pause and connect with the district’s long history. After a city walk, dip your feet into the warm water and slow the pace of your journey. Check the day’s operating and maintenance notices before visiting.",
+      "cn": "儒城是一片拥有悠久历史的温泉地区，其渊源相传可追溯至三国时期。史料记载，朝鲜太祖考察鸡龙山一带作为新都候选地时曾到访这里，太宗也于1413年访问儒城温泉。君王留下的足迹，让人感受到这片土地深厚的岁月。\n\n进入近代，温泉旅游逐渐呈现新的面貌。1907年，日本人Suzuki（스즈키）开始商业开发。随着铁路交通的发展，儒城也逐步成为迎接旅行者的温泉旅游地。\n\n1912年，Kim Gap-sun（김갑순）购入土地并开发温泉设施，同年12月开业。1932年，忠清南道道厅迁至大田，进一步带动了儒城温泉观光的发展。\n\n如今的户外足浴体验场使用天然温泉水，免费向公众开放，是一处可稍作休息、回味当地历史的空间。城市漫步之后，把双脚浸入温暖的泉水，让旅程的节奏慢下来。到访前请查看当天的开放及维护通知。",
+      "tw": "儒城是一片擁有悠久歷史的溫泉地區，其淵源相傳可追溯至三國時期。史料記載，朝鮮太祖考察雞龍山一帶作為新都候選地時曾到訪這裡，太宗也於1413年造訪儒城溫泉。君王留下的足跡，讓人感受到這片土地深厚的歲月。\n\n進入近代，溫泉觀光逐漸呈現新的面貌。1907年，日本人Suzuki（스즈키）開始商業開發。隨著鐵路交通的發展，儒城也逐步成為迎接旅人的溫泉觀光地。\n\n1912年，Kim Gap-sun（김갑순）買下土地並開發溫泉設施，同年12月開業。1932年，忠清南道廳遷至大田，進一步帶動了儒城溫泉觀光的發展。\n\n如今的戶外足湯體驗場使用天然溫泉水，免費向公眾開放，是一處可稍作休息、回味在地歷史的空間。城市漫步之後，把雙腳浸入溫暖的泉水，讓旅程的節奏慢下來。到訪前請查看當天的開放及維護公告。"
     },
     "purpose": {
       "ko": "유성의 온천문화를 가볍게 경험하고 휴식하는 방문입니다. 단체 이용 방법과 집합 지점은 운영진의 현장 안내를 따릅니다.",
@@ -755,7 +755,27 @@
     "sources": [
       {
         "label": "유성구 문화관광 · 야외 족욕체험장",
-        "url": "https://www.yuseong.go.kr/prog/trrsrt/TRSE_01/tour/sub02_01/view.do?trrsrtNo=15"
+        "url": "https://www.yuseong.go.kr/prog/trrsrt/TRSE_08/tour/sub02_08/view.do?trrsrtNo=15"
+      },
+      {
+        "label": "유성구 문화관광 · 유성온천의 역사",
+        "url": "https://www.yuseong.go.kr/tour/sub01_01_03.do"
+      },
+      {
+        "label": "유성온천 · 한국민족문화대백과사전",
+        "url": "https://encykorea.aks.ac.kr/Article/E0041553"
+      },
+      {
+        "label": "국사편찬위원회 · 태종실록 1413년 유성 온정 행차",
+        "url": "https://sillok.history.go.kr/id/kca_11309011_001"
+      },
+      {
+        "label": "대전광역시 월간 대전이즈유 · 유성온천의 근대 개발",
+        "url": "https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=2735&menuSeq=5944&pageIndex=1"
+      },
+      {
+        "label": "대전시립박물관 · 유성온천 역사 소개",
+        "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&ntatcSeq=1472056087"
       }
     ],
     "naverUrl": null,
@@ -787,7 +807,21 @@
       "en": "Hot springs · Relaxation"
     },
     "categoryId": "wellness",
-    "categoryBasis": "organizer-confirmed"
+    "categoryBasis": "organizer-confirmed",
+    "headline": {
+      "ko": "왕의 발걸음이 머문 치유의 샘, 대전 유성온천",
+      "en": "A Spring of Renewal Once Visited by Kings: Daejeon’s Yuseong Hot Springs",
+      "cn": "君王足迹停驻的疗愈之泉——大田儒城温泉",
+      "tw": "君王足跡停駐的療癒之泉——大田儒城溫泉"
+    },
+    "sectionTitles": {
+      "history": {
+        "ko": "유성온천의 역사와 오늘",
+        "en": "Yuseong Hot Springs, Then and Now",
+        "cn": "儒城温泉的历史与今日",
+        "tw": "儒城溫泉的歷史與今日"
+      }
+    }
   },
   {
     "id": "wine-expo",
