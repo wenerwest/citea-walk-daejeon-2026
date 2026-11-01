@@ -7,7 +7,7 @@ export const scheduleTracks = {
     name: localized('크리에이터 일정', 'Creator Schedule', '创作者行程', '創作者行程'),
     audience: localized(
       '중화권 MZ 디지털 크리에이터',
-      'Chinese-speaking MZ digital creators',
+      'MZ digital creators from Chinese-speaking regions',
       '华语地区 MZ 数字创作者',
       '華語地區 MZ 數位創作者'
     ),
@@ -24,7 +24,7 @@ export const scheduleTracks = {
     ),
     audience: localized(
       '중화권 여행사·대형 커뮤니티 운영자',
-      'Chinese-speaking travel agencies and large community operators',
+      'Travel agencies and large community operators from Chinese-speaking regions',
       '华语地区旅行社及大型社群运营者',
       '華語地區旅行社及大型社群經營者'
     ),

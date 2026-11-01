@@ -130,7 +130,7 @@
   "tw": {
     "langName": "繁體中文",
     "langCode": "CN",
-    "htmlLang": "zh-Hant-TW",
+    "htmlLang": "zh-Hant",
     "skipToContent": "跳至主要內容",
     "language": "選擇語言",
     "menu": "選單",
@@ -258,7 +258,7 @@
   "cn": {
     "langName": "简体中文",
     "langCode": "CN",
-    "htmlLang": "zh-Hans-CN",
+    "htmlLang": "zh-Hans",
     "skipToContent": "跳转到主要内容",
     "language": "选择语言",
     "menu": "菜单",
