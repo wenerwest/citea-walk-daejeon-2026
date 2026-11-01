@@ -92,6 +92,7 @@ try {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(place.id || '')) fail('places.json: each place needs a unique lowercase-hyphen id.');
     if (ids.has(place.id)) fail(`places.json: duplicate place id ${place.id}`);
     ids.add(place.id);
+    if (!['festival', 'wellness', 'walking', 'visits'].includes(place.categoryId)) fail(`${place.id}: choose a supported exploration category.`);
     const image = typeof place.image === 'string' ? place.image : place.image?.src;
     if (image) await localAsset(image, `${place.id}.image`);
     for (const [index, image] of (place.gallery || []).entries()) {
@@ -134,7 +135,7 @@ try {
       if (item.time && !/^([01]\d|2[0-3]):[0-5]\d(?:\s*[–-]\s*([01]\d|2[0-3]):[0-5]\d)?$/.test(item.time)) fail(`schedule.json: use HH:MM or HH:MM–HH:MM for time: ${item.time}`);
     }
   }
-  const appFiles = ['index.html', 'app.js', 'styles.css', 'shopping-guide.js', 'shopping-guide.css', 'filmed-here.js', 'filmed-here.css'];
+  const appFiles = ['index.html', 'app.js', 'styles.css', 'shopping-guide.js', 'shopping-guide.css', 'filmed-here.js', 'filmed-here.css', 'explore-categories.js', 'explore-categories.css'];
   const missing = [];
   for (const file of appFiles) if (!(await exists(path.join(root, file)))) missing.push(file);
   if (missing.length && !allowIncomplete) fail(`Application files are not ready: ${missing.join(', ')}. Finish the app, then build again.`);
@@ -157,7 +158,7 @@ try {
   const buildId = hash.digest('hex').slice(0, 16);
   if (await exists(path.join(dist, 'index.html'))) {
     const html = await readFile(path.join(dist, 'index.html'), 'utf8');
-    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:(?:app|shopping-guide|filmed-here)\.js|(?:styles|shopping-guide|filmed-here)\.css|manifest\.webmanifest|assets\/fonts\/fonts\.css|assets\/icons\/[a-z0-9-]+\.(?:png|ico))(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
+    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:(?:app|shopping-guide|filmed-here|explore-categories)\.js|(?:styles|shopping-guide|filmed-here|explore-categories)\.css|manifest\.webmanifest|assets\/fonts\/fonts\.css|assets\/icons\/[a-z0-9-]+\.(?:png|ico))(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
       const hashIndex = reference.indexOf('#');
       const fragment = hashIndex === -1 ? '' : reference.slice(hashIndex);
       const withoutFragment = hashIndex === -1 ? reference : reference.slice(0, hashIndex);
@@ -172,7 +173,7 @@ try {
   const entry = path.join(dist, 'app.js');
   if (await exists(entry)) {
     const js = await readFile(entry, 'utf8');
-    await writeFile(entry, js.replace(/from '([.]\/(?:shopping-guide|filmed-here)[.]js)'/g, (_match, file) => `from '${file}?v=${buildId}'`));
+    await writeFile(entry, js.replace(/from '([.]\/(?:shopping-guide|filmed-here|explore-categories)[.]js)'/g, (_match, file) => `from '${file}?v=${buildId}'`));
   }
   if (await exists(path.join(dist, 'sw.js'))) {
     const worker = await readFile(path.join(dist, 'sw.js'), 'utf8');

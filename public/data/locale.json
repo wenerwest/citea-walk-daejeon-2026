@@ -124,7 +124,8 @@
     "liveVoiceTitle": "Live Voice 웹으로 제공",
     "liveVoiceBody": "오디오 가이드는 Live Voice 웹에서 제공됩니다. 각자의 휴대전화로 해설을 들어 주세요.",
     "earphonesRequiredTitle": "개인 이어폰 필수",
-    "earphonesRequiredBody": "헤드셋이 아닌 개인 이어폰을 반드시 준비해 주세요. 출발 전 휴대전화 연결과 휴대전화·이어폰의 배터리를 확인해 주세요."
+    "earphonesRequiredBody": "헤드셋이 아닌 개인 이어폰을 반드시 준비해 주세요. 출발 전 휴대전화 연결과 휴대전화·이어폰의 배터리를 확인해 주세요.",
+    "exploreResults": "{count}개 장소 · 프로그램"
   },
   "tw": {
     "langName": "繁體中文",
@@ -251,7 +252,8 @@
     "liveVoiceTitle": "透過Live Voice網頁提供",
     "liveVoiceBody": "語音導覽透過Live Voice網頁提供，請使用自己的手機收聽解說。",
     "earphonesRequiredTitle": "必須自備入耳式耳機",
-    "earphonesRequiredBody": "請務必自備入耳式耳機，不使用頭戴式耳機。出發前，請確認手機連線狀態，以及手機與耳機的電量。"
+    "earphonesRequiredBody": "請務必自備入耳式耳機，不使用頭戴式耳機。出發前，請確認手機連線狀態，以及手機與耳機的電量。",
+    "exploreResults": "{count}個地點 · 活動"
   },
   "cn": {
     "langName": "简体中文",
@@ -378,7 +380,8 @@
     "liveVoiceTitle": "通过Live Voice网页提供",
     "liveVoiceBody": "语音导览通过Live Voice网页提供，请使用自己的手机收听讲解。",
     "earphonesRequiredTitle": "必须自备入耳式耳机",
-    "earphonesRequiredBody": "请务必自备入耳式耳机，不使用头戴式耳机。出发前，请检查手机连接状态，以及手机和耳机的电量。"
+    "earphonesRequiredBody": "请务必自备入耳式耳机，不使用头戴式耳机。出发前，请检查手机连接状态，以及手机和耳机的电量。",
+    "exploreResults": "{count}个地点 · 活动"
   },
   "en": {
     "langName": "English",
@@ -505,6 +508,7 @@
     "liveVoiceTitle": "Provided through Live Voice online",
     "liveVoiceBody": "The audio guide is provided through the Live Voice website. Listen to the commentary on your own phone.",
     "earphonesRequiredTitle": "Personal earphones or earbuds required",
-    "earphonesRequiredBody": "Bring your own earphones or earbuds, not a headset. Before departure, check the connection to your phone and charge your phone and earphones."
+    "earphonesRequiredBody": "Bring your own earphones or earbuds, not a headset. Before departure, check the connection to your phone and charge your phone and earphones.",
+    "exploreResults": "{count} places & programs"
   }
 }

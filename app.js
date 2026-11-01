@@ -1,5 +1,6 @@
 import { shoppingCopy, renderShoppingGuide } from './shopping-guide.js';
 import { initFilmedHere, renderFilmedHere, closeFilmedGallery } from './filmed-here.js';
+import { exploreCategoryIds, renderExploreCategoryFilters, renderExploreCategoryBadge } from './explore-categories.js';
 const $ = (s, root = document) => root.querySelector(s);
 const main = $('#main');
 const langs = ['ko', 'en', 'tw', 'cn'];
@@ -8,7 +9,7 @@ const store = (key, value) => { try { localStorage.setItem(key, JSON.stringify(v
 const params = new URL(location.href).searchParams;
 let lang = langs.includes(params.get('lang')) ? params.get('lang') : readStore('citea-language', 'ko');
 if (!langs.includes(lang)) lang = 'ko';
-let data, menuOpen = false, shoppingFilter = 'all';
+let data, menuOpen = false, shoppingFilter = 'all', exploreFilter = 'all', exploreQuery = '';
 let checks = readStore('citea-checklist', {});
 if (!checks || typeof checks !== 'object' || Array.isArray(checks)) checks = {};
 const extra = {
@@ -69,8 +70,8 @@ function pageHeading(kind) {
 function dateCards(selected='', compact=false) {
   return `<div class="date-cards ${compact?'compact':''}" aria-label="${esc(t('selectDate'))}">${data.event.dates.map((d,i)=>`<a class="date-card ${d.id===selected?'selected':''}" href="#/schedule/${d.id}" ${d.id===selected?'aria-current="date"':''}><span class="date-top">DAY ${String(i+1).padStart(2,'0')}${icon('arrow',18)}</span><span class="date-number">11<span>/</span>${7+i}</span><span class="date-day">${['SAT','SUN','MON','TUE'][i]} <span>· ${esc(t(['daySat','daySun','dayMon','dayTue'][i]))}</span></span>${!compact?`<span class="date-status">${esc(t(d.items.length?'viewSchedule':'schedulePendingTitle'))}</span>`:''}</a>`).join('')}</div>`;
 }
-function placeCard(p, index) {
-  return `<article class="place-card"><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${esc(l(p.category))}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
+function placeCard(p, index, hidden=false) {
+  return `<article class="place-card"${hidden?' hidden':''}><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${renderExploreCategoryBadge(p,lang)}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
 }
 function home() {
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -99,8 +100,19 @@ function scheduleItem(item) {
   const title=primary?`<a class="schedule-place-title" href="#/place/${primary.id}">${esc(l(item.title))}${icon('arrow',18)}</a>`:esc(l(item.title));
   return `<article class="timeline-item" id="${esc(item.id||'')}"><time class="timeline-time" datetime="${esc(item.time)}">${esc(item.time || t('toBeConfirmed'))}</time><div class="timeline-body ${hasPhoto?'has-photo':''}">${hasPhoto?(primary?`<a class="schedule-photo-link" href="#/place/${primary.id}" aria-label="${esc(t('placeIntro')+' · '+l(primary.names))}">${image}</a>`:image):''}<div>${venue?`<p class="category">${primary?`<a href="#/place/${primary.id}">${esc(venue)}</a>`:esc(venue)}</p>`:''}<h3>${title}</h3>${item.description?`<p>${esc(l(item.description))}</p>`:''}${item.meetingPoint?`<p>${esc(t('meetingPoint'))}: ${esc(l(item.meetingPoint))}</p>`:''}<div class="button-row">${associated.map(x=>link('/place/'+x.id,t('placeIntro')+' · '+l(x.names),'text-link')).join('')}</div></div></div></article>`;
 }
+function matchesExplorePlace(p) {
+  const query=exploreQuery.toLocaleLowerCase().trim();
+  return (exploreFilter==='all'||p.categoryId===exploreFilter)&&JSON.stringify([p.names,p.koreanName,p.category,p.themes]).toLocaleLowerCase().includes(query);
+}
+function applyExploreFilters() {
+  let visible=0;
+  data.places.forEach((p,i)=>{const ok=matchesExplorePlace(p);$('#place-results').children[i].hidden=!ok;visible+=ok;});
+  $('#no-results').hidden=visible>0;
+  $('#place-count').textContent=t('exploreResults').replace('{count}',visible);
+}
 function explore() {
-  return `<div class="page-container">${pageHeading('explore')}<div class="explore-bar"><p>${data.places.length} ${esc(t('allPlaces'))}</p><label class="search-field">${icon('search',18)}<span class="sr-only">${esc(t('search'))}</span><input id="place-search" type="search" placeholder="${esc(t('searchPlaceholder'))}" autocomplete="off"></label></div><div class="place-grid explore-grid" id="place-results">${data.places.map(placeCard).join('')}</div><p id="no-results" hidden>${esc(t('noResults'))}</p><p class="muted list-note">${esc(t('tourList'))}</p></div>`;
+  const visible=data.places.filter(matchesExplorePlace).length;
+  return `<div class="page-container">${pageHeading('explore')}<div id="explore-filters">${renderExploreCategoryFilters(data.places,lang,exploreFilter)}</div><div class="explore-bar"><p id="place-count" aria-live="polite">${esc(t('exploreResults').replace('{count}',visible))}</p><label class="search-field">${icon('search',18)}<span class="sr-only">${esc(t('search'))}</span><input id="place-search" type="search" value="${esc(exploreQuery)}" placeholder="${esc(t('searchPlaceholder'))}" autocomplete="off"></label></div><div class="place-grid explore-grid" id="place-results">${data.places.map((p,i)=>placeCard(p,i,!matchesExplorePlace(p))).join('')}</div><p id="no-results" ${visible?'hidden':''}>${esc(t('noResults'))}</p><p class="muted list-note">${esc(t('tourList'))}</p></div>`;
 }
 function mapBlock(p) {
   return `<div class="map-detail"><div class="map-icon">${icon('pin',26)}</div><div><p class="small-label">${esc(t('address'))}</p><p class="address-text">${esc(l(p.address)||t('addressPending'))}</p>${lang!=='ko'&&p.address?`<p lang="ko" class="korean-name">${esc(p.address.ko)}</p>`:''}<p class="muted">${esc(l(p.meetingPoint)||t('meetingPending'))}</p><div class="button-row">${naver(p)?ext(naver(p),t(p.naverUrl?'openNaverMap':'searchNaverMap'),'button button-outline'):`<span class="badge">${esc(t('mapPending'))}</span>`}${p.directionsUrl?ext(p.directionsUrl,t('directions'),'text-link'):''}${p.address?`<button class="text-link" data-action="copy" data-id="${p.id}">${esc(t('copyAddress'))}</button>`:''}</div>${naver(p)&&!p.naverUrl?`<p class="microcopy">${esc(t('mapSearchHint'))}</p><p class="microcopy">${esc(t('directionsPending'))}</p>`:''}</div></div>`;
@@ -110,7 +122,7 @@ function place(id) {
   const i=data.places.indexOf(p);
   const section = (key,label,value) => `<section><h2>${esc(l(p.sectionTitles?.[key])||t(label))}</h2>${paragraphs(value)}</section>`;
   const practical=p.programInfo?`<div class="program-info"><h3>${esc(l(p.programInfo.title))}</h3><p>${esc(l(p.programInfo.body))}</p>${link('/schedule/'+p.programInfo.date,l(p.programInfo.linkLabel),'button button-outline')}</div>`:mapBlock(p);
-  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${esc(l(p.category))}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}${p.headline?`<p class="place-headline">${esc(l(p.headline))}</p>`:''}</div>${placeMedia(p)}<div class="detail-columns"><div class="detail-copy">${section('intro','placeIntro',p.intro)}${section('history','background',p.history)}${section('purpose','visitPurpose',p.purpose)}${p.sources.length?`<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details>`:''}</div><aside class="detail-sidebar"><h2>${esc(t('practicalInfo'))}</h2>${practical}</aside></div>${p.id==='daejeon-modern-history'?renderFilmedHere(lang):''}<nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
+  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${renderExploreCategoryBadge(p,lang)}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}${p.headline?`<p class="place-headline">${esc(l(p.headline))}</p>`:''}</div>${placeMedia(p)}<div class="detail-columns"><div class="detail-copy">${section('intro','placeIntro',p.intro)}${section('history','background',p.history)}${section('purpose','visitPurpose',p.purpose)}${p.sources.length?`<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details>`:''}</div><aside class="detail-sidebar"><h2>${esc(t('practicalInfo'))}</h2>${practical}</aside></div>${p.id==='daejeon-modern-history'?renderFilmedHere(lang):''}<nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
 }
 function audioPage() {
   return `<div class="page-container narrow">${pageHeading('audio')}<section class="live-voice-notices">${notice(t('liveVoiceTitle'),t('liveVoiceBody'))}${notice(t('earphonesRequiredTitle'),t('earphonesRequiredBody'),'earphones-required')}</section></div>`;
@@ -153,6 +165,17 @@ async function setLanguage(value) {
 document.addEventListener('click',async e=>{
   if(e.target.closest('#skip')){e.preventDefault();main.focus({preventScroll:true});main.scrollIntoView({block:'start'});return;}
   if(e.target.closest('a[href^="#/"]')){menuOpen=false;}
+  const categoryButton=e.target.closest('[data-explore-category]');
+  if(categoryButton){
+    const value=categoryButton.dataset.exploreCategory;
+    if(value==='all'||exploreCategoryIds.includes(value)){
+      exploreFilter=value;
+      $('#explore-filters').innerHTML=renderExploreCategoryFilters(data.places,lang,exploreFilter);
+      applyExploreFilters();
+      main.querySelector(`[data-explore-category="${exploreFilter}"]`)?.focus({preventScroll:true});
+    }
+    return;
+  }
   const b=e.target.closest('[data-action]');if(!b)return;
   const p=byId(b.dataset.id);
   switch(b.dataset.action){
@@ -168,7 +191,7 @@ document.addEventListener('change',e=>{
   if(e.target.dataset.check){checks[e.target.dataset.check]=e.target.checked;if(!store('citea-checklist',checks))toast(t('localSaveFailed'));e.target.closest('.check-item').classList.toggle('checked',e.target.checked);const count=data.event.checklist.filter(x=>checks[x.id]).length;$('#check-count').textContent=`${count} / ${data.event.checklist.length}`;$('#check-progress').value=count;}
 });
 document.addEventListener('input',e=>{
-  if(e.target.id==='place-search'){const q=e.target.value.toLocaleLowerCase().trim();let visible=0;data.places.forEach((p,i)=>{const ok=JSON.stringify([p.names,p.koreanName,p.category]).toLocaleLowerCase().includes(q);$('#place-results').children[i].hidden=!ok;visible+=ok;});$('#no-results').hidden=visible>0;}
+  if(e.target.id==='place-search'){exploreQuery=e.target.value;applyExploreFilters();}
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuOpen){menuOpen=false;renderHeader();$('.menu-button')?.focus();}});
 window.addEventListener('hashchange',()=>render({focus:true}));

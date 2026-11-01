@@ -9,10 +9,10 @@
       "en": "Daejeon Traditional Naraegwan"
     },
     "category": {
-      "ko": "전통문화 · 무형유산",
-      "tw": "傳統文化・無形文化資產",
-      "cn": "传统文化・非物质文化遗产",
-      "en": "Traditional culture · Intangible heritage"
+      "ko": "웰니스 체험",
+      "en": "Wellness Experiences",
+      "cn": "康养体验",
+      "tw": "身心療癒體驗"
     },
     "intro": {
       "ko": "대전의 무형유산을 전시와 교육으로 만나는 문화공간입니다. 전통 기술과 생활문화를 오늘의 시선으로 살펴봅니다.",
@@ -75,7 +75,15 @@
       "fit": "cover",
       "width": 600,
       "height": 403
-    }
+    },
+    "themes": {
+      "ko": "전통문화 · 무형유산",
+      "tw": "傳統文化・無形文化資產",
+      "cn": "传统文化・非物质文化遗产",
+      "en": "Traditional culture · Intangible heritage"
+    },
+    "categoryId": "wellness",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "uam",
@@ -87,10 +95,10 @@
       "en": "Uam Historical Park"
     },
     "category": {
-      "ko": "역사 · 유교문화",
-      "tw": "歷史・儒學文化",
-      "cn": "历史・儒学文化",
-      "en": "History · Confucian culture"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "조선 후기 유학자 우암 송시열의 학문과 생애를 돌아보는 역사공원입니다. 남간정사 등 관련 문화유산이 자리합니다.",
@@ -146,7 +154,15 @@
       "credit": "Jo / Wikimedia Commons · CC BY 2.0 · resized / cropped",
       "source": "https://commons.wikimedia.org/wiki/File:Korea-Daejeon-Uam_Historic_Park-01.jpg",
       "license": "https://creativecommons.org/licenses/by/2.0/"
-    }
+    },
+    "themes": {
+      "ko": "역사 · 유교문화",
+      "tw": "歷史・儒學文化",
+      "cn": "历史・儒学文化",
+      "en": "History · Confucian culture"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "temiorae",
@@ -158,10 +174,10 @@
       "en": "Temiorae"
     },
     "category": {
-      "ko": "근대건축 · 문화공간",
-      "tw": "近代建築・文化空間",
-      "cn": "近代建筑・文化空间",
-      "en": "Modern architecture · Cultural spaces"
+      "ko": "축제",
+      "en": "Festivals",
+      "cn": "节庆",
+      "tw": "節慶"
     },
     "intro": {
       "ko": "옛 충청남도지사 관사촌을 만나는 대전 원도심의 문화공간입니다. 건축과 전시를 따라 이 지역의 생활사를 읽어봅니다.",
@@ -220,7 +236,15 @@
       "fit": "cover",
       "width": 992,
       "height": 744
-    }
+    },
+    "themes": {
+      "ko": "근대건축 · 문화공간",
+      "tw": "近代建築・文化空間",
+      "cn": "近代建筑・文化空间",
+      "en": "Modern architecture · Cultural spaces"
+    },
+    "categoryId": "festival",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "temi-literature",
@@ -232,10 +256,10 @@
       "en": "Daejeon Temi Literature Museum"
     },
     "category": {
-      "ko": "문학 · 문화공간 재생",
-      "tw": "文學・文化空間再生",
-      "cn": "文学・文化空间更新",
-      "en": "Literature · Reused cultural spaces"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "옛 테미도서관 건물을 새롭게 활용한 문학 문화공간입니다. 전시와 기록, 시민 프로그램으로 대전 문학을 만납니다.",
@@ -294,7 +318,15 @@
       "fit": "cover",
       "width": 700,
       "height": 466
-    }
+    },
+    "themes": {
+      "ko": "문학 · 문화공간 재생",
+      "tw": "文學・文化空間再生",
+      "cn": "文学・文化空间更新",
+      "en": "Literature · Reused cultural spaces"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "temi-park",
@@ -306,10 +338,10 @@
       "en": "Temi Park"
     },
     "category": {
-      "ko": "도시숲 · 산책",
-      "tw": "城市綠地・散步",
-      "cn": "城市绿地・漫步",
-      "en": "Urban woodland · Walking"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "원도심 가까이에서 숲과 산책길을 만나는 공원입니다. 낮은 언덕의 자연을 천천히 둘러봅니다.",
@@ -364,7 +396,15 @@
       "fit": "cover",
       "width": 700,
       "height": 449
-    }
+    },
+    "themes": {
+      "ko": "도시숲 · 산책",
+      "tw": "城市綠地・散步",
+      "cn": "城市绿地・漫步",
+      "en": "Urban woodland · Walking"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "bomunsan",
@@ -376,10 +416,10 @@
       "en": "Bomunsan Keunnamu Observatory"
     },
     "category": {
-      "ko": "전망 · 목조건축",
-      "tw": "城市景觀・木構建築",
-      "cn": "城市景观・木结构建筑",
-      "en": "Views · Timber architecture"
+      "ko": "웰니스 체험",
+      "en": "Wellness Experiences",
+      "cn": "康养体验",
+      "tw": "身心療癒體驗"
     },
     "intro": {
       "ko": "보문산의 옛 보운대 자리에 조성된 목조 전망시설입니다. 산과 도심이 만나는 대전의 풍경을 주제로 살펴봅니다.",
@@ -433,7 +473,15 @@
       "fit": "cover",
       "width": 1600,
       "height": 1067
-    }
+    },
+    "themes": {
+      "ko": "전망 · 목조건축",
+      "tw": "城市景觀・木構建築",
+      "cn": "城市景观・木结构建筑",
+      "en": "Views · Timber architecture"
+    },
+    "categoryId": "wellness",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "baking-yoga",
@@ -445,10 +493,10 @@
       "en": "Mindful Baking Yoga"
     },
     "category": {
-      "ko": "웰니스 · 프로그램",
-      "tw": "身心平衡・體驗活動",
-      "cn": "身心健康・体验活动",
-      "en": "Wellness · Program"
+      "ko": "웰니스 체험",
+      "en": "Wellness Experiences",
+      "cn": "康养体验",
+      "tw": "身心療癒體驗"
     },
     "intro": {
       "ko": "운영진이 안내한 마인드풀 베이킹 요가 프로그램입니다. 슬로우스텝과 한국 어반 웰니스 협회 공동 개발로 소개되었습니다.",
@@ -493,7 +541,15 @@
       "fit": "cover",
       "width": 1408,
       "height": 768
-    }
+    },
+    "themes": {
+      "ko": "웰니스 · 프로그램",
+      "tw": "身心平衡・體驗活動",
+      "cn": "身心健康・体验活动",
+      "en": "Wellness · Program"
+    },
+    "categoryId": "wellness",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "architecture-bakery",
@@ -505,10 +561,10 @@
       "en": "CiTEA Walk Modern Architecture & Bakery Tour"
     },
     "category": {
-      "ko": "도보 · 건축 · 로컬 문화",
-      "tw": "步行・建築・在地文化",
-      "cn": "步行・建筑・本地文化",
-      "en": "Walking · Architecture · Local culture"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "대전의 근대건축과 빵집을 주제로 걷는 프로그램입니다. 운영진은 판레이레이 연구자가 진행하는 투어로 안내했습니다.",
@@ -560,7 +616,15 @@
       },
       "source": null,
       "license": null
-    }
+    },
+    "themes": {
+      "ko": "도보 · 건축 · 로컬 문화",
+      "tw": "步行・建築・在地文化",
+      "cn": "步行・建筑・本地文化",
+      "en": "Walking · Architecture · Local culture"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "andor-cafe",
@@ -572,10 +636,10 @@
       "tw": "Andor Café（안도르카페）"
     },
     "category": {
-      "ko": "카페 · 원도심 산책",
-      "en": "Café · Old-town walk",
-      "cn": "咖啡馆 · 老城漫步",
-      "tw": "咖啡館 · 舊城漫步"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "나무가 드리운 2층 건물에 자리한 카페입니다. 원도심 산책 사이에 잠시 쉬며 골목의 분위기를 느껴보는 공간으로 소개합니다.",
@@ -637,7 +701,15 @@
       },
       "source": null,
       "license": null
-    }
+    },
+    "themes": {
+      "ko": "카페 · 원도심 산책",
+      "en": "Café · Old-town walk",
+      "cn": "咖啡馆 · 老城漫步",
+      "tw": "咖啡館 · 舊城漫步"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "yuseong-footbath",
@@ -649,10 +721,10 @@
       "en": "Yuseong Hot Springs Outdoor Foot Bath"
     },
     "category": {
-      "ko": "온천 · 휴식",
-      "tw": "溫泉・休憩",
-      "cn": "温泉・休憩",
-      "en": "Hot springs · Relaxation"
+      "ko": "웰니스 체험",
+      "en": "Wellness Experiences",
+      "cn": "康养体验",
+      "tw": "身心療癒體驗"
     },
     "intro": {
       "ko": "유성구 봉명동에서 야외 족욕을 경험하는 온천 휴식공간입니다. 도시를 걸은 뒤 잠시 쉬어가는 장소로 소개합니다.",
@@ -707,7 +779,15 @@
       "fit": "cover",
       "width": 940,
       "height": 692
-    }
+    },
+    "themes": {
+      "ko": "온천 · 휴식",
+      "tw": "溫泉・休憩",
+      "cn": "温泉・休憩",
+      "en": "Hot springs · Relaxation"
+    },
+    "categoryId": "wellness",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "wine-expo",
@@ -719,10 +799,10 @@
       "en": "Daejeon International Wine EXPO 2026"
     },
     "category": {
-      "ko": "박람회 · 식문화",
-      "tw": "博覽會・飲食文化",
-      "cn": "博览会・饮食文化",
-      "en": "Expo · Food culture"
+      "ko": "축제",
+      "en": "Festivals",
+      "cn": "节庆",
+      "tw": "節慶"
     },
     "intro": {
       "ko": "와인과 식문화를 만나는 박람회입니다. 공식 일반 관람 일정은 2026년 11월 6~8일, 장소는 대전컨벤션센터(DCC) 및 일원입니다.",
@@ -776,7 +856,15 @@
       "fit": "contain",
       "width": 429,
       "height": 441
-    }
+    },
+    "themes": {
+      "ko": "박람회 · 식문화",
+      "tw": "博覽會・飲食文化",
+      "cn": "博览会・饮食文化",
+      "en": "Expo · Food culture"
+    },
+    "categoryId": "festival",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "local-wellness",
@@ -788,10 +876,10 @@
       "en": "Daejeon Local Wellness Venue Visits"
     },
     "category": {
-      "ko": "로컬 공간 · 웰니스",
-      "tw": "在地空間・身心平衡",
-      "cn": "本地空间・身心健康",
-      "en": "Local spaces · Wellness"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "제공 일정표에 기재된 썬스퀘어, 오젠하이, 1011 커피교육공간 답사입니다. 지역의 웰니스 공간과 커피교육을 살펴보는 프로그램입니다.",
@@ -842,7 +930,15 @@
       "width": 1600,
       "height": 2133,
       "position": "center 65%"
-    }
+    },
+    "themes": {
+      "ko": "로컬 공간 · 웰니스",
+      "tw": "在地空間・身心平衡",
+      "cn": "本地空间・身心健康",
+      "en": "Local spaces · Wellness"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "daejeon-modern-history",
@@ -854,10 +950,10 @@
       "tw": "大田近現代史展示館"
     },
     "category": {
-      "ko": "근대건축 · 드라마 촬영지",
-      "en": "Modern Architecture · Drama Filming Location",
-      "cn": "近代建筑 · 影视取景地",
-      "tw": "近代建築 · 影視取景地"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "옛 충남도청사에 자리한 전시관입니다. 건축 공간을 둘러보고, 아래 작품 카드를 눌러 실제 드라마 속 모습과 비교해 보세요.",
@@ -913,7 +1009,15 @@
       },
       "source": null,
       "license": null
-    }
+    },
+    "themes": {
+      "ko": "근대건축 · 드라마 촬영지",
+      "en": "Modern Architecture · Drama Filming Location",
+      "cn": "近代建筑 · 影视取景地",
+      "tw": "近代建築 · 影視取景地"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "hanbat-arboretum",
@@ -925,10 +1029,10 @@
       "tw": "Hanbat樹木園"
     },
     "category": {
-      "ko": "수목원 · 자연",
-      "en": "Arboretum · Nature",
-      "cn": "树木园 · 自然",
-      "tw": "樹木園 · 自然"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "도심에서 나무와 꽃을 만나는 수목원입니다. 식물 보전과 자연 체험, 산책을 위한 공간을 갖추고 있습니다.",
@@ -994,7 +1098,15 @@
       },
       "source": null,
       "license": null
-    }
+    },
+    "themes": {
+      "ko": "수목원 · 자연",
+      "en": "Arboretum · Nature",
+      "cn": "树木园 · 自然",
+      "tw": "樹木園 · 自然"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "daecheong-lake-trail",
@@ -1006,10 +1118,10 @@
       "tw": "大清湖五百里路"
     },
     "category": {
-      "ko": "호수 · 걷기",
-      "en": "Lake · Walking",
-      "cn": "湖泊 · 步行",
-      "tw": "湖泊 · 步行"
+      "ko": "웰니스 체험",
+      "en": "Wellness Experiences",
+      "cn": "康养体验",
+      "tw": "身心療癒體驗"
     },
     "intro": {
       "ko": "대청호 주변의 물가와 마을을 잇는 걷기 길입니다. 호수 풍경과 계절에 따라 달라지는 수변 식생을 만날 수 있습니다.",
@@ -1066,7 +1178,15 @@
       },
       "source": null,
       "license": null
-    }
+    },
+    "themes": {
+      "ko": "호수 · 걷기",
+      "en": "Lake · Walking",
+      "cn": "湖泊 · 步行",
+      "tw": "湖泊 · 步行"
+    },
+    "categoryId": "wellness",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "daejeon-jungang-market",
@@ -1078,10 +1198,10 @@
       "tw": "大田中央市場"
     },
     "category": {
-      "ko": "전통시장 · 생활문화",
-      "en": "Traditional market · Local life",
-      "cn": "传统市场 · 生活文化",
-      "tw": "傳統市場 · 生活文化"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "시장 골목을 걷고 전통 다방 스타일의 쌍화차를 맛보는 시간. 먹거리와 생활 풍경 속에서 대전 원도심의 일상을 만납니다.",
@@ -1223,7 +1343,15 @@
         "cn": "探访看点",
         "tw": "探訪看點"
       }
-    }
+    },
+    "themes": {
+      "ko": "전통시장 · 생활문화",
+      "en": "Traditional market · Local life",
+      "cn": "传统市场 · 生活文化",
+      "tw": "傳統市場 · 生活文化"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "taehwajang",
@@ -1235,10 +1363,10 @@
       "tw": "태화장（Taehwajang）"
     },
     "category": {
-      "ko": "중화요리 · 화교 문화",
-      "en": "Chinese cuisine · Chinese-Korean heritage",
-      "cn": "中华料理 · 华侨文化",
-      "tw": "中華料理 · 華僑文化"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "대전에서 가장 오래된 중식당으로 알려진 태화장. 화교 고복신이 1954년 문을 연 이곳에서 중화요리와 함께 대전 화교의 정착과 서화에 얽힌 이야기를 만납니다.",
@@ -1360,7 +1488,15 @@
         "source": null,
         "license": null
       }
-    ]
+    ],
+    "themes": {
+      "ko": "중화요리 · 화교 문화",
+      "en": "Chinese cuisine · Chinese-Korean heritage",
+      "cn": "中华料理 · 华侨文化",
+      "tw": "中華料理 · 華僑文化"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "soje-dong",
@@ -1372,10 +1508,10 @@
       "tw": "蘇堤洞"
     },
     "category": {
-      "ko": "골목 · 근대 생활사",
-      "en": "Alleys · Modern local history",
-      "cn": "街巷 · 近代生活史",
-      "tw": "街巷 · 近代生活史"
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
     },
     "intro": {
       "ko": "대전역 뒤편 철도관사촌의 흔적이 남아 있는 동네입니다. 옛 건물을 활용한 카페와 식당이 골목 풍경을 이어갑니다.",
@@ -1406,7 +1542,15 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "themes": {
+      "ko": "골목 · 근대 생활사",
+      "en": "Alleys · Modern local history",
+      "cn": "街巷 · 近代生活史",
+      "tw": "街巷 · 近代生活史"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color"
   },
   {
     "id": "tourism-insight-exchange",
@@ -1418,10 +1562,10 @@
       "tw": "觀光洞察交流會"
     },
     "category": {
-      "ko": "교류 · 관광 인사이트",
-      "en": "Exchange · Tourism insights",
-      "cn": "交流 · 旅游洞察",
-      "tw": "交流 · 觀光洞察"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "중국·대만 Z세대의 여행 트렌드를 살펴보고, 중부권에서 더 오래 머무는 지속가능한 관광의 가능성을 함께 이야기합니다.",
@@ -1521,7 +1665,15 @@
         "cn": "查看11月9日行程",
         "tw": "查看11月9日行程"
       }
-    }
+    },
+    "themes": {
+      "ko": "교류 · 관광 인사이트",
+      "en": "Exchange · Tourism insights",
+      "cn": "交流 · 旅游洞察",
+      "tw": "交流 · 觀光洞察"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "ppuri-park",
@@ -1533,10 +1685,10 @@
       "tw": "根公園"
     },
     "category": {
-      "ko": "공원 · 가족문화",
-      "en": "Park · Family culture",
-      "cn": "公园 · 家族文化",
-      "tw": "公園 · 家族文化"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "성씨와 가족의 뿌리를 주제로 한 공원입니다. 성씨별 조형물과 수변 공간을 둘러보며 한국의 가족문화를 살펴봅니다.",
@@ -1572,7 +1724,15 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "themes": {
+      "ko": "공원 · 가족문화",
+      "en": "Park · Family culture",
+      "cn": "公园 · 家族文化",
+      "tw": "公園 · 家族文化"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "daejeon-national-cemetery",
@@ -1584,10 +1744,10 @@
       "tw": "國立大田顯忠院"
     },
     "category": {
-      "ko": "추모 · 역사",
-      "en": "Remembrance · History",
-      "cn": "追思 · 历史",
-      "tw": "追思 · 歷史"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "대한민국을 위해 희생한 이들을 기리는 국립묘지입니다. 묘역과 추모시설을 통해 역사와 추모 문화를 만납니다.",
@@ -1627,6 +1787,14 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "themes": {
+      "ko": "추모 · 역사",
+      "en": "Remembrance · History",
+      "cn": "追思 · 历史",
+      "tw": "追思 · 歷史"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   }
 ]
