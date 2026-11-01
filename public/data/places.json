@@ -39,12 +39,6 @@
       "en": "2, Cheolgap 2-gil, Dong-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "장소와 주소는 공식 자료로 확인했습니다. 제공 일정표의 방문 시각은 11월 7일 13:30입니다. 체험 예약과 집합 장소는 확인이 필요합니다.",
-      "tw": "場館與地址已核對官方資料。提供的行程表安排於11月7日13:30參訪；體驗預約與集合點仍待確認。",
-      "cn": "场馆与地址已核对官方资料。提供的行程表安排于11月7日13:30参访；体验预约和集合点仍待确认。",
-      "en": "The venue and address have been checked against official sources. The supplied schedule lists the visit for November 7 at 13:30. Activity reservations and the meeting point still need confirmation."
-    },
     "naverQuery": "대전전통나래관 대전 동구 철갑2길 2",
     "sources": [
       {
@@ -123,12 +117,6 @@
       "en": "53, Chungjeong-ro, Dong-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "장소·주소·송시열 관련 배경 확인. 항저우와의 연결, 행사 해설과 집합 장소는 확인 필요.",
-      "tw": "已確認地點、地址及宋時烈相關背景；杭州關聯、活動導覽內容與集合點仍待確認。",
-      "cn": "已确认地点、地址及宋时烈相关背景；杭州关联、活动讲解内容和集合点仍待确认。",
-      "en": "The location, address and background on Song Si-yeol have been checked. Connections with Hangzhou, event commentary and the meeting point still need confirmation."
-    },
     "naverQuery": "우암사적공원 대전 동구 충정로 53",
     "sources": [
       {
@@ -200,12 +188,6 @@
       "en": "13, Bomun-ro 205beon-gil, Jung-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "장소·주소·역사를 확인했습니다. 제공 일정표에는 11월 7일 15:30 축제 방문으로 기재되어 있습니다. 2026 가을축제의 세부 운영과 프로그램은 별도 확인이 필요합니다.",
-      "tw": "已確認地點、地址與歷史。提供的行程表安排於11月7日15:30參加慶典；2026秋季慶典的實際開放情形與詳細活動仍須另行確認。",
-      "cn": "已确认地点、地址与历史。提供的行程表安排于11月7日15:30参加节庆活动；2026秋季活动的实际开放情况和具体安排仍需另行确认。",
-      "en": "The venue, address and history have been checked. The supplied schedule lists a festival visit on November 7 at 15:30. Detailed operations and programs for the 2026 autumn festival need separate confirmation."
-    },
     "naverQuery": "테미오래 대전 중구 보문로205번길 13",
     "sources": [
       {
@@ -280,12 +262,6 @@
       "en": "37-1, Bomun-ro 199beon-gil, Jung-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "공식 명칭·주소·개관 배경을 확인했습니다. 제공 일정표에는 11월 7일 16:30 테미문학관·테미공원 방문으로 기재되어 있습니다. 관람 전시와 집합 장소는 확인이 필요합니다.",
-      "tw": "已確認正式館名、地址與開館背景。提供的行程表安排於11月7日16:30參訪 Temi 文學館與 Temi 公園；當日展覽與集合點仍待確認。",
-      "cn": "已确认正式馆名、地址与开放背景。提供的行程表安排于11月7日16:30参访 Temi 文学馆与 Temi 公园；当天展览和集合点仍待确认。",
-      "en": "The official name, address and opening background have been checked. The supplied schedule lists Temi Literature Museum and Temi Park on November 7 at 16:30. The exhibition and meeting point still need confirmation."
-    },
     "naverQuery": "대전테미문학관 대전 중구 보문로199번길 37-1",
     "sources": [
       {
@@ -360,12 +336,6 @@
       "en": "37-36, Bomun-ro 199beon-gil, Jung-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "중구 공식 관광안내에서 주소와 공원 배경 확인. 행사 산책 동선·집합 입구는 확인 필요.",
-      "tw": "地址與公園背景已核對中區官方旅遊資訊；活動步道與集合入口仍待確認。",
-      "cn": "地址与公园背景已核对中区官方旅游信息；活动步行路线和集合入口仍待确认。",
-      "en": "The address and park background have been checked using Jung-gu’s official tourism information. The event walking route and meeting entrance still need confirmation."
-    },
     "naverQuery": "테미공원 대전 중구 보문로199번길 37-36",
     "sources": [
       {
@@ -431,12 +401,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "시설과 2025년 준공 사실은 확인. 정확한 방문 주소·현재 운영·집합 지점은 확인 중. '2026년 준공'으로 단정하지 않습니다.",
-      "tw": "已確認設施與2025年竣工資訊；本次導航地址、現行開放規定與集合點仍待確認。不可逕寫為「2026年竣工」。",
-      "cn": "已确认设施与2025年竣工信息；本次导航地址、现行开放规定和集合点仍待确认。不可直接写为“2026年竣工”。",
-      "en": "The facility and its completion in 2025 have been checked. The exact visit address, current operation and meeting point are being confirmed. It is not described as having been completed in 2026."
-    },
     "naverQuery": "보문산 큰나무 전망대 대전",
     "sources": [
       {
@@ -506,12 +470,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "프로그램명과 개발 주체는 주최 측 제공 내용을 반영했습니다. 제공 일정표의 시작 시각은 11월 8일 10:00입니다. 장소·강사·수업 내용·참여 조건은 확인이 필요합니다.",
-      "tw": "活動名稱與開發單位依主辦方提供的資訊編寫。提供的行程表安排於11月8日10:00開始；地點、講師、課程與參加條件仍待確認。",
-      "cn": "活动名称与开发单位依据主办方提供的信息编写。提供的行程表安排于11月8日10:00开始；地点、讲师、课程和参加条件仍待确认。",
-      "en": "The program name and developers follow information supplied by the organizers. The supplied schedule lists a start time of November 8 at 10:00. The venue, instructor, class content and participation requirements still need confirmation."
-    },
     "naverQuery": "",
     "sources": [],
     "naverUrl": null,
@@ -572,12 +530,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "제공 일정표의 투어 시작 시각은 11월 8일 13:30이며, 이후 방문지는 날짜별 일정에서 확인할 수 있습니다. 진행자 성명은 제공된 한글 표기를 유지합니다. 중국어 성명·소개·정확한 출발·종료 지점과 집합 장소는 확인이 필요합니다.",
-      "tw": "提供的行程表安排於11月8日13:30開始導覽，後續參訪地點可在當日行程查看。帶領者姓名保留主辦方提供的韓文；中文姓名、簡介、確切起終點與集合點仍待確認。",
-      "cn": "提供的行程表安排于11月8日13:30开始导览，后续参访地点可在当天行程中查看。带领者姓名保留主办方提供的韩文；中文姓名、简介、具体起终点和集合点仍待确认。",
-      "en": "The supplied schedule lists the tour start as November 8 at 13:30. See the daily schedule for subsequent stops. The leader’s name is kept in the supplied Korean spelling. Their Chinese name and introduction, exact start and end points, and meeting point still need confirmation."
-    },
     "naverQuery": "",
     "sources": [],
     "naverUrl": null,
@@ -650,12 +602,6 @@
       "tw": "大田廣域市中區 Seonhwa-ro 148"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "주소는 공개 매장 안내를 참고했습니다. 제공 일정표에는 11월 8일 15:30 방문과 카페 체류 30분이 표기되어 있습니다.",
-      "en": "The address follows public venue listings. The supplied schedule lists a visit on November 8 at 15:30 and a 30-minute café stop.",
-      "cn": "地址参考公开店铺资料。所提供行程表安排于11月8日15:30到访，并在咖啡馆停留30分钟。",
-      "tw": "地址參考公開店舖資料。所提供行程表安排於11月8日15:30到訪，並在咖啡館停留30分鐘。"
-    },
     "sources": [
       {
         "label": "Andor Café · 매장 안내",
@@ -733,12 +679,6 @@
       "en": "574, Bongmyeong-dong, Yuseong-gu, Daejeon"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "유성구 공식 자료로 장소·주소 확인. 당일 이용 가능 여부·단체 집합 지점은 확인 필요.",
-      "tw": "場地與地址已核對儒城區官方資訊；當日開放情形與團體集合點仍待確認。",
-      "cn": "场地与地址已核对儒城区官方信息；当天开放情况与团队集合点仍待确认。",
-      "en": "The venue and address have been checked using Yuseong-gu’s official sources. Availability on the visit day and the group meeting point still need confirmation."
-    },
     "naverQuery": "유성온천 야외 족욕체험장 대전 유성구 봉명동 574",
     "sources": [
       {
@@ -804,12 +744,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "공식 일반 관람 기간은 11월 6~8일로 확인했습니다. 정확한 전시장·단체 입장 조건·집합 지점은 확인이 필요합니다.",
-      "tw": "官方一般參觀展期已確認為11月6至8日；確切展館、團體入場條件與集合點仍待確認。",
-      "cn": "官方公众参观展期已确认为11月6日至8日；具体展馆、团队入场条件和集合点仍待确认。",
-      "en": "Official public visiting dates have been checked as November 6–8. The exact exhibition hall, group admission terms and meeting point still need confirmation."
-    },
     "naverQuery": "대전컨벤션센터 DCC 대전국제와인EXPO",
     "sources": [
       {
@@ -879,12 +813,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "제공 일정표의 방문처를 반영했습니다. 오젠하이 지점, 썬스퀘어·1011의 정확한 상호와 주소, 단체 예약과 집합 장소는 확인이 필요합니다.",
-      "tw": "已列入提供行程表中的參訪地點。OZENHI 分館、Sun Square 與1011的正式店名及地址、團體預約與集合點仍待確認。",
-      "cn": "已列入提供行程表中的参访地点。OZENHI 分店、Sun Square 与1011的正式店名及地址、团队预约和集合点仍待确认。",
-      "en": "The venues follow the supplied schedule. The Ozenhigh branch, exact business names and addresses of Sun Square and 1011, group reservations and meeting points still need confirmation."
-    },
     "naverQuery": "",
     "sources": [
       {
@@ -956,12 +884,6 @@
       "tw": "大田廣域市中區中央路101"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "장소·주소는 대전관광 공식 자료를 참고했습니다. 관람 가능 구역과 운영시간은 방문 전 확인해 주세요. 작품별 장면은 사용자가 제공한 사진입니다.",
-      "en": "The location and address follow Daejeon’s official tourism information. Check accessible areas and opening hours before visiting. Drama scenes were supplied by the user.",
-      "cn": "地点与地址参考大田官方旅游资料。出发前请确认开放区域与开放时间。作品画面由用户提供。",
-      "tw": "地點與地址參考大田官方旅遊資料。出發前請確認開放區域與開放時間。作品畫面由使用者提供。"
-    },
     "naverQuery": "대전근현대사전시관 대전 중구 중앙로 101",
     "sources": [
       {
@@ -1033,12 +955,6 @@
       "tw": "大田廣域市西區 Dunsan-daero 169"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "주소와 기본소개는 공식 자료를 확인했습니다. 관람 구역과 집합 지점은 운영진 안내를 따르세요.",
-      "en": "The address and introduction follow official sources. Follow the organizers’ guidance for the garden area and meeting point.",
-      "cn": "地址与简介已参考官方资料。参观区域与集合点请依主办方公告。",
-      "tw": "地址與簡介已參考官方資料。參觀區域與集合點請依主辦團隊公告。"
-    },
     "naverQuery": "한밭수목원 대전 서구 둔산대로 169",
     "sources": [
       {
@@ -1115,12 +1031,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "정확한 억새밭 구간·입구·집합 지점은 일정표에 없습니다. 이 소개는 전체 길의 개요이며 특정 구간 방문을 확정하지 않습니다.",
-      "en": "The exact silver-grass section, entrance and meeting point are unspecified. This overview does not confirm a particular route.",
-      "cn": "行程表未注明芒草地的具体区段、入口与集合点。本介绍为路线概况，并不确认特定区段。",
-      "tw": "行程表未註明芒草地的確切區段、入口與集合點。本介紹為路線概況，並不確認特定區段。"
-    },
     "naverQuery": "대청호 오백리길",
     "sources": [
       {
@@ -1198,12 +1108,6 @@
       "tw": "大田廣域市東區 Daejeon-ro 783"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "주소는 동구 공식 관광안내의 대표 위치입니다. 쌍화차를 마실 점포와 집합 지점은 별도 안내를 확인하세요.",
-      "en": "The address is the representative location in Dong-gu’s official guide. The tea shop and meeting point need separate guidance.",
-      "cn": "地址为东区官方指南的代表位置。双和茶店铺与集合点须另行确认。",
-      "tw": "地址為東區官方指南的代表位置。雙和茶店舖與集合點須另行確認。"
-    },
     "naverQuery": "대전중앙시장 대전 동구 대전로 783",
     "sources": [
       {
@@ -1361,12 +1265,6 @@
       "tw": "大田廣域市東區 Jungang-ro 203beon-gil 78"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "동구 정동에 있는 식당입니다. 주소는 대전시 관광안내를, 개업 연도는 제공 사진의 1954년 표기와 식당 소개를 참고했습니다.",
-      "en": "The restaurant is in Jeong-dong, Dong-gu. The address follows Daejeon’s tourism guide; the opening year follows restaurant accounts and the 1954 sign in the supplied photograph.",
-      "cn": "餐厅位于东区贞洞。地址参考大田市旅游指南；开业年份依据餐厅介绍及所提供照片中1954年的标记。",
-      "tw": "餐廳位於東區貞洞。地址參考大田市觀光指南；開業年份依據餐廳介紹及所提供照片中1954年的標記。"
-    },
     "sources": [
       {
         "label": "대전광역시 · 태화장",
@@ -1499,12 +1397,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "소제동 일대 소개입니다. 특정 카페·건물·출발 지점을 확정하지 않으며 상세 동선은 운영진 안내를 따릅니다.",
-      "en": "This is an area overview. Specific cafés, buildings and the starting point follow the organizers’ route.",
-      "cn": "本介绍为苏堤洞区域概况，未确定特定咖啡馆、建筑或出发点；详细路线依主办方公告。",
-      "tw": "本介紹為蘇堤洞區域概況，未確定特定咖啡館、建築或出發點；詳細路線依主辦團隊公告。"
-    },
     "naverQuery": "소제동 철도관사촌 대전",
     "sources": [
       {
@@ -1551,12 +1443,6 @@
     },
     "address": null,
     "verified": false,
-    "verificationNote": {
-      "ko": "장소와 연사별 세부 일정은 운영진의 추가 안내를 확인해 주세요. 이미지는 교류회 소개를 위해 제공된 참고 이미지입니다.",
-      "en": "Check the organizers’ updates for the venue and detailed speaker schedule. The supplied image is a reference for this program.",
-      "cn": "地点及各位讲者的详细安排请以主办方后续通知为准。所附图片为活动介绍参考图。",
-      "tw": "地點及各位講者的詳細安排請以主辦單位後續通知為準。所附圖片為活動介紹參考圖。"
-    },
     "sources": [],
     "naverQuery": "",
     "naverUrl": null,
@@ -1677,12 +1563,6 @@
       "tw": "大田廣域市中區 Ppurigongwon-ro 79"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "공식 공원소개로 주소와 기본정보를 확인했습니다. 실제 방문지는 운영진이 확정하며 두 대안 장소를 모두 방문한다는 뜻은 아닙니다.",
-      "en": "Official information confirms the address and introduction. The organizers will choose the destination; both alternatives are not confirmed visits.",
-      "cn": "地址与简介已由官方资料确认。实际地点由主办方确定，不代表两个备选地点均会参访。",
-      "tw": "地址與簡介已由官方資料確認。實際地點由主辦團隊確定，不代表兩個備選地點均會參訪。"
-    },
     "naverQuery": "뿌리공원 대전 중구 뿌리공원로 79",
     "sources": [
       {
@@ -1734,12 +1614,6 @@
       "tw": "大田廣域市儒城區 Hyeonchungwon-ro 251"
     },
     "verified": true,
-    "verificationNote": {
-      "ko": "주소와 소개는 공식 자료를 확인했습니다. 대안 방문지이며, 참배 동선과 집합 장소는 운영진 안내를 따르세요.",
-      "en": "The address and introduction follow official sources. This is an alternative destination; follow the organizers’ route and meeting guidance.",
-      "cn": "地址与简介已参考官方资料。此处为备选地点，参拜路线与集合点依主办方公告。",
-      "tw": "地址與簡介已參考官方資料。此處為備選地點，參拜路線與集合點依主辦團隊公告。"
-    },
     "naverQuery": "국립대전현충원 대전 유성구 현충원로 251",
     "sources": [
       {
