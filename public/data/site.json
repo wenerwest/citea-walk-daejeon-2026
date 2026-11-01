@@ -8,12 +8,14 @@
     "alt": {
       "ko": "연못과 전통건축이 어우러진 대전 우암사적공원",
       "tw": "大田尤菴史蹟公園的池塘與傳統建築",
-      "cn": "大田尤庵史迹公园的池塘与传统建筑"
+      "cn": "大田尤庵史迹公园的池塘与传统建筑",
+      "en": "A pond and traditional architecture at Uam Historical Park, Daejeon"
     },
     "caption": {
       "ko": "우암사적공원 · 봄에 촬영한 자료 사진",
       "tw": "尤菴史蹟公園・春季資料照片",
-      "cn": "尤庵史迹公园・春季资料照片"
+      "cn": "尤庵史迹公园・春季资料照片",
+      "en": "Uam Historical Park · Archive photo taken in spring"
     },
     "credit": "Jo / Wikimedia Commons · CC BY 2.0 · resized / cropped / color adjusted",
     "source": "https://commons.wikimedia.org/wiki/File:Korea-Daejeon-Uam_Historic_Park-01.jpg",
@@ -25,7 +27,8 @@
       "alt": {
         "ko": "행정안전부",
         "tw": "韓國行政安全部",
-        "cn": "韩国行政安全部"
+        "cn": "韩国行政安全部",
+        "en": "Ministry of the Interior and Safety"
       },
       "width": 1200,
       "height": 630
@@ -35,7 +38,8 @@
       "alt": {
         "ko": "대전광역시 중구",
         "tw": "大田廣域市中區",
-        "cn": "大田广域市中区"
+        "cn": "大田广域市中区",
+        "en": "Jung-gu, Daejeon Metropolitan City"
       },
       "width": 340,
       "height": 322

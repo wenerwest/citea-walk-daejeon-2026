@@ -1,21 +1,24 @@
+import { shoppingCopy, renderShoppingGuide } from './shopping-guide.js';
+import { initFilmedHere, renderFilmedHere, closeFilmedGallery } from './filmed-here.js';
 const $ = (s, root = document) => root.querySelector(s);
 const main = $('#main');
 const engine = $('#audio-engine');
-const langs = ['ko', 'tw', 'cn'];
+const langs = ['ko', 'en', 'tw', 'cn'];
 const readStore = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const store = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; } };
 const params = new URL(location.href).searchParams;
 let lang = langs.includes(params.get('lang')) ? params.get('lang') : readStore('citea-language', 'ko');
 if (!langs.includes(lang)) lang = 'ko';
-let data, activeTrack = null, menuOpen = false, cachedTracks = new Set();
+let data, activeTrack = null, menuOpen = false, cachedTracks = new Set(), shoppingFilter = 'all';
 let checks = readStore('citea-checklist', {});
 if (!checks || typeof checks !== 'object' || Array.isArray(checks)) checks = {};
 const extra = {
+  en: {"guide": "City Exploration Guide", "overview": "Journey at a glance", "fourDays": "Four days, at a slower pace", "all": "All", "sources": "Official references", "photoCredit": "Photo credit", "directionsPending": "Confirm your destination, then choose directions in NAVER Map.", "offline": "Offline · Showing saved information", "updated": "Connected · Check the latest information", "guideNumber": "Guide", "essentials": "Essentials before you set out", "localSaveFailed": "Browser storage is restricted, so your checklist selections cannot be saved.", "failed": "Could not copy. Press and hold the address to copy it.", "remove": "Remove", "savedGuide": "Previously opened guides are available offline. Maps and external links need an internet connection.", "search": "Find a place", "searchPlaceholder": "Place name or keyword", "noResults": "No places found.", "tourism": "City Travel Guide", "tourList": "This is the order of introduction, not the order of visits."},
   ko: { guide: '도시 탐방 가이드', overview: '여정 한눈에', fourDays: '나흘의 느린 여행', all: '전체', sources: '공식 참고 자료', photoCredit: '사진 출처', directionsPending: '목적지 확인 후 NAVER Map에서 길찾기를 선택해 주세요.', offline: '오프라인 · 저장된 안내를 표시합니다', updated: '연결됨 · 최신 안내를 확인하세요', guideNumber: '가이드', essentials: '출발 전, 꼭 챙겨요', localSaveFailed: '브라우저 저장이 제한되어 체크 상태를 유지할 수 없습니다.', failed: '복사하지 못했습니다. 주소를 길게 눌러 복사해 주세요.', remove: '삭제', savedGuide: '한 번 열어 본 안내는 오프라인에서도 볼 수 있습니다. 지도·외부 링크에는 인터넷이 필요합니다.', tourism: '도시 여행 가이드', search: '장소 찾기', searchPlaceholder:'장소명 또는 키워드', noResults:'검색 결과가 없습니다.', tourList:'소개 순서이며 실제 방문 순서가 아닙니다.' },
   tw: { guide: '城市漫遊指南', overview: '旅程一覽', fourDays: '四天，慢慢旅行', all: '全部', sources: '官方參考資料', photoCredit: '照片來源', directionsPending: '確認目的地後，請在NAVER Map選擇路線規劃。', offline: '離線中・顯示已儲存資訊', updated: '已連線・請留意最新資訊', guideNumber: '指南', essentials: '出發前，別忘了', localSaveFailed: '瀏覽器限制儲存，無法保留勾選狀態。', failed: '複製失敗，請長按地址複製。', remove: '移除', savedGuide: '曾開啟的指南可離線查看。地圖與外部連結仍需網路。', tourism: '城市旅行指南', search: '尋找地點', searchPlaceholder:'地點名稱或關鍵字', noResults:'找不到符合的地點。', tourList:'此為介紹順序，並非實際參訪順序。' },
   cn: { guide: '城市漫游指南', overview: '行程一览', fourDays: '四天，慢慢旅行', all: '全部', sources: '官方参考资料', photoCredit: '照片来源', directionsPending: '确认目的地后，请在NAVER Map选择路线规划。', offline: '离线中・显示已保存信息', updated: '已联网・请关注最新信息', guideNumber: '指南', essentials: '出发前，别忘了', localSaveFailed: '浏览器限制存储，无法保留勾选状态。', failed: '复制失败，请长按地址复制。', remove: '移除', savedGuide: '曾打开的指南可离线查看。地图与外部链接仍需网络。', tourism: '城市旅行指南', search: '查找地点', searchPlaceholder:'地点名称或关键词', noResults:'没有找到相关地点。', tourList:'此为介绍顺序，并非实际参访顺序。' }
 };
-const t = key => data?.locale[lang]?.[key] ?? extra[lang]?.[key] ?? key;
+const t = key => data?.locale[lang]?.[key] ?? extra[lang]?.[key] ?? shoppingCopy[lang]?.[key] ?? key;
 const l = value => typeof value === 'string' ? value : value?.[lang] ?? '';
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon = (name, size=20) => {
@@ -52,7 +55,7 @@ function photo(p, cls='', eager=false) {
 }
 function renderHeader() {
   const current=route()[0]||'home';
-  const items=['home','schedule','explore','audio','map','prepare','notices'];
+  const items=['home','schedule','explore','shopping','audio','map','prepare','notices'];
   $('#header').innerHTML=`<div class="header-inner"><a class="brand" href="#/" aria-label="CiTEA Walk ${esc(t('home'))}"><span class="brand-logo"><img src="assets/citea-walk-logo.png" width="1422" height="736" alt="CiTEA Walk" decoding="async"></span><small class="brand-caption">JUNGGU, DAEJEON · 2026</small></a><nav class="desktop-nav" aria-label="${esc(t('menu'))}">${items.map(k=>`<a href="#/${k==='home'?'':k}" ${current===k||k==='explore'&&current==='place'?'aria-current="page"':''}>${esc(t(k))}</a>`).join('')}</nav><div class="header-actions"><div class="language-wrap" title="${esc(data.locale[lang].langName)}">${icon('globe',16)}<span class="language-code" aria-hidden="true">${lang.toUpperCase()}</span><label class="sr-only" for="language">${t('language')}</label><select id="language" aria-label="${t('language')}">${langs.map(x=>`<option value="${x}" ${lang===x?'selected':''}>${x.toUpperCase()} · ${data.locale[x].langName}</option>`).join('')}</select></div><button class="menu-button icon-button" data-action="menu" aria-expanded="${menuOpen}" aria-controls="mobile-nav" aria-label="${t(menuOpen?'closeMenu':'menu')}">${icon(menuOpen?'close':'menu')}</button></div></div><nav id="mobile-nav" class="mobile-nav" ${menuOpen?'':'hidden'} aria-label="${esc(t('menu'))}">${items.map(k=>`<a href="#/${k==='home'?'':k}" ${current===k?'aria-current="page"':''}>${esc(t(k))}${icon('chevron',16)}</a>`).join('')}</nav>`;
   $('#skip').textContent=t('skipToContent');
 }
@@ -77,8 +80,13 @@ function home() {
 }
 function schedule(dateId) {
   const day=data.event.dates.find(d=>d.id===dateId)||data.event.dates[0];
-  return `<div class="page-container">${pageHeading('schedule')}${dateCards(day.id,true)}<div class="schedule-heading"><h2>${esc(l(day.label))}</h2><span class="small-label">${esc(t('scheduleSource'))}</span></div>${day.items.length?`<div class="timeline">${day.items.map(item=>scheduleItem(item)).join('')}</div>`:`<section class="empty-state"><div class="empty-icon">${icon('calendar',32)}</div><h3>${esc(t('schedulePendingTitle'))}</h3><p>${esc(l(data.event.scheduleExplanation))}</p>${link('/notices',t('notices'),'text-link')}</section>`}<div class="section-spacer">${notice(t('meetingPoint'),l(day.meetingPoint)||t('meetingPending'))}</div>${data.event.scheduleSource?ext(data.event.scheduleSource,t('scheduleSource'),'button button-outline'):''}</div>`;
+  return `<div class="page-container">${pageHeading('schedule')}${dateCards(day.id,true)}<div class="schedule-heading"><h2>${esc(l(day.label))}</h2><span class="small-label">${esc(t('scheduleSource'))}</span></div>${day.items.length?`<div class="timeline">${day.items.map(item=>scheduleItem(item)).join('')}</div>`:`<section class="empty-state"><div class="empty-icon">${icon('calendar',32)}</div><h3>${esc(t('schedulePendingTitle'))}</h3><p>${esc(l(data.event.scheduleExplanation))}</p>${link('/notices',t('notices'),'text-link')}</section>`}${day.id==='2026-11-10'?shoppingScheduleLinks():''}<div class="section-spacer">${notice(t('meetingPoint'),l(day.meetingPoint)||t('meetingPending'))}</div>${data.event.scheduleSource?ext(data.event.scheduleSource,t('scheduleSource'),'button button-outline'):''}</div>`;
 }
+function shoppingScheduleLinks() {
+  const c=shoppingCopy[lang];
+  return `<aside class="schedule-shopping"><div><h2>${esc(c.freeTime)}</h2><p>${esc(c.scheduleNote)}</p></div>${link('/shopping',c.viewGuide,'button button-primary')}</aside><p class="schedule-filming">${link('/place/daejeon-modern-history',c.filmingLink,'text-link')}</p>`;
+}
+function shopping() { return renderShoppingGuide(data.shopping,lang,shoppingFilter); }
 function scheduleItem(item) {
   const p=byId(item.placeId);
   const associated=[...new Set([item.placeId,...(item.relatedPlaceIds||[])])].map(byId).filter(Boolean);
@@ -102,7 +110,7 @@ function audioBlock(p) {
 function place(id) {
   const p=byId(id); if(!p) return notFound();
   const i=data.places.indexOf(p);
-  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${esc(l(p.category))}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}</div>${photo(p,'detail-photo',true)}${p.image?`<p class="photo-attribution">${p.image.source?ext(p.image.source,l(p.image.credit),''):esc(l(p.image.credit))} ${p.image.license?ext(p.image.license,'License',''):''}</p>`:''}<div class="detail-columns"><div class="detail-copy"><section><h2>${esc(t('placeIntro'))}</h2><p>${esc(l(p.intro))}</p></section><section><h2>${esc(t('background'))}</h2><p>${esc(l(p.history))}</p></section><section><h2>${esc(t('visitPurpose'))}</h2><p>${esc(l(p.purpose))}</p></section>${notice(t('verificationNote'),l(p.verificationNote),'verification')}<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details></div><aside class="detail-sidebar"><h2>${esc(t('audio'))}</h2>${audioBlock(p)}<h2>${esc(t('practicalInfo'))}</h2>${mapBlock(p)}</aside></div><nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
+  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${esc(l(p.category))}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}</div>${photo(p,'detail-photo',true)}${p.image?`<p class="photo-attribution">${p.image.source?ext(p.image.source,l(p.image.credit),''):esc(l(p.image.credit))} ${p.image.license?ext(p.image.license,'License',''):''}</p>`:''}<div class="detail-columns"><div class="detail-copy"><section><h2>${esc(t('placeIntro'))}</h2><p>${esc(l(p.intro))}</p></section><section><h2>${esc(t('background'))}</h2><p>${esc(l(p.history))}</p></section><section><h2>${esc(t('visitPurpose'))}</h2><p>${esc(l(p.purpose))}</p></section>${notice(t('verificationNote'),l(p.verificationNote),'verification')}<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details></div><aside class="detail-sidebar"><h2>${esc(t('audio'))}</h2>${audioBlock(p)}<h2>${esc(t('practicalInfo'))}</h2>${mapBlock(p)}</aside></div>${p.id==='daejeon-modern-history'?renderFilmedHere(lang):''}<nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
 }
 function audioPage() {
   return `<div class="page-container narrow">${pageHeading('audio')}${notice(t('audioEarphones'),t('audioNoAutoplay'),'green-note')}<div class="audio-list">${data.places.map((p,i)=>`<section class="audio-list-item"><div class="audio-list-title"><span>${String(i+1).padStart(2,'0')}</span><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2></div>${audioBlock(p)}</section>`).join('')}</div><div class="offline-explainer">${icon('download',24)}<div><h2>${esc(t('saveOffline'))}</h2><p>${esc(t('offlineHint'))}</p><p>${esc(t('downloadHint'))}</p><p>${esc(t('savedGuide'))}</p></div></div></div>`;
@@ -126,13 +134,14 @@ function notices() {
 const notFound=()=>`<div class="page-container empty-state"><h1>${esc(t('notFound'))}</h1>${link('/',t('backHome'),'button button-primary')}</div>`;
 function render({focus=false}={}) {
   if(!data) return;
+  closeFilmedGallery({restoreFocus:false});
   const [page, id]=route();
   document.documentElement.lang=data.locale[lang].htmlLang;
   const title=page==='place'?l(byId(id)?.names):t(page||'home');
   document.title=`${title} · CiTEA Walk 2026`;
   document.querySelector('meta[name="description"]').content=l(data.event.description);
   renderHeader();
-  main.innerHTML=({home, schedule:()=>schedule(id), explore, place:()=>place(id), audio:audioPage, map:mapPage, prepare, notices}[page||'home']||notFound)();
+  main.innerHTML=({home, schedule:()=>schedule(id), explore, shopping, place:()=>place(id), audio:audioPage, map:mapPage, prepare, notices}[page||'home']||notFound)();
   footer(); renderPlayer();
   if(focus){window.scrollTo(0,0);main.focus({preventScroll:true});}
 }
@@ -183,6 +192,7 @@ document.addEventListener('click',async e=>{
   const b=e.target.closest('[data-action]');if(!b)return;
   const p=byId(b.dataset.id);
   switch(b.dataset.action){
+    case 'shopping-filter':shoppingFilter=b.dataset.filter;main.innerHTML=shopping();main.querySelector(`[data-filter="${shoppingFilter}"]`)?.focus({preventScroll:true});break;
     case 'menu':menuOpen=!menuOpen;renderHeader();break;
     case 'play':await startAudio(p);break;
     case 'toggle-audio':if(engine.paused)await engine.play().catch(()=>toast(t('audioError')));else engine.pause();break;
@@ -208,8 +218,8 @@ window.addEventListener('hashchange',()=>render({focus:true}));
 window.addEventListener('online',()=>{footer();toast(t('updated'));});window.addEventListener('offline',()=>{footer();toast(t('offline'));});
 async function init(){
   try{
-    const names=['locale','event','places','site'];const values=await Promise.all(names.map(async name=>{const r=await fetch(`data/${name}.json`,{cache:'no-cache'});if(!r.ok)throw Error(name);return r.json();}));data=Object.fromEntries(names.map((name,i)=>[name,values[i]]));
-    store('citea-language',lang);await updateCached();render();
+    const names=['locale','event','places','site','shopping'];const values=await Promise.all(names.map(async name=>{const r=await fetch(`data/${name}.json`,{cache:'no-cache'});if(!r.ok)throw Error(name);return r.json();}));data=Object.fromEntries(names.map((name,i)=>[name,values[i]]));
+    store('citea-language',lang);await Promise.all([updateCached(),initFilmedHere({getLanguage:()=>lang})]);render();
     if(data.site.publicUrl){let canonical=document.createElement('link');canonical.rel='canonical';canonical.href=data.site.publicUrl;document.head.append(canonical);}
     if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
   }catch{main.innerHTML='<div class="empty-state"><h1>안내를 불러오지 못했습니다 / 無法載入 / 无法加载</h1><button class="button button-primary" data-action="retry">다시 시도 / 重試 / 重试</button></div>';}

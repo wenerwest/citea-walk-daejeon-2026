@@ -1,0 +1,127 @@
+{
+  "works": [
+    {
+      "id": "mr-sunshine",
+      "title": {
+        "ko": "미스터 션샤인",
+        "en": "Mr. Sunshine",
+        "tw": "陽光先生",
+        "cn": "阳光先生"
+      },
+      "description": {
+        "ko": "대전근현대사전시관이 일본 항구로 등장한 장면",
+        "en": "The exhibition hall appears as a Japanese port.",
+        "tw": "展示館化身為日本港口的場景。",
+        "cn": "展示馆化身为日本港口的场景。"
+      },
+      "scenes": [
+        {
+          "src": "assets/filming/mr-sunshine-01.jpg",
+          "original": "assets/filming/originals/mr-sunshine-01.png",
+          "width": 958,
+          "height": 534,
+          "alt": {
+            "ko": "미스터 션샤인: 시모노세키 항구로 등장한 전시관 입구",
+            "en": "Mr. Sunshine: the hall entrance appearing as Shimonoseki port",
+            "tw": "《陽光先生》：展示館入口化身下關港",
+            "cn": "《阳光先生》：展示馆入口化身下关港"
+          }
+        },
+        {
+          "src": "assets/filming/mr-sunshine-02.jpg",
+          "original": "assets/filming/originals/mr-sunshine-02.png",
+          "width": 958,
+          "height": 534,
+          "alt": {
+            "ko": "미스터 션샤인: 일본 항구의 업무 공간으로 등장한 전시관 내부",
+            "en": "Mr. Sunshine: the hall interior appearing as a Japanese port office",
+            "tw": "《陽光先生》：展示館內部化身日本港口辦公空間",
+            "cn": "《阳光先生》：展示馆内部化身日本港口办公空间"
+          }
+        }
+      ]
+    },
+    {
+      "id": "made-in-korea",
+      "title": {
+        "ko": "메이드 인 코리아",
+        "en": "Made in Korea",
+        "tw": "韓國製造",
+        "cn": "韩国制造"
+      },
+      "description": {
+        "ko": "대전근현대사전시관이 청와대로 등장한 장면",
+        "en": "The exhibition hall appears as the Blue House.",
+        "tw": "展示館化身為青瓦臺的場景。",
+        "cn": "展示馆化身为青瓦台的场景。"
+      },
+      "scenes": [
+        {
+          "src": "assets/filming/made-in-korea-01.jpg",
+          "original": "assets/filming/originals/made-in-korea-01.png",
+          "width": 1223,
+          "height": 611,
+          "alt": {
+            "ko": "메이드 인 코리아: 1979년 청와대로 등장한 전시관 계단",
+            "en": "Made in Korea: the hall staircase appearing as the Blue House in 1979",
+            "tw": "《韓國製造》：展示館階梯化身1979年的青瓦臺",
+            "cn": "《韩国制造》：展示馆楼梯化身1979年的青瓦台"
+          }
+        },
+        {
+          "src": "assets/filming/made-in-korea-02.jpg",
+          "original": "assets/filming/originals/made-in-korea-02.png",
+          "width": 1223,
+          "height": 611,
+          "alt": {
+            "ko": "메이드 인 코리아: 청와대 복도로 등장한 전시관 내부",
+            "en": "Made in Korea: the hall corridor appearing as the Blue House",
+            "tw": "《韓國製造》：展示館走廊化身青瓦臺內部",
+            "cn": "《韩国制造》：展示馆走廊化身青瓦台内部"
+          }
+        }
+      ]
+    },
+    {
+      "id": "low-life",
+      "title": {
+        "ko": "파인: 촌뜨기들",
+        "en": "Low Life",
+        "tw": "Low Life（파인: 촌뜨기들）",
+        "cn": "Low Life（파인: 촌뜨기들）"
+      },
+      "description": {
+        "ko": "대전근현대사전시관이 부산세관과 치안본부로 등장한 장면",
+        "en": "The exhibition hall appears as Busan Customs and the National Police Headquarters.",
+        "tw": "展示館化身為釜山海關與治安本部的場景。",
+        "cn": "展示馆化身为釜山海关与治安本部的场景。"
+      },
+      "scenes": [
+        {
+          "src": "assets/filming/low-life-01.jpg",
+          "original": "assets/filming/originals/low-life-01.png",
+          "width": 1223,
+          "height": 611,
+          "alt": {
+            "ko": "파인: 촌뜨기들: 부산세관으로 등장한 건물과 마당",
+            "en": "Low Life: the building and courtyard appearing as Busan Customs",
+            "tw": "《Low Life》：建築與庭院化身釜山海關",
+            "cn": "《Low Life》：建筑与庭院化身釜山海关"
+          }
+        },
+        {
+          "src": "assets/filming/low-life-02.jpg",
+          "original": "assets/filming/originals/low-life-02.png",
+          "width": 802,
+          "height": 414,
+          "alt": {
+            "ko": "파인: 촌뜨기들: 치안본부로 등장한 전시관 정면",
+            "en": "Low Life: the exhibition hall facade appearing as the National Police Headquarters",
+            "tw": "《Low Life》：展示館正面化身治安本部",
+            "cn": "《Low Life》：展示馆正面化身治安本部"
+          }
+        }
+      ]
+    }
+  ]
+}

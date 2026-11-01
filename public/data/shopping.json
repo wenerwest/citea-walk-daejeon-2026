@@ -1,0 +1,177 @@
+[
+  {
+    "id": "sungsimdang-main",
+    "category": "bakery",
+    "koreanName": "성심당 본점",
+    "names": {
+      "ko": "성심당 본점",
+      "en": "Sungsimdang Main Store",
+      "cn": "圣心堂总店",
+      "tw": "聖心堂總店"
+    },
+    "description": {
+      "ko": "대전을 대표하는 지역 베이커리입니다. 바삭한 튀김소보로와 짭짤한 부추빵 등 대표 빵을 만나보세요.",
+      "en": "Daejeon’s signature local bakery. Try its famous fried soboro bread and savoury chive buns.",
+      "cn": "大田代表性本地面包店。可以品尝招牌炸酥皮面包和咸香韭菜面包。",
+      "tw": "大田代表性在地麵包店。可以品嚐招牌炸酥皮麵包與鹹香韭菜麵包。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 대종로480번길 15",
+      "en": "15, Daejong-ro 480beon-gil, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Daejong-ro 480beon-gil 15",
+      "tw": "大田廣域市中區 Daejong-ro 480beon-gil 15"
+    },
+    "naverUrl": "https://naver.me/FXZr5T27",
+    "naverQuery": "성심당 본점 대전 중구 대종로480번길 15",
+    "image": {
+      "src": "assets/shopping/sungsimdang.jpg",
+      "width": 1200,
+      "height": 600,
+      "kind": "store",
+      "alt": {
+        "ko": "성심당 본점 실제 매장 외관",
+        "en": "The exterior of Sungsimdang Main Store",
+        "cn": "圣心堂总店实际外观",
+        "tw": "聖心堂總店實際外觀"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://sungsimdang.co.kr/31/15",
+        "label": {
+          "ko": "성심당 공식 매장 안내 · 외관 사진",
+          "en": "Sungsimdang official store guide & exterior photo",
+          "cn": "圣心堂官方店铺介绍及外观照片",
+          "tw": "聖心堂官方店舖介紹與外觀照片"
+        }
+      }
+    ]
+  },
+  {
+    "id": "oliveyoung-daejeon-jungang",
+    "category": "beauty",
+    "koreanName": "올리브영 대전중앙점",
+    "names": {
+      "ko": "올리브영 대전중앙점",
+      "en": "Olive Young Daejeon Jungang",
+      "cn": "Olive Young 大田中央店",
+      "tw": "Olive Young 大田中央店"
+    },
+    "description": {
+      "ko": "한국 스킨케어, 메이크업, 뷰티 제품을 한곳에서 살펴볼 수 있는 매장입니다.",
+      "en": "Browse Korean skincare, makeup and beauty products in one store.",
+      "cn": "可一站选购韩国护肤品、彩妆及美容产品的店铺。",
+      "tw": "可一次選購韓國保養品、彩妝與美容產品的店舖。"
+    },
+    "note": {
+      "ko": "11월 방문 주의: 공식 안내에 11/1(일)~11/30(월) 리뉴얼 공사 휴업으로 표시되어 있습니다. 11월 10일에는 이용할 수 없으니 재개점 여부를 확인해 주세요.",
+      "en": "November closure: the official store listing states renovation from Nov 1–30. It is unavailable on November 10; check the reopening status before visiting.",
+      "cn": "11月到访请注意：官方店铺页面标示11月1日至30日装修暂停营业，11月10日无法购物。请出发前确认重新开业情况。",
+      "tw": "11月到訪請注意：官方店舖頁面標示11月1日至30日裝修暫停營業，11月10日無法購物。請出發前確認重新開業情況。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 중앙로164번길 17",
+      "en": "17, Jungang-ro 164beon-gil, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Jungang-ro 164beon-gil 17",
+      "tw": "大田廣域市中區 Jungang-ro 164beon-gil 17"
+    },
+    "naverQuery": "올리브영 대전중앙점 대전 중구 중앙로164번길 17",
+    "image": {
+      "src": "assets/shopping/oliveyoung.jpg",
+      "width": 1200,
+      "height": 676,
+      "kind": "store",
+      "alt": {
+        "ko": "올리브영 대전중앙점 공식 매장 사진",
+        "en": "Official store photo of Olive Young Daejeon Jungang",
+        "cn": "Olive Young大田中央店官方店铺照片",
+        "tw": "Olive Young大田中央店官方店舖照片"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://www.oliveyoung.co.kr/store/store/getStoreInfoMain.do",
+        "label": {
+          "ko": "올리브영 공식 매장찾기 · 대전중앙점 영업 안내",
+          "en": "Olive Young official store finder · search Daejeon Jungang",
+          "cn": "Olive Young官方门店查询 · 搜索대전중앙",
+          "tw": "Olive Young官方門市查詢 · 搜尋대전중앙"
+        }
+      },
+      {
+        "url": "https://image.oliveyoung.co.kr/cfimages/oystore/DD11_1.jpg",
+        "label": {
+          "ko": "올리브영 공식 매장 사진",
+          "en": "Olive Young official store photo",
+          "cn": "Olive Young官方店铺照片",
+          "tw": "Olive Young官方店舖照片"
+        }
+      }
+    ]
+  },
+  {
+    "id": "daiso-daejeon-jungchon",
+    "category": "essentials",
+    "koreanName": "다이소 대전중촌네거리점",
+    "names": {
+      "ko": "다이소 대전중촌네거리점",
+      "en": "Daiso Daejeon Jungchon Intersection",
+      "cn": "大创大田中村十字路口店",
+      "tw": "大創大田中村十字路口店"
+    },
+    "description": {
+      "ko": "생활용품, 여행용품, 문구와 소형 잡화를 합리적인 가격에 구매할 수 있습니다.",
+      "en": "Find affordable household items, travel accessories, stationery and small everyday goods.",
+      "cn": "可实惠选购生活用品、旅行用品、文具及小型日用杂货。",
+      "tw": "可實惠選購生活用品、旅行用品、文具與小型日用雜貨。"
+    },
+    "note": {
+      "ko": "중앙로·은행동 쇼핑 구역에서 추가 이동이 필요한 원도심 인근 지점입니다. 출발 전 지도에서 경로를 확인해 주세요.",
+      "en": "This branch is near the old city centre and requires additional travel from Jungang-ro and Eunhaeng-dong. Check your route before setting out.",
+      "cn": "本店位于原市中心附近，从中央路、银行洞购物区前往需额外移动。出发前请在地图上确认路线。",
+      "tw": "本店位於舊市中心附近，從中央路、銀行洞購物區前往需額外移動。出發前請在地圖上確認路線。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 대종로 625 (중촌동), 지하 1층~5층",
+      "en": "625, Daejong-ro, Jung-gu, Daejeon · B1–5F",
+      "cn": "大田广域市中区 Daejong-ro 625（中村洞），地下1层至5层",
+      "tw": "大田廣域市中區 Daejong-ro 625（中村洞），地下1樓至5樓"
+    },
+    "naverQuery": "다이소 대전중촌네거리점 대전 중구 대종로 625",
+    "image": {
+      "src": "assets/shopping/daiso.png",
+      "width": 401,
+      "height": 94,
+      "kind": "brand",
+      "alt": {
+        "ko": "다이소 공식 브랜드 로고",
+        "en": "Official Daiso brand logo",
+        "cn": "大创官方品牌标志",
+        "tw": "大創官方品牌標誌"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://www.daiso.co.kr/cs/shop",
+        "label": {
+          "ko": "다이소 공식 매장검색 · 대전중촌네거리점",
+          "en": "Daiso official store finder · search 대전중촌네거리",
+          "cn": "大创官方门店查询 · 搜索대전중촌네거리",
+          "tw": "大創官方門市查詢 · 搜尋대전중촌네거리"
+        }
+      },
+      {
+        "url": "https://www.daiso.co.kr/company/bi",
+        "label": {
+          "ko": "다이소 공식 브랜드 이미지",
+          "en": "Daiso official brand image",
+          "cn": "大创官方品牌图片",
+          "tw": "大創官方品牌圖片"
+        }
+      }
+    ]
+  }
+]

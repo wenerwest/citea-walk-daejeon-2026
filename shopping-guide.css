@@ -1,0 +1,59 @@
+/* Shared CiTEA colours and typography, scoped to the shopping guide. */
+.shopping-page .page-heading { max-width: 850px; }
+.shopping-all-maps { border: 1px solid var(--line); background: var(--sage); border-radius: var(--radius); }
+.shopping-all-maps > summary { padding: 20px 24px; font-size: 18px; font-weight: 600; cursor: pointer; }
+.shopping-map-list { padding: 0 24px 22px; }
+.shopping-map-list > p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+.shopping-map-list > a { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; padding: 15px 0; border-top: 1px solid var(--line); }
+.shopping-map-list > a > span[lang] { grid-column: 1; color: var(--muted); font-size: 15px; }
+.shopping-map-list > a > span:last-child { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+.shopping-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between; margin: 30px 0 24px; }
+.shopping-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.shopping-filters > button { min-height: 44px; padding: 10px 15px; border: 1px solid var(--line); border-radius: 3px; font-size: 15px; background: var(--white); }
+.shopping-filters > button[aria-pressed="true"] { background: var(--green); color: var(--white); border-color: var(--green); }
+.shopping-filters > button:hover { box-shadow: inset 0 0 0 1px var(--green); }
+.shopping-count { font-size: 14px; color: var(--muted); }
+.shopping-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.shopping-card { display: flex; min-width: 0; flex-direction: column; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.shopping-photo { aspect-ratio: 3 / 2; background: var(--sage); position: relative; }
+.shopping-photo img { width: 100%; height: 100%; object-fit: contain; }
+.shopping-brand { background: #fff; }
+.shopping-brand img { padding: 28px; }
+.shopping-image-label { position: absolute; bottom: 10px; left: 12px; right: 12px; font-size: 11px; color: var(--muted); text-align: center; }
+.shopping-card-body { display: flex; flex: 1; flex-direction: column; padding: 23px 20px 18px; }
+.shopping-card-body > .category { font-size: 14px; line-height: 1.5; margin-bottom: 8px; }
+.shopping-card h2 { font-size: 22px; letter-spacing: -.5px; }
+.shopping-description { font-size: 16px; line-height: 1.8; margin-top: 14px; color: var(--muted); }
+.shopping-note { font-size: 14px; line-height: 1.7; margin-top: 14px; padding: 12px; background: var(--sage); border-left: 2px solid var(--green); }
+.shopping-address { margin-top: auto; padding: 24px 0 18px; }
+.shopping-address > .small-label { font-size: 13px; }
+.shopping-address p { font-size: 16px; line-height: 1.75; margin-top: 5px; }
+.shopping-address p + p { font-size: 14px; color: var(--muted); }
+.shopping-map-button { gap: 7px; padding: 14px 12px; width: 100%; min-height: 52px; font-size: 15px; }
+.shopping-sources { margin-top: 18px; font-size: 12px; color: var(--muted); }
+.shopping-sources summary { cursor: pointer; min-height: 32px; display: list-item; }
+.shopping-sources p { margin: 8px 0; }
+.shopping-sources a { display: block; text-decoration: underline; text-underline-offset: 3px; padding: 5px 0; }
+.shopping-map-hint { margin: 24px 0 12px; font-size: 14px; color: var(--muted); }
+.schedule-shopping { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; background: var(--sage); padding: 24px; margin: 30px 0; border: 1px solid var(--line); }
+.schedule-shopping > div { flex: 1; min-width: 210px; }
+.schedule-shopping h2 { font-size: 22px; margin-bottom: 8px; }
+.schedule-shopping p { font-size: 15px; color: var(--muted); }
+.schedule-shopping .button { font-size: 16px; }
+.schedule-filming { margin: 0 0 24px; }
+@media (max-width: 1000px) { .shopping-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .shopping-grid { grid-template-columns: minmax(0, 1fr); }
+  .shopping-all-maps > summary { padding: 18px 16px; font-size: 16px; }
+  .shopping-map-list { padding: 0 16px 18px; }
+  .shopping-filters > button { font-size: 14px; padding: 9px 12px; }
+  .shopping-card-body { padding: 22px 20px 18px; }
+  .shopping-map-button { font-size: 16px; }
+  .schedule-shopping { padding: 20px; }
+}
+/* The added navigation item needs the existing mobile menu at tablet widths. */
+@media (min-width: 1201px) and (max-width: 1540px) {
+  .desktop-nav { display: none; }
+  .header-actions { margin-left: auto; }
+  .menu-button { display: inline-flex !important; }
+}

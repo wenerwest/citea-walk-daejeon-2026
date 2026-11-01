@@ -9,7 +9,7 @@ const publicDir = path.join(root, 'public'), dist = path.join(root, 'dist');
 const allowIncomplete = process.argv.includes('--allow-incomplete');
 const exists = async file => { try { return (await stat(file)).isFile(); } catch { return false; } };
 const fail = message => { throw new Error(message); };
-const langs = ['ko', 'tw', 'cn'];
+const langs = ['ko', 'en', 'tw', 'cn'];
 async function filesUnder(directory) {
   const list = [];
   try {
@@ -25,7 +25,7 @@ async function filesUnder(directory) {
 function localized(value, label) {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return;
   if (langs.some(lang => typeof value[lang] === 'string')) {
-    for (const lang of langs) if (typeof value[lang] !== 'string' || !value[lang].trim()) fail(`${label}.${lang}: all three languages need non-empty text.`);
+    for (const lang of langs) if (typeof value[lang] !== 'string' || !value[lang].trim()) fail(`${label}.${lang}: all four languages need non-empty text.`);
   }
 }
 function localizedTree(value, label) {
@@ -54,7 +54,7 @@ try {
   }
   const locale = parsed.get('locale.json');
   if (locale) {
-    if (!langs.every(lang => locale[lang] && typeof locale[lang] === 'object' && !Array.isArray(locale[lang]))) fail('locale.json: ko, tw and cn must each contain a translation object.');
+    if (!langs.every(lang => locale[lang] && typeof locale[lang] === 'object' && !Array.isArray(locale[lang]))) fail('locale.json: ko, en, tw and cn must each contain a translation object.');
     const keys = new Set(langs.flatMap(lang => Object.keys(locale[lang])));
     for (const key of keys) for (const lang of langs) if (typeof locale[lang][key] !== 'string' || !locale[lang][key].trim()) fail(`locale.json: missing text ${lang}.${key}`);
   }
@@ -62,6 +62,31 @@ try {
   if (site?.hero?.src) await localAsset(site.hero.src, 'site.hero.src');
   for (const logo of site?.footerLogos || []) await localAsset(logo.src, 'site.footerLogos.src');
   const places = rows(parsed.get('places.json'), 'places');
+  const shops = parsed.get('shopping.json') || [];
+  const shopIds = new Set();
+  for (const shop of shops) {
+    if (!shop.id || shopIds.has(shop.id)) fail('shopping.json: every shop needs a unique id.');
+    shopIds.add(shop.id);
+    if (!['bakery', 'beauty', 'essentials'].includes(shop.category)) fail(`shopping.${shop.id}: unknown category.`);
+    if (!shop.address?.ko || !shop.naverQuery) fail(`shopping.${shop.id}: Korean address and map query are required.`);
+    if (shop.naverUrl) {
+      const url = new URL(shop.naverUrl);
+      if (url.protocol !== 'https:' || !['naver.me', 'map.naver.com'].includes(url.hostname)) fail(`shopping.${shop.id}: use a verified Naver link.`);
+    }
+    if (!shop.image?.src) fail(`shopping.${shop.id}: an image is required.`);
+    await localAsset(shop.image.src, `shopping.${shop.id}.image`, false);
+  }
+  const filmIds = new Set();
+  for (const film of parsed.get('filming.json')?.works || []) {
+    if (!film.id || filmIds.has(film.id)) fail('filming.json: every work needs a unique id.');
+    filmIds.add(film.id);
+    if (!Array.isArray(film.scenes)) fail(`filming.${film.id}: scenes must be an array, which may be empty.`);
+    for (const [index, scene] of film.scenes.entries()) {
+      if (!scene.src || !scene.width || !scene.height) fail(`filming.${film.id}.${index}: image path and dimensions are required.`);
+      await localAsset(scene.src, `filming.${film.id}.${index}`, false);
+      if (scene.original) await localAsset(scene.original, `filming.${film.id}.${index}.original`, false);
+    }
+  }
   const ids = new Set();
   for (const place of places) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(place.id || '')) fail('places.json: each place needs a unique lowercase-hyphen id.');
@@ -109,7 +134,7 @@ try {
       if (item.time && !/^([01]\d|2[0-3]):[0-5]\d(?:\s*[–-]\s*([01]\d|2[0-3]):[0-5]\d)?$/.test(item.time)) fail(`schedule.json: use HH:MM or HH:MM–HH:MM for time: ${item.time}`);
     }
   }
-  const appFiles = ['index.html', 'app.js', 'styles.css'];
+  const appFiles = ['index.html', 'app.js', 'styles.css', 'shopping-guide.js', 'shopping-guide.css', 'filmed-here.js', 'filmed-here.css'];
   const missing = [];
   for (const file of appFiles) if (!(await exists(path.join(root, file)))) missing.push(file);
   if (missing.length && !allowIncomplete) fail(`Application files are not ready: ${missing.join(', ')}. Finish the app, then build again.`);
@@ -132,7 +157,7 @@ try {
   const buildId = hash.digest('hex').slice(0, 16);
   if (await exists(path.join(dist, 'index.html'))) {
     const html = await readFile(path.join(dist, 'index.html'), 'utf8');
-    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:app\.js|styles\.css|manifest\.webmanifest|assets\/fonts\/fonts\.css|assets\/icons\/[a-z0-9-]+\.(?:png|ico))(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
+    const versioned = html.replace(/(\s(?:src|href)\s*=\s*)(["'])((?:\.\/)?(?:(?:app|shopping-guide|filmed-here)\.js|(?:styles|shopping-guide|filmed-here)\.css|manifest\.webmanifest|assets\/fonts\/fonts\.css|assets\/icons\/[a-z0-9-]+\.(?:png|ico))(?:[?#][^"']*)?)\2/g, (_match, attribute, quote, reference) => {
       const hashIndex = reference.indexOf('#');
       const fragment = hashIndex === -1 ? '' : reference.slice(hashIndex);
       const withoutFragment = hashIndex === -1 ? reference : reference.slice(0, hashIndex);
@@ -143,6 +168,11 @@ try {
       return `${attribute}${quote}${file}?${query.toString().replaceAll('&', '&amp;')}${fragment}${quote}`;
     });
     await writeFile(path.join(dist, 'index.html'), versioned);
+  }
+  const entry = path.join(dist, 'app.js');
+  if (await exists(entry)) {
+    const js = await readFile(entry, 'utf8');
+    await writeFile(entry, js.replace(/from '([.]\/(?:shopping-guide|filmed-here)[.]js)'/g, (_match, file) => `from '${file}?v=${buildId}'`));
   }
   if (await exists(path.join(dist, 'sw.js'))) {
     const worker = await readFile(path.join(dist, 'sw.js'), 'utf8');
