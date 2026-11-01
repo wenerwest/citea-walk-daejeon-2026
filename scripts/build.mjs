@@ -94,6 +94,10 @@ try {
     ids.add(place.id);
     const image = typeof place.image === 'string' ? place.image : place.image?.src;
     if (image) await localAsset(image, `${place.id}.image`);
+    for (const [index, image] of (place.gallery || []).entries()) {
+      if (!image.src || !image.width || !image.height) fail(`${place.id}.gallery.${index}: image path and dimensions are required.`);
+      await localAsset(image.src, `${place.id}.gallery.${index}`, false);
+    }
   }
   const schedule = parsed.get('schedule.json') || parsed.get('event.json');
   const checkIds = new Set();

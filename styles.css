@@ -302,3 +302,30 @@ body { -webkit-text-size-adjust: 100%; }
 }
 
 @media (max-width: 360px) { .schedule-photo-link .place-photo { aspect-ratio: 2 / 1; } }
+
+/* Supplied place photographs keep their full composition. */
+.place-photo img { position: absolute; inset: 0; }
+.place-single-media { margin: 0; }
+.place-single-media .detail-photo.image-contain { aspect-ratio: 16 / 9; max-height: 480px; }
+.place-single-media .photo-attribution { margin: 12px 0 0; }
+.place-headline { margin-top: 18px; max-width: 860px; font-size: 19px; color: var(--muted); line-height: 1.7; }
+.place-photo-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.place-photo-gallery figure { margin: 0; min-width: 0; }
+.place-gallery-frame { aspect-ratio: 3 / 2; background: var(--sage); position: relative; }
+.place-gallery-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.place-photo-gallery figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-top: 12px; font-size: 14px; }
+.place-photo-gallery figcaption small { color: var(--muted); font-size: 11px; }
+.detail-copy > section > p + p { margin-top: 18px; }
+.program-info { padding: 25px; background: var(--sage); }
+.program-info h3 { font-size: 18px; }
+.program-info p { margin: 14px 0 20px; }
+@media (max-width: 600px) {
+  .place-photo-gallery { grid-template-columns: 1fr; gap: 22px; }
+  .place-headline { font-size: 16px; margin-top: 12px; }
+  .place-photo-gallery figcaption { margin-top: 8px; font-size: 13px; }
+  .place-single-media .detail-photo.image-contain { aspect-ratio: 3 / 2; max-height: 330px; }
+  .program-info { padding: 20px; }
+}
+.reference-image-label { position: absolute; right: 6px; bottom: 6px; left: 6px; padding: 4px 7px; background: rgba(249,251,248,.94); color: var(--ink); font-size: 10px; line-height: 1.5; text-align: center; }
+.place-single-media .detail-photo.image-contain.image-portrait { aspect-ratio: 4 / 5; max-width: 480px; max-height: none; margin-inline: auto; }
+.place-single-media .detail-photo { width: 100%; }

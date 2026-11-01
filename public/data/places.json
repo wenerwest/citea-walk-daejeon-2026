@@ -585,6 +585,89 @@
     "meetingPoint": null
   },
   {
+    "id": "andor-cafe",
+    "koreanName": "안도르카페",
+    "names": {
+      "ko": "안도르카페",
+      "en": "Andor Café",
+      "cn": "Andor Café（안도르카페）",
+      "tw": "Andor Café（안도르카페）"
+    },
+    "category": {
+      "ko": "카페 · 원도심 산책",
+      "en": "Café · Old-town walk",
+      "cn": "咖啡馆 · 老城漫步",
+      "tw": "咖啡館 · 舊城漫步"
+    },
+    "intro": {
+      "ko": "나무가 드리운 2층 건물에 자리한 카페입니다. 원도심 산책 사이에 잠시 쉬며 골목의 분위기를 느껴보는 공간으로 소개합니다.",
+      "en": "A café in a two-story building shaded by trees. It offers a pause during an old-downtown walk and a chance to take in the surrounding streets.",
+      "cn": "位于树荫下两层建筑内的咖啡馆。可在原市中心漫步途中稍作休息，感受周边街巷的氛围。",
+      "tw": "位於樹蔭下兩層建築內的咖啡館。可在舊市中心漫步途中稍作休息，感受周邊街巷的氛圍。"
+    },
+    "history": {
+      "ko": "나무와 건물이 어우러진 풍경 속에서 원도심 골목의 또 다른 표정을 만납니다. 건물과 마당을 천천히 바라보며 산책의 여운을 이어가 보세요.",
+      "en": "Trees and an older building offer another view of Daejeon’s old town. Take time to enjoy the building and its garden during your walk.",
+      "cn": "树木与老建筑相映成趣，呈现大田老城的另一种面貌。不妨放慢脚步，欣赏建筑与庭院，让漫步的余韵延续。",
+      "tw": "樹木與老建築相映成趣，呈現大田舊城的另一種面貌。不妨放慢腳步，欣賞建築與庭院，讓漫步的餘韻延續。"
+    },
+    "purpose": {
+      "ko": "근대건축·빵집 투어 중 잠시 쉬어 가며, 카페와 골목이 이어지는 대전의 일상을 느껴봅니다.",
+      "en": "Pause during the architecture and bakery walk to enjoy the café and the everyday life of the surrounding streets.",
+      "cn": "在近代建筑与面包店漫步途中稍作休息，感受咖啡馆与街巷相连的大田日常。",
+      "tw": "在近代建築與麵包店漫步途中稍作休息，感受咖啡館與街巷相連的大田日常。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 선화로 148",
+      "en": "148, Seonhwa-ro, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Seonhwa-ro 148",
+      "tw": "大田廣域市中區 Seonhwa-ro 148"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "주소는 공개 매장 안내를 참고했습니다. 제공 일정표에는 11월 8일 15:30 방문과 카페 체류 30분이 표기되어 있습니다.",
+      "en": "The address follows public venue listings. The supplied schedule lists a visit on November 8 at 15:30 and a 30-minute café stop.",
+      "cn": "地址参考公开店铺资料。所提供行程表安排于11月8日15:30到访，并在咖啡馆停留30分钟。",
+      "tw": "地址參考公開店舖資料。所提供行程表安排於11月8日15:30到訪，並在咖啡館停留30分鐘。"
+    },
+    "sources": [
+      {
+        "label": "Andor Café · 매장 안내",
+        "url": "https://triple.guide/restaurants/9f29c6cb-88c6-4f1d-963e-b83d027ae9ff"
+      }
+    ],
+    "naverQuery": "안도르카페 대전 중구 선화로 148",
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null,
+    "image": {
+      "src": "assets/supplied/andor-cafe.jpg",
+      "width": 399,
+      "height": 501,
+      "fit": "contain",
+      "alt": {
+        "ko": "나무 아래 초록색 외벽의 2층 건물에 자리한 안도르카페",
+        "en": "Andor Café in a two-story building with green lower walls beneath mature trees",
+        "cn": "树木掩映下，设于绿色下层外墙两层建筑内的Andor Café",
+        "tw": "樹木掩映下，設於綠色下層外牆兩層建築內的Andor Café"
+      },
+      "caption": {
+        "ko": "나무 아래 초록색 외벽의 2층 건물에 자리한 안도르카페",
+        "en": "Andor Café in a two-story building with green lower walls beneath mature trees",
+        "cn": "树木掩映下，设于绿色下层外墙两层建筑内的Andor Café",
+        "tw": "樹木掩映下，設於綠色下層外牆兩層建築內的Andor Café"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    }
+  },
+  {
     "id": "yuseong-footbath",
     "koreanName": "유성온천 야외 족욕체험장",
     "names": {
@@ -943,7 +1026,33 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "image": {
+      "src": "assets/supplied/hanbat-arboretum.jpg",
+      "width": 1118,
+      "height": 770,
+      "fit": "contain",
+      "alt": {
+        "ko": "가을 단풍과 연못, 정자와 산책로가 어우러진 한밭수목원 전경",
+        "en": "Autumn foliage, ponds, a pavilion and walking paths at Hanbat Arboretum",
+        "cn": "秋色中的Hanbat树木园，可见池塘、亭子与步道",
+        "tw": "秋色中的Hanbat樹木園，可見池塘、亭子與步道"
+      },
+      "caption": {
+        "ko": "가을 단풍과 연못, 정자와 산책로가 어우러진 한밭수목원 전경",
+        "en": "Autumn foliage, ponds, a pavilion and walking paths at Hanbat Arboretum",
+        "cn": "秋色中的Hanbat树木园，可见池塘、亭子与步道",
+        "tw": "秋色中的Hanbat樹木園，可見池塘、亭子與步道"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    }
   },
   {
     "id": "daecheong-lake-trail",
@@ -1013,22 +1122,22 @@
       "tw": "傳統市場 · 生活文化"
     },
     "intro": {
-      "ko": "대전역 맞은편에 있는 전통시장입니다. 먹거리와 생활용품, 다양한 테마 골목을 통해 지역의 일상을 만납니다.",
-      "en": "A traditional market opposite Daejeon Station. Food, everyday goods and themed alleys offer a glimpse of local life.",
-      "cn": "位于大田站对面的传统市场。可通过美食、日用品与主题街巷感受当地生活。",
-      "tw": "位於大田站對面的傳統市場。可透過美食、日用品與主題街巷感受在地生活。"
+      "ko": "시장 골목을 걷고 전통 다방 스타일의 쌍화차를 맛보는 시간. 먹거리와 생활 풍경 속에서 대전 원도심의 일상을 만납니다.",
+      "en": "Walk the market lanes and try ssanghwa tea in traditional dabang style. Discover everyday life in Daejeon’s old downtown through its food and street scenes.",
+      "cn": "漫步市场街巷，品尝传统茶馆风格的双和茶，在美食与生活风景中感受大田原市中心的日常。",
+      "tw": "漫步市場街巷，品嚐傳統茶館風格的雙和茶，在美食與生活風景中感受大田舊市中心的日常。"
     },
     "history": {
-      "ko": "헌책방·생선·그릇 등 품목별 골목이 모여 시장을 이룹니다.",
-      "en": "Its lanes include areas for used books, fish and tableware.",
-      "cn": "市场内分布着旧书、鲜鱼及餐具等商品街巷。",
-      "tw": "市場內分布著舊書、鮮魚與餐具等商品街巷。"
+      "ko": "대전역 맞은편 중앙시장은 먹거리와 생활용품이 어우러진 원도심의 생활 공간입니다. 이불골목과 오래된 상점, 주변 레코드 가게의 풍경을 따라 골목마다 다른 표정을 살펴봅니다.\n\n골목에서는 순대와 치킨, 떡볶이와 국밥 등 친숙한 시장 먹거리를 만날 수 있습니다. 가게마다 다른 풍경과 음식의 향을 따라, 각자의 취향으로 시장을 둘러보세요.\n\n산책 중에는 1970~80년대의 정취를 떠올리는 옛 다방식 쌍화차도 만나봅니다. 쌍화차에 계란노른자를 곁들이는 방식은 차 한 잔을 간식처럼 즐기던 한국 다방 문화를 보여줍니다.\n\n차의 향과 재료, 한 잔을 내는 방식을 천천히 살펴보세요. 쌍화차 한 잔을 통해 지역의 일상 속에서 이어져 온 차 문화를 직접 경험합니다.",
+      "en": "Opposite Daejeon Station, Jungang Market brings together food and everyday goods. Explore the bedding lane, long-standing shops and nearby record stores, discovering a different scene around each corner.\n\nThe lanes offer familiar market foods such as sundae sausage, fried chicken, tteokbokki and gukbap soup with rice. Follow the changing scenes and aromas, and explore according to your own tastes.\n\nPause along the way for old-style dabang ssanghwa tea, evoking the atmosphere of the 1970s and 1980s. Served with an egg yolk, it recalls a tea-room culture where a cup of tea could also be enjoyed as a small snack.\n\nTake time to notice the tea’s aroma, ingredients and the way it is served. Enjoy it as an encounter with tea culture woven into local everyday life.",
+      "cn": "大田站对面的中央市场，汇集美食与生活用品，是原市中心的日常生活空间。沿着被褥巷、老店与周边唱片店的风景，看看不同街巷的表情。\n\n街巷里有米肠、炸鸡、炒年糕、汤饭等熟悉的市场美食。跟着不同店铺的风景与食物香气，按自己的喜好慢慢逛。\n\n散步途中，也来体验令人想起七八十年代氛围的旧式茶馆双和茶。茶中搭配蛋黄的喝法，展现了韩国旧式茶馆把一杯茶当作小点心享用的文化。\n\n慢慢感受茶香、食材与上茶方式，把这杯双和茶当作一次体验：走进地方日常，认识延续至今的韩国茶文化。",
+      "tw": "大田站對面的中央市場，匯集美食與生活用品，是舊市中心的日常生活空間。沿著寢具巷、老店與周邊唱片行的風景，看看不同街巷的表情。\n\n街巷裡有米腸、炸雞、辣炒年糕、湯飯等熟悉的市場美食。跟著不同店舖的風景與食物香氣，依自己的喜好慢慢逛。\n\n散步途中，也來體驗令人想起七、八〇年代氛圍的舊式茶館雙和茶。茶中搭配蛋黃的喝法，呈現了韓國舊式茶館把一杯茶當作小點心享用的文化。\n\n慢慢感受茶香、食材與上茶方式，把這杯雙和茶當作一次體驗：走進地方日常，認識延續至今的韓國茶文化。"
     },
     "purpose": {
-      "ko": "제공 일정표의 11월 9일 12:30 중앙시장–소제동 시티워크와 쌍화차 일정에 포함됩니다.",
-      "en": "Part of the November 9, 12:30 Jungang Market–Soje-dong walk and ssanghwa tea program.",
-      "cn": "属于11月9日12:30中央市场至苏堤洞步行及双和茶行程。",
-      "tw": "屬於11月9日12:30中央市場至蘇堤洞步行及雙和茶行程。"
+      "ko": "시장 산책과 쌍화차 체험을 통해 대전의 생활 문화와 한국 전통 다방의 차 문화를 함께 만납니다.",
+      "en": "Experience Daejeon’s everyday culture and Korea’s traditional dabang tea culture through a market walk and ssanghwa tea.",
+      "cn": "通过市场漫步与双和茶体验，感受大田的生活文化和韩国传统茶馆的饮茶文化。",
+      "tw": "透過市場漫步與雙和茶體驗，感受大田的生活文化和韓國傳統茶館的飲茶文化。"
     },
     "address": {
       "ko": "대전광역시 동구 대전로 783",
@@ -1052,7 +1161,256 @@
     ],
     "naverUrl": null,
     "directionsUrl": null,
-    "meetingPoint": null
+    "meetingPoint": null,
+    "headline": {
+      "ko": "7080 레트로 감성으로 만나는 중앙시장과 쌍화차",
+      "en": "Jungang Market & Ssanghwa Tea: A Taste of 1970s–80s Nostalgia",
+      "cn": "在中央市场与双和茶中，感受七八十年代的复古情怀",
+      "tw": "在中央市場與雙和茶中，感受七、八〇年代的復古情懷"
+    },
+    "image": {
+      "src": "assets/supplied/jungang-market.jpg",
+      "width": 545,
+      "height": 366,
+      "fit": "contain",
+      "alt": {
+        "ko": "대전 중앙시장 입구",
+        "en": "Entrance to Daejeon Jungang Market",
+        "cn": "大田中央市场入口",
+        "tw": "大田中央市場入口"
+      },
+      "caption": {
+        "ko": "대전 중앙시장 입구",
+        "en": "Entrance to Daejeon Jungang Market",
+        "cn": "大田中央市场入口",
+        "tw": "大田中央市場入口"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    },
+    "gallery": [
+      {
+        "src": "assets/supplied/jungang-market.jpg",
+        "width": 545,
+        "height": 366,
+        "fit": "contain",
+        "alt": {
+          "ko": "대전 중앙시장 입구",
+          "en": "Entrance to Daejeon Jungang Market",
+          "cn": "大田中央市场入口",
+          "tw": "大田中央市場入口"
+        },
+        "caption": {
+          "ko": "대전 중앙시장 입구",
+          "en": "Entrance to Daejeon Jungang Market",
+          "cn": "大田中央市场入口",
+          "tw": "大田中央市場入口"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      },
+      {
+        "src": "assets/supplied/ssanghwa-egg-tea.jpg",
+        "width": 447,
+        "height": 447,
+        "fit": "contain",
+        "alt": {
+          "ko": "달걀노른자를 곁들인 쌍화차",
+          "en": "Ssanghwa herbal tea topped with egg yolk",
+          "cn": "加入蛋黄的双和茶",
+          "tw": "加入蛋黃的雙和茶"
+        },
+        "caption": {
+          "ko": "달걀노른자를 곁들인 쌍화차",
+          "en": "Ssanghwa herbal tea topped with egg yolk",
+          "cn": "加入蛋黄的双和茶",
+          "tw": "加入蛋黃的雙和茶"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      }
+    ],
+    "sectionTitles": {
+      "intro": {
+        "ko": "산책 소개",
+        "en": "About the walk",
+        "cn": "漫步介绍",
+        "tw": "漫步介紹"
+      },
+      "history": {
+        "ko": "시장과 차 이야기",
+        "en": "Market lanes and tea culture",
+        "cn": "市场与茶的故事",
+        "tw": "市場與茶的故事"
+      },
+      "purpose": {
+        "ko": "탐방 포인트",
+        "en": "What to look for",
+        "cn": "探访看点",
+        "tw": "探訪看點"
+      }
+    }
+  },
+  {
+    "id": "taehwajang",
+    "koreanName": "태화장",
+    "names": {
+      "ko": "태화장",
+      "en": "Taehwajang",
+      "cn": "태화장（Taehwajang）",
+      "tw": "태화장（Taehwajang）"
+    },
+    "category": {
+      "ko": "중화요리 · 화교 문화",
+      "en": "Chinese cuisine · Chinese-Korean heritage",
+      "cn": "中华料理 · 华侨文化",
+      "tw": "中華料理 · 華僑文化"
+    },
+    "intro": {
+      "ko": "대전에서 가장 오래된 중식당으로 알려진 태화장. 화교 고복신이 1954년 문을 연 이곳에서 중화요리와 함께 대전 화교의 정착과 서화에 얽힌 이야기를 만납니다.",
+      "en": "Known as Daejeon’s oldest Chinese restaurant, Taehwajang was opened in 1954 by Go Bok-sin, a Chinese immigrant. Discover its cuisine and the stories of settlement, calligraphy and painting woven into its history.",
+      "cn": "泰华庄被誉为大田最古老的中餐厅，由华侨 Go Bok-sin（고복신）于1954年创办。在品尝中华料理的同时，了解大田华侨的定居故事与餐厅的书画情缘。",
+      "tw": "泰華莊被譽為大田最古老的中餐廳，由華僑 Go Bok-sin（고복신）於1954年創辦。在品嚐中華料理的同時，了解大田華僑的定居故事與餐廳的書畫情緣。"
+    },
+    "history": {
+      "ko": "태화장은 화교 고복신이 전쟁 뒤 대전에 정착해 1954년 문을 연 오랜 중식당입니다. 창업주의 이동과 정착 이야기를 통해 대전 화교 사회의 한 장면을 살펴봅니다.\n\n식사를 즐기며 한 식당에 쌓인 시간과 지역의 음식 문화를 함께 살펴봅니다. 한 그릇의 음식을 통해 사람의 이동과 교류가 도시의 일상에 남긴 흔적을 읽어보는 시간입니다.\n\n태화장에 전해지는 서화 이야기도 함께 만나봅니다. 중화요리와 예술을 잇는 이야기를 따라, 대전 원도심에 쌓인 문화적 다양성을 생각해 보세요.",
+      "en": "Taehwajang is a long-established Chinese restaurant opened in 1954 by Go Bok-sin, who settled in Daejeon after the war. His story of migration and settlement offers a glimpse into the city’s Chinese community.\n\nOver a meal, explore the history held by a single restaurant and its place in local food culture. The food offers a way to consider how migration and exchange shape a city’s everyday life.\n\nDiscover the stories of calligraphy and painting associated with Taehwajang. These connections between cuisine and art offer another way to consider the cultural diversity of Daejeon’s old downtown.",
+      "cn": "태화장是一家历史悠久的中餐馆，由战后定居大田的华侨고복신于1954年创办。从创办人的迁徙与定居经历，可以认识大田华侨社会的一段历史。\n\n用餐时，不妨一同感受老餐馆积累的时光与地方饮食文化。从一餐一饭出发，看看迁徙与交流如何在城市日常中留下印记。\n\n也来了解태화장流传的书画故事。循着中华料理与艺术之间的联系，感受大田原市中心积累的多元文化。",
+      "tw": "태화장是一家歷史悠久的中餐館，由戰後定居大田的華僑고복신於1954年創辦。從創辦人的遷徙與定居經歷，可以認識大田華僑社會的一段歷史。\n\n用餐時，不妨一同感受老餐館累積的時光與地方飲食文化。從一餐一飯出發，看看遷徙與交流如何在城市日常中留下印記。\n\n也來了解태화장流傳的書畫故事。循著中華料理與藝術之間的連結，感受大田舊市中心累積的多元文化。"
+    },
+    "purpose": {
+      "ko": "한 끼의 식사와 태화장에 전해지는 이야기를 통해 대전 화교의 생활사와 원도심의 문화적 다양성을 살펴봅니다.",
+      "en": "Explore the everyday history of Daejeon’s Chinese community and the old downtown’s cultural diversity through a meal and Taehwajang’s stories.",
+      "cn": "通过用餐与태화장的故事，了解大田华侨的生活历史和原市中心的文化多样性。",
+      "tw": "透過用餐與태화장的故事，了解大田華僑的生活歷史和舊市中心的文化多樣性。"
+    },
+    "address": {
+      "ko": "대전광역시 동구 중앙로203번길 78",
+      "en": "78, Jungang-ro 203beon-gil, Dong-gu, Daejeon",
+      "cn": "大田广域市东区 Jungang-ro 203beon-gil 78",
+      "tw": "大田廣域市東區 Jungang-ro 203beon-gil 78"
+    },
+    "verified": true,
+    "verificationNote": {
+      "ko": "동구 정동에 있는 식당입니다. 주소는 대전시 관광안내를, 개업 연도는 제공 사진의 1954년 표기와 식당 소개를 참고했습니다.",
+      "en": "The restaurant is in Jeong-dong, Dong-gu. The address follows Daejeon’s tourism guide; the opening year follows restaurant accounts and the 1954 sign in the supplied photograph.",
+      "cn": "餐厅位于东区贞洞。地址参考大田市旅游指南；开业年份依据餐厅介绍及所提供照片中1954年的标记。",
+      "tw": "餐廳位於東區貞洞。地址參考大田市觀光指南；開業年份依據餐廳介紹及所提供照片中1954年的標記。"
+    },
+    "sources": [
+      {
+        "label": "대전광역시 · 태화장",
+        "url": "https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=2866"
+      }
+    ],
+    "naverQuery": "태화장 대전 동구 중앙로203번길 78",
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null,
+    "headline": {
+      "ko": "태화장, 한 끼에 담긴 대전 화교의 시간",
+      "en": "Taehwajang: Daejeon’s Chinese Community, Told Through a Meal",
+      "cn": "태화장：一餐之间，读懂大田华侨的岁月",
+      "tw": "태화장：一餐之間，讀懂大田華僑的歲月"
+    },
+    "image": {
+      "src": "assets/supplied/taehwajang-exterior.jpg",
+      "width": 300,
+      "height": 200,
+      "fit": "contain",
+      "alt": {
+        "ko": "태화장 외관과 1954년 간판",
+        "en": "Taehwajang exterior with its 1954 sign",
+        "cn": "泰华庄外观与1954年招牌",
+        "tw": "泰華莊外觀與1954年招牌"
+      },
+      "caption": {
+        "ko": "태화장 외관과 1954년 간판",
+        "en": "Taehwajang exterior with its 1954 sign",
+        "cn": "泰华庄外观与1954年招牌",
+        "tw": "泰華莊外觀與1954年招牌"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    },
+    "gallery": [
+      {
+        "src": "assets/supplied/taehwajang-exterior.jpg",
+        "width": 300,
+        "height": 200,
+        "fit": "contain",
+        "alt": {
+          "ko": "태화장 외관과 1954년 간판",
+          "en": "Taehwajang exterior with its 1954 sign",
+          "cn": "泰华庄外观与1954年招牌",
+          "tw": "泰華莊外觀與1954年招牌"
+        },
+        "caption": {
+          "ko": "태화장 외관과 1954년 간판",
+          "en": "Taehwajang exterior with its 1954 sign",
+          "cn": "泰华庄外观与1954年招牌",
+          "tw": "泰華莊外觀與1954年招牌"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      },
+      {
+        "src": "assets/supplied/taehwajang-jajangmyeon.jpg",
+        "width": 1024,
+        "height": 683,
+        "fit": "contain",
+        "alt": {
+          "ko": "태화장의 짜장면",
+          "en": "Jajangmyeon at Taehwajang",
+          "cn": "泰华庄的炸酱面",
+          "tw": "泰華莊的炸醬麵"
+        },
+        "caption": {
+          "ko": "태화장의 짜장면",
+          "en": "Jajangmyeon at Taehwajang",
+          "cn": "泰华庄的炸酱面",
+          "tw": "泰華莊的炸醬麵"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      }
+    ]
   },
   {
     "id": "soje-dong",
@@ -1105,6 +1463,127 @@
     "naverUrl": null,
     "directionsUrl": null,
     "meetingPoint": null
+  },
+  {
+    "id": "tourism-insight-exchange",
+    "koreanName": "관광 인사이트 교류회",
+    "names": {
+      "ko": "관광 인사이트 교류회",
+      "en": "Tourism Insights Exchange",
+      "cn": "旅游洞察交流会",
+      "tw": "觀光洞察交流會"
+    },
+    "category": {
+      "ko": "교류 · 관광 인사이트",
+      "en": "Exchange · Tourism insights",
+      "cn": "交流 · 旅游洞察",
+      "tw": "交流 · 觀光洞察"
+    },
+    "intro": {
+      "ko": "중국·대만 Z세대의 여행 트렌드를 살펴보고, 중부권에서 더 오래 머무는 지속가능한 관광의 가능성을 함께 이야기합니다.",
+      "en": "Explore travel trends among Gen Z in China and Taiwan, and discuss the possibilities for sustainable tourism that encourages longer stays in central Korea.",
+      "cn": "了解中国与台湾Z世代的旅行趋势，共同探讨韩国中部吸引游客延长停留、实现可持续旅游的可能性。",
+      "tw": "了解中國與台灣Z世代的旅行趨勢，共同探討韓國中部吸引旅客延長停留、實踐永續觀光的可能性。"
+    },
+    "history": {
+      "ko": "Z세대는 어떤 도시에서, 어떤 경험을 위해 더 오래 머물까요? 중국·대만의 여행 트렌드를 바탕으로 글로벌 Z세대가 주목하는 지역의 일상과 체류 경험을 살펴봅니다.\n\n중국 현지 여행사 관계자와 한국에 거주하는 중국인 도시 연구자를 연사로 만나, 여행 시장과 도시 연구의 관점을 함께 나눕니다. 서로 다른 현장의 경험을 통해 대전과 중부권 관광을 바라봅니다.\n\n방문객이 잠시 들르는 데서 나아가 지역에 머무르고 교류하려면 무엇이 필요할지 논의합니다. 여행자의 취향과 지역의 삶을 연결하며, 지속가능한 체류형 관광의 미래를 함께 그려봅니다.",
+      "en": "What makes Gen Z stay longer in a city, and which experiences do they seek? Drawing on travel trends in China and Taiwan, we explore the everyday local life and extended-stay experiences attracting global Gen Z.\n\nHear from travel agency professionals based in China and Chinese urban researchers living in Korea. Their perspectives connect travel markets and urban research, offering different ways to consider tourism in Daejeon and central Korea.\n\nDiscuss what helps visitors move beyond a brief stop to stay and connect with a place. Together, consider how travelers’ interests and local life can shape a sustainable future for longer-stay tourism.",
+      "cn": "什么样的城市、什么样的体验，会让Z世代愿意多停留几天？从中国与台湾的旅行趋势出发，观察全球Z世代关注的地方日常与停留体验。\n\n邀请中国当地旅行社相关人士及居住在韩国的中国籍城市研究者担任讲者，交流旅游市场与城市研究的不同视角，从各自的实践经验出发，重新认识大田与韩国中部旅游。\n\n讨论如何让游客不只短暂停留，而是愿意住下来、与地方交流。连接旅行者的兴趣与居民的生活，共同思考可持续旅居型旅游的未来。",
+      "tw": "什麼樣的城市、什麼樣的體驗，會讓Z世代願意多停留幾天？從中國與台灣的旅行趨勢出發，觀察全球Z世代關注的地方日常與停留體驗。\n\n邀請中國當地旅行社相關人士及居住在韓國的中國籍城市研究者擔任講者，交流旅遊市場與城市研究的不同視角，從各自的實務經驗出發，重新認識大田與韓國中部觀光。\n\n討論如何讓旅客不只短暫造訪，而是願意住下來、與地方交流。連結旅行者的興趣與居民的生活，共同思考永續旅居型觀光的未來。"
+    },
+    "purpose": {
+      "ko": "지역과 여행자를 연결하는 관점을 나누고, 중부권의 지속가능한 체류형 관광을 위한 아이디어를 교류합니다.",
+      "en": "Exchange ideas on connecting places and travelers, and on sustainable tourism that supports longer stays in central Korea.",
+      "cn": "交流连接地方与旅行者的思路，为韩国中部可持续的停留型旅游分享创意。",
+      "tw": "交流連結地方與旅客的思路，為韓國中部永續的停留型觀光分享想法。"
+    },
+    "address": null,
+    "verified": false,
+    "verificationNote": {
+      "ko": "장소와 연사별 세부 일정은 운영진의 추가 안내를 확인해 주세요. 이미지는 교류회 소개를 위해 제공된 참고 이미지입니다.",
+      "en": "Check the organizers’ updates for the venue and detailed speaker schedule. The supplied image is a reference for this program.",
+      "cn": "地点及各位讲者的详细安排请以主办方后续通知为准。所附图片为活动介绍参考图。",
+      "tw": "地點及各位講者的詳細安排請以主辦單位後續通知為準。所附圖片為活動介紹參考圖。"
+    },
+    "sources": [],
+    "naverQuery": "",
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null,
+    "headline": {
+      "ko": "글로벌 Z세대가 주목하는 중부권 체류형 관광의 미래",
+      "en": "The Future of Extended-Stay Tourism in Central Korea Through the Lens of Global Gen Z",
+      "cn": "全球Z世代关注的韩国中部旅居型旅游未来",
+      "tw": "全球Z世代關注的韓國中部旅居型觀光未來"
+    },
+    "image": {
+      "src": "assets/supplied/tourism-insight-exchange.jpg",
+      "width": 1408,
+      "height": 768,
+      "fit": "contain",
+      "alt": {
+        "ko": "관광 인사이트 교류회 · 사용자 제공 참고 이미지",
+        "en": "Tourism Insights Exchange · Reference image supplied by the user",
+        "cn": "旅游洞察交流会 · 用户提供的参考图片",
+        "tw": "觀光洞察交流會 · 使用者提供的參考圖片"
+      },
+      "caption": {
+        "ko": "관광 인사이트 교류회",
+        "en": "Tourism Insights Exchange",
+        "cn": "旅游洞察交流会",
+        "tw": "觀光洞察交流會"
+      },
+      "credit": {
+        "ko": "사용자 제공 참고 이미지",
+        "en": "Reference image supplied by the user",
+        "cn": "用户提供的参考图片",
+        "tw": "使用者提供的參考圖片"
+      },
+      "source": null,
+      "license": null,
+      "reference": true
+    },
+    "sectionTitles": {
+      "intro": {
+        "ko": "프로그램 소개",
+        "en": "About the program",
+        "cn": "活动介绍",
+        "tw": "活動介紹"
+      },
+      "history": {
+        "ko": "함께 나눌 이야기",
+        "en": "Topics for discussion",
+        "cn": "交流话题",
+        "tw": "交流話題"
+      },
+      "purpose": {
+        "ko": "교류의 방향",
+        "en": "Aims of the exchange",
+        "cn": "交流方向",
+        "tw": "交流方向"
+      }
+    },
+    "programInfo": {
+      "title": {
+        "ko": "11월 9일 · 15:00",
+        "en": "November 9 · 15:00",
+        "cn": "11月9日 · 15:00",
+        "tw": "11月9日 · 15:00"
+      },
+      "body": {
+        "ko": "중국·대만 Z세대의 여행 트렌드와 중부권 체류형 관광을 주제로 만납니다. 행사 장소는 추후 안내합니다.",
+        "en": "An exchange on travel trends among Gen Z in China and Taiwan and longer stays in central Korea. The venue will be announced.",
+        "cn": "围绕中国与台湾Z世代旅行趋势及韩国中部停留型旅游展开交流。活动地点将另行通知。",
+        "tw": "圍繞中國與台灣Z世代旅行趨勢及韓國中部停留型觀光展開交流。活動地點將另行通知。"
+      },
+      "date": "2026-11-09",
+      "linkLabel": {
+        "ko": "11월 9일 일정 보기",
+        "en": "View November 9 schedule",
+        "cn": "查看11月9日行程",
+        "tw": "查看11月9日行程"
+      }
+    }
   },
   {
     "id": "ppuri-park",

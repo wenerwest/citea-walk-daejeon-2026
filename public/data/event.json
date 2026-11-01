@@ -457,7 +457,8 @@
           },
           "relatedPlaceIds": [
             "architecture-bakery"
-          ]
+          ],
+          "placeId": "andor-cafe"
         },
         {
           "id": "2026-11-08-1600",
@@ -634,24 +635,25 @@
           "id": "2026-11-09-1130",
           "time": "11:30",
           "title": {
-            "ko": "점심식사 · 중구 태화장",
-            "tw": "午餐：中區 태화장",
-            "cn": "午餐：中区 Taehwajang",
-            "en": "Lunch · Taehwajang in Jung-gu"
+            "ko": "점심식사 · 태화장",
+            "en": "Lunch · Taehwajang",
+            "cn": "午餐 · 泰华庄",
+            "tw": "午餐 · 泰華莊"
           },
           "venue": {
-            "ko": "중구 태화장",
-            "tw": "中區 태화장",
-            "cn": "中区 Taehwajang（태화장）",
-            "en": "Taehwajang, Jung-gu"
+            "ko": "태화장 · 동구",
+            "en": "Taehwajang · Dong-gu",
+            "cn": "泰华庄 · 东区",
+            "tw": "泰華莊 · 東區"
           },
           "description": {
-            "ko": "원본의 연혁·작품 소개 포함.",
-            "tw": "原行程附有沿革與作品介紹。",
-            "cn": "原行程表附有历史沿革及相关作品介绍。",
-            "en": "Includes the history and works introduced in the source."
+            "ko": "대전에서 가장 오래된 중식당으로 알려진 태화장. 화교 고복신이 1954년 문을 연 이곳에서 중화요리와 함께 대전 화교의 정착과 서화에 얽힌 이야기를 만납니다.",
+            "en": "Known as Daejeon’s oldest Chinese restaurant, Taehwajang was opened in 1954 by Go Bok-sin, a Chinese immigrant. Discover its cuisine and the stories of settlement, calligraphy and painting woven into its history.",
+            "cn": "泰华庄被誉为大田最古老的中餐厅，由华侨 Go Bok-sin（고복신）于1954年创办。在品尝中华料理的同时，了解大田华侨的定居故事与餐厅的书画情缘。",
+            "tw": "泰華莊被譽為大田最古老的中餐廳，由華僑 Go Bok-sin（고복신）於1954年創辦。在品嚐中華料理的同時，了解大田華僑的定居故事與餐廳的書畫情緣。"
           },
-          "mapQuery": "태화장 대전"
+          "mapQuery": "태화장 대전",
+          "placeId": "taehwajang"
         },
         {
           "id": "2026-11-09-1230",
@@ -669,10 +671,10 @@
             "en": "Jungang Market · Soje-dong"
           },
           "description": {
-            "ko": "중앙시장과 소제동을 걷고, 중앙시장에서 쌍화차를 즐깁니다.",
-            "tw": "漫步中央市場與蘇堤洞，並在中央市場品嚐雙和茶。",
-            "cn": "步行游览中央市场与苏堤洞，并在中央市场品尝双和茶。",
-            "en": "Walk through Jungang Market and Soje-dong, and enjoy ssanghwa herbal tea at Jungang Market."
+            "ko": "시장 골목을 걷고 전통 다방 스타일의 쌍화차를 맛보는 시간. 먹거리와 생활 풍경 속에서 대전 원도심의 일상을 만납니다.",
+            "en": "Walk the market lanes and try ssanghwa tea in traditional dabang style. Discover everyday life in Daejeon’s old downtown through its food and street scenes.",
+            "cn": "漫步市场街巷，品尝传统茶馆风格的双和茶，在美食与生活风景中感受大田原市中心的日常。",
+            "tw": "漫步市場街巷，品嚐傳統茶館風格的雙和茶，在美食與生活風景中感受大田舊市中心的日常。"
           },
           "placeId": "daejeon-jungang-market",
           "relatedPlaceIds": [
@@ -699,11 +701,12 @@
             "en": "Tourism insights exchange"
           },
           "description": {
-            "ko": "교류회 장소는 원본에 기재되어 있지 않습니다.",
-            "tw": "原行程未註明交流會地點。",
-            "cn": "原行程表未注明交流会地点。",
-            "en": "The source does not specify the venue for the exchange."
-          }
+            "ko": "중국·대만 Z세대의 여행 트렌드를 살펴보고, 중부권에서 더 오래 머무는 지속가능한 관광의 가능성을 함께 이야기합니다.",
+            "en": "Explore travel trends among Gen Z in China and Taiwan, and discuss the possibilities for sustainable tourism that encourages longer stays in central Korea.",
+            "cn": "了解中国与台湾Z世代的旅行趋势，共同探讨韩国中部吸引游客延长停留、实现可持续旅游的可能性。",
+            "tw": "了解中國與台灣Z世代的旅行趨勢，共同探討韓國中部吸引旅客延長停留、實踐永續觀光的可能性。"
+          },
+          "placeId": "tourism-insight-exchange"
         },
         {
           "id": "2026-11-09-1700",
