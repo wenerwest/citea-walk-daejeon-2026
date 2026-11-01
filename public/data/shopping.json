@@ -116,14 +116,14 @@
     "naverUrl": "https://naver.me/Faf6mDVq"
   },
   {
-    "id": "daiso-daejeon-jungchon",
+    "id": "daiso-nc-jungangno",
     "category": "essentials",
-    "koreanName": "다이소 대전중촌네거리점",
+    "koreanName": "다이소 NC중앙로역점",
     "names": {
-      "ko": "다이소 대전중촌네거리점",
-      "en": "Daiso Daejeon Jungchon Intersection",
-      "cn": "大创大田中村十字路口店",
-      "tw": "大創大田中村十字路口店"
+      "ko": "다이소 NC중앙로역점",
+      "en": "Daiso NC Jungangno Station",
+      "cn": "大创 NC中央路站店",
+      "tw": "大創 NC中央路站店"
     },
     "description": {
       "ko": "생활용품, 여행용품, 문구와 소형 잡화를 합리적인 가격에 구매할 수 있습니다.",
@@ -131,19 +131,13 @@
       "cn": "可实惠选购生活用品、旅行用品、文具及小型日用杂货。",
       "tw": "可實惠選購生活用品、旅行用品、文具與小型日用雜貨。"
     },
-    "note": {
-      "ko": "중앙로·은행동 쇼핑 구역에서 추가 이동이 필요한 원도심 인근 지점입니다. 출발 전 지도에서 경로를 확인해 주세요.",
-      "en": "This branch is near the old city centre and requires additional travel from Jungang-ro and Eunhaeng-dong. Check your route before setting out.",
-      "cn": "本店位于原市中心附近，从中央路、银行洞购物区前往需额外移动。出发前请在地图上确认路线。",
-      "tw": "本店位於舊市中心附近，從中央路、銀行洞購物區前往需額外移動。出發前請在地圖上確認路線。"
-    },
     "address": {
-      "ko": "대전광역시 중구 대종로 625 (중촌동), 지하 1층~5층",
-      "en": "625, Daejong-ro, Jung-gu, Daejeon · B1–5F",
-      "cn": "大田广域市中区 Daejong-ro 625（中村洞），地下1层至5层",
-      "tw": "大田廣域市中區 Daejong-ro 625（中村洞），地下1樓至5樓"
+      "ko": "대전광역시 중구 중앙로 141, NC중앙로역점 4층",
+      "en": "141, Jungang-ro, Jung-gu, Daejeon · NC Jungangno Station, 4F",
+      "cn": "大田广域市中区 Jungang-ro 141，NC中央路站店4层",
+      "tw": "大田廣域市中區 Jungang-ro 141，NC中央路站店4樓"
     },
-    "naverQuery": "다이소 대전중촌네거리점 대전 중구 대종로 625",
+    "naverQuery": "다이소 NC중앙로역점 대전 중구 중앙로 141",
     "image": {
       "src": "assets/shopping/daiso.png",
       "width": 401,
@@ -159,12 +153,21 @@
     "verifiedAt": "2026-11-01",
     "sources": [
       {
-        "url": "https://www.daiso.co.kr/cs/shop",
+        "url": "https://naver.me/F5s7zDK8",
         "label": {
-          "ko": "다이소 공식 매장검색 · 대전중촌네거리점",
-          "en": "Daiso official store finder · search 대전중촌네거리",
-          "cn": "大创官方门店查询 · 搜索대전중촌네거리",
-          "tw": "大創官方門市查詢 · 搜尋대전중촌네거리"
+          "ko": "다이소 NC중앙로역점 · 네이버 지도",
+          "en": "Daiso NC Jungangno Station · Naver Map",
+          "cn": "大创NC中央路站店 · Naver地图",
+          "tw": "大創NC中央路站店 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://www.daisogift.co.kr/usestoreinfo",
+        "label": {
+          "ko": "다이소 공식 매장 안내 · 주소와 층수",
+          "en": "Daiso official store information · address & floor",
+          "cn": "大创官方门店信息 · 地址及楼层",
+          "tw": "大創官方門市資訊 · 地址與樓層"
         }
       },
       {
@@ -174,6 +177,355 @@
           "en": "Daiso official brand image",
           "cn": "大创官方品牌图片",
           "tw": "大創官方品牌圖片"
+        }
+      }
+    ],
+    "naverUrl": "https://naver.me/F5s7zDK8"
+  },
+  {
+    "id": "pie-garden-no2",
+    "category": "bakery",
+    "koreanName": "파이가든 빵한모금 2호점",
+    "names": {
+      "ko": "파이가든 빵한모금 2호점",
+      "en": "Pie Garden · Ppanghanmogum No. 2",
+      "cn": "Pie Garden · 빵한모금 2号店",
+      "tw": "Pie Garden · 빵한모금 2號店"
+    },
+    "address": {
+      "ko": "대전광역시 중구 중앙로 124, 이화빌딩 1층 103호",
+      "en": "124, Jungang-ro, Jung-gu, Daejeon · Ihwa Building, 1F, Unit 103",
+      "cn": "大田广域市中区 Jungang-ro 124，梨花大厦1层103号",
+      "tw": "大田廣域市中區 Jungang-ro 124，梨花大樓1樓103號"
+    },
+    "description": {
+      "ko": "에그파이와 크렘소쿠니 등 파이류를 선보이는 베이커리 카페입니다. 크루아상과 샌드위치도 커피와 함께 즐길 수 있습니다.",
+      "en": "A bakery café serving egg pies and Krem Sokuni pastries, alongside croissants, sandwiches and coffee.",
+      "cn": "提供鸡蛋派、Krem Sokuni等派类甜点的烘焙咖啡馆，也可搭配咖啡品尝可颂与三明治。",
+      "tw": "供應雞蛋派、Krem Sokuni等派類甜點的烘焙咖啡館，也可搭配咖啡品嚐可頌與三明治。"
+    },
+    "naverUrl": "https://naver.me/5wNUke7L",
+    "naverQuery": "파이가든 빵한모금 2호점 대전광역시 중구 중앙로 124, 이화빌딩 1층 103호",
+    "image": {
+      "src": "assets/shopping/pie-garden.jpg",
+      "width": 900,
+      "height": 1200,
+      "kind": "store",
+      "alt": {
+        "ko": "파이가든 빵한모금 2호점의 에그파이",
+        "en": "Egg pie from Pie Garden · Ppanghanmogum No. 2",
+        "cn": "Pie Garden 빵한모금 2号店的鸡蛋派",
+        "tw": "Pie Garden 빵한모금 2號店的雞蛋派"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/5wNUke7L",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://pcmap.place.naver.com/restaurant/2064079396/menu/list",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jeongdong-munhwasa",
+    "category": "bakery",
+    "koreanName": "정동문화사",
+    "names": {
+      "ko": "정동문화사",
+      "en": "Jeongdong Munhwasa",
+      "cn": "Jeongdong Munhwasa",
+      "tw": "Jeongdong Munhwasa"
+    },
+    "address": {
+      "ko": "대전광역시 동구 창조2길 11",
+      "en": "11, Changjo 2-gil, Dong-gu, Daejeon",
+      "cn": "大田广域市东区 Changjo 2-gil 11",
+      "tw": "大田廣域市東區 Changjo 2-gil 11"
+    },
+    "description": {
+      "ko": "대전역 인근에서 에그타르트, 까눌레, 휘낭시에 등 구움과자를 만날 수 있는 디저트 카페입니다.",
+      "en": "A dessert café near Daejeon Station, offering egg tarts, canelés and financiers.",
+      "cn": "位于大田站附近的甜点咖啡馆，提供蛋挞、可丽露及费南雪等烘焙点心。",
+      "tw": "位於大田站附近的甜點咖啡館，供應蛋塔、可麗露與費南雪等烘焙點心。"
+    },
+    "naverUrl": "https://naver.me/GXApTysI",
+    "naverQuery": "정동문화사 대전광역시 동구 창조2길 11",
+    "image": {
+      "src": "assets/shopping/jeongdong.jpg",
+      "width": 1200,
+      "height": 900,
+      "kind": "store",
+      "alt": {
+        "ko": "정동문화사의 에그타르트",
+        "en": "Egg tart from Jeongdong Munhwasa",
+        "cn": "Jeongdong Munhwasa的蛋挞",
+        "tw": "Jeongdong Munhwasa的蛋塔"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/GXApTysI",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://m.place.naver.com/restaurant/1710005494/menu/list",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cold-butter-main",
+    "category": "bakery",
+    "koreanName": "콜드버터베이크샵 본점",
+    "names": {
+      "ko": "콜드버터베이크샵 본점",
+      "en": "Cold Butter Bake Shop Main Store",
+      "cn": "Cold Butter Bake Shop 总店",
+      "tw": "Cold Butter Bake Shop 總店"
+    },
+    "address": {
+      "ko": "대전광역시 중구 중앙로112번길 37, 1층 일부 1호",
+      "en": "37, Jungang-ro 112beon-gil, Jung-gu, Daejeon · 1F, Unit 1",
+      "cn": "大田广域市中区 Jungang-ro 112beon-gil 37，1层1号",
+      "tw": "大田廣域市中區 Jungang-ro 112beon-gil 37，1樓1號"
+    },
+    "description": {
+      "ko": "콜버 크랙 소금빵과 황치즈 휘낭시에, 실크 푸딩 에그타르트 등을 선보이는 베이크샵입니다.",
+      "en": "A bake shop offering its crack salt bread, yellow-cheese financiers and silky pudding egg tarts.",
+      "cn": "提供特色盐面包、黄芝士费南雪及丝滑布丁蛋挞等点心的烘焙店。",
+      "tw": "供應特色鹽奶油麵包、黃起司費南雪與絲滑布丁蛋塔等點心的烘焙店。"
+    },
+    "naverUrl": "https://naver.me/xRhEI5gu",
+    "naverQuery": "콜드버터베이크샵 본점 대전광역시 중구 중앙로112번길 37, 1층 일부 1호",
+    "image": {
+      "src": "assets/shopping/cold-butter.jpg",
+      "width": 900,
+      "height": 1200,
+      "kind": "store",
+      "alt": {
+        "ko": "콜드버터베이크샵 본점의 콜버 크랙 소금빵",
+        "en": "Crack salt bread from Cold Butter Bake Shop Main Store",
+        "cn": "Cold Butter Bake Shop总店的特色盐面包",
+        "tw": "Cold Butter Bake Shop總店的特色鹽奶油麵包"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/xRhEI5gu",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://m.place.naver.com/restaurant/1839529474/menu/list",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mongsim-daeheung",
+    "category": "bakery",
+    "koreanName": "몽심 대흥점",
+    "names": {
+      "ko": "몽심 대흥점",
+      "en": "Mongsim Daeheung",
+      "cn": "Mongsim 大兴店",
+      "tw": "Mongsim 大興店"
+    },
+    "address": {
+      "ko": "대전광역시 중구 중교로 32, 1층",
+      "en": "32, Junggyo-ro, Jung-gu, Daejeon · 1F",
+      "cn": "大田广域市中区 Junggyo-ro 32，1层",
+      "tw": "大田廣域市中區 Junggyo-ro 32，1樓"
+    },
+    "description": {
+      "ko": "밀키연유마들렌과 레몬마들렌 등 마들렌을 중심으로 구움과자를 만날 수 있는 매장입니다.",
+      "en": "A shop specialising in baked treats, including milky condensed-milk and lemon madeleines.",
+      "cn": "以玛德琳为主的烘焙点心店，可品尝炼乳玛德琳和柠檬玛德琳等。",
+      "tw": "以瑪德蓮為主的烘焙點心店，可品嚐煉乳瑪德蓮與檸檬瑪德蓮等。"
+    },
+    "naverUrl": "https://naver.me/xtgpELmJ",
+    "naverQuery": "몽심 대흥점 대전광역시 중구 중교로 32, 1층",
+    "image": {
+      "src": "assets/shopping/mongsim-daeheung.jpg",
+      "width": 900,
+      "height": 1200,
+      "kind": "store",
+      "alt": {
+        "ko": "몽심 대흥점 실제 매장 외관",
+        "en": "The exterior of Mongsim Daeheung",
+        "cn": "Mongsim大兴店实际外观",
+        "tw": "Mongsim大興店實際外觀"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/xtgpELmJ",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://pcmap.place.naver.com/restaurant/1007780014/home",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
+        }
+      }
+    ]
+  },
+  {
+    "id": "musee-bakery",
+    "category": "bakery",
+    "koreanName": "뮤제 베이커리",
+    "names": {
+      "ko": "뮤제 베이커리",
+      "en": "Musee Bakery",
+      "cn": "Musee Bakery",
+      "tw": "Musee Bakery"
+    },
+    "address": {
+      "ko": "대전광역시 중구 대흥로121번길 44",
+      "en": "44, Daeheung-ro 121beon-gil, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Daeheung-ro 121beon-gil 44",
+      "tw": "大田廣域市中區 Daeheung-ro 121beon-gil 44"
+    },
+    "description": {
+      "ko": "바닐라 플랑과 빨미에 등 페이스트리와 디저트를 선보이는 대흥동 베이커리입니다.",
+      "en": "A Daeheung-dong bakery serving pastries and desserts such as vanilla flan and palmiers.",
+      "cn": "位于大兴洞的烘焙店，提供香草法式布丁派、蝴蝶酥等酥皮点心和甜品。",
+      "tw": "位於大興洞的烘焙店，供應香草法式布丁派、蝴蝶酥等酥皮點心與甜點。"
+    },
+    "naverUrl": "https://naver.me/5owon5LR",
+    "naverQuery": "뮤제 베이커리 대전광역시 중구 대흥로121번길 44",
+    "image": {
+      "src": "assets/shopping/musee.jpg",
+      "width": 932,
+      "height": 1200,
+      "kind": "store",
+      "alt": {
+        "ko": "뮤제 베이커리의 바닐라 플랑",
+        "en": "Vanilla flan from Musee Bakery",
+        "cn": "Musee Bakery的香草法式布丁派",
+        "tw": "Musee Bakery的香草法式布丁派"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/5owon5LR",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://pcmap.place.naver.com/restaurant/1576755421/menu/list",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gachi-chocolate",
+    "category": "bakery",
+    "koreanName": "가치있는초콜릿",
+    "names": {
+      "ko": "가치있는초콜릿",
+      "en": "Gachiinneun Chocolate",
+      "cn": "Gachiinneun Chocolate",
+      "tw": "Gachiinneun Chocolate"
+    },
+    "address": {
+      "ko": "대전광역시 중구 중앙로112번길 19",
+      "en": "19, Jungang-ro 112beon-gil, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Jungang-ro 112beon-gil 19",
+      "tw": "大田廣域市中區 Jungang-ro 112beon-gil 19"
+    },
+    "description": {
+      "ko": "빈투바 초콜릿 젤라또와 마시는초콜릿, 초콜릿바 등 초콜릿을 다양하게 즐길 수 있는 전문점입니다.",
+      "en": "A chocolate specialist offering bean-to-bar chocolate gelato, drinking chocolate and chocolate bars.",
+      "cn": "巧克力专门店，可品尝Bean-to-bar巧克力意式冰淇淋、巧克力饮品和巧克力条。",
+      "tw": "巧克力專門店，可品嚐Bean-to-bar巧克力義式冰淇淋、巧克力飲品與巧克力磚。"
+    },
+    "naverUrl": "https://naver.me/FUhsCbb6",
+    "naverQuery": "가치있는초콜릿 대전광역시 중구 중앙로112번길 19",
+    "image": {
+      "src": "assets/shopping/gachi-chocolate.jpg",
+      "width": 800,
+      "height": 1200,
+      "kind": "store",
+      "alt": {
+        "ko": "가치있는초콜릿의 초콜릿바",
+        "en": "Chocolate bars from Gachiinneun Chocolate",
+        "cn": "Gachiinneun Chocolate的巧克力条",
+        "tw": "Gachiinneun Chocolate的巧克力磚"
+      }
+    },
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://naver.me/FUhsCbb6",
+        "label": {
+          "ko": "매장 정보 · 네이버 지도",
+          "en": "Store information · Naver Map",
+          "cn": "店铺信息 · Naver地图",
+          "tw": "店舖資訊 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://pcmap.place.naver.com/restaurant/37779153/home",
+        "label": {
+          "ko": "매장 등록 메뉴 · 사진 출처",
+          "en": "Store-listed menu & image source",
+          "cn": "店铺登记菜单及图片来源",
+          "tw": "店舖登錄菜單與圖片來源"
         }
       }
     ]
