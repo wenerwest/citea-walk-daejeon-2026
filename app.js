@@ -1,6 +1,7 @@
 import { shoppingCopy, renderShoppingGuide } from './shopping-guide.js';
 import { initFilmedHere, renderFilmedHere, closeFilmedGallery } from './filmed-here.js';
 import { exploreCategoryIds, renderExploreCategoryFilters, renderExploreCategoryBadge } from './explore-categories.js';
+import { scheduleTracks, scheduleTrackCopy, renderScheduleTrackCards, renderScheduleTrackSummary } from './schedule-tracks.js';
 const $ = (s, root = document) => root.querySelector(s);
 const main = $('#main');
 const langs = ['ko', 'en', 'tw', 'cn'];
@@ -10,6 +11,9 @@ const params = new URL(location.href).searchParams;
 let lang = langs.includes(params.get('lang')) ? params.get('lang') : readStore('citea-language', 'ko');
 if (!langs.includes(lang)) lang = 'ko';
 let data, menuOpen = false, shoppingFilter = 'all', exploreFilter = 'all', exploreQuery = '';
+const validScheduleTrack = id => Object.hasOwn(scheduleTracks,id);
+let scheduleTrack=params.get('program')||readStore('citea-schedule-track',null);
+if(!validScheduleTrack(scheduleTrack)) scheduleTrack=null;
 let checks = readStore('citea-checklist', {});
 if (!checks || typeof checks !== 'object' || Array.isArray(checks)) checks = {};
 const extra = {
@@ -68,21 +72,55 @@ function pageHeading(kind) {
   return `<div class="page-heading"><p class="eyebrow">${esc(t(kind+'Eyebrow'))}</p><h1>${esc(t(kind+'Title'))}</h1><p class="intro">${esc(t(kind+'Intro'))}</p></div>`;
 }
 function dateCards(selected='', compact=false) {
-  return `<div class="date-cards ${compact?'compact':''}" aria-label="${esc(t('selectDate'))}">${data.event.dates.map((d,i)=>`<a class="date-card ${d.id===selected?'selected':''}" href="#/schedule/${d.id}" ${d.id===selected?'aria-current="date"':''}><span class="date-top">DAY ${String(i+1).padStart(2,'0')}${icon('arrow',18)}</span><span class="date-number">11<span>/</span>${7+i}</span><span class="date-day">${['SAT','SUN','MON','TUE'][i]} <span>· ${esc(t(['daySat','daySun','dayMon','dayTue'][i]))}</span></span>${!compact?`<span class="date-status">${esc(t(d.items.length?'viewSchedule':'schedulePendingTitle'))}</span>`:''}</a>`).join('')}</div>`;
+  const days=scheduleDays();
+  return `<div class="date-cards ${compact?'compact':''} ${days.length===2?'track-two-days':''}" aria-label="${esc(t('selectDate'))}">${days.map(d=>{const i=data.event.dates.indexOf(d);return `<a class="date-card ${d.id===selected?'selected':''}" href="${esc(scheduleHref(scheduleTrack,d.id))}" data-schedule-track="${scheduleTrack}" ${d.id===selected?'aria-current="date"':''}><span class="date-top">DAY ${String(i+1).padStart(2,'0')}${icon('arrow',18)}</span><span class="date-number">11<span>/</span>${Number(d.id.slice(-2))}</span><span class="date-day">${['SAT','SUN','MON','TUE'][i]} <span>· ${esc(t(['daySat','daySun','dayMon','dayTue'][i]))}</span></span>${!compact?`<span class="date-status">${esc(t(d.items.length?'viewSchedule':'schedulePendingTitle'))}</span>`:''}</a>`;}).join('')}</div>`;
+}
+function scheduleDays() {
+  return validScheduleTrack(scheduleTrack)?data.event.dates.filter(d=>scheduleTracks[scheduleTrack].dates.includes(d.id)):[];
+}
+function scheduleHref(trackId,dateId) {
+  const track=scheduleTracks[trackId];
+  const day=track.dates.includes(dateId)?dateId:track.dates[0];
+  const url=new URL(location.href);url.searchParams.set('lang',lang);url.searchParams.set('program',trackId);url.hash='/schedule/'+day;
+  return url.search+url.hash;
+}
+function scheduleChooseHref() {
+  const url=new URL(location.href);url.searchParams.set('lang',lang);url.searchParams.set('program','choose');url.hash='/schedule';
+  return url.search+url.hash;
+}
+function syncScheduleContext() {
+  const url=new URL(location.href);
+  const incoming=url.searchParams.get('program');
+  const incomingLanguage=url.searchParams.get('lang');
+  if(langs.includes(incomingLanguage)){lang=incomingLanguage;store('citea-language',lang);}
+  if(incoming==='choose') scheduleTrack=null;
+  else if(validScheduleTrack(incoming)) scheduleTrack=incoming;
+  else if(Object.hasOwn(history.state||{},'scheduleTrack')) scheduleTrack=validScheduleTrack(history.state.scheduleTrack)?history.state.scheduleTrack:null;
+  const [page,dateId]=route();
+  if(page==='schedule'&&['2026-11-09','2026-11-10'].includes(dateId)) scheduleTrack='partners';
+  if(page==='schedule'&&validScheduleTrack(scheduleTrack)) {
+    const allowed=scheduleTracks[scheduleTrack].dates;
+    url.searchParams.set('program',scheduleTrack);url.hash='/schedule/'+(allowed.includes(dateId)?dateId:allowed[0]);
+    history.replaceState({...history.state,scheduleTrack},'',url);
+  } else if(page==='schedule') {
+    history.replaceState({...history.state,scheduleTrack:null},'',url);
+  }
+  store('citea-schedule-track',scheduleTrack);
 }
 function placeCard(p, index, hidden=false) {
   return `<article class="place-card"${hidden?' hidden':''}><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${renderExploreCategoryBadge(p,lang)}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
 }
 function home() {
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  const todayDate=data.event.dates.find(d=>d.id===today);
+  const todayDate=scheduleDays().find(d=>d.id===today);
   const hero=data.site.hero;
   const featured=['uam','temiorae','yuseong-footbath'].map(byId).filter(Boolean);
-  return `<div class="home-layout"><section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="tiny-leaf">${icon('leaf',15)}</span> ${esc(t('guide'))}</p><div class="event-pill"><span></span> NOVEMBER 7–10, 2026</div><h1 lang="en" aria-label="${esc(t('tagline'))}">The Heart<br>of Daejeon:<br><em>Jung-gu.</em></h1><p class="hero-local">${esc(t('homeEyebrow'))}</p><p class="hero-description">${esc(t('homeIntro'))}</p>${link('/schedule',t('viewSchedule'),'button button-primary')}<div class="hero-bottom">${icon('pin',15)}<span>Jung-gu & beyond, Daejeon</span><span class="hero-line"></span><span>TEA · CULTURE · WELLNESS</span></div></div><div class="hero-visual"><img class="hero-image" src="${esc(hero.src)}" alt="${esc(l(hero.alt))}" width="${hero.width||1400}" height="${hero.height||1600}" style="object-position:42% center" fetchpriority="high"><div class="image-shade"></div><span class="hero-year">20<br>26</span><div class="hero-image-caption"><span>01 / DAEJEON</span><p>${esc(l(hero.caption))}</p></div><a class="walk-stamp" href="#/explore" aria-label="${esc(t('startExploring'))}">${icon('walk',32)}<span>TAKE A<br>SLOW WALK</span>${icon('arrow',18)}</a></div></section><section class="journey-section"><div class="section-title"><div><p class="eyebrow">YOUR FOUR-DAY JOURNEY</p><h2>${esc(t('fourDays'))}</h2></div><p class="muted">${esc(t('eventPeriod'))}</p></div>${dateCards()}</section><div class="home-utility"><section class="today-panel"><div class="utility-icon">${icon('calendar',23)}</div><div><h2>${esc(t('todayProgram'))}</h2><p>${esc(todayDate?l(todayDate.label)+' · '+(todayDate.items.length?l(todayDate.items[0].title):t('schedulePendingTitle')):t('todayOutsideEvent'))}</p></div>${link(todayDate?'/schedule/'+todayDate.id:'/schedule',t('viewSchedule'),'text-link')}</section><section class="home-notice"><span class="small-label">${esc(t('importantNotices'))}</span><h2>${esc(l(data.event.notices[0]?.title))}</h2>${link('/notices',t('viewAllNotices'),'text-link')}</section></div><section class="home-discover"><div class="section-title"><div><p class="eyebrow">PLACES & STORIES</p><h2>${esc(t('discoverPlaces'))}</h2></div>${link('/explore',t('viewAllPlaces'),'text-link')}</div><div class="place-grid">${featured.map((p)=>placeCard(p,data.places.indexOf(p))).join('')}</div></section><section class="prepare-banner"><div class="banner-icon">${icon('walk',32)}</div><div><p class="eyebrow">BEFORE YOU GO</p><h2>${esc(t('homePrepareTitle'))}</h2><p>${esc(t('homePrepareBody'))}</p></div>${link('/prepare',t('openChecklist'),'button button-light')}</section><p class="photo-attribution">${esc(t('photoCredit'))}: ${hero.source?ext(hero.source,l(hero.credit),''):esc(l(hero.credit))}${hero.license?' · '+ext(hero.license,'License',''):''}</p></div>`;
+  return `<div class="home-layout"><section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="tiny-leaf">${icon('leaf',15)}</span> ${esc(t('guide'))}</p><div class="event-pill"><span></span> NOVEMBER 7–10, 2026</div><h1 lang="en" aria-label="${esc(t('tagline'))}">The Heart<br>of Daejeon:<br><em>Jung-gu.</em></h1><p class="hero-local">${esc(t('homeEyebrow'))}</p><p class="hero-description">${esc(t('homeIntro'))}</p>${link('/schedule',t('viewSchedule'),'button button-primary')}<div class="hero-bottom">${icon('pin',15)}<span>Jung-gu & beyond, Daejeon</span><span class="hero-line"></span><span>TEA · CULTURE · WELLNESS</span></div></div><div class="hero-visual"><img class="hero-image" src="${esc(hero.src)}" alt="${esc(l(hero.alt))}" width="${hero.width||1400}" height="${hero.height||1600}" style="object-position:42% center" fetchpriority="high"><div class="image-shade"></div><span class="hero-year">20<br>26</span><div class="hero-image-caption"><span>01 / DAEJEON</span><p>${esc(l(hero.caption))}</p></div><a class="walk-stamp" href="#/explore" aria-label="${esc(t('startExploring'))}">${icon('walk',32)}<span>TAKE A<br>SLOW WALK</span>${icon('arrow',18)}</a></div></section><section class="journey-section">${renderScheduleTrackCards(lang,id=>scheduleHref(id))}</section><div class="home-utility"><section class="today-panel"><div class="utility-icon">${icon('calendar',23)}</div><div><h2>${esc(t('todayProgram'))}</h2><p>${esc(!scheduleTrack?scheduleTrackCopy[lang].intro:todayDate?l(todayDate.label)+' · '+(todayDate.items.length?l(todayDate.items[0].title):t('schedulePendingTitle')):t('todayOutsideEvent'))}</p></div>${link(todayDate?'/schedule/'+todayDate.id:'/schedule',t('viewSchedule'),'text-link')}</section><section class="home-notice"><span class="small-label">${esc(t('importantNotices'))}</span><h2>${esc(l(data.event.notices[0]?.title))}</h2>${link('/notices',t('viewAllNotices'),'text-link')}</section></div><section class="home-discover"><div class="section-title"><div><p class="eyebrow">PLACES & STORIES</p><h2>${esc(t('discoverPlaces'))}</h2></div>${link('/explore',t('viewAllPlaces'),'text-link')}</div><div class="place-grid">${featured.map((p)=>placeCard(p,data.places.indexOf(p))).join('')}</div></section><section class="prepare-banner"><div class="banner-icon">${icon('walk',32)}</div><div><p class="eyebrow">BEFORE YOU GO</p><h2>${esc(t('homePrepareTitle'))}</h2><p>${esc(t('homePrepareBody'))}</p></div>${link('/prepare',t('openChecklist'),'button button-light')}</section><p class="photo-attribution">${esc(t('photoCredit'))}: ${hero.source?ext(hero.source,l(hero.credit),''):esc(l(hero.credit))}${hero.license?' · '+ext(hero.license,'License',''):''}</p></div>`;
 }
 function schedule(dateId) {
-  const day=data.event.dates.find(d=>d.id===dateId)||data.event.dates[0];
-  return `<div class="page-container">${pageHeading('schedule')}${dateCards(day.id,true)}<div class="schedule-heading"><h2>${esc(l(day.label))}</h2><span class="small-label">${esc(t('scheduleSource'))}</span></div>${day.items.length?`<div class="timeline">${day.items.map(item=>scheduleItem(item)).join('')}</div>`:`<section class="empty-state"><div class="empty-icon">${icon('calendar',32)}</div><h3>${esc(t('schedulePendingTitle'))}</h3><p>${esc(l(data.event.scheduleExplanation))}</p>${link('/notices',t('notices'),'text-link')}</section>`}${day.id==='2026-11-10'?shoppingScheduleLinks():''}<div class="section-spacer">${notice(t('meetingPoint'),l(day.meetingPoint)||t('meetingPending'))}</div>${data.event.scheduleSource?ext(data.event.scheduleSource,t('scheduleSource'),'button button-outline'):''}</div>`;
+  if(!validScheduleTrack(scheduleTrack)) return `<div class="page-container">${pageHeading('schedule')}${renderScheduleTrackCards(lang,id=>scheduleHref(id,dateId))}</div>`;
+  const day=scheduleDays().find(d=>d.id===dateId)||scheduleDays()[0];
+  return `<div class="page-container">${pageHeading('schedule')}${renderScheduleTrackSummary(scheduleTrack,lang,scheduleChooseHref())}<p class="schedule-shared-note">${esc(scheduleTrackCopy[lang].shared)}</p>${dateCards(day.id,true)}<div class="schedule-heading"><h2>${esc(l(day.label))}</h2><span class="small-label">${esc(t('scheduleSource'))}</span></div>${day.items.length?`<div class="timeline">${day.items.map(item=>scheduleItem(item)).join('')}</div>`:`<section class="empty-state"><div class="empty-icon">${icon('calendar',32)}</div><h3>${esc(t('schedulePendingTitle'))}</h3><p>${esc(l(data.event.scheduleExplanation))}</p>${link('/notices',t('notices'),'text-link')}</section>`}${day.id==='2026-11-10'?shoppingScheduleLinks():''}<div class="section-spacer">${notice(t('meetingPoint'),l(day.meetingPoint)||t('meetingPending'))}</div>${data.event.scheduleSource?ext(data.event.scheduleSource,t('scheduleSource'),'button button-outline'):''}</div>`;
 }
 function shoppingScheduleLinks() {
   const c=shoppingCopy[lang];
@@ -145,6 +183,7 @@ function render({focus=false}={}) {
   if(!data) return;
   closeFilmedGallery({restoreFocus:false});
   if(route()[0]==='map') history.replaceState(null,'','#/explore');
+  syncScheduleContext();
   const [page, id]=route();
   document.documentElement.lang=data.locale[lang].htmlLang;
   const title=page==='place'?l(byId(id)?.names):t(page||'home');
@@ -159,12 +198,18 @@ function toast(message) { const el=$('#toast'); el.textContent=message; el.class
 async function setLanguage(value) {
   if(!langs.includes(value)) return;
   lang=value;store('citea-language',lang);
-  const u=new URL(location.href);u.searchParams.set('lang',lang);history.replaceState(null,'',u);
+  const u=new URL(location.href);u.searchParams.set('lang',lang);history.replaceState(history.state,'',u);
   render();
 }
 document.addEventListener('click',async e=>{
   if(e.target.closest('#skip')){e.preventDefault();main.focus({preventScroll:true});main.scrollIntoView({block:'start'});return;}
   if(e.target.closest('a[href^="#/"]')){menuOpen=false;}
+  const trackLink=e.target.closest('[data-schedule-track]');
+  if(trackLink&&e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){
+    e.preventDefault();menuOpen=false;
+    scheduleTrack=trackLink.dataset.scheduleTrack;
+    history.pushState({scheduleTrack},'',trackLink.href);render({focus:true});return;
+  }
   const categoryButton=e.target.closest('[data-explore-category]');
   if(categoryButton){
     const value=categoryButton.dataset.exploreCategory;
@@ -179,6 +224,7 @@ document.addEventListener('click',async e=>{
   const b=e.target.closest('[data-action]');if(!b)return;
   const p=byId(b.dataset.id);
   switch(b.dataset.action){
+    case 'choose-schedule-track':if(e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)break;e.preventDefault();scheduleTrack=null;store('citea-schedule-track',null);history.pushState({scheduleTrack:null},'',b.href);render({focus:true});break;
     case 'shopping-filter':shoppingFilter=b.dataset.filter;main.innerHTML=shopping();main.querySelector(`[data-filter="${shoppingFilter}"]`)?.focus({preventScroll:true});break;
     case 'menu':menuOpen=!menuOpen;renderHeader();break;
     case 'copy':try{await navigator.clipboard.writeText(p.address.ko);toast(t('copied'));}catch{toast(t('failed'));}break;
@@ -195,6 +241,7 @@ document.addEventListener('input',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuOpen){menuOpen=false;renderHeader();$('.menu-button')?.focus();}});
 window.addEventListener('hashchange',()=>render({focus:true}));
+window.addEventListener('popstate',()=>render({focus:true}));
 window.addEventListener('online',()=>{footer();toast(t('updated'));});window.addEventListener('offline',()=>{footer();toast(t('offline'));});
 async function init(){
   try{

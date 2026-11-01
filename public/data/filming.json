@@ -79,6 +79,30 @@
             "tw": "《韓國製造》：展示館走廊化身青瓦臺內部",
             "cn": "《韩国制造》：展示馆走廊化身青瓦台内部"
           }
+        },
+        {
+          "src": "assets/filming/made-in-korea-03.jpg",
+          "original": "assets/filming/originals/made-in-korea-03.png",
+          "width": 1002,
+          "height": 537,
+          "alt": {
+            "ko": "메이드 인 코리아: 청와대로 등장한 전시관의 나무문 앞에 선 인물",
+            "en": "Made in Korea: a man standing in front of a wooden door in the hall appearing as the Blue House",
+            "tw": "《韓國製造》：展示館化身青瓦臺，一名男子站在木門前",
+            "cn": "《韩国制造》：展示馆化身青瓦台，一名男子站在木门前"
+          }
+        },
+        {
+          "src": "assets/filming/made-in-korea-04.jpg",
+          "original": "assets/filming/originals/made-in-korea-04.png",
+          "width": 1002,
+          "height": 537,
+          "alt": {
+            "ko": "메이드 인 코리아: 청와대 복도로 등장한 전시관에서 두 인물이 악수하는 장면",
+            "en": "Made in Korea: two men shaking hands in the hall corridor appearing as the Blue House",
+            "tw": "《韓國製造》：展示館走廊化身青瓦臺，兩名男子握手的場景",
+            "cn": "《韩国制造》：展示馆走廊化身青瓦台，两名男子握手的场景"
+          }
         }
       ]
     },

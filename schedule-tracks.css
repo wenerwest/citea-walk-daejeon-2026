@@ -1,0 +1,35 @@
+/* Participant schedules share CiTEA's existing green, white and sage palette. */
+.schedule-tracks { margin: 30px 0; }
+.schedule-tracks-heading { margin-bottom: 22px; }
+.schedule-tracks-heading h2 { color: var(--green); font-size: 27px; line-height: 1.45; }
+.schedule-tracks-heading p { margin-top: 10px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+.schedule-track-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.schedule-track-card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 28px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .15s, background .15s; }
+.schedule-track-card:hover { background: var(--sage); border-color: var(--green); }
+.schedule-track-card:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+.schedule-track-card h3 { font-size: 25px; line-height: 1.5; margin: 17px 0 10px; overflow-wrap: anywhere; }
+.schedule-track-period { display: inline-block; color: var(--green); background: var(--sage); padding: 7px 12px; border-radius: var(--radius); font-size: 16px; line-height: 1.6; font-weight: 600; }
+.schedule-track-audience { font-size: 16px; line-height: 1.8; color: var(--muted); }
+.schedule-track-card .schedule-track-audience { margin-bottom: 25px; }
+.schedule-track-view { min-height: 48px; margin-top: auto; width: 100%; font-size: 16px; }
+.schedule-shared-note { margin-top: 20px; padding: 17px 20px; border-left: 3px solid var(--green); color: var(--green); background: var(--sage); font-size: 16px; line-height: 1.8; }
+.schedule-track-summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+.schedule-track-summary-copy { min-width: 0; }
+.schedule-track-current { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+.schedule-track-summary h2 { font-size: 24px; line-height: 1.5; margin-bottom: 8px; overflow-wrap: anywhere; }
+.schedule-track-summary .schedule-track-period { margin-top: 13px; }
+.schedule-track-change { flex-shrink: 0; min-height: 48px; font-size: 16px; }
+@media (max-width: 700px) {
+  .schedule-track-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .schedule-tracks-heading h2 { font-size: 24px; }
+  .schedule-track-card { padding: 24px 20px; }
+  .schedule-track-card h3 { font-size: 23px; }
+  .schedule-track-summary { align-items: flex-start; flex-direction: column; padding: 20px; gap: 20px; }
+  .schedule-track-summary h2 { font-size: 22px; }
+  .schedule-track-change { width: 100%; }
+  .schedule-shared-note { padding: 15px 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .schedule-track-card { transition: none; }
+}
+.date-cards.track-two-days { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -701,10 +701,10 @@
             "en": "Tourism insights exchange"
           },
           "description": {
-            "ko": "중국·대만 Z세대의 여행 트렌드를 살펴보고, 중부권에서 더 오래 머무는 지속가능한 관광의 가능성을 함께 이야기합니다.",
-            "en": "Explore travel trends among Gen Z in China and Taiwan, and discuss the possibilities for sustainable tourism that encourages longer stays in central Korea.",
-            "cn": "了解中国与台湾Z世代的旅行趋势，共同探讨韩国中部吸引游客延长停留、实现可持续旅游的可能性。",
-            "tw": "了解中國與台灣Z世代的旅行趨勢，共同探討韓國中部吸引旅客延長停留、實踐永續觀光的可能性。"
+            "ko": "중화권 Z세대의 여행 트렌드를 살펴보고, 중부권에서 더 오래 머무는 지속가능한 관광의 가능성을 함께 이야기합니다.",
+            "en": "Explore travel trends among Gen Z across Chinese-speaking regions, and discuss the possibilities for sustainable tourism that encourages longer stays in central Korea.",
+            "cn": "了解华语地区Z世代的旅行趋势，共同探讨韩国中部吸引游客延长停留、实现可持续旅游的可能性。",
+            "tw": "了解華語地區Z世代的旅行趨勢，共同探討韓國中部吸引旅客延長停留、實踐永續觀光的可能性。"
           },
           "placeId": "tourism-insight-exchange"
         },
