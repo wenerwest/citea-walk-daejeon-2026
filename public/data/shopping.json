@@ -49,14 +49,14 @@
     ]
   },
   {
-    "id": "oliveyoung-daejeon-jungang",
+    "id": "oliveyoung-daejeon-daeheung",
     "category": "beauty",
-    "koreanName": "올리브영 대전중앙점",
+    "koreanName": "올리브영 대전대흥점",
     "names": {
-      "ko": "올리브영 대전중앙점",
-      "en": "Olive Young Daejeon Jungang",
-      "cn": "Olive Young 大田中央店",
-      "tw": "Olive Young 大田中央店"
+      "ko": "올리브영 대전대흥점",
+      "en": "Olive Young Daejeon Daeheung",
+      "cn": "Olive Young 大田大兴店",
+      "tw": "Olive Young 大田大興店"
     },
     "description": {
       "ko": "한국 스킨케어, 메이크업, 뷰티 제품을 한곳에서 살펴볼 수 있는 매장입니다.",
@@ -64,29 +64,23 @@
       "cn": "可一站选购韩国护肤品、彩妆及美容产品的店铺。",
       "tw": "可一次選購韓國保養品、彩妝與美容產品的店舖。"
     },
-    "note": {
-      "ko": "11월 방문 주의: 공식 안내에 11/1(일)~11/30(월) 리뉴얼 공사 휴업으로 표시되어 있습니다. 11월 10일에는 이용할 수 없으니 재개점 여부를 확인해 주세요.",
-      "en": "November closure: the official store listing states renovation from Nov 1–30. It is unavailable on November 10; check the reopening status before visiting.",
-      "cn": "11月到访请注意：官方店铺页面标示11月1日至30日装修暂停营业，11月10日无法购物。请出发前确认重新开业情况。",
-      "tw": "11月到訪請注意：官方店舖頁面標示11月1日至30日裝修暫停營業，11月10日無法購物。請出發前確認重新開業情況。"
-    },
     "address": {
-      "ko": "대전광역시 중구 중앙로164번길 17",
-      "en": "17, Jungang-ro 164beon-gil, Jung-gu, Daejeon",
-      "cn": "大田广域市中区 Jungang-ro 164beon-gil 17",
-      "tw": "大田廣域市中區 Jungang-ro 164beon-gil 17"
+      "ko": "대전광역시 중구 중앙로130번길 14",
+      "en": "14, Jungang-ro 130beon-gil, Jung-gu, Daejeon",
+      "cn": "大田广域市中区 Jungang-ro 130beon-gil 14",
+      "tw": "大田廣域市中區 Jungang-ro 130beon-gil 14"
     },
-    "naverQuery": "올리브영 대전중앙점 대전 중구 중앙로164번길 17",
+    "naverQuery": "올리브영 대전대흥점 대전 중구 중앙로130번길 14",
     "image": {
-      "src": "assets/shopping/oliveyoung.jpg",
+      "src": "assets/shopping/oliveyoung-daeheung.jpg",
       "width": 1200,
-      "height": 676,
+      "height": 900,
       "kind": "store",
       "alt": {
-        "ko": "올리브영 대전중앙점 공식 매장 사진",
-        "en": "Official store photo of Olive Young Daejeon Jungang",
-        "cn": "Olive Young大田中央店官方店铺照片",
-        "tw": "Olive Young大田中央店官方店舖照片"
+        "ko": "올리브영 대전대흥점 공식 매장 사진",
+        "en": "Official store photo of Olive Young Daejeon Daeheung",
+        "cn": "Olive Young大田大兴店官方店铺照片",
+        "tw": "Olive Young大田大興店官方店舖照片"
       }
     },
     "verifiedAt": "2026-11-01",
@@ -94,14 +88,23 @@
       {
         "url": "https://www.oliveyoung.co.kr/store/store/getStoreInfoMain.do",
         "label": {
-          "ko": "올리브영 공식 매장찾기 · 대전중앙점 영업 안내",
-          "en": "Olive Young official store finder · search Daejeon Jungang",
-          "cn": "Olive Young官方门店查询 · 搜索대전중앙",
-          "tw": "Olive Young官方門市查詢 · 搜尋대전중앙"
+          "ko": "올리브영 공식 매장찾기 · 대전대흥점",
+          "en": "Olive Young official store finder · search Daejeon Daeheung",
+          "cn": "Olive Young官方门店查询 · 搜索대전대흥",
+          "tw": "Olive Young官方門市查詢 · 搜尋대전대흥"
         }
       },
       {
-        "url": "https://image.oliveyoung.co.kr/cfimages/oystore/DD11_1.jpg",
+        "url": "https://naver.me/Faf6mDVq",
+        "label": {
+          "ko": "올리브영 대전대흥점 · 네이버 지도",
+          "en": "Olive Young Daejeon Daeheung · Naver Map",
+          "cn": "Olive Young大田大兴店 · Naver地图",
+          "tw": "Olive Young大田大興店 · Naver地圖"
+        }
+      },
+      {
+        "url": "https://image.oliveyoung.co.kr/cfimages/oystore/DDF6_1.jpg",
         "label": {
           "ko": "올리브영 공식 매장 사진",
           "en": "Olive Young official store photo",
@@ -109,7 +112,8 @@
           "tw": "Olive Young官方店舖照片"
         }
       }
-    ]
+    ],
+    "naverUrl": "https://naver.me/Faf6mDVq"
   },
   {
     "id": "daiso-daejeon-jungchon",
