@@ -329,3 +329,4 @@ body { -webkit-text-size-adjust: 100%; }
 .reference-image-label { position: absolute; right: 6px; bottom: 6px; left: 6px; padding: 4px 7px; background: rgba(249,251,248,.94); color: var(--ink); font-size: 10px; line-height: 1.5; text-align: center; }
 .place-single-media .detail-photo.image-contain.image-portrait { aspect-ratio: 4 / 5; max-width: 480px; max-height: none; margin-inline: auto; }
 .place-single-media .detail-photo { width: 100%; }
+.place-gallery-frame.gallery-portrait { aspect-ratio: 4 / 5; }
