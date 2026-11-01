@@ -128,8 +128,8 @@
     "earphonesRequiredBody": "헤드셋이 아닌 개인 이어폰을 반드시 준비해 주세요. 출발 전 휴대전화 연결과 휴대전화·이어폰의 배터리를 확인해 주세요."
   },
   "tw": {
-    "langName": "繁體中文（台灣）",
-    "langCode": "TW",
+    "langName": "繁體中文",
+    "langCode": "CN",
     "htmlLang": "zh-Hant-TW",
     "skipToContent": "跳至主要內容",
     "language": "選擇語言",
@@ -256,7 +256,7 @@
     "earphonesRequiredBody": "請務必自備入耳式耳機，不使用頭戴式耳機。出發前，請確認手機連線狀態，以及手機與耳機的電量。"
   },
   "cn": {
-    "langName": "简体中文（中国大陆）",
+    "langName": "简体中文",
     "langCode": "CN",
     "htmlLang": "zh-Hans-CN",
     "skipToContent": "跳转到主要内容",
