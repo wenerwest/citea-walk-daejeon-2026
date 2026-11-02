@@ -9,10 +9,10 @@
       "en": "Daejeon Traditional Naraegwan"
     },
     "category": {
-      "ko": "웰니스 체험",
-      "en": "Wellness Experiences",
-      "cn": "康养体验",
-      "tw": "身心療癒體驗"
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
     },
     "intro": {
       "ko": "대전의 무형유산을 전시와 교육으로 만나는 문화공간입니다. 전통 기술과 생활문화를 오늘의 시선으로 살펴봅니다.",
@@ -82,8 +82,8 @@
       "cn": "传统文化・非物质文化遗产",
       "en": "Traditional culture · Intangible heritage"
     },
-    "categoryId": "wellness",
-    "categoryBasis": "schedule-color"
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed"
   },
   {
     "id": "uam",
@@ -1166,6 +1166,161 @@
     "categoryBasis": "schedule-color"
   },
   {
+    "id": "coffee-1011",
+    "koreanName": "커피1011",
+    "names": {
+      "ko": "커피1011 (COFFEE 1011)",
+      "en": "COFFEE 1011",
+      "cn": "COFFEE 1011（커피1011）",
+      "tw": "COFFEE 1011（커피1011）"
+    },
+    "category": {
+      "ko": "방문답사",
+      "en": "Site Visits",
+      "cn": "参访考察",
+      "tw": "參訪考察"
+    },
+    "categoryId": "visits",
+    "categoryBasis": "organizer-confirmed",
+    "intro": {
+      "ko": "직접 로스팅한 커피와 에그타르트를 만나는 대전의 로컬 커피 공간입니다. 커피교육도 운영하며, 이번 일정에서는 1011 커피교육공간을 방문합니다.",
+      "en": "A local Daejeon coffee space offering its own roasted coffee and egg tarts. COFFEE 1011 also provides coffee education, and the itinerary includes a visit to its learning space.",
+      "cn": "这处大田本地咖啡空间提供自家烘焙咖啡与蛋挞，也开展咖啡教育。本次行程将参访1011咖啡教育空间。",
+      "tw": "這處大田在地咖啡空間提供自家烘焙咖啡與蛋塔，也開設咖啡課程。本次行程將參訪1011咖啡教育空間。"
+    },
+    "history": {
+      "ko": "간판에 적힌 ‘COFFEE1011 ROASTING COMPANY’에서 브랜드의 로스팅 정체성을 만날 수 있습니다. 커피1011은 아시아스페셜티커피협회 인증교육기관 명단에도 등록되어 있어, 커피를 즐기는 공간이자 배우는 공간으로 소개합니다.\n\n다양한 토핑의 에그타르트와 불이 켜진 매장 간판을 함께 살펴보세요. 한 잔의 커피와 디저트, 공간의 분위기를 통해 로컬 카페의 일상을 가까이에서 느껴봅니다.",
+      "en": "The COFFEE1011 ROASTING COMPANY sign introduces the brand’s roasting identity. Listed among the Asia Specialty Coffee Association’s certified education centres, COFFEE 1011 is a place to learn about coffee as well as enjoy it.\n\nExplore the supplied photographs of its assorted egg tarts and illuminated storefront. Coffee, desserts and the setting offer a glimpse of everyday life in a local café.",
+      "cn": "“COFFEE1011 ROASTING COMPANY”招牌展现了品牌的咖啡烘焙特色。咖啡1011也被列入亚洲精品咖啡协会的认证教育机构名录，是品尝咖啡与学习咖啡文化的空间。\n\n一起看看配料各异的蛋挞与夜间亮灯的店铺招牌。从一杯咖啡、一道甜点与空间氛围出发，感受本地咖啡馆的日常。",
+      "tw": "「COFFEE1011 ROASTING COMPANY」招牌展現了品牌的咖啡烘焙特色。咖啡1011也被列入亞洲精品咖啡協會的認證教育機構名錄，是品嚐咖啡與學習咖啡文化的空間。\n\n一起看看配料各異的蛋塔與夜間亮燈的店舖招牌。從一杯咖啡、一道甜點與空間氛圍出發，感受在地咖啡館的日常。"
+    },
+    "purpose": {
+      "ko": "커피와 디저트, 교육이 어우러지는 로컬 공간을 살펴보는 방문답사입니다. 11월 9일 오전 공간 답사 프로그램에서 지역의 커피 문화를 만나봅니다.",
+      "en": "A site visit exploring how coffee, desserts and education come together in a local space. Discover the city’s coffee culture as part of the November 9 morning venue visits.",
+      "cn": "通过参访，了解咖啡、甜点与教育如何在本地空间中相遇。在11月9日上午的空间考察活动中，感受大田的咖啡文化。",
+      "tw": "透過參訪，了解咖啡、甜點與教育如何在在地空間中相遇。在11月9日上午的空間考察活動中，感受大田的咖啡文化。"
+    },
+    "sectionTitles": {
+      "history": {
+        "ko": "커피와 디저트, 공간의 이야기",
+        "en": "Coffee, Desserts and the Space",
+        "cn": "咖啡、甜点与空间的故事",
+        "tw": "咖啡、甜點與空間的故事"
+      }
+    },
+    "address": {
+      "ko": "대전광역시 유성구 신성로 56 (신성동)",
+      "en": "56, Sinseong-ro, Yuseong-gu, Daejeon (Sinseong-dong)",
+      "cn": "大田广域市儒城区 Sinseong-ro 56（新城洞）",
+      "tw": "大田廣域市儒城區 Sinseong-ro 56（新城洞）"
+    },
+    "verified": true,
+    "naverQuery": "커피1011 대전 유성구 신성로 56",
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null,
+    "sources": [
+      {
+        "label": "커피1011 · 공식 홈페이지",
+        "url": "https://coffee1011.kr/"
+      },
+      {
+        "label": "커피1011 · 공식 위치 안내",
+        "url": "https://coffee1011.kr/contact"
+      },
+      {
+        "label": "아시아스페셜티커피협회 · 인증교육기관",
+        "url": "https://www.asca.coffee/asca_edu5"
+      }
+    ],
+    "image": {
+      "src": "assets/supplied/coffee-1011-eggtarts.jpg",
+      "width": 680,
+      "height": 680,
+      "fit": "contain",
+      "alt": {
+        "ko": "상자에 담긴 다양한 토핑의 커피1011 에그타르트 네 개",
+        "en": "Four COFFEE 1011 egg tarts with assorted toppings in a box",
+        "cn": "盒中四款搭配不同配料的COFFEE 1011蛋挞",
+        "tw": "盒中四款搭配不同配料的COFFEE 1011蛋塔"
+      },
+      "caption": {
+        "ko": "커피1011 · 에그타르트",
+        "en": "COFFEE 1011 · Egg tarts",
+        "cn": "COFFEE 1011 · 蛋挞",
+        "tw": "COFFEE 1011 · 蛋塔"
+      },
+      "credit": {
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
+      },
+      "source": null,
+      "license": null
+    },
+    "gallery": [
+      {
+        "src": "assets/supplied/coffee-1011-eggtarts.jpg",
+        "width": 680,
+        "height": 680,
+        "fit": "contain",
+        "alt": {
+          "ko": "상자에 담긴 다양한 토핑의 커피1011 에그타르트 네 개",
+          "en": "Four COFFEE 1011 egg tarts with assorted toppings in a box",
+          "cn": "盒中四款搭配不同配料的COFFEE 1011蛋挞",
+          "tw": "盒中四款搭配不同配料的COFFEE 1011蛋塔"
+        },
+        "caption": {
+          "ko": "커피1011 · 에그타르트",
+          "en": "COFFEE 1011 · Egg tarts",
+          "cn": "COFFEE 1011 · 蛋挞",
+          "tw": "COFFEE 1011 · 蛋塔"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      },
+      {
+        "src": "assets/supplied/coffee-1011-sign.jpg",
+        "width": 750,
+        "height": 750,
+        "fit": "contain",
+        "alt": {
+          "ko": "밤에 조명이 켜진 COFFEE1011 ROASTING COMPANY 간판과 매장 외관",
+          "en": "The illuminated COFFEE1011 ROASTING COMPANY sign and storefront at night",
+          "cn": "夜间亮灯的COFFEE1011 ROASTING COMPANY招牌与店铺外观",
+          "tw": "夜間亮燈的COFFEE1011 ROASTING COMPANY招牌與店舖外觀"
+        },
+        "caption": {
+          "ko": "커피1011 · 간판과 매장 외관",
+          "en": "COFFEE 1011 · Sign and storefront",
+          "cn": "COFFEE 1011 · 招牌与店铺外观",
+          "tw": "COFFEE 1011 · 招牌與店舖外觀"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      }
+    ],
+    "themes": {
+      "ko": "로스터리 · 커피교육 · 에그타르트",
+      "en": "Roastery · Coffee education · Egg tarts",
+      "cn": "咖啡烘焙 · 咖啡教育 · 蛋挞",
+      "tw": "咖啡烘焙 · 咖啡教育 · 蛋塔"
+    }
+  },
+  {
     "id": "daejeon-modern-history",
     "koreanName": "대전근현대사전시관",
     "names": {
@@ -1588,10 +1743,10 @@
       "tw": "태화장（Taehwajang）"
     },
     "category": {
-      "ko": "방문답사",
-      "en": "Site Visits",
-      "cn": "参访考察",
-      "tw": "參訪考察"
+      "ko": "로컬 스페이스",
+      "en": "Local Spaces",
+      "cn": "本地空间",
+      "tw": "在地空間"
     },
     "intro": {
       "ko": "대전에서 가장 오래된 중식당으로 알려진 태화장. 화교 고복신이 1954년 문을 연 이곳에서 중화요리와 함께 대전 화교의 정착과 서화에 얽힌 이야기를 만납니다.",
@@ -1720,7 +1875,7 @@
       "cn": "中华料理 · 华侨文化",
       "tw": "中華料理 · 華僑文化"
     },
-    "categoryId": "visits",
+    "categoryId": "local-spaces",
     "categoryBasis": "organizer-confirmed"
   },
   {

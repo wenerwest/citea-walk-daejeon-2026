@@ -92,7 +92,7 @@ try {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(place.id || '')) fail('places.json: each place needs a unique lowercase-hyphen id.');
     if (ids.has(place.id)) fail(`places.json: duplicate place id ${place.id}`);
     ids.add(place.id);
-    if (!['festival', 'wellness', 'walking', 'visits'].includes(place.categoryId)) fail(`${place.id}: choose a supported exploration category.`);
+    if (!['festival', 'wellness', 'walking', 'visits', 'local-spaces'].includes(place.categoryId)) fail(`${place.id}: choose a supported exploration category.`);
     const image = typeof place.image === 'string' ? place.image : place.image?.src;
     if (image) await localAsset(image, `${place.id}.image`);
     for (const [index, image] of (place.gallery || []).entries()) {

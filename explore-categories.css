@@ -3,6 +3,7 @@
 .explore-category-tone--wellness { --explore-category-accent: #b6d7a8; }
 .explore-category-tone--walking { --explore-category-accent: #cfe2f3; }
 .explore-category-tone--visits { --explore-category-accent: #00ffff; }
+.explore-category-tone--local-spaces { --explore-category-accent: #f4b183; }
 
 .explore-category-filters {
   display: flex;

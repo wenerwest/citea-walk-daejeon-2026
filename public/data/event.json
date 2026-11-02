@@ -6,7 +6,7 @@
   "timezone": "Asia/Seoul",
   "status": "published-from-source",
   "scheduleSource": null,
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03",
   "description": {
     "ko": "차 문화와 도시 탐험, 근대건축과 웰니스를 잇는 대전의 나흘. 스마트폰으로 일정을 확인하고 Live Voice 웹을 통해 해설을 들으세요. 개인 이어폰은 필수입니다.",
     "tw": "用四天時間，串起茶文化、城市探索、近代建築與身心療癒。用手機查看行程，透過Live Voice網頁收聽解說。必須自備入耳式耳機。",
@@ -608,7 +608,10 @@
             "cn": "参加晨间瑜伽，并考察 Sun Square、OZENHI 和 1011 咖啡教育空间。",
             "en": "Morning yoga and visits to Sun Square, Ozenhigh and 1011 Coffee Education Space."
           },
-          "placeId": "local-wellness"
+          "placeId": "local-wellness",
+          "relatedPlaceIds": [
+            "coffee-1011"
+          ]
         },
         {
           "id": "2026-11-09-1100",
