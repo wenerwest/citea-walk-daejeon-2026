@@ -627,13 +627,112 @@
     "categoryBasis": "schedule-color"
   },
   {
+    "id": "mokcheok-market",
+    "koreanName": "목척시장",
+    "names": {
+      "ko": "목척시장 골목",
+      "en": "Mokcheok Market Lanes",
+      "cn": "木尺市场街巷",
+      "tw": "木尺市場街巷"
+    },
+    "headline": {
+      "ko": "100년의 도시 기억과 드라마 속 풍경을 만나는 골목",
+      "en": "A Century of City Memories, Seen on Screen",
+      "cn": "在百年街巷里，遇见城市记忆与影视风景",
+      "tw": "在百年街巷裡，遇見城市記憶與影視風景"
+    },
+    "category": {
+      "ko": "도보관광",
+      "en": "Walking Tours",
+      "cn": "步行游览",
+      "tw": "步行導覽"
+    },
+    "categoryId": "walking",
+    "categoryBasis": "schedule-color",
+    "themes": {
+      "ko": "근대 골목 · 드라마 촬영지",
+      "en": "Historic lanes · Drama locations",
+      "cn": "近代街巷 · 剧集取景地",
+      "tw": "近代街巷 · 戲劇取景地"
+    },
+    "intro": {
+      "ko": "대전천 서쪽, 중구 은행동·선화동 일대에 남아 있는 옛 목척시장 골목입니다. 1905년 대전역 개통 이후 성장한 원도심의 기억을 따라, 낮은 지붕과 오래된 건물 사이를 천천히 걸어봅니다.",
+      "en": "On the west side of Daejeoncheon Stream, the former Mokcheok Market lanes run through the Eunhaeng-dong and Seonhwa-dong area of Jung-gu. Low roofs and weathered buildings recall the old downtown that grew after Daejeon Station opened in 1905.",
+      "cn": "旧木尺市场街巷位于大田川西侧、中区银杏洞与宣化洞一带。1905年大田站开通后，老城逐渐发展。沿着低矮屋顶与老建筑之间的小路，慢慢读懂这段城市记忆。",
+      "tw": "舊木尺市場街巷位於大田川西側、中區銀杏洞與宣化洞一帶。1905年大田站啟用後，舊城逐漸發展。沿著低矮屋頂與老建築之間的小路，慢慢讀懂這段城市記憶。"
+    },
+    "history": {
+      "ko": "목척시장은 철도와 함께 성장한 대전 원도심의 오래된 시장 가운데 하나입니다. 일제강점기 일본인들의 거주와 상업 활동이 이어졌던 일대로, 시장과 주거 골목에 근대도시가 형성되던 흔적이 남아 있습니다.\n\n한때 북적이던 시장의 모습은 옅어졌지만, 좁은 골목과 낮은 건물, 세월이 묻어나는 간판은 또 다른 이야기를 들려줍니다. 도심의 큰길에서 한 걸음 들어가 대전의 지난 시간을 살펴보세요.",
+      "en": "Mokcheok was one of the old downtown markets that grew alongside the railway. Japanese residents and businesses settled in the area during the colonial period, leaving traces of Daejeon’s development as a modern city.\n\nAlthough the once-busy market has grown quieter, its narrow lanes, low buildings and faded signs still tell stories. Step away from the main streets to discover another layer of Daejeon’s past.",
+      "cn": "木尺市场是与铁路一同发展的老城市集之一。日据时期，日本居民在此居住、经商，市场与住宅街巷之间，留下了大田逐步形成近代城市的痕迹。\n\n昔日市场的喧闹渐渐淡去，狭窄巷道、低矮建筑与褪色招牌却仍在讲述故事。从繁华大街拐入小巷，看看大田另一面的时光。",
+      "tw": "木尺市場是與鐵路一同發展的舊城市集之一。日治時期，日本居民在此居住、經商，市場與住宅街巷之間，留下了大田逐步形成近代城市的痕跡。\n\n昔日市場的喧鬧漸漸淡去，狹窄巷道、低矮建築與褪色招牌卻仍在講述故事。從繁華大街轉入小巷，看看大田另一面的時光。"
+    },
+    "sectionTitles": {
+      "history": {
+        "ko": "100년의 시간을 품은 원도심 골목",
+        "en": "Old Downtown Lanes, a Century in the Making",
+        "cn": "承载百年时光的老城街巷",
+        "tw": "承載百年時光的舊城街巷"
+      },
+      "purpose": {
+        "ko": "레트로 골목 산책과 사진 한 장",
+        "en": "A Retro Walk and a Photograph",
+        "cn": "复古街巷漫步与留影",
+        "tw": "復古街巷漫步與留影"
+      }
+    },
+    "storySections": [
+      {
+        "title": {
+          "ko": "〈지금 우리 학교는〉 속 긴장감을 만나다",
+          "en": "The Lanes Behind All of Us Are Dead",
+          "cn": "走进《僵尸校园》的紧张氛围",
+          "tw": "走進《殭屍校園》的緊張氛圍"
+        },
+        "body": {
+          "ko": "목척교에서 목척시장·선화동으로 이어지는 골목은 넷플릭스 시리즈 〈지금 우리 학교는〉 시즌 1의 촬영지로 소개됩니다. 목척2길을 비롯한 원도심 골목의 풍경이 극 중 긴박한 도심 장면의 배경이 되었습니다.\n\n화면 속 스릴을 더했던 골목에서, 이번에는 오래된 건물의 질감과 빛을 천천히 바라보세요. 실제 주민과 가게의 일상이 이어지는 곳이니 통행을 막지 않고 조용히 둘러보면 좋겠습니다.",
+          "en": "The lanes from Mokcheokgyo Bridge toward Mokcheok Market and Seonhwa-dong are filming locations for season one of Netflix’s All of Us Are Dead. Streets including Mokcheok 2-gil provided the backdrop for tense urban scenes.\n\nTake a slower look at the textures and light that gave the screen its atmosphere. These lanes are also home to residents and working shops; keep paths clear and enjoy them quietly.",
+          "cn": "从木尺桥通往木尺市场、宣化洞的街巷，是Netflix剧集《僵尸校园》第一季的取景地。包括木尺2街在内的老城街景，为剧中紧张的都市场面提供了背景。\n\n曾为镜头增添惊悚氛围的小巷，也值得慢慢欣赏建筑的纹理与光影。这里仍有居民生活、店铺经营，散步拍照时请保持安静，不妨碍通行。",
+          "tw": "從木尺橋通往木尺市場、宣化洞的街巷，是Netflix影集《殭屍校園》第一季的取景地。包括木尺2街在內的舊城街景，為劇中緊張的都會場面提供了背景。\n\n曾為鏡頭增添驚悚氛圍的小巷，也值得慢慢欣賞建築的紋理與光影。這裡仍有居民生活、店舖營業，散步拍照時請保持安靜，不妨礙通行。"
+        }
+      }
+    ],
+    "purpose": {
+      "ko": "화려한 번화가와는 다른, 오래된 골목의 표정을 사진에 담아봅니다. 근대도시의 기억과 K-콘텐츠의 배경을 함께 살펴보고, 인근 카페 안도르에서 산책의 여운을 이어가세요.",
+      "en": "Photograph the character of the old lanes, explore the setting behind a Korean drama, and continue your walk with a pause at nearby Café Andorh.",
+      "cn": "用照片记录有别于繁华商业街的老巷表情，在近代城市记忆与韩剧场景之间漫步，再到附近的Andorh咖啡馆稍作停留。",
+      "tw": "用照片記錄有別於繁華商業街的老巷表情，在近代城市記憶與韓劇場景之間漫步，再到附近的Andorh咖啡館稍作停留。"
+    },
+    "address": {
+      "ko": "대전광역시 중구 목척2길·목척3길 일대 (은행동·선화동 인근)",
+      "en": "Around Mokcheok 2-gil and Mokcheok 3-gil, Jung-gu, Daejeon (near Eunhaeng-dong and Seonhwa-dong)",
+      "cn": "大田广域市中区木尺2街、木尺3街一带（银杏洞、宣化洞附近）",
+      "tw": "大田廣域市中區木尺2街、木尺3街一帶（銀杏洞、宣化洞附近）"
+    },
+    "verified": true,
+    "naverQuery": "목척시장 대전 중구 목척2길",
+    "naverUrl": null,
+    "directionsUrl": null,
+    "meetingPoint": null,
+    "sources": [
+      {
+        "label": "대전광역시 · 옛 목척시장 골목",
+        "url": "https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=3197"
+      },
+      {
+        "label": "대전광역시 중구 · 영화·드라마 촬영지 소개",
+        "url": "https://www.welfarehello.com/community/hometownNews/대전-중구-여행지-추천-영화드라마-촬영지살인자o난감서울의봄-변호인소년심판지금-우리-학교는정직한-후보등--fead0bad-1939-4ea8-aabb-c6e4dc3e1d85"
+      }
+    ]
+  },
+  {
     "id": "andor-cafe",
     "koreanName": "안도르카페",
     "names": {
-      "ko": "안도르카페",
-      "en": "Andor Café",
-      "cn": "Andor Café（안도르카페）",
-      "tw": "Andor Café（안도르카페）"
+      "ko": "카페 안도르 (Andorh)",
+      "en": "Café Andorh",
+      "cn": "Andorh咖啡馆（안도르）",
+      "tw": "Andorh咖啡館（안도르）"
     },
     "category": {
       "ko": "도보관광",
@@ -642,16 +741,16 @@
       "tw": "步行導覽"
     },
     "intro": {
-      "ko": "나무가 드리운 2층 건물에 자리한 카페입니다. 원도심 산책 사이에 잠시 쉬며 골목의 분위기를 느껴보는 공간으로 소개합니다.",
-      "en": "A café in a two-story building shaded by trees. It offers a pause during an old-downtown walk and a chance to take in the surrounding streets.",
-      "cn": "位于树荫下两层建筑内的咖啡馆。可在原市中心漫步途中稍作休息，感受周边街巷的氛围。",
-      "tw": "位於樹蔭下兩層建築內的咖啡館。可在舊市中心漫步途中稍作休息，感受周邊街巷的氛圍。"
+      "ko": "대전 중구 은행동·선화동 인근 골목에 자리한 카페 안도르(Andorh)는 일제강점기 대전부윤의 관사로 알려진 일본식 구옥을 개조한 빈티지 감성 카페입니다. 오래된 건물과 나무가 어우러진 마당에서 원도심의 시간을 천천히 느껴보세요.",
+      "en": "In the lanes near Eunhaeng-dong and Seonhwa-dong in Jung-gu, Café Andorh brings new life to an old Japanese-style house known as the former residence of Daejeon’s mayor during the colonial period. Its vintage interior and tree-shaded courtyard invite a quiet pause in the old downtown.",
+      "cn": "Andorh咖啡馆位于大田中区银杏洞、宣化洞附近的街巷，由一座日式老宅改造而成。这栋建筑以日据时期大田府尹（相当于市长）的官邸而为人所知。复古室内与树荫庭院相映，适合放慢脚步，感受老城的时光。",
+      "tw": "Andorh咖啡館位於大田中區銀杏洞、宣化洞附近的街巷，由一座日式老宅改造而成。這棟建築以日治時期大田府尹（相當於市長）的官邸而為人所知。復古室內與樹蔭庭院相映，適合放慢腳步，感受舊城的時光。"
     },
     "history": {
-      "ko": "나무와 건물이 어우러진 풍경 속에서 원도심 골목의 또 다른 표정을 만납니다. 건물과 마당을 천천히 바라보며 산책의 여운을 이어가 보세요.",
-      "en": "Trees and an older building offer another view of Daejeon’s old town. Take time to enjoy the building and its garden during your walk.",
-      "cn": "树木与老建筑相映成趣，呈现大田老城的另一种面貌。不妨放慢脚步，欣赏建筑与庭院，让漫步的余韵延续。",
-      "tw": "樹木與老建築相映成趣，呈現大田舊城的另一種面貌。不妨放慢腳步，欣賞建築與庭院，讓漫步的餘韻延續。"
+      "ko": "1920년대 일본식 가옥을 카페와 갤러리로 다시 활용한 공간입니다. 대전시 소개 자료에는 일제강점기 대전부윤 관사로 알려진 건물로 소개되어 있습니다.\n\n따뜻한 목조 실내와 오래된 생활 소품, 나무가 드리운 마당이 과거와 현재를 이어줍니다. 근대건축을 감상하는 산책에서 커피 한 잔과 함께 머무는 여행으로 걸음을 바꿔보세요.",
+      "en": "This 1920s Japanese-style house has been adapted into a café and gallery. Daejeon’s city publication describes it as a building known as the colonial-era mayor’s residence.\n\nWooden interiors, vintage everyday objects and a courtyard shaded by mature trees connect past and present. Pause over a coffee and experience historic architecture as a place to spend time.",
+      "cn": "这座20世纪20年代的日式住宅，如今被重新利用为咖啡馆与画廊。大田市的介绍资料将其称为以日据时期大田府尹官邸而为人所知的建筑。\n\n温暖的木质室内、旧时生活物件与树荫庭院，将过去与现在连在一起。欣赏近代建筑之余，不妨用一杯咖啡的时间，体验老宅里的日常。",
+      "tw": "這座1920年代的日式住宅，如今被重新利用為咖啡館與藝廊。大田市的介紹資料將其稱為以日治時期大田府尹官邸而為人所知的建築。\n\n溫暖的木質室內、舊時生活物件與樹蔭庭院，將過去與現在連在一起。欣賞近代建築之餘，不妨用一杯咖啡的時間，體驗老宅裡的日常。"
     },
     "purpose": {
       "ko": "근대건축·빵집 투어 중 잠시 쉬어 가며, 카페와 골목이 이어지는 대전의 일상을 느껴봅니다.",
@@ -670,6 +769,10 @@
       {
         "label": "Andor Café · 매장 안내",
         "url": "https://triple.guide/restaurants/9f29c6cb-88c6-4f1d-963e-b83d027ae9ff"
+      },
+      {
+        "label": "대전광역시 · 원도심 골목과 안도르 소개",
+        "url": "https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=3197"
       }
     ],
     "naverQuery": "안도르카페 대전 중구 선화로 148",
@@ -932,7 +1035,54 @@
         "cn": "韩国葡萄酒的起点与节庆的发展",
         "tw": "韓國葡萄酒的起點與節慶的成長"
       }
-    }
+    },
+    "gallery": [
+      {
+        "src": "assets/supplied/wine-expo.webp",
+        "alt": {
+          "ko": "대전국제와인EXPO 2026",
+          "tw": "2026 大田國際葡萄酒 EXPO",
+          "cn": "2026 大田国际葡萄酒 EXPO",
+          "en": "Daejeon International Wine EXPO 2026"
+        },
+        "credit": {
+          "ko": "제공 이미지",
+          "tw": "提供圖片",
+          "cn": "提供图片",
+          "en": "Supplied image"
+        },
+        "source": null,
+        "fit": "contain",
+        "width": 429,
+        "height": 441
+      },
+      {
+        "src": "assets/supplied/wine-expo-onsite.jpg",
+        "width": 720,
+        "height": 479,
+        "fit": "contain",
+        "alt": {
+          "ko": "대전 와인엑스포 행사장에서 스태프와 관람객이 함께 즐기는 현장",
+          "en": "Staff and visitors taking part in a celebration at the Daejeon Wine EXPO",
+          "cn": "大田葡萄酒EXPO现场，工作人员与观众一同参与活动",
+          "tw": "大田葡萄酒EXPO現場，工作人員與觀眾一同參與活動"
+        },
+        "caption": {
+          "ko": "와인엑스포 · 축제 현장",
+          "en": "Wine EXPO · Festival scene",
+          "cn": "葡萄酒EXPO · 活动现场",
+          "tw": "葡萄酒EXPO · 活動現場"
+        },
+        "credit": {
+          "ko": "제공 사진",
+          "en": "Supplied photo",
+          "cn": "提供的照片",
+          "tw": "提供的照片"
+        },
+        "source": null,
+        "license": null
+      }
+    ]
   },
   {
     "id": "local-wellness",

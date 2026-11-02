@@ -30,15 +30,15 @@
   },
   "footerLogos": [
     {
-      "src": "assets/supplied/ministry-interior-safety.png",
+      "src": "assets/supplied/ministry-smes-startups.png",
       "alt": {
-        "ko": "행정안전부",
-        "tw": "韓國行政安全部",
-        "cn": "韩国行政安全部",
-        "en": "Ministry of the Interior and Safety"
+        "ko": "중소벤처기업부",
+        "en": "Ministry of SMEs and Startups",
+        "cn": "韩国中小风险企业部",
+        "tw": "韓國中小企業暨新創部"
       },
-      "width": 1200,
-      "height": 630
+      "width": 1024,
+      "height": 576
     },
     {
       "src": "assets/supplied/junggu.png",
@@ -51,5 +51,114 @@
       "width": 340,
       "height": 322
     }
-  ]
+  ],
+  "about": {
+    "navTitle": {
+      "ko": "CiTEA Walk 소개",
+      "en": "About CiTEA Walk",
+      "cn": "关于CiTEA Walk",
+      "tw": "關於CiTEA Walk"
+    },
+    "button": {
+      "ko": "기획 의도 보기",
+      "en": "About CiTEA Walk",
+      "cn": "了解项目理念",
+      "tw": "了解計畫理念"
+    },
+    "eyebrow": "WHY DAEJEON?",
+    "headline": {
+      "ko": "대전에서 시작하는 대한민국 지방 관광의 새로운 질문",
+      "en": "A New Question for Regional Travel in Korea, Starting in Daejeon",
+      "cn": "从大田出发，重新思考韩国地方旅游",
+      "tw": "從大田出發，重新思考韓國地方旅遊"
+    },
+    "question": {
+      "ko": "“꼭 서울이어야 할까요?”",
+      "en": "“Does it have to be Seoul?”",
+      "cn": "“一定要去首尔吗？”",
+      "tw": "「一定要去首爾嗎？」"
+    },
+    "intro": {
+      "ko": "우리는 한국을 찾는 외국인 여행자들에게 이 질문을 던지며 시작했습니다. 수도를 벗어나, 다시 찾고 오래 머물고 싶은 도시의 가능성을 대전에서 함께 탐색합니다.",
+      "en": "We began with a question for international visitors to Korea. Beyond the capital, what makes a city somewhere you want to revisit and stay a little longer? We explore that possibility in Daejeon.",
+      "cn": "我们向来到韩国的外国旅行者提出这个问题。走出首都，什么样的城市会让人愿意再次到访、停留更久？我们想从大田开始，一起寻找答案。",
+      "tw": "我們向來到韓國的外國旅人提出這個問題。走出首都，什麼樣的城市會讓人願意再次造訪、停留更久？我們想從大田開始，一起尋找答案。"
+    },
+    "sections": [
+      {
+        "title": {
+          "ko": "접근성과 로컬의 이야기가 만날 때",
+          "en": "When Access Meets Local Stories",
+          "cn": "让便捷交通与地方故事相遇",
+          "tw": "讓便捷交通與地方故事相遇"
+        },
+        "body": {
+          "ko": "상하이와 오사카, 후쿠오카처럼 수도가 아니어도 여행의 목적지가 되는 도시들이 있습니다. 편리한 접근성과 그 도시만의 매력이 만나면, 여행은 한 번의 방문을 넘어 재방문과 일상 같은 체류로 이어질 수 있습니다.\n\n대한민국 지방 도시에도 같은 질문이 필요합니다. 어떻게 찾아오기 쉬운 도시를, 다시 돌아오고 싶은 도시로 만들 수 있을까요? CiTEA Walk는 접근성과 로컬 고유의 이야기를 연결하는 데서 출발합니다.",
+          "en": "Cities such as Shanghai, Osaka and Fukuoka show that a capital is only one possible destination. When convenient access meets a distinctive local character, a first visit can become a return journey—and a stay that feels part of everyday life.\n\nKorea’s regional cities face a similar question: how can a city that is easy to reach become a place worth returning to? CiTEA Walk begins by connecting access with stories rooted in local life.",
+          "cn": "上海、大阪、福冈等城市，让我们看到首都之外同样丰富的旅行可能。便捷的交通与独特的地方魅力相结合，一次到访就有机会变成再次出发，以及更接近日常的停留。\n\n韩国的地方城市也需要思考同样的问题：如何让一座容易抵达的城市，成为值得再来的目的地？CiTEA Walk从连接交通便利与地方故事开始。",
+          "tw": "上海、大阪、福岡等城市，讓我們看到首都之外同樣豐富的旅行可能。便捷的交通與獨特的地方魅力相結合，一次造訪就有機會變成再次出發，以及更接近日常的停留。\n\n韓國的地方城市也需要思考同樣的問題：如何讓一座容易抵達的城市，成為值得再來的目的地？CiTEA Walk從連結交通便利與地方故事開始。"
+        }
+      },
+      {
+        "title": {
+          "ko": "2023년부터 이어온 도시 실험, Sunday Tea Club",
+          "en": "Sunday Tea Club: Exploring the City Since 2023",
+          "cn": "始于2023年的城市实践：Sunday Tea Club",
+          "tw": "始於2023年的城市實踐：Sunday Tea Club"
+        },
+        "body": {
+          "ko": "우리는 2023년부터 외국인 차(Tea) 커뮤니티 Sunday Tea Club을 운영하며, 차 한 잔과 도시 산책이 대전과 여행자를 어떻게 이어줄 수 있는지 꾸준히 실험해 왔습니다.\n\n대전은 잠시 스쳐 가는 교통의 요지에 머물지 않습니다. 도시 곳곳에는 여행자가 시간을 들여 발견할 만한 이야기들이 쌓여 있습니다.",
+          "en": "Since 2023, we have run Sunday Tea Club, a tea community for international residents and visitors. Through tea and city walks, we have explored how people can form deeper connections with Daejeon.\n\nDaejeon offers far more than a convenient stop along the way. Across the city, there are stories worth taking time to discover.",
+          "cn": "自2023年起，我们运营面向外国人的茶文化社群Sunday Tea Club，持续探索一杯茶、一次城市漫步，如何让旅行者与大田建立更深的联系。\n\n大田不仅是一座交通便利的中转城市。城市的各个角落，都有值得花时间发现的故事。",
+          "tw": "自2023年起，我們經營面向外國人的茶文化社群Sunday Tea Club，持續探索一杯茶、一次城市漫步，如何讓旅人與大田建立更深的連結。\n\n大田不僅是一座交通便利的中轉城市。城市的各個角落，都有值得花時間發現的故事。"
+        },
+        "points": [
+          {
+            "ko": "도시의 역사를 품은 근대 건축물",
+            "en": "Modern architecture that holds the city’s history",
+            "cn": "承载城市历史的近代建筑",
+            "tw": "承載城市歷史的近代建築"
+          },
+          {
+            "ko": "사람들을 불러 모으는 빵집과 미식 문화",
+            "en": "Bakeries and food culture that bring people together",
+            "cn": "吸引人们相聚的面包店与美食文化",
+            "tw": "吸引人們相聚的麵包店與美食文化"
+          },
+          {
+            "ko": "대전의 정체성을 이어 온 철도와 골목의 기억",
+            "en": "Railway heritage and lane-side memories that shape Daejeon",
+            "cn": "塑造大田地方特色的铁路历史与街巷记忆",
+            "tw": "塑造大田地方特色的鐵道歷史與街巷記憶"
+          },
+          {
+            "ko": "영화·드라마 촬영지에서 만나는 도시의 또 다른 얼굴",
+            "en": "Another view of the city through film and drama locations",
+            "cn": "在电影、剧集取景地发现城市的另一面",
+            "tw": "在電影、戲劇取景地發現城市的另一面"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ko": "이야기를 연결하는 로컬 가이드, CiTEA Walk",
+          "en": "CiTEA Walk: A Local Guide Connecting the Stories",
+          "cn": "串联地方故事的向导：CiTEA Walk",
+          "tw": "串聯地方故事的嚮導：CiTEA Walk"
+        },
+        "body": {
+          "ko": "우리가 집중하는 것은 외국인의 시선에서 이 이야기들을 어떻게 매력적인 여행으로 엮을 것인가입니다. 찾아오는 길과 언어, 장소의 배경과 일상의 경험이 자연스럽게 이어질 때, 도시는 더 오래 머물고 싶은 여행지가 됩니다.\n\n지역 공항과 교통 거점에서 시작된 방문이 골목과 동네까지 이어지려면, 로컬 콘텐츠를 발굴하고 여행자의 눈높이로 소개하는 연결이 필요합니다. CiTEA Walk 2026은 대전의 숨은 매력을 함께 걷고 읽으며, 대한민국 지방 관광의 새로운 가능성을 탐색하는 프로젝트입니다.",
+          "en": "Our focus is how to connect these stories into a rewarding journey from an international visitor’s perspective. When access, language, local history and everyday experiences fit together, a city becomes somewhere people want to stay.\n\nA journey that begins at a regional airport or transport hub needs connections that lead into neighbourhoods and local life. CiTEA Walk 2026 brings Daejeon’s less familiar attractions into view through walking and storytelling, exploring new possibilities for regional travel across Korea.",
+          "cn": "我们关注的是：如何从外国旅行者的视角，把这些故事串联成有吸引力的旅程？当交通、语言、地方背景与日常体验自然衔接，城市才更可能成为让人愿意停留的目的地。\n\n让从地方机场、交通枢纽开始的旅行延伸到街巷与社区，需要发掘地方内容，并以旅行者能理解的方式加以介绍。CiTEA Walk 2026通过步行与故事，重新认识大田不易被看见的魅力，探索韩国地方旅游的新可能。",
+          "tw": "我們關注的是：如何從外國旅人的視角，把這些故事串聯成有吸引力的旅程？當交通、語言、地方背景與日常體驗自然銜接，城市才更可能成為讓人願意停留的目的地。\n\n讓從地方機場、交通樞紐開始的旅行延伸到街巷與社區，需要發掘地方內容，並以旅人能理解的方式加以介紹。CiTEA Walk 2026透過步行與故事，重新認識大田不易被看見的魅力，探索韓國地方旅遊的新可能。"
+        }
+      }
+    ],
+    "closing": {
+      "ko": "수도를 벗어나 로컬의 매력을 발견하는 여정, 대전에서 함께 걷기 시작합니다.",
+      "en": "Step beyond the capital and discover local life. Let’s begin walking together in Daejeon.",
+      "cn": "走出首都，发现地方的魅力。从大田开始，我们一起出发。",
+      "tw": "走出首都，發現地方的魅力。從大田開始，我們一起出發。"
+    }
+  }
 }

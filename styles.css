@@ -330,3 +330,42 @@ body { -webkit-text-size-adjust: 100%; }
 .place-single-media .detail-photo.image-contain.image-portrait { aspect-ratio: 4 / 5; max-width: 480px; max-height: none; margin-inline: auto; }
 .place-single-media .detail-photo { width: 100%; }
 .place-gallery-frame.gallery-portrait { aspect-ratio: 4 / 5; }
+
+/* Project story follows the guide's existing typography and palette. */
+.hero-actions { display:flex; align-items:center; gap:10px 24px; flex-wrap:wrap; margin-top:24px; }
+.hero-actions .button { margin-top:0; }
+.hero-actions .text-link { font-size:15px; min-height:48px; }
+.home-about { display:flex; align-items:center; justify-content:space-between; gap:24px 40px; padding:36px 0; margin-top:20px; border-top:1px solid var(--line); }
+.home-about h2 { font-size:30px; margin:10px 0; }
+.home-about p:not(.eyebrow) { color:var(--muted); font-size:16px; }
+.home-about .button { flex-shrink:0; }
+.about-page { max-width:1000px; }
+.about-page .page-heading { padding-bottom:28px; }
+.about-page h1 { font-size:clamp(30px,3.3vw,46px); line-height:1.45; max-width:850px; }
+.about-question { padding:32px 36px; background:var(--sage); border-left:4px solid var(--green); }
+.about-question>p { font-size:clamp(26px,3vw,36px); font-weight:600; line-height:1.5; margin-bottom:16px; color:var(--green); }
+.about-question>div { max-width:720px; font-size:17px; line-height:1.9; }
+.about-story { max-width:780px; margin:40px auto 0; }
+.about-story section { margin-bottom:36px; }
+.about-story h2 { font-size:25px; line-height:1.5; margin-bottom:18px; }
+.about-story section>p { font-size:17px; color:var(--muted); line-height:1.95; }
+.about-story section>p+p { margin-top:18px; }
+.about-story ul { padding-left:24px; margin:22px 0 0; }
+.about-story li { padding:5px 0; font-size:17px; line-height:1.7; }
+.about-closing { padding-top:28px; border-top:1px solid var(--line); font-size:21px; line-height:1.8; color:var(--green); font-weight:500; }
+.about-actions { display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-top:24px; }
+.footer-meta>.footer-about { margin-right:14px; }
+.footer-institutions img[src$="ministry-smes-startups.png"] { width:300px; max-width:100%; height:auto; }
+@media(max-width:600px) {
+  .hero-actions { margin-top:20px; gap:6px 18px; }
+  .hero-actions .text-link { font-size:14px; }
+  .home-about { align-items:flex-start; flex-direction:column; gap:20px; padding:28px 0; }
+  .home-about h2 { font-size:24px; }
+  .home-about p:not(.eyebrow) { font-size:15px; }
+  .about-question { padding:24px 20px; }
+  .about-question>div,.about-story section>p,.about-story li { font-size:16px; }
+  .about-story { margin-top:30px; }
+  .about-story h2 { font-size:22px; }
+  .about-closing { font-size:19px; }
+  .footer-institutions img[src$="ministry-smes-startups.png"] { width:270px; }
+}

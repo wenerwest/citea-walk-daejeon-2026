@@ -456,6 +456,7 @@
             "en": "The source indicates 30 minutes at Andor Café."
           },
           "relatedPlaceIds": [
+            "mokcheok-market",
             "architecture-bakery"
           ],
           "placeId": "andor-cafe"
