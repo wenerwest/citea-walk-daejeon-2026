@@ -144,6 +144,8 @@ async function toggleExpanded() {
   if (expanded) return leaveExpanded();
   expanded = true;
   updateExpansion();
+  // Keep viewport expansion on phones, including browsers without stable element fullscreen.
+  if (window.matchMedia('(max-width: 900px), (max-height: 500px)').matches) return;
   const surface = dialog.querySelector('.film-dialog-surface');
   if (surface.requestFullscreen) {
     try {await surface.requestFullscreen();} catch { /* Viewport expansion remains available. */ }

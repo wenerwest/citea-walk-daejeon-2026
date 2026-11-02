@@ -111,7 +111,7 @@ function syncScheduleContext() {
   store('citea-schedule-track',scheduleTrack);
 }
 function placeCard(p, index, hidden=false) {
-  return `<article class="place-card"${hidden?' hidden':''}><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${renderExploreCategoryBadge(p,lang)}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
+  return `<article class="place-card"${hidden?' hidden':''}><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${renderExploreCategoryBadge(p,lang)}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name" lang="ko">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
 }
 function home() {
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
