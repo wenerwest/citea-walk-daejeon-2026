@@ -996,23 +996,30 @@
     "directionsUrl": null,
     "meetingPoint": null,
     "image": {
-      "src": "assets/supplied/wine-expo.webp",
+      "src": "assets/supplied/wine-expo-onsite.jpg",
+      "width": 720,
+      "height": 479,
+      "fit": "contain",
       "alt": {
-        "ko": "대전국제와인EXPO 2026",
-        "tw": "2026 大田國際葡萄酒 EXPO",
-        "cn": "2026 大田国际葡萄酒 EXPO",
-        "en": "Daejeon International Wine EXPO 2026"
+        "ko": "대전 와인엑스포 행사장에서 스태프와 관람객이 함께 즐기는 현장",
+        "en": "Staff and visitors taking part in a celebration at the Daejeon Wine EXPO",
+        "cn": "大田葡萄酒EXPO现场，工作人员与观众一同参与活动",
+        "tw": "大田葡萄酒EXPO現場，工作人員與觀眾一同參與活動"
+      },
+      "caption": {
+        "ko": "와인엑스포 · 축제 현장",
+        "en": "Wine EXPO · Festival scene",
+        "cn": "葡萄酒EXPO · 活动现场",
+        "tw": "葡萄酒EXPO · 活動現場"
       },
       "credit": {
-        "ko": "제공 이미지",
-        "tw": "提供圖片",
-        "cn": "提供图片",
-        "en": "Supplied image"
+        "ko": "제공 사진",
+        "en": "Supplied photo",
+        "cn": "提供的照片",
+        "tw": "提供的照片"
       },
       "source": null,
-      "fit": "contain",
-      "width": 429,
-      "height": 441
+      "license": null
     },
     "themes": {
       "ko": "박람회 · 식문화",
@@ -1038,25 +1045,6 @@
     },
     "gallery": [
       {
-        "src": "assets/supplied/wine-expo.webp",
-        "alt": {
-          "ko": "대전국제와인EXPO 2026",
-          "tw": "2026 大田國際葡萄酒 EXPO",
-          "cn": "2026 大田国际葡萄酒 EXPO",
-          "en": "Daejeon International Wine EXPO 2026"
-        },
-        "credit": {
-          "ko": "제공 이미지",
-          "tw": "提供圖片",
-          "cn": "提供图片",
-          "en": "Supplied image"
-        },
-        "source": null,
-        "fit": "contain",
-        "width": 429,
-        "height": 441
-      },
-      {
         "src": "assets/supplied/wine-expo-onsite.jpg",
         "width": 720,
         "height": 479,
@@ -1081,6 +1069,25 @@
         },
         "source": null,
         "license": null
+      },
+      {
+        "src": "assets/supplied/wine-expo.webp",
+        "alt": {
+          "ko": "대전국제와인EXPO 2026",
+          "tw": "2026 大田國際葡萄酒 EXPO",
+          "cn": "2026 大田国际葡萄酒 EXPO",
+          "en": "Daejeon International Wine EXPO 2026"
+        },
+        "credit": {
+          "ko": "제공 이미지",
+          "tw": "提供圖片",
+          "cn": "提供图片",
+          "en": "Supplied image"
+        },
+        "source": null,
+        "fit": "contain",
+        "width": 429,
+        "height": 441
       }
     ]
   },
