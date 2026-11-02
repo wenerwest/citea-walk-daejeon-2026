@@ -99,6 +99,13 @@ try {
       if (!image.src || !image.width || !image.height) fail(`${place.id}.gallery.${index}: image path and dimensions are required.`);
       await localAsset(image.src, `${place.id}.gallery.${index}`, false);
     }
+    for (const [sectionIndex, section] of (place.storySections || []).entries()) {
+      for (const [imageIndex, image] of (section.gallery || []).entries()) {
+        const label = `${place.id}.storySections.${sectionIndex}.gallery.${imageIndex}`;
+        if (!image.src || !image.width || !image.height) fail(`${label}: image path and dimensions are required.`);
+        await localAsset(image.src, label, false);
+      }
+    }
   }
   const schedule = parsed.get('schedule.json') || parsed.get('event.json');
   const checkIds = new Set();

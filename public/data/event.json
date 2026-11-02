@@ -608,10 +608,7 @@
             "cn": "参加晨间瑜伽，并考察 Sun Square、OZENHI 和 1011 咖啡教育空间。",
             "en": "Morning yoga and visits to Sun Square, Ozenhigh and 1011 Coffee Education Space."
           },
-          "placeId": "local-wellness",
-          "relatedPlaceIds": [
-            "coffee-1011"
-          ]
+          "placeId": "local-wellness"
         },
         {
           "id": "2026-11-09-1100",

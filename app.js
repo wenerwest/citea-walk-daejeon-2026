@@ -54,8 +54,11 @@ function photo(p, cls='', eager=false) {
   const ico = /park|uam|bomun/.test(id)?'leaf':/yoga|wellness/.test(id)?'sun':/bakery/.test(id)?'walk':'pin';
   return `<div class="place-photo photo-placeholder ${cls}"><span class="placeholder-icon">${icon(ico,40)}</span><span>${esc(t('photoPending'))}</span></div>`;
 }
+function photoGallery(images, eagerFirst=false) {
+  return `<div class="place-photo-gallery">${images.map((image,index)=>`<figure><div class="place-gallery-frame ${image.width<image.height?'gallery-portrait':''}"><img src="${esc(image.src)}" alt="${esc(l(image.alt))}" width="${image.width}" height="${image.height}" ${eagerFirst&&index===0?'fetchpriority="high"':'loading="lazy"'} decoding="async"></div><figcaption><span>${esc(l(image.caption)||l(image.alt))}</span><small>${esc(l(image.credit))}</small></figcaption></figure>`).join('')}</div>`;
+}
 function placeMedia(p) {
-  if (p.gallery?.length) return `<div class="place-photo-gallery">${p.gallery.map((image,index)=>`<figure><div class="place-gallery-frame ${image.width<image.height?'gallery-portrait':''}"><img src="${esc(image.src)}" alt="${esc(l(image.alt))}" width="${image.width}" height="${image.height}" ${index===0?'fetchpriority="high"':'loading="lazy"'} decoding="async"></div><figcaption><span>${esc(l(image.caption)||l(image.alt))}</span><small>${esc(l(image.credit))}</small></figcaption></figure>`).join('')}</div>`;
+  if (p.gallery?.length) return photoGallery(p.gallery,true);
   return `<figure class="place-single-media">${photo(p,'detail-photo',true)}${p.image?`<figcaption class="photo-attribution">${p.image.caption?`${esc(l(p.image.caption))} · `:''}${p.image.source?ext(p.image.source,l(p.image.credit),''):esc(l(p.image.credit))} ${p.image.license?ext(p.image.license,'License',''):''}</figcaption>`:''}</figure>`;
 }
 const paragraphs = value => l(value).split(/\n\s*\n/).filter(Boolean).map(text=>`<p>${esc(text)}</p>`).join('');
@@ -144,7 +147,7 @@ function scheduleItem(item) {
 }
 function matchesExplorePlace(p) {
   const query=exploreQuery.toLocaleLowerCase().trim();
-  return (exploreFilter==='all'||p.categoryId===exploreFilter)&&JSON.stringify([p.names,p.koreanName,p.category,p.themes]).toLocaleLowerCase().includes(query);
+  return (exploreFilter==='all'||p.categoryId===exploreFilter)&&JSON.stringify([p.names,p.koreanName,p.category,p.themes,p.keywords]).toLocaleLowerCase().includes(query);
 }
 function applyExploreFilters() {
   let visible=0;
@@ -164,7 +167,7 @@ function place(id) {
   const i=data.places.indexOf(p);
   const section = (key,label,value) => `<section><h2>${esc(l(p.sectionTitles?.[key])||t(label))}</h2>${paragraphs(value)}</section>`;
   const practical=p.programInfo?`<div class="program-info"><h3>${esc(l(p.programInfo.title))}</h3><p>${esc(l(p.programInfo.body))}</p>${link('/schedule/'+p.programInfo.date,l(p.programInfo.linkLabel),'button button-outline')}</div>`:mapBlock(p);
-  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${renderExploreCategoryBadge(p,lang)}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}${p.headline?`<p class="place-headline">${esc(l(p.headline))}</p>`:''}</div>${placeMedia(p)}<div class="detail-columns"><div class="detail-copy">${section('intro','placeIntro',p.intro)}${section('history','background',p.history)}${(p.storySections||[]).map(story=>`<section><h2>${esc(l(story.title))}</h2>${paragraphs(story.body)}</section>`).join('')}${section('purpose','visitPurpose',p.purpose)}${p.sources.length?`<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details>`:''}</div><aside class="detail-sidebar"><h2>${esc(t('practicalInfo'))}</h2>${practical}</aside></div>${p.id==='daejeon-modern-history'?renderFilmedHere(lang):''}<nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
+  return `<article class="page-container place-detail"><div class="breadcrumb">${link('/explore',t('backToExplore'),'text-link','')}<span>/ ${String(i+1).padStart(2,'0')}</span></div><div class="place-title"><p class="eyebrow">${renderExploreCategoryBadge(p,lang)}</p><h1>${esc(l(p.names))}</h1>${lang!=='ko'?`<p class="native-title" lang="ko">${esc(p.koreanName)}</p>`:''}${p.headline?`<p class="place-headline">${esc(l(p.headline))}</p>`:''}${p.keywords?.length?`<ul class="place-keywords">${p.keywords.map(word=>`<li>${esc(l(word))}</li>`).join('')}</ul>`:''}</div>${placeMedia(p)}<div class="detail-columns"><div class="detail-copy">${section('intro','placeIntro',p.intro)}${section('history','background',p.history)}${(p.storySections||[]).map(story=>`<section><h2>${esc(l(story.title))}</h2>${paragraphs(story.body)}${story.gallery?.length?photoGallery(story.gallery):''}</section>`).join('')}${section('purpose','visitPurpose',p.purpose)}${p.sources.length?`<details class="sources"><summary>${esc(t('sources'))} (${p.sources.length})</summary>${p.sources.map(s=>ext(s.url,s.label)).join('')}</details>`:''}</div><aside class="detail-sidebar"><h2>${esc(t('practicalInfo'))}</h2>${practical}</aside></div>${p.id==='daejeon-modern-history'?renderFilmedHere(lang):''}<nav class="place-pagination" aria-label="${esc(t('explore'))}">${i>0?link('/place/'+data.places[i-1].id,t('previousPlace')+' · '+l(data.places[i-1].names),'prev-link',''): '<span></span>'}${i<data.places.length-1?link('/place/'+data.places[i+1].id,t('nextPlace')+' · '+l(data.places[i+1].names),'next-link'): '<span></span>'}</nav></article>`;
 }
 function audioPage() {
   return `<div class="page-container narrow">${pageHeading('audio')}<section class="live-voice-notices">${notice(t('liveVoiceTitle'),t('liveVoiceBody'))}${notice(t('earphonesRequiredTitle'),t('earphonesRequiredBody'),'earphones-required')}</section></div>`;
@@ -187,6 +190,7 @@ function render({focus=false}={}) {
   if(!data) return;
   closeFilmedGallery({restoreFocus:false});
   if(route()[0]==='map') history.replaceState(null,'','#/explore');
+  if(route()[0]==='place'&&route()[1]==='coffee-1011') history.replaceState(history.state,'','#/place/local-wellness');
   syncScheduleContext();
   const [page, id]=route();
   document.documentElement.lang=data.locale[lang].htmlLang;

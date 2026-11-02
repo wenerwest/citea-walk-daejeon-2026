@@ -330,6 +330,9 @@ body { -webkit-text-size-adjust: 100%; }
 .place-single-media .detail-photo.image-contain.image-portrait { aspect-ratio: 4 / 5; max-width: 480px; max-height: none; margin-inline: auto; }
 .place-single-media .detail-photo { width: 100%; }
 .place-gallery-frame.gallery-portrait { aspect-ratio: 4 / 5; }
+.place-keywords { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 0; padding:0; list-style:none; }
+.place-keywords li { padding:5px 12px; border:1px solid var(--line); border-radius:20px; background:var(--sage); color:var(--green); font-size:14px; line-height:1.5; }
+.detail-copy .place-photo-gallery { margin-top:22px; }
 
 /* Project story follows the guide's existing typography and palette. */
 .hero-actions { display:flex; align-items:center; gap:10px 24px; flex-wrap:wrap; margin-top:24px; }
