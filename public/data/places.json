@@ -1107,10 +1107,10 @@
       "tw": "參訪考察"
     },
     "intro": {
-      "ko": "썬스퀘어, 오젠하이, 커피1011을 찾아가는 로컬 웰니스 공간 답사입니다. 지역의 웰니스 공간과 커피교육을 통해 몸과 마음의 휴식, 새로운 배움이 일상과 만나는 방식을 살펴봅니다.",
-      "en": "Visit Sun Square, Ozenhigh and COFFEE1011 as part of a local wellness venue tour. Explore how spaces for wellness and coffee education bring rest and learning into everyday life.",
-      "cn": "参访Sun Square、OZENHI与COFFEE1011，走进大田的本地康养空间。通过康养与咖啡教育，了解身心休憩、学习与日常生活如何相遇。",
-      "tw": "參訪Sun Square、OZENHI與COFFEE1011，走進大田的在地身心療癒空間。透過身心照顧與咖啡教育，了解休憩、學習與日常生活如何相遇。"
+      "ko": "커피1011의 청양고추·바질토마토 에그타르트부터 웰니스 체험까지, 썬스퀘어·오젠하이·커피1011에서 대전의 로컬 문화를 만나는 답사입니다.",
+      "en": "From COFFEE1011’s Cheongyang chili and basil-tomato egg tarts to wellness experiences, explore local life at Sun Square, Ozenhigh and COFFEE1011.",
+      "cn": "从COFFEE1011的青阳辣椒与罗勒番茄蛋挞，到康养体验，走访Sun Square、OZENHI与COFFEE1011，认识大田地方日常的新面貌。",
+      "tw": "從COFFEE1011的青陽辣椒與羅勒番茄蛋塔，到身心療癒體驗，走訪Sun Square、OZENHI與COFFEE1011，認識大田在地日常的新面貌。"
     },
     "history": {
       "ko": "오젠하이 공식 홈페이지는 여러 지점을 안내하고 있어 이번 방문 지점 확인이 필요합니다. 세 공간의 단체 예약 내용과 운영 이력은 운영진 자료를 받은 뒤 보완합니다.",
@@ -1143,6 +1143,14 @@
       {
         "label": "아시아스페셜티커피협회 · 인증교육기관",
         "url": "https://www.asca.coffee/asca_edu5"
+      },
+      {
+        "label": "대전광역시 · 2025 유망 소상공인 선정 발표",
+        "url": "https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&ntatcSeq=1501829686&pageIndex=117&recordCountPerPage=10&searchCondition=&searchKeyword="
+      },
+      {
+        "label": "커피1011 제공 보도자료 · 2026 대전빵축제 에그타르트",
+        "url": "https://www.newswire.co.kr/newsRead.php?no=1044462"
       }
     ],
     "naverUrl": null,
@@ -1169,10 +1177,10 @@
       "position": "center 65%"
     },
     "themes": {
-      "ko": "로컬 공간 · 웰니스 · 커피1011 · 커피교육",
-      "en": "Local spaces · Wellness · COFFEE1011 · Coffee education",
-      "cn": "本地空间 · 康养 · COFFEE1011 · 咖啡教育",
-      "tw": "在地空間 · 身心療癒 · COFFEE1011 · 咖啡教育"
+      "ko": "로컬 공간 · 웰니스 · 커피1011 · 커피교육 · 청양고추 에그타르트 · 바질토마토 에그타르트",
+      "en": "Local spaces · Wellness · COFFEE1011 · Coffee education · Cheongyang chili egg tart · Basil-tomato egg tart",
+      "cn": "本地空间 · 康养 · COFFEE1011 · 咖啡教育 · 青阳辣椒蛋挞 · 罗勒番茄蛋挞",
+      "tw": "在地空間 · 身心療癒 · COFFEE1011 · 咖啡教育 · 青陽辣椒蛋塔 · 羅勒番茄蛋塔"
     },
     "categoryId": "visits",
     "categoryBasis": "schedule-color",
@@ -1199,16 +1207,16 @@
     "storySections": [
       {
         "title": {
-          "ko": "커피1011 · 커피와 디저트, 배움이 있는 공간",
-          "en": "COFFEE1011 · Coffee, Desserts and Learning",
-          "cn": "COFFEE1011 · 咖啡、甜点与学习的空间",
-          "tw": "COFFEE1011 · 咖啡、甜點與學習的空間"
+          "ko": "커피1011 · 로스터리에서 만나는 이색 에그타르트",
+          "en": "COFFEE1011 · Creative Egg Tarts at a Local Roastery",
+          "cn": "COFFEE1011 · 咖啡烘焙坊里的创意蛋挞",
+          "tw": "COFFEE1011 · 在咖啡烘豆坊遇見創意蛋塔"
         },
         "body": {
-          "ko": "직접 로스팅한 커피와 에그타르트를 만나는 대전의 로컬 커피 공간입니다. 커피교육도 운영하며, 이번 일정에서는 1011 커피교육공간을 방문합니다.\n\n위치: 대전광역시 유성구 신성로 56 (신성동)",
-          "en": "A local Daejeon coffee space offering its own roasted coffee and egg tarts. COFFEE 1011 also provides coffee education, and the itinerary includes a visit to its learning space.\n\nLocation: 56, Sinseong-ro, Yuseong-gu, Daejeon (Sinseong-dong)",
-          "cn": "这处大田本地咖啡空间提供自家烘焙咖啡与蛋挞，也开展咖啡教育。本次行程将参访1011咖啡教育空间。\n\n地址：大田广域市儒城区 Sinseong-ro 56（新城洞）",
-          "tw": "這處大田在地咖啡空間提供自家烘焙咖啡與蛋塔，也開設咖啡課程。本次行程將參訪1011咖啡教育空間。\n\n地址：大田廣域市儒城區 Sinseong-ro 56（新城洞）"
+          "ko": "대덕연구단지와 함께 성장한 커피1011은 직접 로스팅한 커피와 디저트, 커피교육을 선보이는 대전의 로컬 브랜드입니다. 2025년에는 ‘제2의 성심당’을 발굴·육성하기 위한 대전시 ‘유망 소상공인 사업화 지원사업’에 선정됐습니다.\n\n2026 대전빵축제를 위해 준비한 ‘청양고추 에그타르트’와 ‘바질토마토 에그타르트’는 달콤함에 새로운 감각을 더합니다. 청양고추 에그타르트는 부드러운 에그 필링에 청양고추의 알싸함과 이탈리아 숙성 치즈 파르미지아노 레지아노의 깊은 풍미를 더해 달콤함·짭짤함·매콤함의 조화를 만듭니다.\n\n바질토마토 에그타르트는 직접 만든 토마토 올리브오일 절임과 생바질, 에그 필링이 어우러진 메뉴입니다. 달콤하고 짭짤한 맛 사이로 산뜻한 산미와 향긋한 바질 향을 느낄 수 있습니다.\n\n이색적인 맛의 조합을 통해 로컬 브랜드가 지역의 미식 문화를 넓혀가는 이야기를 살펴봅니다.\n\n위치: 대전광역시 유성구 신성로 56 (신성동)",
+          "en": "COFFEE1011 is a Daejeon local brand that has grown alongside the Daedeok Research Complex, offering its own roasted coffee, desserts and coffee education. In 2025, it was selected for Daejeon City’s business development support program for promising small businesses, an initiative to discover and nurture the next “Sungsimdang.”\n\nDeveloped for the 2026 Daejeon Bread Festival, its Cheongyang chili and basil-tomato egg tarts bring fresh ideas to a familiar dessert. The Cheongyang chili tart combines silky egg custard with the pepper’s distinctive heat and the rich flavor of aged Italian Parmigiano Reggiano, balancing sweet, savory and spicy notes.\n\nThe basil-tomato tart pairs house-made tomatoes marinated in olive oil with fresh basil and egg custard, bringing together sweetness, savory flavor and bright acidity.\n\nThrough these creative combinations, discover how a local brand adds new possibilities to the region’s food culture.\n\nLocation: 56, Sinseong-ro, Yuseong-gu, Daejeon (Sinseong-dong)",
+          "cn": "与大德研究园区一同成长的COFFEE1011，是提供自家烘焙咖啡、甜点与咖啡教学的大田本地品牌。2025年，品牌入选大田市面向潜力小微商家的商业发展扶持项目，该项目旨在发掘并培育下一个“圣心堂”。\n\n品牌为2026年大田面包节研发的“青阳辣椒蛋挞”与“罗勒番茄蛋挞”，为熟悉的甜点带来新意。青阳辣椒蛋挞以柔滑蛋奶馅搭配辣椒的辛香，再加入意大利熟成奶酪Parmigiano Reggiano的浓郁风味，呈现甜、咸、辣的平衡。\n\n罗勒番茄蛋挞则结合自制橄榄油渍番茄、新鲜罗勒与蛋奶馅，带来甜香、咸鲜与清爽酸味。\n\n从这些别出心裁的风味组合中，认识本地品牌如何为地方饮食文化开拓新的可能。\n\n地址：大田广域市儒城区 Sinseong-ro 56（新城洞）",
+          "tw": "與大德研究園區一同成長的COFFEE1011，是提供自家烘焙咖啡、甜點與咖啡教學的大田在地品牌。2025年，品牌入選大田市扶植潛力小型商家的商業發展支援計畫，該計畫旨在發掘並培育下一個「聖心堂」。\n\n品牌為2026年大田麵包節研發的「青陽辣椒蛋塔」與「羅勒番茄蛋塔」，為熟悉的甜點帶來新意。青陽辣椒蛋塔以柔滑蛋奶餡搭配辣椒的辛香，再加入義大利熟成起司Parmigiano Reggiano的濃郁風味，呈現甜、鹹、辣的平衡。\n\n羅勒番茄蛋塔則結合自製橄欖油漬番茄、新鮮羅勒與蛋奶餡，帶來甜香、鹹鮮與清爽酸味。\n\n從這些別出心裁的風味組合中，認識在地品牌如何為地方飲食文化開拓新的可能。\n\n地址：大田廣域市儒城區 Sinseong-ro 56（新城洞）"
         },
         "gallery": [
           {
@@ -1223,10 +1231,10 @@
               "tw": "盒中四款搭配不同配料的COFFEE 1011蛋塔"
             },
             "caption": {
-              "ko": "커피1011 · 에그타르트",
-              "en": "COFFEE 1011 · Egg tarts",
-              "cn": "COFFEE 1011 · 蛋挞",
-              "tw": "COFFEE 1011 · 蛋塔"
+              "ko": "커피1011 · 청양고추·바질토마토 등 에그타르트",
+              "en": "COFFEE1011 · Egg tarts including Cheongyang chili and basil-tomato",
+              "cn": "COFFEE1011 · 青阳辣椒、罗勒番茄等口味的蛋挞",
+              "tw": "COFFEE1011 · 青陽辣椒、羅勒番茄等口味的蛋塔"
             },
             "credit": {
               "ko": "제공 사진",
