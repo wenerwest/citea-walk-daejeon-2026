@@ -7,7 +7,18 @@ const main = $('#main');
 const langs = ['ko', 'en', 'tw', 'cn'];
 const readStore = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const store = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; } };
-const params = new URL(location.href).searchParams;
+const entryUrl = new URL(location.href);
+if (entryUrl.hostname === 'sundayteaclub.kr') {
+  let changed = false;
+  for (const [key, value] of [['lang', 'ko'], ['program', 'partners']]) {
+    if (!entryUrl.searchParams.has(key)) {
+      entryUrl.searchParams.set(key, value);
+      changed = true;
+    }
+  }
+  if (changed) history.replaceState(history.state, '', entryUrl);
+}
+const params = entryUrl.searchParams;
 let lang = langs.includes(params.get('lang')) ? params.get('lang') : readStore('citea-language', 'ko');
 if (!langs.includes(lang)) lang = 'ko';
 let data, menuOpen = false, shoppingFilter = 'all', exploreFilter = 'all', exploreQuery = '';

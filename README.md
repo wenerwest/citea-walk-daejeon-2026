@@ -2,7 +2,9 @@
 
 로그인·설치 없이 사용하는 한국어 / English / 繁體中文 / 简体中文 도시 탐방 가이드입니다. 별도 서버, 유료 API, npm 설치 없이 동작하는 정적 웹사이트이며, GitHub 무료 기본 주소로 배포할 수 있습니다.
 
-공개 사이트: [CiTEA Walk 바로 열기](https://wenerwest.github.io/citea-walk-daejeon-2026/)
+운영 도메인: [CiTEA Walk 바로 열기](https://sundayteaclub.kr/?lang=ko&program=partners#/). GitHub Pages의 Custom domain 설정과 DNS 연결 및 HTTPS 인증이 완료된 뒤 사용할 수 있습니다.
+
+이 도메인의 첫 접속에는 한국어·파트너스 프로그램이 기본 적용됩니다. URL에 명시한 언어와 프로그램은 그대로 유지합니다. 기존 GitHub Pages 경로와 사용자 도메인 모두에서 동작하도록 자산 경로는 상대 경로를 유지합니다.
 
 소스 저장소: [wenerwest/citea-walk-daejeon-2026](https://github.com/wenerwest/citea-walk-daejeon-2026)
 
