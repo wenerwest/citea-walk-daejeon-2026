@@ -6,6 +6,8 @@ self.addEventListener('install', event => {event.waitUntil(caches.open(VERSION).
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('citea-guide-')&&k!==VERSION).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{
   const u=new URL(event.request.url);
+  // Survey pages and authenticated/API responses must never enter the guide cache.
+  if(/^\/(?:survey|api)(?:\/|$)/.test(u.pathname))return;
   if(event.request.method!=='GET'||u.origin!==ROOT.origin||!u.pathname.startsWith(ROOT.pathname))return;
   event.respondWith((async()=>{
     const cache=await caches.open(VERSION);

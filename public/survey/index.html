@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>CiTEA Walk 活动满意度调查 / 活動滿意度調查</title>
+  <style>
+    :root{font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Microsoft YaHei",sans-serif;color:#2B302A;background:#F9FBF8;line-height:1.8}
+    body{margin:0;min-height:100vh;display:grid;place-items:center}main{max-width:36rem;margin:24px;padding:32px;border:1px solid #DDE4DA;background:white;border-radius:4px}h1{font-size:24px;line-height:1.5}a{color:#1C3A27;font-weight:600;display:inline-block;min-height:44px}a:focus-visible{outline:3px solid #1C3A27;outline-offset:4px}[hidden]{display:none!important}
+  </style>
+</head>
+<body>
+<main>
+  <p>CiTEA Walk · Sunday Tea Club</p>
+  <h1>CiTEA Walk 活动满意度调查 / 活動滿意度調查</h1>
+  <p id="status" role="status">调查链接准备中。調查連結準備中。<br>설문 서비스 연결을 준비하고 있습니다.</p>
+  <a id="continue" hidden>进入调查 / 進入調查 / 계속하기 →</a>
+  <p><a href="https://sundayteaclub.kr/">Sunday Tea Club ↗</a></p>
+  <noscript>请启用 JavaScript 或联系活动主办方取得调查链接。請啟用 JavaScript 或聯絡活動主辦方取得調查連結。</noscript>
+</main>
+<script>
+  // The survey backend is hosted separately; this page is its stable domain entry.
+  const SURVEY_ORIGIN = "https://citea-walk-survey-2026.wenerwest.chatgpt.site";
+  try {
+    const origin = new URL(SURVEY_ORIGIN);
+    if (origin.protocol !== "https:" || origin.username || origin.password || origin.pathname !== "/" || origin.search || origin.hash || origin.origin === location.origin) throw new Error("Invalid survey origin");
+    const target = new URL("/survey", origin.origin);
+    const language = new URLSearchParams(location.search).get("lang");
+    const supported = {cn:"zh-CN",tw:"zh-TW","zh-CN":"zh-CN","zh-TW":"zh-TW"};
+    if (Object.prototype.hasOwnProperty.call(supported, language)) target.searchParams.set("lang", supported[language]);
+    const link = document.getElementById("continue");
+    link.href = target.href;
+    link.hidden = false;
+    document.getElementById("status").textContent = "正在前往调查。正在前往調查。설문으로 이동합니다…";
+    location.replace(target.href);
+  } catch (_) {
+    // Keep an honest setup message while the deployment origin is unconfigured.
+  }
+</script>
+</body>
+</html>
