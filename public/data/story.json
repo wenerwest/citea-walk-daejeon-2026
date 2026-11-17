@@ -459,72 +459,66 @@
       "tw": "這趟旅程留下的十件事",
       "cn": "这趟旅程留下的十件事"
     },
-    "intro": {
-      "ko": "참가자 설문 11건의 선택값과 중국어 서술형 답변을 바탕으로, 기억에 남은 경험과 다음 여행에 바라는 점을 정리했습니다. 관광 활성화 문항은 복수 선택이었습니다.",
-      "en": "These takeaways draw on 11 survey responses, including selections and written comments in Chinese. The question about improving tourism allowed multiple selections.",
-      "tw": "我們從 11 份參加者問卷的勾選結果與中文文字回答中，整理出令人印象深刻的體驗及對下次旅行的建議。觀光發展題可以複選。",
-      "cn": "我们从 11 份参与者问卷的勾选结果和中文文字回答中，整理出令人印象深刻的体验和对下次旅行的建议。旅游发展题可以多选。"
-    },
     "items": [
       {
-        "ko": "지역 문화·역사 체험은 8건에서 선택됐습니다. 테미오래와 대전근현대사전시관을 둘러본 뒤 대전의 역사를 더 알아보고 싶어졌다는 답변도 있었습니다.",
-        "en": "Eight responses selected local culture and history experiences. One participant said visiting Temi Orae and the Daejeon Modern History Exhibition Hall made them want to learn more about the city’s history.",
-        "tw": "有 8 份問卷勾選在地文化與歷史體驗。也有人說，走訪 Temi Orae 近代官舍村與大田近現代史展示館後，更想深入認識大田的歷史。",
-        "cn": "有 8 份问卷选择了当地文化与历史体验。也有人说，参观 Temi Orae 近代官舍村和大田近现代史展示馆后，更想深入了解大田的历史。"
+        "ko": "테미오래와 대전근현대사전시관을 둘러본 뒤 대전의 역사를 더 알아보고 싶어졌다는 이야기가 있었습니다. 지역의 문화와 역사를 직접 경험할 기회를 바라는 의견도 나왔습니다.",
+        "en": "Visiting Temi Orae and the Daejeon Modern History Exhibition Hall sparked interest in learning more about the city’s history. Participants also expressed interest in hands-on experiences with local culture and history.",
+        "tw": "走訪 Temi Orae 近代官舍村與大田近現代史展示館後，有人更想深入認識大田的歷史。也有意見希望增加親身體驗在地文化與歷史的機會。",
+        "cn": "参观 Temi Orae 近代官舍村和大田近现代史展示馆后，有人更想深入了解大田的历史。也有意见希望增加亲身体验当地文化与历史的机会。"
       },
       {
-        "ko": "로컬 음식·베이커리 투어는 6건에서 선택됐습니다. 성심당의 빵과 박물관을 함께 경험한 점이 인상 깊었다는 의견이 있었습니다.",
-        "en": "Six responses selected local food and bakery tours. One participant especially enjoyed trying Sungsimdang’s bread and visiting its museum.",
-        "tw": "有 6 份問卷勾選在地美食與麵包店之旅。也有人對品嚐聖心堂麵包、參觀博物館的經驗印象深刻。",
-        "cn": "有 6 份问卷选择了当地美食与面包店之旅。也有人对品尝圣心堂面包、参观博物馆的经历印象深刻。"
+        "ko": "성심당의 빵을 맛보고 박물관도 둘러볼 수 있어 인상 깊었다는 이야기가 있었습니다. 대전의 지역 음식과 빵집을 함께 소개하는 코스에도 관심을 보였습니다.",
+        "en": "Trying Sungsimdang’s bread and visiting its museum stood out. There was also interest in tours that bring together Daejeon’s local food and bakeries.",
+        "tw": "品嚐聖心堂的麵包並參觀博物館的經驗令人印象深刻。也有意見希望安排結合大田在地美食與麵包店的行程。",
+        "cn": "品尝圣心堂的面包并参观博物馆的经历令人印象深刻。也有意见希望安排结合大田当地美食与面包店的行程。"
       },
       {
-        "ko": "웰니스는 4건에서 선택됐습니다. 요가와 싱잉볼이 기억에 남았다는 답변이 있었고, 이런 체험에도 대전만의 이야기를 더해 달라는 의견이 나왔습니다.",
-        "en": "Four responses selected wellness. Participants mentioned yoga and singing bowls as highlights, and one suggested giving wellness activities a clearer connection to Daejeon.",
-        "tw": "有 4 份問卷勾選身心療癒體驗。有人對瑜伽與頌缽印象深刻，也有人希望這些體驗能多帶入大田在地的故事。",
-        "cn": "有 4 份问卷选择了身心疗愈体验。有人对瑜伽和颂钵印象深刻，也有人希望这些体验能更多融入大田本地的故事。"
+        "ko": "요가와 싱잉볼이 기억에 남았다는 반응이 있었습니다. 이런 웰니스 체험에 대전만의 이야기를 더하면 좋겠다는 제안도 나왔습니다.",
+        "en": "Yoga and singing bowls were memorable experiences. Feedback also suggested giving wellness activities a clearer connection to Daejeon.",
+        "tw": "瑜伽與頌缽讓人印象深刻。也有意見建議，身心療癒體驗可以多融入大田在地的故事。",
+        "cn": "瑜伽和颂钵让人印象深刻。也有意见建议，身心疗愈体验可以更多融入大田本地的故事。"
       },
       {
-        "ko": "와인엑스포를 흥미롭게 본 답변이 있었습니다. 엑스포 관람에 앞서 대전의 양조장과 지역 술 문화를 소개하면 더 좋겠다는 제안도 있었습니다.",
-        "en": "Some responses highlighted the Wine Expo. One suggested introducing Daejeon’s local producers and drinking traditions before the Expo visit.",
-        "tw": "問卷中有對葡萄酒博覽會的好評。也有人建議，逛展前可以先介紹大田的在地釀酒廠與飲酒文化。",
-        "cn": "问卷中有对葡萄酒博览会的好评。也有人建议，逛展前可以先介绍大田本地的酿酒厂与饮酒文化。"
+        "ko": "와인엑스포를 흥미롭게 봤다는 반응이 있었습니다. 엑스포를 둘러보기 전에 대전의 양조장과 지역 술 문화를 소개하자는 제안도 있었습니다.",
+        "en": "The Wine Expo drew positive feedback. A suggestion was to introduce Daejeon’s local producers and drinking traditions before visiting the Expo.",
+        "tw": "葡萄酒博覽會獲得好評。也有建議可以在逛展前，先介紹大田的在地釀酒廠與飲酒文化。",
+        "cn": "葡萄酒博览会获得了好评。也有建议可以在逛展前，先介绍大田本地的酿酒厂与饮酒文化。"
       },
       {
-        "ko": "도보 일정에서는 주요 장소의 해설을 함께 듣고, 나머지는 각자 관심에 맞게 둘러볼 시간을 두자는 제안이 있었습니다. 식사 시간이 부족했다는 답변도 있었습니다.",
-        "en": "One suggestion was to guide the group through a few key stops, then give everyone time to explore on their own. Another response noted that meal breaks were too short.",
-        "tw": "有人建議，城市散步可以先一起聽幾個重點景點的導覽，再留時間讓大家依自己的興趣探索。也有人提到，用餐時間不夠。",
-        "cn": "有人建议，城市漫步可以先一起听几个重点景点的讲解，再留时间让大家按自己的兴趣探索。也有人提到，用餐时间不够。"
+        "ko": "도보 일정에서는 주요 장소의 해설을 함께 듣고, 각자의 관심에 따라 자유롭게 둘러볼 시간을 두자는 제안이 있었습니다. 식사 시간이 부족했다는 의견도 나왔습니다.",
+        "en": "Feedback suggested guiding the group through key stops on the walk and leaving time for everyone to explore at their own pace. There were also concerns about short meal breaks.",
+        "tw": "有人建議，城市散步可以先一起聽重點景點的導覽，再留時間讓大家依自己的興趣探索。也有意見提到用餐時間不夠。",
+        "cn": "有人建议，城市漫步可以先一起听重点景点的讲解，再留时间让大家按自己的兴趣探索。也有意见提到用餐时间不够。"
       },
       {
-        "ko": "교통·이동 편의는 7건에서 선택됐습니다. 개별 여행자가 대전을 둘러보기 쉽도록 관광버스나 자전거 여행 지도를 제공하자는 제안이 있었습니다.",
-        "en": "Seven responses selected easier transport. One suggestion was to offer sightseeing buses or cycling maps so independent travellers could get around Daejeon more easily.",
-        "tw": "有 7 份問卷勾選改善交通與移動便利性。也有人提議提供觀光巴士或自行車漫遊地圖，方便自由行旅客遊覽大田。",
-        "cn": "有 7 份问卷选择了改善交通和出行便利性。也有人提议提供观光巴士或自行车旅行地图，方便自由行游客游览大田。"
+        "ko": "개별 여행자가 대전을 더 편하게 둘러볼 수 있도록 관광버스나 자전거 여행 지도를 제공하자는 제안이 있었습니다.",
+        "en": "Suggestions for making it easier to get around Daejeon independently included sightseeing buses and cycling maps.",
+        "tw": "為了方便自由行旅客遊覽大田，有意見建議提供觀光巴士或自行車漫遊地圖。",
+        "cn": "为方便自由行游客游览大田，有意见建议提供观光巴士或自行车旅行地图。"
       },
       {
-        "ko": "중국어 관광안내·해설과 중국어 지도·안내표지는 각각 5건에서 선택됐습니다. 체험 수업을 영어로 들을 수 있으면 좋겠다는 의견도 있었습니다.",
-        "en": "Chinese-language guides and interpretation received five selections, as did Chinese-language maps and signs. One participant also suggested offering activities in English.",
-        "tw": "中文旅遊導覽與解說、中文地圖與指標各有 5 份問卷勾選。也有人希望體驗課程能提供英語授課。",
-        "cn": "中文旅游导览与讲解、中文地图与指示牌各有 5 份问卷选择。也有人希望体验课程能提供英语授课。"
+        "ko": "중국어 관광 안내·해설과 중국어 지도·안내표지를 바라는 의견이 나왔습니다. 체험 수업을 영어로 들을 수 있으면 좋겠다는 제안도 있었습니다.",
+        "en": "Feedback called for Chinese-language guides, interpretation, maps and signs. Offering activities in English also came up as a suggestion.",
+        "tw": "問卷中有希望提供中文旅遊導覽、解說、地圖與指標的意見，也有建議讓體驗課程提供英語授課。",
+        "cn": "问卷中有希望提供中文旅游导览、讲解、地图与指示牌的意见，也有建议让体验课程提供英语授课。"
       },
       {
-        "ko": "지역 주민과의 교류는 4건에서 선택됐습니다. 여행에서 만난 사람들과의 대화가 기억에 남았다는 답변과, 새 참가자가 합류할 때 짧게 자기소개를 나누자는 제안도 있었습니다.",
-        "en": "Four responses selected opportunities to meet local residents. One participant remembered the conversations they had on the trip, and another suggested brief introductions whenever new people joined the group.",
-        "tw": "有 4 份問卷勾選與在地居民交流。有人記得旅途中與人交談的收穫，也有人提議新成員加入時，可以簡單自我介紹。",
-        "cn": "有 4 份问卷选择了和当地居民交流。有人记得旅途中与人交谈的收获，也有人提议新成员加入时可以简单自我介绍。"
+        "ko": "여행에서 만난 사람들과의 대화가 기억에 남았다는 이야기가 있었습니다. 지역 주민과 교류할 기회를 바라는 의견과, 새 참가자가 합류할 때 짧게 자기소개를 나누자는 제안도 나왔습니다.",
+        "en": "Conversations with people met along the way stayed with participants. Feedback also pointed to opportunities to meet local residents and suggested brief introductions when newcomers join the group.",
+        "tw": "旅途中與人交談的經驗讓人印象深刻。也有意見希望能和在地居民交流，並建議新成員加入時，可以簡單自我介紹。",
+        "cn": "旅途中与人交谈的经历令人印象深刻。也有意见希望能和当地居民交流，并建议新成员加入时可以简单自我介绍。"
       },
       {
-        "ko": "한 응답에서는 과학도시 대전의 특성을 살려, 과학관이나 엑스포과학공원과 연계한 참여형 과학 체험을 제안했습니다.",
-        "en": "One participant suggested hands-on science activities in partnership with places such as the National Science Museum or Expo Science Park, building on Daejeon’s identity as a science city.",
-        "tw": "有一份問卷建議發揮大田作為科學城市的特色，與科學館或 Expo 科學公園合作，推出能親手參與的科學體驗。",
-        "cn": "有一份问卷建议发挥大田作为科学城市的特色，与科学馆或 Expo 科学公园合作，推出能亲手参与的科学体验。"
+        "ko": "과학도시 대전의 특색을 살려 과학관이나 엑스포과학공원에서 직접 참여할 수 있는 과학 체험을 마련하자는 제안이 있었습니다.",
+        "en": "Hands-on activities at places such as the National Science Museum or Expo Science Park were suggested as a way to experience Daejeon as a science city.",
+        "tw": "也有建議在科學館或 Expo 科學公園安排能親手參與的活動，讓旅客體驗大田作為科學城市的特色。",
+        "cn": "也有建议在科学馆或 Expo 科学公园安排能亲手参与的活动，让游客体验大田作为科学城市的特色。"
       },
       {
-        "ko": "대전 재방문 의향과 추천 의향은 두 문항 모두 11건에서 4점 또는 5점이었습니다.",
-        "en": "All 11 responses gave a score of 4 or 5 on both willingness to revisit Daejeon and willingness to recommend it.",
-        "tw": "再訪大田與推薦大田的意願這兩題，11 份問卷都給了 4 分或 5 分。",
-        "cn": "再访大田与推荐大田的意愿这两道题，11 份问卷都给出了 4 分或 5 分。"
+        "ko": "대전을 다시 찾거나 주변 사람들에게 추천하는 데 긍정적인 반응이 나왔습니다.",
+        "en": "Participants expressed interest in returning to Daejeon and in recommending the city to others.",
+        "tw": "問卷也反映出再訪大田和向身邊的人推薦大田的意願。",
+        "cn": "问卷也反映出再访大田和向身边的人推荐大田的意愿。"
       }
     ]
   },
