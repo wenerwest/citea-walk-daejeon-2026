@@ -81,7 +81,7 @@ function renderHeader() {
   $('#skip').textContent=t('skipToContent');
 }
 function footer() {
-  $('#footer').innerHTML=`<div class="footer-inner"><div><a class="footer-brand" href="#/" aria-label="CiTEA Walk ${esc(t('home'))}"><span class="brand-logo"><img src="assets/citea-walk-logo.png" width="1422" height="736" alt="CiTEA Walk" loading="lazy" decoding="async"></span><span>${esc(t('tagline'))}</span></a><p>${esc(t('footerNote'))}</p></div><div class="footer-meta"><p>JUNGGU, DAEJEON · NOV 7–10, 2026</p><p>${esc(t('lastUpdated'))} ${esc(data.event.updatedAt)}</p>${link('/about',l(data.site.about.navTitle),'footer-about','')} <a href="#/notices">${esc(t('notices'))} ↗</a> <a href="${esc(surveyHref())}">${esc(t('survey'))} ↗</a></div></div><div class="footer-institutions" aria-label="${esc(t('institutionLogos'))}">${(data.site.footerLogos||[]).map(logo=>`<img src="${esc(logo.src)}" alt="${esc(l(logo.alt))}" width="${logo.width}" height="${logo.height}" loading="lazy" decoding="async">`).join('')}</div><div class="footer-bottom"><span>© 2026 CiTEA Walk</span><span id="connection">${esc(t(navigator.onLine?'savedGuide':'offline'))}</span></div>`;
+  $('#footer').innerHTML=`<div class="footer-inner"><div><a class="footer-brand" href="#/" aria-label="CiTEA Walk ${esc(t('home'))}"><span class="brand-logo"><img src="assets/citea-walk-logo.png" width="1422" height="736" alt="CiTEA Walk" loading="lazy" decoding="async"></span><span>${esc(t('tagline'))}</span></a><p>${esc(t('footerNote'))}</p></div><div class="footer-meta"><p>JUNGGU, DAEJEON · NOV 7–10, 2026</p><p>${esc(t('lastUpdated'))} ${esc(data.event.updatedAt)}</p>${link('/about',l(data.site.about.navTitle),'footer-about','')} ${link('/stories',l(data.story.title),'footer-about','')} <a href="#/notices">${esc(t('notices'))} ↗</a> <a href="${esc(surveyHref())}">${esc(t('survey'))} ↗</a></div></div><div class="footer-institutions" aria-label="${esc(t('institutionLogos'))}">${(data.site.footerLogos||[]).map(logo=>`<img src="${esc(logo.src)}" alt="${esc(l(logo.alt))}" width="${logo.width}" height="${logo.height}" loading="lazy" decoding="async">`).join('')}</div><div class="footer-bottom"><span>© 2026 CiTEA Walk</span><span id="connection">${esc(t(navigator.onLine?'savedGuide':'offline'))}</span></div>`;
 }
 function pageHeading(kind) {
   return `<div class="page-heading"><p class="eyebrow">${esc(t(kind+'Eyebrow'))}</p><h1>${esc(t(kind+'Title'))}</h1><p class="intro">${esc(t(kind+'Intro'))}</p></div>`;
@@ -126,29 +126,12 @@ function placeCard(p, index, hidden=false) {
   return `<article class="place-card"${hidden?' hidden':''}><a href="#/place/${p.id}" class="photo-link" aria-label="${esc(l(p.names))}">${photo(p)}<span class="place-number">${String(index+1).padStart(2,'0')}</span></a><div class="place-card-body"><p class="category">${renderExploreCategoryBadge(p,lang)}</p><h2><a href="#/place/${p.id}">${esc(l(p.names))}</a></h2>${lang!=='ko'?`<p class="korean-name" lang="ko">${esc(p.koreanName)}</p>`:''}<p>${esc(l(p.intro))}</p><div class="card-bottom">${link('/place/'+p.id,t('viewDetails'),'text-link')}</div></div></article>`;
 }
 function meetingRecord() {
-  const copy = {
-    ko: {
-      label: '커뮤니티 교류 기록',
-      title: '디지털 노마드와 대전 창업 커뮤니티를 잇다',
-      body: '대전 유성구청 일자리경제과와의 미팅에서는 디지털 노마드와 대전의 창업 커뮤니티를 어떻게 연결할 수 있을지 논의했습니다.'
-    },
-    en: {
-      label: 'Community exchange',
-      title: 'Connecting digital nomads with Daejeon’s startup community',
-      body: 'In a meeting with the Jobs and Economy Division of Yuseong-gu Office in Daejeon, we discussed how to connect digital nomads with Daejeon’s startup community.'
-    },
-    tw: {
-      label: '社群交流紀錄',
-      title: '連結數位遊牧者與大田創業社群',
-      body: '在與大田儒城區廳就業經濟科的會議中，我們討論了如何連結數位遊牧者與大田的創業社群。'
-    },
-    cn: {
-      label: '社群交流记录',
-      title: '连接数字游民与大田创业社群',
-      body: '在与大田儒城区厅就业经济科的会议中，我们讨论了如何连接数字游民与大田的创业社群。'
-    }
-  }[lang];
-  return `<section class="home-about" id="yuseong-community-meeting" aria-labelledby="meeting-record-title"><div><p class="eyebrow">${esc(copy.label)}</p><h2 id="meeting-record-title">${esc(copy.title)}</h2><p>${esc(copy.body)}</p></div></section>`;
+  const story=data.story;
+  return `<section class="home-about home-story-preview" id="yuseong-community-meeting" aria-labelledby="meeting-record-title"><div><p class="eyebrow">AFTER THE WALK</p><h2 id="meeting-record-title">${link('/stories',l(story.title),'','')}</h2><p>${esc(l(story.preview))}</p></div>${link('/stories',l(story.readMore),'button button-outline')}</section>`;
+}
+function stories() {
+  const story=data.story;
+  return `<article class="page-container story-page"><div class="breadcrumb">${link('/',l(story.backHome),'text-link','')}</div><header class="page-heading"><p class="eyebrow">SUNDAY TEA CLUB · AFTER THE WALK</p><h1>${esc(l(story.title))}</h1><p class="intro">${esc(l(story.subtitle))}</p></header><div class="story-body"><div class="story-intro">${paragraphs(story.intro)}</div>${story.sections.map((section,index)=>`<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body)}${section.gallery?.length?photoGallery(section.gallery):''}</section>`).join('')}<section class="story-takeaways" aria-labelledby="story-takeaways-title"><p class="eyebrow">WHAT WE TAKE FORWARD</p><h2 id="story-takeaways-title">${esc(l(story.takeaways.title))}</h2><p>${esc(l(story.takeaways.intro))}</p><ol>${story.takeaways.items.map(item=>`<li>${esc(l(item))}</li>`).join('')}</ol></section><div class="story-closing">${paragraphs(story.closing)}</div>${story.sources?.length?`<details class="sources"><summary>${esc(t('sources'))}</summary>${story.sources.map(source=>ext(source.url,l(source.label))).join('')}</details>`:''}<div class="about-actions">${link('/',l(story.backHome),'button button-outline')}</div></div></article>`;
 }
 function home() {
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -231,11 +214,11 @@ function render({focus=false}={}) {
   syncScheduleContext();
   const [page, id]=route();
   document.documentElement.lang=data.locale[lang].htmlLang;
-  const title=page==='place'?l(byId(id)?.names):page==='about'?l(data.site.about.navTitle):t(page||'home');
+  const title=page==='place'?l(byId(id)?.names):page==='about'?l(data.site.about.navTitle):page==='stories'?l(data.story.title):t(page||'home');
   document.title=`${title} · CiTEA Walk 2026`;
   document.querySelector('meta[name="description"]').content=l(data.event.description);
   renderHeader();
-  main.innerHTML=({home, about:aboutPage, schedule:()=>schedule(id), explore, shopping, place:()=>place(id), audio:audioPage, prepare, notices}[page||'home']||notFound)();
+  main.innerHTML=({home, about:aboutPage, stories, schedule:()=>schedule(id), explore, shopping, place:()=>place(id), audio:audioPage, prepare, notices}[page||'home']||notFound)();
   footer();
   if(focus){window.scrollTo(0,0);main.focus({preventScroll:true});}
 }
@@ -290,7 +273,7 @@ window.addEventListener('popstate',()=>render({focus:true}));
 window.addEventListener('online',()=>{footer();toast(t('updated'));});window.addEventListener('offline',()=>{footer();toast(t('offline'));});
 async function init(){
   try{
-    const names=['locale','event','places','site','shopping'];const values=await Promise.all(names.map(async name=>{const r=await fetch(`data/${name}.json`,{cache:'no-cache'});if(!r.ok)throw Error(name);return r.json();}));data=Object.fromEntries(names.map((name,i)=>[name,values[i]]));
+    const names=['locale','event','places','site','shopping','story'];const values=await Promise.all(names.map(async name=>{const r=await fetch(`data/${name}.json`,{cache:'no-cache'});if(!r.ok)throw Error(name);return r.json();}));data=Object.fromEntries(names.map((name,i)=>[name,values[i]]));
     store('citea-language',lang);await initFilmedHere({getLanguage:()=>lang});render();
     if(data.site.publicUrl){let canonical=document.createElement('link');canonical.rel='canonical';canonical.href=data.site.publicUrl;document.head.append(canonical);}
     if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});

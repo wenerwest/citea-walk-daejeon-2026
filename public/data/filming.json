@@ -146,6 +146,56 @@
           }
         }
       ]
+    },
+    {
+      "id": "hundred-days-of-lies",
+      "title": {
+        "ko": "100일의 거짓말",
+        "en": "100일의 거짓말",
+        "tw": "100일의 거짓말",
+        "cn": "100일의 거짓말"
+      },
+      "description": {
+        "ko": "운영자가 프로그램 후 전해 들은 촬영지 소식에 따르면, 2화에서 소란이 병원에 가는 장면의 복도로 대전근현대사전시관이 사용됐다고 합니다. 공유해주신 장면에서 계단과 복도의 모습을 만나보세요.",
+        "en": "According to filming-location information shared with the organizers after the programme, the exhibition hall appears as a hospital corridor when Soran visits the hospital in episode 2. These supplied stills show the stairs and corridors.",
+        "tw": "根據活動後提供給主辦團隊的拍攝地資訊，第二集中素蘭前往醫院時，走廊場景使用了大田近現代史展示館。透過分享的劇照，看看階梯與走廊的樣貌。",
+        "cn": "根据活动后提供给主办团队的拍摄地信息，第二集中素兰前往医院时，走廊场景使用了大田近现代史展示馆。通过分享的剧照，看看楼梯与走廊的样貌。"
+      },
+      "scenes": [
+        {
+          "src": "assets/filming/hundred-days-of-lies-01.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 장면의 인물과 실내 배경",
+            "en": "《100일의 거짓말》 · a character and the hospital interior",
+            "tw": "《100일의 거짓말》・醫院場景的人物與室內背景",
+            "cn": "《100일의 거짓말》・医院场景的人物与室内背景"
+          }
+        },
+        {
+          "src": "assets/filming/hundred-days-of-lies-02.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 출입문과 계단이 보이는 장면",
+            "en": "《100일의 거짓말》 · hospital doorway and staircase",
+            "tw": "《100일의 거짓말》・可見醫院門口與階梯的場景",
+            "cn": "《100일의 거짓말》・可见医院门口与台阶的场景"
+          }
+        },
+        {
+          "src": "assets/filming/hundred-days-of-lies-03.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 복도 장면",
+            "en": "《100일의 거짓말》 · the hospital corridor scene",
+            "tw": "《100일의 거짓말》・醫院走廊場景",
+            "cn": "《100일의 거짓말》・医院走廊场景"
+          }
+        }
+      ]
     }
   ]
 }

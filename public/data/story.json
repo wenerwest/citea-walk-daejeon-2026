@@ -1,0 +1,441 @@
+{
+  "title": {
+    "ko": "CiTEA Walk 뒷이야기",
+    "en": "CiTEA Walk: Stories After the Journey",
+    "tw": "CiTEA Walk 旅程之後的故事",
+    "cn": "CiTEA Walk 旅程之后的故事"
+  },
+  "subtitle": {
+    "ko": "프로그램은 끝났지만, 아직 전하고 싶은 이야기들",
+    "en": "The programme has ended, but there is still more to share",
+    "tw": "活動結束了，還有一些故事想與你分享",
+    "cn": "活动结束了，还有一些故事想与你分享"
+  },
+  "intro": {
+    "ko": "CiTEA Walk의 1박 2일과 3박 4일 일정이 모두 끝났습니다. 참가자들이 각자의 도시로 돌아간 뒤에도 대전에서의 이야기는 조금 더 이어졌어요.\n\n프로그램 이후의 만남, 함께 걸으며 궁금해했던 촬영지, 날씨와 시간 때문에 보여드리지 못한 풍경까지. 이번 여행을 준비하고 운영하며 미처 전하지 못했던 이야기를 나눠봅니다.",
+    "en": "Both the two-day, one-night and four-day, three-night CiTEA Walk programmes have come to an end. Even after everyone returned to their own cities, our stories from Daejeon continued.\n\nHere are a few things we did not get to share during the trip: a meeting after the programme, filming locations you asked about, and places that weather and time kept us from visiting together.",
+    "tw": "CiTEA Walk 的兩天一夜與四天三夜行程都結束了。大家回到各自的城市後，我們與大田的故事還在繼續。\n\n活動之後的相聚、一起散步時好奇的拍攝地，以及因天氣和時間而錯過的風景。這次想與你分享的，是籌備與帶領旅程時，還沒來得及說完的故事。",
+    "cn": "CiTEA Walk 的两天一夜与四天三夜行程都结束了。大家回到各自的城市后，我们与大田的故事还在继续。\n\n活动之后的相聚、一起散步时好奇的拍摄地，以及因天气和时间而错过的风景。这次想与你分享的，是筹备与带领旅程时，还没来得及说完的故事。"
+  },
+  "preview": {
+    "ko": "유성구청과 나눈 디지털 노마드·창업 커뮤니티 연결 논의부터 뜻밖의 호평을 받은 와인엑스포, 다음에 함께 가고 싶은 곳까지. 여행이 끝난 뒤에도 이어진 대전의 이야기를 전합니다.",
+    "en": "From a discussion with Yuseong-gu about connecting digital nomads and the startup community to the unexpectedly popular Wine Expo and places saved for next time—our Daejeon story continues.",
+    "tw": "從與儒城區廳討論數位遊牧者與創業社群的連結，到意外獲得好評的葡萄酒博覽會，以及下次想一起去的地方。旅程之後，大田的故事仍在繼續。",
+    "cn": "从与儒城区厅讨论数字游民与创业社群的连接，到意外获得好评的葡萄酒博览会，以及下次想一起去的地方。旅程之后，大田的故事仍在继续。"
+  },
+  "readMore": {
+    "ko": "뒷이야기 읽기",
+    "en": "Read the stories",
+    "tw": "閱讀旅程後記",
+    "cn": "阅读旅程后记"
+  },
+  "backHome": {
+    "ko": "홈으로 돌아가기",
+    "en": "Back to home",
+    "tw": "返回首頁",
+    "cn": "返回首页"
+  },
+  "sections": [
+    {
+      "id": "yuseong-meeting",
+      "title": {
+        "ko": "여행 뒤에 이어진 만남, 유성구청과의 미팅",
+        "en": "A meeting after the journey: Yuseong-gu Office",
+        "tw": "旅程之後的相聚：與儒城區廳的會議",
+        "cn": "旅程之后的相聚：与儒城区厅的会议"
+      },
+      "body": {
+        "ko": "모든 공식 일정이 끝난 뒤, 대전 유성구청의 초청으로 다시 모였습니다. CiTEA Walk에 함께했던 Yoshi, Karen, Hannah, Dana와 함께 유성구청 일자리경제과와의 미팅에 참석했어요.\n\n이 자리에서는 디지털 노마드와 대전의 창업 커뮤니티를 어떻게 연결할 수 있을지 논의했습니다. 며칠 전까지 함께 도시를 여행했던 사람들이 이번에는 대전에서 이어갈 수 있는 교류를 이야기하게 된 셈이죠.\n\n한 번의 방문이 새로운 만남으로 이어졌다는 점이 반가웠습니다. 이번 대화를 계기로 앞으로 대전과 또 다른 교류를 만들어갈 기회가 생기기를 기대하고 있어요.",
+        "en": "After all the official activities ended, we gathered again at the invitation of Daejeon’s Yuseong-gu Office. Yoshi, Karen, Hannah and Dana joined us for a meeting with its Jobs and Economy Division.\n\nWe discussed how to connect digital nomads with Daejeon’s startup community. People who had been exploring the city together just days earlier were now talking about ways to stay connected with it.\n\nIt was lovely to see one visit lead to another meeting. We hope this conversation opens opportunities for further exchanges with Daejeon.",
+        "tw": "所有正式行程結束後，我們受大田儒城區廳邀請，再次相聚。與 CiTEA Walk 同行的 Yoshi、Karen、Hannah、Dana 一起出席了儒城區廳就業經濟科的會議。\n\n會中，我們討論如何連結數位遊牧者與大田的創業社群。幾天前還一起探索城市的旅伴，這次開始聊起未來可以與大田延續哪些交流。\n\n一次造訪能帶來下一次相聚，讓我們很開心。希望這次對話能成為起點，日後有機會與大田展開更多交流。",
+        "cn": "所有正式行程结束后，我们受大田儒城区厅邀请，再次相聚。与 CiTEA Walk 同行的 Yoshi、Karen、Hannah、Dana 一起出席了儒城区厅就业经济科的会议。\n\n会上，我们讨论如何连接数字游民与大田的创业社群。几天前还一起探索城市的旅伴，这次开始聊起未来可以与大田延续哪些交流。\n\n一次到访能带来下一次相聚，让我们很开心。希望这次对话能成为起点，日后有机会与大田展开更多交流。"
+      }
+    },
+    {
+      "id": "filming-locations",
+      "title": {
+        "ko": "함께 궁금해했던 드라마 촬영지",
+        "en": "The filming location you asked about",
+        "tw": "大家好奇的韓劇拍攝地",
+        "cn": "大家好奇的韩剧拍摄地"
+      },
+      "body": {
+        "ko": "대전근현대사전시관에서 여러 참가자가 《100일의 거짓말》 촬영지가 아니냐고 물어봤던 것 기억하시나요? 당시에는 저희도 정확히 알지 못했어요. 프로그램을 마친 뒤 전해 들은 촬영지 소식에 따르면, 2화에서 소란이 병원에 가는 장면의 병원 복도로 이 공간이 사용됐다고 합니다.\n\n함께 전하고 싶은 곳은 충남 논산의 선샤인랜드예요. 《100일의 거짓말》의 촬영지 중 하나로 알려져 있고, 《미스터 션샤인》과도 인연이 있는 장소입니다.\n\n다음에 한국 드라마를 볼 때는 배경의 건물과 거리를 한번 눈여겨보세요. 우리가 함께 걸었던 장소를 화면에서 다시 만날지도 모르니까요.",
+        "en": "Do you remember asking whether Daejeon’s Modern and Contemporary History Exhibition Hall appeared in the drama 100 Days of Lies (《100일의 거짓말》)? We did not know for certain at the time. According to filming-location information passed on to us after the programme, the hall was used as the hospital corridor in the episode-two scene where Soran visits a hospital.\n\nAnother place to keep in mind is Sunshine Land in Nonsan, Chungcheongnam-do. It is known as one of the drama’s filming locations and also has a connection with Mr. Sunshine.\n\nNext time you watch a Korean drama, take a closer look at the buildings and streets in the background. You might recognise somewhere we walked together.",
+        "tw": "還記得在大田近現代史展示館，有人問這裡是不是《100日的謊言》（《100일의 거짓말》）的拍攝地嗎？當時我們也不太確定。活動結束後收到的拍攝地消息提到，第二集中 Soran 前往醫院時出現的醫院走廊，就是在這個空間拍攝的。\n\n另一個想介紹的地方，是忠清南道論山的 Sunshine Land。這裡也是該劇已知的拍攝地之一，並與《陽光先生》有著淵源。\n\n下次看韓劇時，不妨多留意背景中的建築和街道。也許會在螢幕裡，再次遇見我們一起走過的地方。",
+        "cn": "还记得在大田近现代史展示馆，有人问这里是不是《100日的谎言》（《100일의 거짓말》）的拍摄地吗？当时我们也不太确定。活动结束后收到的拍摄地消息提到，第二集中 Soran 前往医院时出现的医院走廊，就是在这个空间拍摄的。\n\n另一个想介绍的地方，是忠清南道论山的 Sunshine Land。这里也是该剧已知的拍摄地之一，并与《阳光先生》有着渊源。\n\n下次看韩剧时，不妨多留意背景中的建筑和街道。也许会在屏幕里，再次遇见我们一起走过的地方。"
+      },
+      "gallery": [
+        {
+          "src": "assets/filming/hundred-days-of-lies-01.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 장면의 인물과 실내 배경",
+            "en": "《100일의 거짓말》 · a character and the hospital interior",
+            "tw": "《100일의 거짓말》・醫院場景的人物與室內背景",
+            "cn": "《100일의 거짓말》・医院场景的人物与室内背景"
+          },
+          "caption": {
+            "ko": "《100일의 거짓말》 · 병원 장면의 인물과 실내 배경",
+            "en": "《100일의 거짓말》 · a character and the hospital interior",
+            "tw": "《100일의 거짓말》・醫院場景的人物與室內背景",
+            "cn": "《100일의 거짓말》・医院场景的人物与室内背景"
+          },
+          "credit": {
+            "ko": "사용자가 공유한 드라마 장면",
+            "en": "Drama still supplied through the user’s shared conversation",
+            "tw": "使用者透過共享對話提供的戲劇劇照",
+            "cn": "用户通过共享对话提供的电视剧剧照"
+          }
+        },
+        {
+          "src": "assets/filming/hundred-days-of-lies-02.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 출입문과 계단이 보이는 장면",
+            "en": "《100일의 거짓말》 · hospital doorway and staircase",
+            "tw": "《100일의 거짓말》・可見醫院門口與階梯的場景",
+            "cn": "《100일의 거짓말》・可见医院门口与台阶的场景"
+          },
+          "caption": {
+            "ko": "《100일의 거짓말》 · 병원 출입문과 계단이 보이는 장면",
+            "en": "《100일의 거짓말》 · hospital doorway and staircase",
+            "tw": "《100일의 거짓말》・可見醫院門口與階梯的場景",
+            "cn": "《100일의 거짓말》・可见医院门口与台阶的场景"
+          },
+          "credit": {
+            "ko": "사용자가 공유한 드라마 장면",
+            "en": "Drama still supplied through the user’s shared conversation",
+            "tw": "使用者透過共享對話提供的戲劇劇照",
+            "cn": "用户通过共享对话提供的电视剧剧照"
+          }
+        },
+        {
+          "src": "assets/filming/hundred-days-of-lies-03.webp",
+          "width": 1672,
+          "height": 941,
+          "alt": {
+            "ko": "《100일의 거짓말》 · 병원 복도 장면",
+            "en": "《100일의 거짓말》 · the hospital corridor scene",
+            "tw": "《100일의 거짓말》・醫院走廊場景",
+            "cn": "《100일의 거짓말》・医院走廊场景"
+          },
+          "caption": {
+            "ko": "《100일의 거짓말》 · 병원 복도 장면",
+            "en": "《100일의 거짓말》 · the hospital corridor scene",
+            "tw": "《100일의 거짓말》・醫院走廊場景",
+            "cn": "《100일의 거짓말》・医院走廊场景"
+          },
+          "credit": {
+            "ko": "사용자가 공유한 드라마 장면",
+            "en": "Drama still supplied through the user’s shared conversation",
+            "tw": "使用者透過共享對話提供的戲劇劇照",
+            "cn": "用户通过共享对话提供的电视剧剧照"
+          }
+        },
+        {
+          "src": "assets/filming/exhibition-hall.jpg",
+          "width": 938,
+          "height": 615,
+          "alt": {
+            "ko": "대전근현대사전시관 내부 · 장소 자료사진",
+            "en": "Inside the Daejeon Modern and Contemporary History Exhibition Hall · reference photo",
+            "tw": "大田近現代史展示館內部・場地資料照片",
+            "cn": "大田近现代史展示馆内部・场地资料照片"
+          },
+          "caption": {
+            "ko": "대전근현대사전시관 내부 · 장소 자료사진",
+            "en": "Inside the Daejeon Modern and Contemporary History Exhibition Hall · reference photo",
+            "tw": "大田近現代史展示館內部・場地資料照片",
+            "cn": "大田近现代史展示馆内部・场地资料照片"
+          },
+          "credit": {
+            "ko": "기존 사이트에 제공된 자료사진",
+            "en": "Reference photo from the existing site",
+            "tw": "原網站提供的資料照片",
+            "cn": "原网站提供的资料照片"
+          }
+        }
+      ]
+    },
+    {
+      "id": "places-we-missed",
+      "title": {
+        "ko": "이번에는 함께 가지 못한 목척시장과 대청호",
+        "en": "Two places saved for another visit: Mokcheok Market and Daecheong Lake",
+        "tw": "這次錯過的木尺市場與大清湖",
+        "cn": "这次错过的木尺市场与大清湖"
+      },
+      "body": {
+        "ko": "목척시장과 대청호 억새밭은 원래 계획에 있었지만, 날씨와 일정 때문에 제외한 장소입니다. 목척시장 주변의 원도심 골목과 목척교 일대는 《지금 우리 학교는》의 촬영지로도 알려져 있어요.\n\n성심당에서 멀지 않아 함께 걸어가고 싶었지만, 일정이 길어지면서 성심당 인근에서 자유시간을 갖는 것으로 바꿨습니다. 오래된 시장과 골목은 대전 원도심에 쌓인 시간을 느껴볼 수 있는 곳이기도 해요.\n\n대청호에서는 가을 억새 풍경을 보여드리고 싶었습니다. 특히 맑은 날 해 질 무렵 햇빛을 받는 억새가 아름다운데, 당일에는 날씨가 흐려 방문을 포기했어요. 이번에 못 본 풍경은 다음에 대전을 다시 찾을 이유로 남겨둡니다.",
+        "en": "Mokcheok Market and the silver-grass fields by Daecheong Lake were in our original plan, but weather and timing meant we had to leave them out. The old-town lanes around the market and the Mokcheok Bridge area are also known as filming locations for All of Us Are Dead.\n\nWe had hoped to walk there from nearby Sungsimdang. As the schedule ran longer, we changed this to free time around the bakery. The old market and its lanes offer another way to sense the layers of time in central Daejeon.\n\nAt Daecheong Lake, we wanted to share the autumn silver grass, especially in the light near sunset on a clear day. Cloudy weather led us to cancel that visit. We will keep that view as a reason to return.",
+        "tw": "木尺市場和大清湖芒草原本都在計畫中，最後因為天氣與時間而取消。市場周邊的舊城巷弄，以及木尺橋一帶，也因《殭屍校園》的拍攝地而為人所知。\n\n這裡離聖心堂不遠，本來想帶大家一起走過去。後來行程比預期長，便改成在聖心堂附近自由活動。老市場與巷弄，也能讓人感受到大田舊城累積的時光。\n\n至於大清湖，我們很想讓大家看看秋天的芒草，尤其是晴天日落前被陽光照亮的模樣。可惜當天天氣陰沉，只好取消。這次錯過的風景，就留作下次再訪大田的理由吧。",
+        "cn": "木尺市场和大清湖芒草原本都在计划中，最后因为天气与时间而取消。市场周边的老城巷弄，以及木尺桥一带，也因《僵尸校园》的拍摄地而为人所知。\n\n这里离圣心堂不远，本来想带大家一起走过去。后来行程比预期长，便改成在圣心堂附近自由活动。老市场与巷弄，也能让人感受到大田老城积累的时光。\n\n至于大清湖，我们很想让大家看看秋天的芒草，尤其是晴天日落前被阳光照亮的模样。可惜当天天气阴沉，只好取消。这次错过的风景，就留作下次再访大田的理由吧。"
+      },
+      "gallery": [
+        {
+          "src": "assets/supplied/daecheong-lake-silver-grass.jpg",
+          "width": 1920,
+          "height": 778,
+          "alt": {
+            "ko": "이번에 방문하지 못한 대청호의 가을 풍경 · 자료사진",
+            "en": "Autumn at Daecheong Lake, omitted from this trip · reference photo",
+            "tw": "這次未能造訪的大清湖秋景・資料照片",
+            "cn": "这次未能到访的大清湖秋景・资料照片"
+          },
+          "caption": {
+            "ko": "이번에 방문하지 못한 대청호의 가을 풍경 · 자료사진",
+            "en": "Autumn at Daecheong Lake, omitted from this trip · reference photo",
+            "tw": "這次未能造訪的大清湖秋景・資料照片",
+            "cn": "这次未能到访的大清湖秋景・资料照片"
+          },
+          "credit": {
+            "ko": "기존 사이트에 제공된 자료사진",
+            "en": "Reference photo from the existing site",
+            "tw": "原網站提供的資料照片",
+            "cn": "原网站提供的资料照片"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hiking",
+      "title": {
+        "ko": "꼭 함께하고 싶었던 하이킹",
+        "en": "The hike we wanted to share",
+        "tw": "很想與大家一起走的山路",
+        "cn": "很想与大家一起走的山路"
+      },
+      "body": {
+        "ko": "정식 계획에는 넣지 못했지만, 개인적으로 끝까지 고민했던 활동은 하이킹이었어요. 보문산성에서 내려다보는 도시, 계족산 황톳길을 맨발로 걷는 경험처럼 대전에는 산과 일상을 가까이에서 만날 수 있는 곳들이 있습니다. 계족산성과 황톳길은 서로 다른 코스이니 구분해서 생각하면 좋아요.\n\n산행을 넣고 싶었던 이유는 전망 때문만은 아니었습니다. 현지 사람들이 가까운 산을 오르고 숲길을 걷는 방식으로 도시의 생활을 경험해보면 좋겠다고 생각했거든요.\n\n하지만 제한된 시간 안에 여러 프로그램을 진행해야 해서, 이번에는 산행 대신 비교적 쉽게 오를 수 있는 전망대를 방문했습니다. 다음에 기회가 된다면 각자의 체력과 시간에 맞는 가벼운 코스로 함께 걸어보고 싶어요. 산에 올라 차 한 잔 마시는 날도 기대해봅니다.",
+        "en": "Hiking never made it into the formal plan, but it was an idea we kept returning to. The city view from Bomunsanseong Fortress and barefoot walking on Gyejoksan’s red-clay trail are ways to experience how close Daejeon’s hills are to everyday life. Gyejoksanseong Fortress and the red-clay trail are separate routes, so it is worth distinguishing them.\n\nWe wanted to include a hike for more than the view. Walking local hills and forest paths felt like a good way to experience how people spend time in the city.\n\nWith several activities to fit into limited time, we visited an easier-to-reach observatory instead. Next time, we would love to choose a gentle route that suits everyone’s time and fitness—and perhaps share a cup of tea up on the mountain.",
+        "tw": "健行沒有正式排進計畫，卻是我們一直很想加入的活動。從寶文山城俯瞰城市，或在雞足山黃土步道赤腳散步，都是感受大田山林與日常距離的方式。雞足山城與黃土步道是不同路線，規劃時可以分開考量。\n\n想帶大家健行，不只是為了看風景。我們覺得，像當地人一樣走進近郊的山與森林，也是認識城市生活的好方法。\n\n不過，有限的時間裡還有其他活動，這次便改成前往比較容易抵達的展望台。下次若有機會，希望能依大家的體力和時間，選一條輕鬆的路線一起走走，再到山上喝杯茶。",
+        "cn": "徒步没有正式排进计划，却是我们一直很想加入的活动。从宝文山城俯瞰城市，或在鸡足山黄土步道赤脚散步，都是感受大田山林与日常距离的方式。鸡足山城与黄土步道是不同路线，规划时可以分开考虑。\n\n想带大家徒步，不只是为了看风景。我们觉得，像当地人一样走进近郊的山与森林，也是认识城市生活的好方法。\n\n不过，有限的时间里还有其他活动，这次便改成前往比较容易抵达的展望台。下次若有机会，希望能依大家的体力和时间，选一条轻松的路线一起走走，再到山上喝杯茶。"
+      },
+      "gallery": [
+        {
+          "src": "assets/supplied/bomunsanseong-hero.jpg",
+          "width": 1280,
+          "height": 748,
+          "alt": {
+            "ko": "보문산성에서 바라본 대전 · 자료사진",
+            "en": "Daejeon seen from Bomunsanseong Fortress · reference photo",
+            "tw": "從寶文山城眺望大田・資料照片",
+            "cn": "从宝文山城眺望大田・资料照片"
+          },
+          "caption": {
+            "ko": "보문산성에서 바라본 대전 · 자료사진",
+            "en": "Daejeon seen from Bomunsanseong Fortress · reference photo",
+            "tw": "從寶文山城眺望大田・資料照片",
+            "cn": "从宝文山城眺望大田・资料照片"
+          },
+          "credit": {
+            "ko": "기존 사이트에 제공된 자료사진",
+            "en": "Reference photo from the existing site",
+            "tw": "原網站提供的資料照片",
+            "cn": "原网站提供的资料照片"
+          }
+        }
+      ]
+    },
+    {
+      "id": "autumn-daejeon",
+      "title": {
+        "ko": "다음 가을을 위해 남겨두는 두 곳",
+        "en": "Two more places for an autumn visit",
+        "tw": "留給下一次秋日旅行的兩個地方",
+        "cn": "留给下一次秋日旅行的两个地方"
+      },
+      "body": {
+        "ko": "이번 일정에는 포함하지 않았지만, 가을의 대전을 이야기할 때 함께 떠올리는 곳은 장태산 자연휴양림과 국립대전현충원입니다. 장태산에서는 숲길을 따라 걸으며 계절의 변화를 느껴보면 좋겠어요.\n\n국립대전현충원은 국가와 사회를 위해 희생하거나 공헌한 분들을 기리는 국립묘지입니다. 가을 풍경을 만날 수 있는 곳이면서, 그곳에 깃든 기억을 조용히 돌아보는 추모의 공간이기도 해요. 방문한다면 참배객과 묘역을 배려하며 차분히 머물러주세요.\n\n이번에 함께 가지는 못했지만, 도시의 다른 표정을 만나고 싶을 때 떠올려볼 만한 장소들로 남겨둡니다.",
+        "en": "Two places we did not include this time also come to mind when we think of autumn in Daejeon: Jangtaesan Recreational Forest and Daejeon National Cemetery. At Jangtaesan, a walk through the forest is a lovely way to notice the changing season.\n\nDaejeon National Cemetery honours people who sacrificed or contributed to the nation and society. Alongside its autumn scenery, it is a place of remembrance. If you visit, spend time quietly and be considerate of mourners and the graves.\n\nWe did not visit these places together, but they are worth keeping in mind for a different perspective on the city.",
+        "tw": "這次沒有排進行程，但說到大田的秋天，我們也會想到壯泰山自然休養林與國立大田顯忠院。在壯泰山，可以沿著森林步道，慢慢感受季節的變化。\n\n國立大田顯忠院是紀念為國家與社會犧牲或作出貢獻者的國立公墓。這裡有秋天的景色，也承載著值得靜靜回望的記憶。造訪時，請體諒前來祭拜的人們，並尊重墓區，安靜地停留。\n\n雖然這次沒能一起前往，仍想把這兩個地方留給下次想認識大田不同面貌的你。",
+        "cn": "这次没有排进行程，但说到大田的秋天，我们也会想到壮泰山自然休养林与国立大田显忠院。在壮泰山，可以沿着森林步道，慢慢感受季节的变化。\n\n国立大田显忠院是纪念为国家与社会牺牲或作出贡献者的国立公墓。这里有秋天的景色，也承载着值得静静回望的记忆。到访时，请体谅前来祭拜的人们，并尊重墓区，安静地停留。\n\n虽然这次没能一起前往，仍想把这两个地方留给下次想认识大田不同面貌的你。"
+      },
+      "gallery": [
+        {
+          "src": "assets/supplied/daejeon-national-cemetery-autumn-01.jpg",
+          "width": 800,
+          "height": 1066,
+          "alt": {
+            "ko": "국립대전현충원의 가을 풍경 · 자료사진",
+            "en": "Autumn scenery at Daejeon National Cemetery · reference photo",
+            "tw": "國立大田顯忠院的秋景・資料照片",
+            "cn": "国立大田显忠院的秋景・资料照片"
+          },
+          "caption": {
+            "ko": "국립대전현충원의 가을 풍경 · 자료사진",
+            "en": "Autumn scenery at Daejeon National Cemetery · reference photo",
+            "tw": "國立大田顯忠院的秋景・資料照片",
+            "cn": "国立大田显忠院的秋景・资料照片"
+          },
+          "credit": {
+            "ko": "기존 사이트에 제공된 자료사진",
+            "en": "Reference photo from the existing site",
+            "tw": "原網站提供的資料照片",
+            "cn": "原网站提供的资料照片"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wine-expo",
+      "title": {
+        "ko": "예상보다 반응이 뜨거웠던 와인엑스포",
+        "en": "The Wine Expo’s unexpectedly warm reception",
+        "tw": "意外獲得熱烈好評的葡萄酒博覽會",
+        "cn": "意外获得热烈好评的葡萄酒博览会"
+      },
+      "body": {
+        "ko": "참가자들의 후기를 보면서 놀랐던 것 중 하나는 대전국제와인엑스포에 대한 호평이었어요. 사실 일정에 넣을지 정말 많이 고민했습니다. CiTEA Walk는 중구의 지원을 받은 프로그램인 만큼 중구를 중심으로 구성하는 것이 원칙이었는데, 와인엑스포의 개최지는 유성구였거든요.\n\n다만 일 년에 한 번 열리는 축제가 마침 방문 기간과 겹쳤고, 이번 기회에 함께 경험하면 좋겠다는 생각에 특별히 일정에 포함했습니다. 중구 중심이라는 원칙 안에서, 축제 시기라는 특별한 상황을 고려한 선택이었어요.\n\n그런데 예상보다 와인을 즐기는 분들이 많았습니다. 제빵 프로그램이 길어지면서 식사를 제대로 하지 못했고, 와인엑스포에서도 충분한 시간을 드리지 못한 점이 많이 아쉬워요. 조금 더 여유롭게 드시고 둘러보실 수 있게 했어야 했는데, 미안합니다.\n\n그래도 좋은 경험으로 기억해주셔서 고맙습니다. 다음에는 체험 사이의 이동과 식사, 자유시간까지 더 넉넉하게 준비하고 싶어요.",
+        "en": "One surprise in the feedback was how warmly participants remembered the Daejeon International Wine Expo. We had thought carefully about including it. CiTEA Walk was supported by Jung-gu, so keeping the programme centred on Jung-gu was the right principle; the Expo took place in Yuseong-gu.\n\nThe annual festival happened to coincide with our visit, however, and we made a special exception so we could experience it together. It was a choice made for this particular occasion while keeping Jung-gu at the centre of the programme.\n\nMore people enjoyed wine than we had expected. The baking activity ran over, leaving us without a proper meal and with too little time at the Expo. We are sorry we did not leave enough space to eat and explore at a relaxed pace.\n\nThank you for remembering it as a good experience nonetheless. Next time, we want to allow more generous time for travel between activities, meals and exploring on your own.",
+        "tw": "看大家的回饋時，讓我們意外的是大田國際葡萄酒博覽會獲得了很多好評。其實，我們曾很猶豫要不要排進行程。CiTEA Walk 受到中區支持，以中區為行程核心是應有的原則，但博覽會的地點在儒城區。\n\n只是，一年一度的節慶剛好與這次到訪重疊，覺得若能一起體驗會很難得，因此特別加入行程。這是在維持中區為核心的前提下，考量節慶時機所做的一次特別安排。\n\n沒想到喜歡品酒的朋友比預期多。當天烘焙活動超時，讓大家沒能好好用餐，博覽會的停留時間也不夠充裕。沒能讓大家從容地吃飯、慢慢逛逛，我們真的很抱歉。\n\n謝謝大家仍把它記作一段美好的體驗。下次，我們想把活動之間的移動、用餐和自由時間都安排得更寬裕。",
+        "cn": "看大家的反馈时，让我们意外的是大田国际葡萄酒博览会获得了很多好评。其实，我们曾很犹豫要不要排进行程。CiTEA Walk 受到中区支持，以中区为行程核心是应有的原则，但博览会的地点在儒城区。\n\n只是，一年一度的节庆刚好与这次到访重叠，觉得若能一起体验会很难得，因此特别加入行程。这是在维持中区为核心的前提下，考虑节庆时机所做的一次特别安排。\n\n没想到喜欢品酒的朋友比预期多。当天烘焙活动超时，让大家没能好好用餐，博览会的停留时间也不够充裕。没能让大家从容地吃饭、慢慢逛逛，我们真的很抱歉。\n\n谢谢大家仍把它记作一段美好的体验。下次，我们想把活动之间的移动、用餐和自由时间都安排得更宽裕。"
+      },
+      "gallery": [
+        {
+          "src": "assets/supplied/wine-expo-onsite.jpg",
+          "width": 720,
+          "height": 479,
+          "alt": {
+            "ko": "대전 와인엑스포 행사장 · 자료사진",
+            "en": "A Daejeon Wine Expo venue scene · reference photo",
+            "tw": "大田葡萄酒博覽會現場・資料照片",
+            "cn": "大田葡萄酒博览会现场・资料照片"
+          },
+          "caption": {
+            "ko": "대전 와인엑스포 행사장 · 자료사진",
+            "en": "A Daejeon Wine Expo venue scene · reference photo",
+            "tw": "大田葡萄酒博覽會現場・資料照片",
+            "cn": "大田葡萄酒博览会现场・资料照片"
+          },
+          "credit": {
+            "ko": "기존 사이트에 제공된 자료사진",
+            "en": "Reference photo from the existing site",
+            "tw": "原網站提供的資料照片",
+            "cn": "原网站提供的资料照片"
+          }
+        }
+      ]
+    },
+    {
+      "id": "december-screening",
+      "title": {
+        "ko": "12월에 다시 만날 이유, 다큐멘터리 상영회",
+        "en": "A reason to meet again in December: a documentary screening",
+        "tw": "十二月再相聚的理由：紀錄片放映會",
+        "cn": "十二月再相聚的理由：纪录片放映会"
+      },
+      "body": {
+        "ko": "2026년 12월 중순에는 대전문화산업진흥원에서 대전화교소학을 주제로 한 영화 상영회를 계획하고 있습니다. 저희가 만든 다큐멘터리를 짧게 편집한 버전을 선보일 예정이에요.\n\n그 무렵 한국을 방문할 계획이 있다면, 이번에는 영화를 계기로 대전을 다시 찾아보는 건 어떨까요? 구체적인 날짜와 관람 안내는 정해지는 대로 다시 전하겠습니다.",
+        "en": "A film screening about Daejeon Chinese Primary School is planned for mid-December 2026 at 대전문화산업진흥원, the Daejeon culture-industry promotion institute. We plan to show a shortened edit of our documentary.\n\nIf you are visiting Korea around that time, perhaps the film could be a reason to return to Daejeon. We will share the date and viewing details once they are settled.",
+        "tw": "我們計畫於 2026 年十二月中旬，在大田文化產業振興院（대전문화산업진흥원）舉辦以大田華僑小學為主題的電影放映會，屆時預計放映我們紀錄片的短版剪輯。\n\n如果那段時間剛好要來韓國，不妨以電影為契機，再來大田走走？具體日期與觀影資訊確定後，我們會再與大家分享。",
+        "cn": "我们计划于 2026 年十二月中旬，在大田文化产业振兴院（대전문화산업진흥원）举办以大田华侨小学为主题的电影放映会，届时预计放映我们纪录片的短版剪辑。\n\n如果那段时间刚好要来韩国，不妨以电影为契机，再来大田走走？具体日期与观影信息确定后，我们会再与大家分享。"
+      }
+    }
+  ],
+  "closing": {
+    "ko": "함께 보여드리고 싶었던 풍경도, 더 오래 머물고 싶었던 순간도 남았습니다. 여러분이 들려준 좋았던 점과 아쉬웠던 점은 다음 만남을 준비하는 데 소중한 참고가 될 거예요.\n\n여행이 끝난 뒤에도 다시 만나고 싶은 사람이 있고, 다시 찾아가고 싶은 장소가 있는 도시. CiTEA Walk가 누군가에게 그런 대전의 첫 경험이 되었기를 바랍니다. 다음에 또 만나요.",
+    "en": "There are views we still want to share and moments we wish could have lasted longer. What you enjoyed—and what could have been better—will help us prepare for our next meeting.\n\nWe hope CiTEA Walk was a first encounter with a Daejeon that holds people you want to see again and places you want to return to. Until next time.",
+    "tw": "還有想一起看的風景，也有希望能多停留一會兒的時刻。大家喜歡的地方與留下的遺憾，都會成為我們準備下次相聚時珍貴的參考。\n\n旅程結束後，仍有想再見的人、想再去的地方。希望 CiTEA Walk 成為你與這樣的大田相遇的起點。下次再見。",
+    "cn": "还有想一起看的风景，也有希望能多停留一会儿的时刻。大家喜欢的地方与留下的遗憾，都会成为我们准备下次相聚时珍贵的参考。\n\n旅程结束后，仍有想再见的人、想再去的地方。希望 CiTEA Walk 成为你与这样的大田相遇的起点。下次再见。"
+  },
+  "takeaways": {
+    "title": {
+      "ko": "이번 여정에서 남은 10가지",
+      "en": "Ten things we take from this journey",
+      "tw": "這趟旅程留下的十件事",
+      "cn": "这趟旅程留下的十件事"
+    },
+    "intro": {
+      "ko": "참가자들에게 전해 들은 반응과 현장에서의 경험을 바탕으로, 운영자로서 기억하고 싶은 점들을 정리했습니다.",
+      "en": "These are the things we want to remember as organizers, drawn from reactions shared with us and our experience during the programme.",
+      "tw": "根據參加者與我們分享的感受，以及現場的經驗，整理出主辦團隊想記住的重點。",
+      "cn": "根据参加者与我们分享的感受，以及现场的经验，整理出主办团队想记住的重点。"
+    },
+    "items": [
+      {
+        "ko": "가장 의외의 호평은 와인엑스포였습니다. 고민 끝에 특별히 포함한 축제가 좋은 기억으로 남았어요.",
+        "en": "The Wine Expo brought the most unexpected praise: a festival we debated including became a fond memory.",
+        "tw": "最出乎意料的好評來自葡萄酒博覽會。斟酌後特別加入的活動，成了美好回憶。",
+        "cn": "最出乎意料的好评来自葡萄酒博览会。斟酌后特别加入的活动，成了美好回忆。"
+      },
+      {
+        "ko": "식사 시간은 더 확실히 확보해야 했습니다. 제빵 체험이 길어지면서 끼니를 제대로 챙기지 못한 점이 아쉬웠어요.",
+        "en": "Meal time needed better protection. When baking ran late, we could not make enough time to eat properly.",
+        "tw": "用餐時間需要更確實地保留。烘焙體驗延長，讓大家沒能好好吃飯，是我們的遺憾。",
+        "cn": "用餐时间需要更确实地保留。烘焙体验延长，让大家没能好好吃饭，是我们的遗憾。"
+      },
+      {
+        "ko": "자유시간에는 여유가 필요했습니다. 특히 와인엑스포를 각자의 속도로 즐길 시간이 부족했어요.",
+        "en": "Free time needed more room, especially to explore the Wine Expo at everyone’s own pace.",
+        "tw": "自由時間需要更充裕，尤其是讓大家依自己的步調逛葡萄酒博覽會。",
+        "cn": "自由时间需要更充裕，尤其是让大家依自己的节奏逛葡萄酒博览会。"
+      },
+      {
+        "ko": "지원 취지에 맞는 중구 중심 구성이 원칙이었습니다. 와인엑스포는 축제 시기가 겹친 이번만의 특별한 선택이었어요.",
+        "en": "A Jung-gu focus remained the principle of the supported programme. The Wine Expo was a special exception because its dates coincided with our visit.",
+        "tw": "配合支持計畫的宗旨，以中區為中心仍是原則。葡萄酒博覽會是因檔期重合而作的特別安排。",
+        "cn": "配合支持计划的宗旨，以中区为中心仍是原则。葡萄酒博览会是因档期重合而作的特别安排。"
+      },
+      {
+        "ko": "날씨에 맞춰 풍경을 선택해야 했습니다. 대청호 억새밭은 흐린 날씨 때문에 다음 기회로 남겼어요.",
+        "en": "Weather shaped the scenery we could share. Cloudy skies meant saving Daecheong Lake’s silver grass for another visit.",
+        "tw": "風景行程需要配合天氣。陰天讓大清湖的秋草美景留待下次。",
+        "cn": "风景行程需要配合天气。阴天让大清湖的秋草美景留待下次。"
+      },
+      {
+        "ko": "단체 이동보다 자유로운 선택이 나을 때도 있었습니다. 목척시장 방문은 성심당 인근 자유시간으로 바꿨어요.",
+        "en": "Sometimes independent time worked better than another group stop: we replaced Mokcheok Market with free time near Sungsimdang.",
+        "tw": "有時自由活動比增加團體移動更合適。我們把木尺市場行程改為聖心堂附近的自由時間。",
+        "cn": "有时自由活动比增加团体移动更合适。我们把木尺市场行程改为圣心堂附近的自由时间。"
+      },
+      {
+        "ko": "촬영지에 대한 질문은 익숙한 건물을 다시 보게 했습니다. 함께 걸었던 공간을 드라마에서 발견하는 즐거움도 있었어요.",
+        "en": "Questions about filming locations offered a new way to see familiar buildings and recognize places from our walk on screen.",
+        "tw": "關於拍攝地的提問，讓熟悉的建築有了新面貌，也多了在劇中認出同行地點的樂趣。",
+        "cn": "关于拍摄地的提问，让熟悉的建筑有了新面貌，也多了在剧中认出同行地点的乐趣。"
+      },
+      {
+        "ko": "하이킹은 여전히 함께하고 싶은 경험입니다. 도시의 전망뿐 아니라 대전의 생활 방식을 나누고 싶어요.",
+        "en": "Hiking is still an experience we want to share, for both the views and a taste of everyday life in Daejeon.",
+        "tw": "健行仍是想與大家分享的體驗，不只為了風景，也為了感受大田的日常。",
+        "cn": "徒步仍是想与大家分享的体验，不只为了风景，也为了感受大田的日常。"
+      },
+      {
+        "ko": "여행 이후에도 대화는 이어졌습니다. 유성구청 미팅에서 디지털 노마드와 창업 커뮤니티의 연결을 논의했어요.",
+        "en": "The conversation continued after the trip, with a Yuseong-gu meeting about connecting digital nomads and the startup community.",
+        "tw": "旅行結束後，對話仍持續。在儒城區廳的會議中，我們討論數位遊牧者與創業社群的連結。",
+        "cn": "旅行结束后，对话仍持续。在儒城区厅的会议中，我们讨论数字游民与创业社群的连接。"
+      },
+      {
+        "ko": "다시 만날 이유를 남기고 싶습니다. 가보지 못한 가을 코스와 12월 상영회 소식으로 다음 만남을 기대해요.",
+        "en": "We hope to leave reasons to meet again: autumn places we missed and the planned December screening point to another visit.",
+        "tw": "我們想留下再見面的理由，未能走訪的秋日路線與十二月放映計畫，都讓人期待下次相聚。",
+        "cn": "我们想留下再见面的理由，未能走访的秋日路线与十二月放映计划，都让人期待下次相聚。"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=2386&menuSeq=5928&pageIndex=1",
+      "label": {
+        "ko": "대전광역시 · 원도심 드라마 촬영지",
+        "en": "Daejeon Metropolitan City · downtown filming locations",
+        "tw": "大田廣域市・舊城區戲劇拍攝地",
+        "cn": "大田广域市・老城区电视剧拍摄地"
+      }
+    },
+    {
+      "url": "https://www.dnc.go.kr/design/theme/portal/html/dj-6001.html",
+      "label": {
+        "ko": "국립대전현충원 소개",
+        "en": "About Daejeon National Cemetery",
+        "tw": "國立大田顯忠院介紹",
+        "cn": "国立大田显忠院介绍"
+      }
+    }
+  ]
+}
