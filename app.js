@@ -1,5 +1,5 @@
 import { shoppingCopy, renderShoppingGuide } from './shopping-guide.js';
-import { initFilmedHere, renderFilmedHere, renderFilmThumbnails, closeFilmedGallery } from './filmed-here.js';
+import { initFilmedHere, renderFilmedHere, renderGalleryThumbnails, closeFilmedGallery } from './filmed-here.js';
 import { exploreCategoryIds, renderExploreCategoryFilters, renderExploreCategoryBadge } from './explore-categories.js';
 import { scheduleTracks, scheduleTrackCopy, renderScheduleTrackCards, renderScheduleTrackSummary } from './schedule-tracks.js';
 const $ = (s, root = document) => root.querySelector(s);
@@ -138,8 +138,9 @@ function meetingRecord() {
 function stories() {
   const story=data.story;
   const sections=story.sections.map((section,index)=>{
-    const gallery=section.filmGalleryId
-      ? renderFilmThumbnails(section.filmGalleryId,lang)
+    const galleryId=section.filmGalleryId || (section.galleryLayout==='lightbox' ? section.id : '');
+    const gallery=galleryId
+      ? renderGalleryThumbnails(galleryId,lang)
       : section.gallery?.length ? photoGallery(section.gallery,{layout:section.galleryLayout}) : '';
     const place=byId(section.placeLink?.id);
     const placeLink=place
@@ -290,7 +291,8 @@ window.addEventListener('online',()=>{footer();toast(t('updated'));});window.add
 async function init(){
   try{
     const names=['locale','event','places','site','shopping','story'];const values=await Promise.all(names.map(async name=>{const r=await fetch(`data/${name}.json`,{cache:'no-cache'});if(!r.ok)throw Error(name);return r.json();}));data=Object.fromEntries(names.map((name,i)=>[name,values[i]]));
-    store('citea-language',lang);await initFilmedHere({getLanguage:()=>lang});render();
+    const photoGalleries=data.story.sections.filter(section=>section.galleryLayout==='lightbox');
+    store('citea-language',lang);await initFilmedHere({getLanguage:()=>lang,photoGalleries});render();
     if(data.site.publicUrl){let canonical=document.createElement('link');canonical.rel='canonical';canonical.href=data.site.publicUrl;document.head.append(canonical);}
     if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
   }catch{main.innerHTML='<div class="empty-state"><h1>안내를 불러오지 못했습니다 / 無法載入 / 无法加载</h1><button class="button button-primary" data-action="retry">다시 시도 / 重試 / 重试</button></div>';}

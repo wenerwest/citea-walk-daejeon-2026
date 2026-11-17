@@ -4,15 +4,23 @@ const text = {
   tw: { heading:'在此拍攝的作品', intro:'點選作品卡片，欣賞大田近現代史展示館出現的真實戲劇場景。', open:'開啟劇照圖集', enlargePhoto:'放大照片', scenes:'張劇照', previous:'上一張劇照', next:'下一張劇照', close:'關閉圖集', expand:'點選照片以全螢幕檢視', collapse:'結束放大檢視', pending:'實際拍攝場景照片準備中，之後將新增於此。', hint:'使用左右箭頭或滑動切換劇照。', supplied:'使用者提供的真實戲劇場景' },
   cn: { heading:'在此拍摄的作品', intro:'点击作品卡片，欣赏大田近现代史展示馆出现的真实剧集场景。', open:'打开剧照图库', enlargePhoto:'放大照片', scenes:'张剧照', previous:'上一张剧照', next:'下一张剧照', close:'关闭图库', expand:'点击照片以全屏查看', collapse:'退出放大查看', pending:'实际拍摄场景照片准备中，之后将在此添加。', hint:'使用左右箭头或滑动切换剧照。', supplied:'用户提供的真实剧集场景' }
 };
+const photoNavigation = {
+  ko: {previous:'이전 사진', next:'다음 사진', hint:'좌우 화살표나 스와이프로 사진을 넘길 수 있습니다.'},
+  en: {previous:'Previous photo', next:'Next photo', hint:'Use the arrows or swipe to change photos.'},
+  tw: {previous:'上一張照片', next:'下一張照片', hint:'使用左右箭頭或滑動切換照片。'},
+  cn: {previous:'上一张照片', next:'下一张照片', hint:'使用左右箭头或滑动切换照片。'}
+};
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const localized = (value, lang) => typeof value === 'string' ? value : value?.[lang] || value?.en || value?.ko || '';
 const arrow = direction => `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="${direction==='left'?'m15 5-7 7 7 7':'m9 5 7 7-7 7'}"/></svg>`;
-let films = [], dialog, initialized = false, getLanguage = () => 'ko';
-let activeFilm = null, sceneIndex = 0, previousFocus = null, previousOverflow = '', expanded = false, touch = null, suppressClickUntil = 0;
+let films = [], photoGalleries = [], dialog, initialized = false, getLanguage = () => 'ko';
+let activeGallery = null, sceneIndex = 0, previousFocus = null, previousOverflow = '', expanded = false, touch = null, suppressClickUntil = 0;
 const ui = () => text[getLanguage()] || text.ko;
+const findGallery = id => films.find(film => film.id === id) ?? photoGalleries.find(gallery => gallery.id === id);
 
 export async function initFilmedHere(options = {}) {
   getLanguage = options.getLanguage || getLanguage;
+  photoGalleries = (options.photoGalleries ?? []).map(({id, title, gallery}) => ({id, title, scenes:gallery, photoOnly:true}));
   if (initialized) return;
   const response = await fetch('data/filming.json', {cache:'no-cache'});
   if (!response.ok) throw new Error('Could not load filming galleries');
@@ -42,7 +50,7 @@ export async function initFilmedHere(options = {}) {
   dialog.addEventListener('close', () => {
     if (dialog.open) return;
     document.body.style.overflow = previousOverflow;
-    activeFilm = null;
+    activeGallery = null;
   });
   dialog.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft') {event.preventDefault();changeScene(-1);}
@@ -88,48 +96,74 @@ export function renderFilmedHere(lang = 'ko') {
   }).join('')}</div></section>`;
 }
 
-export function renderFilmThumbnails(id, lang = 'ko') {
-  const film = films.find(item => item.id === id);
-  if (!film?.scenes?.length) return '';
+export function renderGalleryThumbnails(id, lang = 'ko') {
+  const gallery = findGallery(id);
+  if (!gallery?.scenes?.length) return '';
   const strings = text[lang] || text.ko;
-  return `<div class="film-thumbnails">${film.scenes.map((scene,index) => {
+  return `<div class="film-thumbnails${gallery.photoOnly?' photo-thumbnails':''}">${gallery.scenes.map((scene,index) => {
     const label = localized(scene.alt,lang);
-    return `<figure class="film-thumbnail"><button type="button" class="film-thumbnail-trigger" data-film-id="${escapeHtml(id)}" data-film-scene="${index}" aria-haspopup="dialog" aria-controls="filmed-gallery" aria-label="${escapeHtml(label+' · '+strings.enlargePhoto)}"><img src="${escapeHtml(scene.src)}" alt="${escapeHtml(label)}" width="${scene.width}" height="${scene.height}" loading="lazy" decoding="async"><span aria-hidden="true">⤢</span></button><figcaption>${escapeHtml(label)}</figcaption></figure>`;
+    const caption = localized(scene.caption,lang) || label;
+    return `<figure class="film-thumbnail"><button type="button" class="film-thumbnail-trigger" data-film-id="${escapeHtml(id)}" data-film-scene="${index}" aria-haspopup="dialog" aria-controls="filmed-gallery" aria-label="${escapeHtml(label+' · '+strings.enlargePhoto)}"><img src="${escapeHtml(scene.src)}" alt="${escapeHtml(label)}" width="${scene.width}" height="${scene.height}" loading="lazy" decoding="async"><span aria-hidden="true">⤢</span></button><figcaption>${escapeHtml(caption)}</figcaption></figure>`;
   }).join('')}</div>`;
 }
 
 function openGallery(id, trigger, startIndex = 0) {
-  const film = films.find(item => item.id === id);
-  if (!film || !dialog) return;
+  const gallery = findGallery(id);
+  if (!gallery || !dialog) return;
   if (dialog.open) closeFilmedGallery({restoreFocus:false});
-  activeFilm = film;
-  sceneIndex = film.scenes?.[startIndex] ? startIndex : 0;
+  activeGallery = gallery;
+  sceneIndex = gallery.scenes?.[startIndex] ? startIndex : 0;
   previousFocus = trigger || document.activeElement;
   previousOverflow = document.body.style.overflow;
   document.body.style.overflow = 'hidden';
   expanded = false;
   touch = null;
   suppressClickUntil = 0;
-  const strings = ui(), lang = getLanguage(), hasScenes = !!film.scenes?.length;
-  dialog.innerHTML = `<div class="film-dialog-surface"><div class="film-dialog-toolbar"><span class="film-dialog-label">FILMED HERE</span><div><button type="button" class="film-expand-control" data-film-action="expand" aria-pressed="false" ${hasScenes?'':'hidden'} aria-label="${escapeHtml(strings.expand)}">⤢</button><button type="button" class="film-close-control" data-film-action="close" aria-label="${escapeHtml(strings.close)}">×</button></div></div>${hasScenes?`<div class="film-gallery-stage"><button type="button" class="film-gallery-arrow film-gallery-previous" data-film-action="previous" aria-label="${escapeHtml(strings.previous)}" ${film.scenes.length<2?'hidden':''}>${arrow('left')}</button><button type="button" class="film-gallery-image" data-film-action="expand" aria-label="${escapeHtml(strings.expand)}"><img id="film-gallery-photo" alt=""></button><button type="button" class="film-gallery-arrow film-gallery-next" data-film-action="next" aria-label="${escapeHtml(strings.next)}" ${film.scenes.length<2?'hidden':''}>${arrow('right')}</button></div>`:`<div class="film-gallery-empty">${escapeHtml(strings.pending)}</div>`}<div class="film-gallery-caption"><p class="film-gallery-count" id="film-gallery-count" aria-live="polite" aria-atomic="true"></p><h2 id="film-gallery-title">${escapeHtml(localized(film.title,lang))}</h2><p id="film-gallery-description">${escapeHtml(localized(film.description,lang))}</p>${hasScenes?`<p class="film-gallery-help">${escapeHtml(strings.expand)}${film.scenes.length>1?' · '+escapeHtml(strings.hint):''}</p>`:''}${hasScenes?`<p class="film-gallery-credit">${escapeHtml(strings.supplied)}</p>`:''}</div></div>`;
+  const strings = ui(), lang = getLanguage(), hasScenes = !!gallery.scenes?.length;
+  const navigation = gallery.photoOnly ? photoNavigation[lang] || photoNavigation.ko : strings;
+  const multiple = gallery.scenes?.length > 1;
+  const stage = hasScenes ? `<div class="film-gallery-stage">
+    <button type="button" class="film-gallery-arrow film-gallery-previous" data-film-action="previous" aria-label="${escapeHtml(navigation.previous)}" ${multiple?'':'hidden'}>${arrow('left')}</button>
+    <button type="button" class="film-gallery-image" data-film-action="expand" aria-label="${escapeHtml(strings.expand)}"><img id="film-gallery-photo" alt=""></button>
+    <button type="button" class="film-gallery-arrow film-gallery-next" data-film-action="next" aria-label="${escapeHtml(navigation.next)}" ${multiple?'':'hidden'}>${arrow('right')}</button>
+  </div>` : `<div class="film-gallery-empty">${escapeHtml(strings.pending)}</div>`;
+  dialog.innerHTML = `<div class="film-dialog-surface">
+    <div class="film-dialog-toolbar">${gallery.photoOnly?'':'<span class="film-dialog-label">FILMED HERE</span>'}<div>
+      <button type="button" class="film-expand-control" data-film-action="expand" aria-pressed="false" ${hasScenes?'':'hidden'} aria-label="${escapeHtml(strings.expand)}">⤢</button>
+      <button type="button" class="film-close-control" data-film-action="close" aria-label="${escapeHtml(strings.close)}">×</button>
+    </div></div>
+    ${stage}
+    <div class="film-gallery-caption">
+      <p class="film-gallery-count" id="film-gallery-count" aria-live="polite" aria-atomic="true"></p>
+      <h2 id="film-gallery-title">${escapeHtml(localized(gallery.title,lang))}</h2>
+      <p id="film-gallery-description">${escapeHtml(localized(gallery.description,lang))}</p>
+      ${hasScenes?`<p class="film-gallery-help">${escapeHtml(strings.expand)}${multiple?' · '+escapeHtml(navigation.hint):''}</p>`:''}
+      ${hasScenes&&!gallery.photoOnly?`<p class="film-gallery-credit">${escapeHtml(strings.supplied)}</p>`:''}
+    </div>
+  </div>`;
   updateScene();
   dialog.showModal();
   dialog.querySelector('[data-film-action="close"]').focus();
 }
 
 function updateScene() {
-  const scene = activeFilm?.scenes?.[sceneIndex];
+  const scene = activeGallery?.scenes?.[sceneIndex];
   if (!scene) return;
   const img = dialog.querySelector('#film-gallery-photo');
+  const lang = getLanguage();
   img.src = scene.src;
-  img.alt = localized(scene.alt,getLanguage());
+  img.alt = localized(scene.alt,lang);
   img.width = scene.width;
   img.height = scene.height;
-  dialog.querySelector('#film-gallery-count').textContent = `${sceneIndex+1} / ${activeFilm.scenes.length}`;
+  dialog.querySelector('#film-gallery-count').textContent = `${sceneIndex+1} / ${activeGallery.scenes.length}`;
+  if (activeGallery.photoOnly) {
+    dialog.querySelector('#film-gallery-description').textContent = localized(scene.caption,lang) || img.alt;
+  }
 }
 function changeScene(delta) {
-  if (!activeFilm?.scenes?.length || activeFilm.scenes.length < 2) return;
-  sceneIndex = (sceneIndex + delta + activeFilm.scenes.length) % activeFilm.scenes.length;
+  const count = activeGallery?.scenes?.length ?? 0;
+  if (count < 2) return;
+  sceneIndex = (sceneIndex + delta + count) % count;
   updateScene();
 }
 function updateExpansion() {
@@ -150,7 +184,7 @@ async function leaveExpanded() {
   }
 }
 async function toggleExpanded() {
-  if (!activeFilm?.scenes?.length) return;
+  if (!activeGallery?.scenes?.length) return;
   if (expanded) return leaveExpanded();
   expanded = true;
   updateExpansion();
@@ -167,7 +201,7 @@ export function closeFilmedGallery({restoreFocus=true} = {}) {
   dialog.close();
   touch = null;
   document.body.style.overflow = previousOverflow;
-  activeFilm = null;
+  activeGallery = null;
   if (restoreFocus && previousFocus?.isConnected) previousFocus.focus({preventScroll:true});
   previousFocus = null;
 }

@@ -38,6 +38,7 @@
   "sections": [
     {
       "id": "yuseong-meeting",
+      "galleryLayout": "lightbox",
       "title": {
         "ko": "여행 뒤에 이어진 만남, 유성구청과의 미팅",
         "en": "A meeting after the journey: Yuseong-gu Office",

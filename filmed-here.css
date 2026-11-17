@@ -18,19 +18,22 @@
 .film-thumbnail{flex:0 1 calc((100% - 32px) / 3);min-width:0;margin:0}
 .film-thumbnail-trigger{position:relative;display:block;width:100%;padding:0;overflow:hidden;border-radius:6px;background:#101711;cursor:zoom-in}
 .film-thumbnail-trigger img{display:block;width:100%;height:auto}
+.photo-thumbnails .film-thumbnail{flex-basis:calc((100% - 48px) / 4)}
+.photo-thumbnails .film-thumbnail-trigger{aspect-ratio:4 / 3;background:var(--sage)}
+.photo-thumbnails .film-thumbnail-trigger img{height:100%;object-fit:contain}
 .film-thumbnail-trigger span{position:absolute;right:6px;bottom:6px;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#101711e0;color:#fff;font-size:16px;line-height:1}
 .film-thumbnail figcaption{margin-top:6px;color:var(--muted);font-size:13px;overflow-wrap:anywhere}
 .film-place-reference{margin-top:18px}
 @media(max-width:600px){
   .film-thumbnails{gap:12px}
-  .film-thumbnail{flex-basis:calc((100% - 12px) / 2)}
+  .film-thumbnail,.photo-thumbnails .film-thumbnail{flex-basis:calc((100% - 12px) / 2)}
 }
 .film-dialog{padding:0;border:1px solid #ffffff26;border-radius:6px;width:min(1120px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 40px);color:var(--paper);background:#101711;overscroll-behavior:contain}
 .film-dialog::backdrop{background:#071009db}
 .film-dialog-surface{display:flex;flex-direction:column;max-height:calc(100dvh - 42px);overflow:auto;background:#101711;color:var(--paper)}
 .film-dialog-toolbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 14px 10px 24px;padding-top:max(10px,env(safe-area-inset-top));padding-right:max(14px,env(safe-area-inset-right));padding-left:max(24px,env(safe-area-inset-left));flex-shrink:0;background:#101711}
 .film-dialog-label{font-size:12px;letter-spacing:2px;color:#d4dfce}
-.film-dialog-toolbar>div{display:flex;gap:4px;flex-shrink:0}
+.film-dialog-toolbar>div{display:flex;gap:4px;flex-shrink:0;margin-left:auto}
 .film-expand-control,.film-close-control{display:grid;place-items:center;min-width:44px;min-height:44px;border-radius:50%;color:white;font-size:27px;line-height:1}
 .film-expand-control:hover,.film-close-control:hover{background:#ffffff20}
 .film-dialog button:focus-visible{outline:3px solid var(--lime);outline-offset:-3px}
