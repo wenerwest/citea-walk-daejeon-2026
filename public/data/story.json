@@ -376,6 +376,7 @@
     },
     {
       "id": "december-screening",
+      "galleryLayout": "lightbox",
       "title": {
         "ko": "12월 다큐멘터리 상영회 소식",
         "en": "A December documentary preview screening",
