@@ -151,7 +151,12 @@ function stories() {
     const placeLink=place
       ? `<div class="film-place-reference">${link('/place/'+place.id,l(section.placeLink.label),'text-link')}</div>`
       : '';
-    return `<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body,section.inlinePhoto)}${gallery}${placeLink}</section>`;
+    const subsections=(section.subsections??[]).map(({title,body})=>`
+      <section class="story-subsection">
+        <h3>${esc(l(title))}</h3>
+        ${paragraphs(body)}
+      </section>`).join('');
+    return `<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body,section.inlinePhoto)}${subsections}${gallery}${paragraphs(section.closing)}${placeLink}</section>`;
   }).join('');
   return `<article class="page-container story-page"><div class="breadcrumb">${link('/',l(story.backHome),'text-link','')}</div><header class="page-heading"><p class="eyebrow">SUNDAY TEA CLUB · AFTER THE WALK</p><h1>${esc(l(story.title))}</h1><p class="intro">${esc(l(story.subtitle))}</p></header><div class="story-body"><div class="story-intro">${paragraphs(story.intro)}</div>${sections}<section class="story-takeaways" aria-labelledby="story-takeaways-title"><p class="eyebrow">WHAT WE TAKE FORWARD</p><h2 id="story-takeaways-title">${esc(l(story.takeaways.title))}</h2><p>${esc(l(story.takeaways.intro))}</p><ol>${story.takeaways.items.map(item=>`<li>${esc(l(item))}</li>`).join('')}</ol></section><div class="story-closing">${paragraphs(story.closing)}</div>${story.sources?.length?`<details class="sources"><summary>${esc(t('sources'))}</summary>${story.sources.map(source=>ext(source.url,l(source.label))).join('')}</details>`:''}<div class="about-actions">${link('/',l(story.backHome),'button button-outline')}</div></div></article>`;
 }

@@ -357,6 +357,8 @@ body { -webkit-text-size-adjust: 100%; }
 .story-section { padding:36px 0; border-top:1px solid var(--line); }
 .story-section h2,.story-takeaways h2 { font-size:26px; line-height:1.5; margin:12px 0 22px; }
 .story-section .small-label { font-size:13px; letter-spacing:.08em; color:var(--green); }
+.story-subsection { margin-top:26px; }
+.story-subsection h3 { font-size:20px; line-height:1.5; margin-bottom:10px; }
 .story-body .place-photo-gallery {
   width:min(100%, 640px);
   margin-top:20px;
