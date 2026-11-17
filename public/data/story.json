@@ -185,7 +185,25 @@
             "cn": "原网站提供的资料照片"
           }
         }
-      ]
+      ],
+      "inlinePhoto": {
+        "afterParagraph": 2,
+        "src": "assets/story/all-of-us-are-dead-mokcheok.webp",
+        "width": 999,
+        "height": 457,
+        "alt": {
+          "ko": "교복 차림 인물들이 나란히 서 있는 《지금 우리 학교는》 포스터",
+          "en": "All of Us Are Dead poster showing students in uniform standing in a row",
+          "tw": "學生們穿著制服並排站立的《殭屍校園》海報",
+          "cn": "学生们穿着校服并排站立的《僵尸校园》海报"
+        },
+        "caption": {
+          "ko": "넷플릭스 시리즈 《지금 우리 학교는》 포스터",
+          "en": "Poster for the Netflix series All of Us Are Dead",
+          "tw": "Netflix 影集《殭屍校園》海報",
+          "cn": "Netflix 剧集《僵尸校园》海报"
+        }
+      }
     },
     {
       "id": "hiking",
@@ -196,10 +214,10 @@
         "cn": "很想与大家一起走的山路"
       },
       "body": {
-        "ko": "정식 계획에는 넣지 못했지만, 개인적으로 끝까지 고민했던 활동은 하이킹이었어요. 보문산성에서 내려다보는 도시, 계족산 황톳길을 맨발로 걷는 경험처럼 대전에는 산과 일상을 가까이에서 만날 수 있는 곳들이 있습니다. 계족산성과 황톳길은 서로 다른 코스이니 구분해서 생각하면 좋아요.\n\n산행을 넣고 싶었던 이유는 전망 때문만은 아니었습니다. 현지 사람들이 가까운 산을 오르고 숲길을 걷는 방식으로 도시의 생활을 경험해보면 좋겠다고 생각했거든요.\n\n하지만 제한된 시간 안에 여러 프로그램을 진행해야 해서, 이번에는 산행 대신 비교적 쉽게 오를 수 있는 전망대를 방문했습니다. 다음에 기회가 된다면 각자의 체력과 시간에 맞는 가벼운 코스로 함께 걸어보고 싶어요. 산에 올라 차 한 잔 마시는 날도 기대해봅니다.",
-        "en": "Hiking never made it into the formal plan, but it was an idea we kept returning to. The city view from Bomunsanseong Fortress and barefoot walking on Gyejoksan’s red-clay trail are ways to experience how close Daejeon’s hills are to everyday life. Gyejoksanseong Fortress and the red-clay trail are separate routes, so it is worth distinguishing them.\n\nWe wanted to include a hike for more than the view. Walking local hills and forest paths felt like a good way to experience how people spend time in the city.\n\nWith several activities to fit into limited time, we visited an easier-to-reach observatory instead. Next time, we would love to choose a gentle route that suits everyone’s time and fitness—and perhaps share a cup of tea up on the mountain.",
-        "tw": "健行沒有正式排進計畫，卻是我們一直很想加入的活動。從寶文山城俯瞰城市，或在雞足山黃土步道赤腳散步，都是感受大田山林與日常距離的方式。雞足山城與黃土步道是不同路線，規劃時可以分開考量。\n\n想帶大家健行，不只是為了看風景。我們覺得，像當地人一樣走進近郊的山與森林，也是認識城市生活的好方法。\n\n不過，有限的時間裡還有其他活動，這次便改成前往比較容易抵達的展望台。下次若有機會，希望能依大家的體力和時間，選一條輕鬆的路線一起走走，再到山上喝杯茶。",
-        "cn": "徒步没有正式排进计划，却是我们一直很想加入的活动。从宝文山城俯瞰城市，或在鸡足山黄土步道赤脚散步，都是感受大田山林与日常距离的方式。鸡足山城与黄土步道是不同路线，规划时可以分开考虑。\n\n想带大家徒步，不只是为了看风景。我们觉得，像当地人一样走进近郊的山与森林，也是认识城市生活的好方法。\n\n不过，有限的时间里还有其他活动，这次便改成前往比较容易抵达的展望台。下次若有机会，希望能依大家的体力和时间，选一条轻松的路线一起走走，再到山上喝杯茶。"
+        "ko": "등산은 한국에서 국민 스포츠로 불릴 만큼 일상에 자리 잡은 여가 활동입니다. 대전은 산으로 둘러싸인 분지라 도심 가까이에도 비교적 부담 없이 오를 만한 산이 많습니다. 참가자들과 산길을 걸으며 대전 사람들이 일상에서 즐기는 여가를 함께 경험하고 싶었습니다.\n\n보문산성에 오르면 대전 도심이 내려다보입니다. 장동산림욕장에서 계족산성으로 가는 길은 맨발로 걸을 수 있는 황톳길과 일부 구간이 겹칩니다.\n\n산행을 일정에 넣을 방법을 끝까지 고민했습니다. 촘촘한 여행 일정에 소규모 회의와 미팅도 예정돼 있어 산행에 필요한 시간을 확보하기 어려웠습니다. 이번에는 비교적 쉽게 갈 수 있는 전망대를 방문했습니다. 함께 산길을 걸어보지 못한 점은 여전히 아쉽습니다.",
+        "en": "Hiking is so much a part of everyday life in Korea that it is often called the national sport. Daejeon sits in a basin surrounded by mountains, with plenty of approachable hikes close to the city. We wanted to walk those trails together and share a pastime that local people enjoy.\n\nBomunsanseong Fortress looks out over Daejeon. On the way from Jangdong Forest Park to Gyejoksanseong Fortress, part of the route follows the red-clay trail, where you can walk barefoot.\n\nWe kept looking for a way to fit in a hike. Our itinerary was already full, including small meetings and appointments, so it was hard to set aside enough time. We visited a viewpoint that was easier to reach. We still wish we could have walked a mountain trail together.",
+        "tw": "在韓國，登山是很普遍的日常休閒活動，甚至有「國民運動」之稱。大田地處群山環繞的盆地，市區附近就有不少容易攀登的山。我們原本想和大家一起走一段山路，體驗當地人平日喜愛的休閒活動。\n\n登上寶文山城，可以俯瞰大田市區。從長洞森林浴場前往雞足山城的路有一段和黃土步道重疊，那一段也可以赤腳走。\n\n我們一直想找機會把登山排進行程。然而，緊湊的行程中還安排了小型會議與會面，很難撥出足夠的登山時間。這次我們去了比較容易抵達的展望台。沒能和大家一起走山路，現在想來仍覺得可惜。",
+        "cn": "在韩国，登山是很普遍的日常休闲活动，甚至有“国民运动”之称。大田地处群山环绕的盆地，市区附近就有不少容易攀登的山。我们原本想和大家一起走一段山路，体验当地人平日喜爱的休闲活动。\n\n登上宝文山城，可以俯瞰大田市区。从长洞森林浴场前往鸡足山城的路有一段和黄土步道重叠，那一段也可以赤脚走。\n\n我们一直想找机会把登山排进行程。然而，紧凑的行程中还安排了小型会议与会面，很难拨出足够的登山时间。这次我们去了比较容易到达的观景台。没能和大家一起走山路，现在想来仍觉得遗憾。"
       },
       "gallery": [
         {
@@ -325,10 +343,10 @@
         "cn": "意外获得热烈好评的葡萄酒博览会"
       },
       "body": {
-        "ko": "참가자 후기에서 눈에 띈 것은 대전국제와인엑스포에 대한 호평이었습니다. CiTEA Walk는 중구의 지원을 받은 프로그램이라 중구를 중심으로 일정을 짰습니다. 와인엑스포가 열린 곳은 유성구여서 일정에 넣기까지 고민이 많았습니다.\n\n일 년에 한 번 열리는 축제가 마침 방문 기간과 겹쳐 참가자들이 함께 경험할 수 있도록 일정에 넣었습니다.\n\n예상보다 많은 참가자가 와인을 즐겼습니다. 제빵 프로그램이 길어지면서 식사 시간이 줄었고, 와인엑스포를 충분히 둘러볼 시간도 확보하지 못했습니다.\n\n다음에는 체험 사이의 이동과 식사, 자유시간을 일정에 여유 있게 반영하겠습니다.",
-        "en": "The warm response to the Daejeon International Wine Expo stood out in the participants’ feedback. Jung-gu supported CiTEA Walk, so we planned the programme around the district. We took some time to decide whether to include the Expo, which was held in Yuseong-gu.\n\nThe annual festival coincided with our visit, so we added it to the schedule for participants to experience together.\n\nMore participants enjoyed wine than we had expected. The baking session ran long, cutting into the meal break and leaving too little time to explore the Wine Expo.\n\nNext time, we will set aside more time for travel between activities, meals and independent exploring.",
-        "tw": "參加者的回饋中，對大田國際葡萄酒博覽會的好評格外突出。CiTEA Walk 由中區支持，因此行程以中區為主。博覽會在儒城區舉行，我們花了一些時間考慮是否納入行程。\n\n一年一度的博覽會恰好與造訪日期重疊，我們便將它排進行程，讓大家能一起體驗。\n\n喜歡品酒的參加者比預期多。烘焙體驗超時，壓縮了用餐時間，也讓大家在葡萄酒博覽會停留的時間不夠。\n\n下次規劃行程時，我們會為活動之間的交通、用餐與自由活動預留更多時間。",
-        "cn": "参与者的反馈中，对大田国际葡萄酒博览会的好评格外突出。CiTEA Walk 由中区支持，因此行程以中区为主。博览会在儒城区举行，我们花了一些时间考虑是否纳入行程。\n\n一年一度的博览会恰好与到访日期重叠，我们便将它排进行程，让大家能一起体验。\n\n喜欢品酒的参与者比预期多。烘焙体验超时，压缩了用餐时间，也让大家在葡萄酒博览会停留的时间不够。\n\n下次规划行程时，我们会为活动之间的交通、用餐与自由活动预留更多时间。"
+        "ko": "참가자 후기에서 눈에 띈 것은 대전국제와인엑스포에 대한 호평이었습니다. CiTEA Walk는 중구의 지원을 받은 프로그램이라 중구를 중심으로 일정을 짰습니다. 와인엑스포가 열린 곳은 유성구여서 일정에 넣기까지 고민이 많았습니다.\n\n일 년에 한 번 열리는 축제가 마침 방문 기간과 겹쳐 참가자들이 함께 경험할 수 있도록 일정에 넣었습니다.\n\n방문 전날 읽은 후기에는 점심시간 이후에 도착하면 입장까지 한 시간 넘게 기다려야 했다는 이야기가 있었습니다. 빠듯한 일정 안에 입장할 수 있을지 고민이 많았습니다.\n\n당일 오전에는 식사를 거른 채 이동했지만, 다행히 무사히 입장했습니다. 그 과정에서 제빵 체험에서 만든 빵을 함께 맛볼 시간을 마련하지 못해 죄송합니다.\n\n다음에는 이동과 입장 대기에 여유를 두고, 식사와 자유시간을 일정에 따로 확보하겠습니다.",
+        "en": "The warm response to the Daejeon International Wine Expo stood out in the participants’ feedback. Jung-gu supported CiTEA Walk, so we planned the programme around the district. We took some time to decide whether to include the Expo, which was held in Yuseong-gu.\n\nThe annual festival coincided with our visit, so we added it to the schedule for participants to experience together.\n\nThe day before our visit, we read an account of someone waiting more than an hour to get in after lunchtime. With such a tight itinerary, we wondered whether we would be able to get in.\n\nWe had to skip our morning meal, but we made it into the Expo. We’re sorry we couldn’t set aside time for everyone to try the bread we had made in the baking session.\n\nNext time, we’ll allow more time for travel and queues and set aside time for meals and independent exploring.",
+        "tw": "參加者的回饋中，對大田國際葡萄酒博覽會的好評格外突出。CiTEA Walk 由中區支持，因此行程以中區為主。博覽會在儒城區舉行，我們花了一些時間考慮是否納入行程。\n\n一年一度的博覽會恰好與造訪日期重疊，我們便將它排進行程，讓大家能一起體驗。\n\n參觀前一天，我們看到有人分享，午餐時間過後抵達，排隊超過一個小時才入場。當天的行程很緊湊，我們一度擔心來不及進場。\n\n當天上午沒顧上用餐，所幸順利進場。沒能留出時間讓大家一起品嚐烘焙體驗中做的麵包，我們很抱歉。\n\n下次會為交通和入場排隊預留更多時間，也會在行程裡另外安排用餐與自由活動的時間。",
+        "cn": "参与者的反馈中，对大田国际葡萄酒博览会的好评格外突出。CiTEA Walk 由中区支持，因此行程以中区为主。博览会在儒城区举行，我们花了一些时间考虑是否纳入行程。\n\n一年一度的博览会恰好与到访日期重叠，我们便将它排进行程，让大家能一起体验。\n\n参观前一天，我们看到有人分享，午餐时间过后到达，排队超过一个小时才入场。当天的行程很紧凑，我们一度担心来不及进场。\n\n当天上午没顾上吃饭，所幸顺利入场。没能留出时间让大家一起品尝烘焙体验中做的面包，我们很抱歉。\n\n下次会为交通和入场排队预留更多时间，也会在行程里另外安排用餐与自由活动的时间。"
       },
       "gallery": [
         {
@@ -399,10 +417,10 @@
         "cn": "最出乎意料的好评来自葡萄酒博览会。斟酌后特别加入的活动，成了美好回忆。"
       },
       {
-        "ko": "식사 시간은 더 확실히 확보해야 했습니다. 제빵 체험이 길어지면서 끼니를 제대로 챙기지 못한 점이 아쉬웠어요.",
-        "en": "Meal time needed better protection. When baking ran late, we could not make enough time to eat properly.",
-        "tw": "用餐時間需要更確實地保留。烘焙體驗延長，讓大家沒能好好吃飯，是我們的遺憾。",
-        "cn": "用餐时间需要更确实地保留。烘焙体验延长，让大家没能好好吃饭，是我们的遗憾。"
+        "ko": "이동이나 입장 대기에 변수가 생겨도 식사 시간이 밀리지 않도록 일정에 여유를 두어야 했습니다.",
+        "en": "We needed more room in the schedule to protect meal breaks if travel or queues took longer than expected.",
+        "tw": "行程應留一些彈性，才不會因交通或入場等候而壓縮用餐時間。",
+        "cn": "行程应留一些弹性，才不会因交通或入场等候而压缩用餐时间。"
       },
       {
         "ko": "자유시간에는 여유가 필요했습니다. 특히 와인엑스포를 각자의 속도로 즐길 시간이 부족했어요.",
@@ -471,6 +489,15 @@
         "en": "About Daejeon National Cemetery",
         "tw": "國立大田顯忠院介紹",
         "cn": "国立大田显忠院介绍"
+      }
+    },
+    {
+      "url": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=3cc201fd-dda6-4f88-a153-340eb2e713dd",
+      "label": {
+        "ko": "한국관광공사 · 계족산 황톳길과 계족산성",
+        "en": "Korea Tourism Organization · Gyejoksan Red Clay Trail and Gyejoksanseong Fortress",
+        "tw": "韓國觀光公社・雞足山黃土步道與雞足山城",
+        "cn": "韩国观光公社・鸡足山黄土步道与鸡足山城"
       }
     }
   ]

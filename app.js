@@ -79,7 +79,12 @@ function placeMedia(p) {
   if (p.gallery?.length) return photoGallery(p.gallery,{eagerFirst:true});
   return `<figure class="place-single-media">${photo(p,'detail-photo',true)}${p.image?`<figcaption class="photo-attribution">${p.image.caption?`${esc(l(p.image.caption))} · `:''}${p.image.source?ext(p.image.source,l(p.image.credit),''):esc(l(p.image.credit))} ${p.image.license?ext(p.image.license,'License',''):''}</figcaption>`:''}</figure>`;
 }
-const paragraphs = value => l(value).split(/\n\s*\n/).filter(Boolean).map(text=>`<p>${esc(text)}</p>`).join('');
+function paragraphs(value, inlinePhoto) {
+  return l(value).split(/\n\s*\n/).filter(Boolean).map((text,index)=>{
+    const photo=inlinePhoto?.afterParagraph===index+1 ? photoGallery([inlinePhoto]) : '';
+    return `<p>${esc(text)}</p>${photo}`;
+  }).join('');
+}
 function renderHeader() {
   const current=route()[0]||'home';
   const items=['home','schedule','explore','shopping','audio','prepare','notices'];
@@ -146,7 +151,7 @@ function stories() {
     const placeLink=place
       ? `<div class="film-place-reference">${link('/place/'+place.id,l(section.placeLink.label),'text-link')}</div>`
       : '';
-    return `<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body)}${gallery}${placeLink}</section>`;
+    return `<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body,section.inlinePhoto)}${gallery}${placeLink}</section>`;
   }).join('');
   return `<article class="page-container story-page"><div class="breadcrumb">${link('/',l(story.backHome),'text-link','')}</div><header class="page-heading"><p class="eyebrow">SUNDAY TEA CLUB · AFTER THE WALK</p><h1>${esc(l(story.title))}</h1><p class="intro">${esc(l(story.subtitle))}</p></header><div class="story-body"><div class="story-intro">${paragraphs(story.intro)}</div>${sections}<section class="story-takeaways" aria-labelledby="story-takeaways-title"><p class="eyebrow">WHAT WE TAKE FORWARD</p><h2 id="story-takeaways-title">${esc(l(story.takeaways.title))}</h2><p>${esc(l(story.takeaways.intro))}</p><ol>${story.takeaways.items.map(item=>`<li>${esc(l(item))}</li>`).join('')}</ol></section><div class="story-closing">${paragraphs(story.closing)}</div>${story.sources?.length?`<details class="sources"><summary>${esc(t('sources'))}</summary>${story.sources.map(source=>ext(source.url,l(source.label))).join('')}</details>`:''}<div class="about-actions">${link('/',l(story.backHome),'button button-outline')}</div></div></article>`;
 }

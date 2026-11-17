@@ -358,6 +358,7 @@ body { -webkit-text-size-adjust: 100%; }
 .story-section h2,.story-takeaways h2 { font-size:26px; line-height:1.5; margin:12px 0 22px; }
 .story-section .small-label { font-size:13px; letter-spacing:.08em; color:var(--green); }
 .story-body .place-photo-gallery { margin-top:26px; grid-template-columns:1fr; }
+.story-section .place-photo-gallery+p { margin-top:22px; }
 .story-body .place-gallery-frame { aspect-ratio:auto; max-height:none; }
 .story-body .place-gallery-frame img { position:static; height:auto; max-height:600px; object-fit:contain; margin:auto; }
 .story-body figcaption { line-height:1.6; }
