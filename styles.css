@@ -315,6 +315,8 @@ body { -webkit-text-size-adjust: 100%; }
 .place-gallery-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .place-photo-gallery figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-top: 12px; font-size: 14px; }
 .place-photo-gallery figcaption small { color: var(--muted); font-size: 11px; }
+.place-photo-gallery figcaption small a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+.place-photo-gallery figcaption small a svg { width: 12px; height: 12px; margin-inline-start: 4px; }
 .detail-copy > section > p + p { margin-top: 18px; }
 .program-info { padding: 25px; background: var(--sage); }
 .program-info h3 { font-size: 18px; }
@@ -359,6 +361,10 @@ body { -webkit-text-size-adjust: 100%; }
 .story-body .place-gallery-frame { aspect-ratio:auto; max-height:none; }
 .story-body .place-gallery-frame img { position:static; height:auto; max-height:600px; object-fit:contain; margin:auto; }
 .story-body figcaption { line-height:1.6; }
+.story-body .place-photo-gallery-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.story-body .place-photo-gallery-grid .place-gallery-frame { aspect-ratio:4 / 3; }
+.story-body .place-photo-gallery-grid .place-gallery-frame img { position:absolute; height:100%; max-height:none; margin:0; }
+.story-body .place-photo-gallery-grid figcaption { flex-direction:column; align-items:flex-start; }
 .story-takeaways { padding:30px; background:var(--sage); border-radius:12px; margin:12px 0 36px; }
 .story-takeaways>p:not(.eyebrow) { font-size:15px; color:var(--muted); }
 .story-takeaways ol { margin:22px 0 0; padding-left:26px; }
@@ -370,6 +376,7 @@ body { -webkit-text-size-adjust: 100%; }
   .story-body p,.story-body li { font-size:16px; line-height:1.9; }
   .story-section { padding:28px 0; }
   .story-section h2,.story-takeaways h2 { font-size:23px; }
+  .story-body .place-photo-gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
   .story-takeaways { padding:24px 20px; }
 }
 .about-page { max-width:1000px; }

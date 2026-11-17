@@ -1,8 +1,8 @@
 const text = {
-  ko: { heading:'이곳에서 촬영된 작품', intro:'작품 카드를 눌러 대전근현대사전시관이 등장한 실제 드라마 장면을 만나보세요.', open:'장면 갤러리 열기', scenes:'장', previous:'이전 장면', next:'다음 장면', close:'갤러리 닫기', expand:'사진을 눌러 전체 화면으로 보기', collapse:'확대 화면 닫기', pending:'실제 촬영 장면 사진을 준비 중입니다.', hint:'좌우 화살표 또는 스와이프로 장면을 바꿀 수 있습니다.', supplied:'사용자가 제공한 실제 드라마 장면' },
-  en: { heading:'Filmed Here', intro:'Choose a title to see actual drama scenes filmed at the Daejeon Modern and Contemporary History Exhibition Hall.', open:'Open scene gallery', scenes:'scenes', previous:'Previous scene', next:'Next scene', close:'Close gallery', expand:'Select the photo to view full screen', collapse:'Exit enlarged view', pending:'Actual filming scene photos will be added here.', hint:'Use the arrows or swipe to change scenes.', supplied:'Actual drama scenes supplied by the user' },
-  tw: { heading:'在此拍攝的作品', intro:'點選作品卡片，欣賞大田近現代史展示館出現的真實戲劇場景。', open:'開啟劇照圖集', scenes:'張劇照', previous:'上一張劇照', next:'下一張劇照', close:'關閉圖集', expand:'點選照片以全螢幕檢視', collapse:'結束放大檢視', pending:'實際拍攝場景照片準備中，之後將新增於此。', hint:'使用左右箭頭或滑動切換劇照。', supplied:'使用者提供的真實戲劇場景' },
-  cn: { heading:'在此拍摄的作品', intro:'点击作品卡片，欣赏大田近现代史展示馆出现的真实剧集场景。', open:'打开剧照图库', scenes:'张剧照', previous:'上一张剧照', next:'下一张剧照', close:'关闭图库', expand:'点击照片以全屏查看', collapse:'退出放大查看', pending:'实际拍摄场景照片准备中，之后将在此添加。', hint:'使用左右箭头或滑动切换剧照。', supplied:'用户提供的真实剧集场景' }
+  ko: { heading:'이곳에서 촬영된 작품', intro:'작품 카드를 눌러 대전근현대사전시관이 등장한 실제 드라마 장면을 만나보세요.', open:'장면 갤러리 열기', enlargePhoto:'사진 크게 보기', scenes:'장', previous:'이전 장면', next:'다음 장면', close:'갤러리 닫기', expand:'사진을 눌러 전체 화면으로 보기', collapse:'확대 화면 닫기', pending:'실제 촬영 장면 사진을 준비 중입니다.', hint:'좌우 화살표 또는 스와이프로 장면을 바꿀 수 있습니다.', supplied:'사용자가 제공한 실제 드라마 장면' },
+  en: { heading:'Filmed Here', intro:'Choose a title to see actual drama scenes filmed at the Daejeon Modern and Contemporary History Exhibition Hall.', open:'Open scene gallery', enlargePhoto:'Enlarge photo', scenes:'scenes', previous:'Previous scene', next:'Next scene', close:'Close gallery', expand:'Select the photo to view full screen', collapse:'Exit enlarged view', pending:'Actual filming scene photos will be added here.', hint:'Use the arrows or swipe to change scenes.', supplied:'Actual drama scenes supplied by the user' },
+  tw: { heading:'在此拍攝的作品', intro:'點選作品卡片，欣賞大田近現代史展示館出現的真實戲劇場景。', open:'開啟劇照圖集', enlargePhoto:'放大照片', scenes:'張劇照', previous:'上一張劇照', next:'下一張劇照', close:'關閉圖集', expand:'點選照片以全螢幕檢視', collapse:'結束放大檢視', pending:'實際拍攝場景照片準備中，之後將新增於此。', hint:'使用左右箭頭或滑動切換劇照。', supplied:'使用者提供的真實戲劇場景' },
+  cn: { heading:'在此拍摄的作品', intro:'点击作品卡片，欣赏大田近现代史展示馆出现的真实剧集场景。', open:'打开剧照图库', enlargePhoto:'放大照片', scenes:'张剧照', previous:'上一张剧照', next:'下一张剧照', close:'关闭图库', expand:'点击照片以全屏查看', collapse:'退出放大查看', pending:'实际拍摄场景照片准备中，之后将在此添加。', hint:'使用左右箭头或滑动切换剧照。', supplied:'用户提供的真实剧集场景' }
 };
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const localized = (value, lang) => typeof value === 'string' ? value : value?.[lang] || value?.en || value?.ko || '';
@@ -25,7 +25,7 @@ export async function initFilmedHere(options = {}) {
   document.body.append(dialog);
   document.addEventListener('click', event => {
     const card = event.target.closest('[data-film-id]');
-    if (card) openGallery(card.dataset.filmId, card);
+    if (card) openGallery(card.dataset.filmId, card, Number(card.dataset.filmScene ?? 0));
   });
   dialog.addEventListener('click', event => {
     if (event.target === dialog) return closeFilmedGallery();
@@ -88,12 +88,22 @@ export function renderFilmedHere(lang = 'ko') {
   }).join('')}</div></section>`;
 }
 
-function openGallery(id, trigger) {
+export function renderFilmThumbnails(id, lang = 'ko') {
+  const film = films.find(item => item.id === id);
+  if (!film?.scenes?.length) return '';
+  const strings = text[lang] || text.ko;
+  return `<div class="film-thumbnails">${film.scenes.map((scene,index) => {
+    const label = localized(scene.alt,lang);
+    return `<figure class="film-thumbnail"><button type="button" class="film-thumbnail-trigger" data-film-id="${escapeHtml(id)}" data-film-scene="${index}" aria-haspopup="dialog" aria-controls="filmed-gallery" aria-label="${escapeHtml(label+' · '+strings.enlargePhoto)}"><img src="${escapeHtml(scene.src)}" alt="${escapeHtml(label)}" width="${scene.width}" height="${scene.height}" loading="lazy" decoding="async"><span aria-hidden="true">⤢</span></button><figcaption>${escapeHtml(label)}</figcaption></figure>`;
+  }).join('')}</div>`;
+}
+
+function openGallery(id, trigger, startIndex = 0) {
   const film = films.find(item => item.id === id);
   if (!film || !dialog) return;
   if (dialog.open) closeFilmedGallery({restoreFocus:false});
   activeFilm = film;
-  sceneIndex = 0;
+  sceneIndex = film.scenes?.[startIndex] ? startIndex : 0;
   previousFocus = trigger || document.activeElement;
   previousOverflow = document.body.style.overflow;
   document.body.style.overflow = 'hidden';

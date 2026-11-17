@@ -1,5 +1,5 @@
 import { shoppingCopy, renderShoppingGuide } from './shopping-guide.js';
-import { initFilmedHere, renderFilmedHere, closeFilmedGallery } from './filmed-here.js';
+import { initFilmedHere, renderFilmedHere, renderFilmThumbnails, closeFilmedGallery } from './filmed-here.js';
 import { exploreCategoryIds, renderExploreCategoryFilters, renderExploreCategoryBadge } from './explore-categories.js';
 import { scheduleTracks, scheduleTrackCopy, renderScheduleTrackCards, renderScheduleTrackSummary } from './schedule-tracks.js';
 const $ = (s, root = document) => root.querySelector(s);
@@ -66,11 +66,17 @@ function photo(p, cls='', eager=false) {
   const ico = /park|uam|bomun/.test(id)?'leaf':/yoga|wellness/.test(id)?'sun':/bakery/.test(id)?'walk':'pin';
   return `<div class="place-photo photo-placeholder ${cls}"><span class="placeholder-icon">${icon(ico,40)}</span><span>${esc(t('photoPending'))}</span></div>`;
 }
-function photoGallery(images, eagerFirst=false) {
-  return `<div class="place-photo-gallery">${images.map((image,index)=>`<figure><div class="place-gallery-frame ${image.width<image.height?'gallery-portrait':''}"><img src="${esc(image.src)}" alt="${esc(l(image.alt))}" width="${image.width}" height="${image.height}" ${eagerFirst&&index===0?'fetchpriority="high"':'loading="lazy"'} decoding="async"></div><figcaption><span>${esc(l(image.caption)||l(image.alt))}</span><small>${esc(l(image.credit))}</small></figcaption></figure>`).join('')}</div>`;
+function photoGallery(images, { eagerFirst=false, layout } = {}) {
+  const layoutClass=layout==='grid'?' place-photo-gallery-grid':'';
+  return `<div class="place-photo-gallery${layoutClass}">${images.map((image,index)=>{
+    const credit=l(image.credit);
+    const source=ext(image.source,credit||t('photoCredit'),'');
+    const creditMarkup=source||esc(credit);
+    return `<figure><div class="place-gallery-frame ${image.width<image.height?'gallery-portrait':''}"><img src="${esc(image.src)}" alt="${esc(l(image.alt))}" width="${image.width}" height="${image.height}" ${eagerFirst&&index===0?'fetchpriority="high"':'loading="lazy"'} decoding="async"></div><figcaption><span>${esc(l(image.caption)||l(image.alt))}</span>${creditMarkup?`<small>${creditMarkup}</small>`:''}</figcaption></figure>`;
+  }).join('')}</div>`;
 }
 function placeMedia(p) {
-  if (p.gallery?.length) return photoGallery(p.gallery,true);
+  if (p.gallery?.length) return photoGallery(p.gallery,{eagerFirst:true});
   return `<figure class="place-single-media">${photo(p,'detail-photo',true)}${p.image?`<figcaption class="photo-attribution">${p.image.caption?`${esc(l(p.image.caption))} · `:''}${p.image.source?ext(p.image.source,l(p.image.credit),''):esc(l(p.image.credit))} ${p.image.license?ext(p.image.license,'License',''):''}</figcaption>`:''}</figure>`;
 }
 const paragraphs = value => l(value).split(/\n\s*\n/).filter(Boolean).map(text=>`<p>${esc(text)}</p>`).join('');
@@ -131,7 +137,17 @@ function meetingRecord() {
 }
 function stories() {
   const story=data.story;
-  return `<article class="page-container story-page"><div class="breadcrumb">${link('/',l(story.backHome),'text-link','')}</div><header class="page-heading"><p class="eyebrow">SUNDAY TEA CLUB · AFTER THE WALK</p><h1>${esc(l(story.title))}</h1><p class="intro">${esc(l(story.subtitle))}</p></header><div class="story-body"><div class="story-intro">${paragraphs(story.intro)}</div>${story.sections.map((section,index)=>`<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body)}${section.gallery?.length?photoGallery(section.gallery):''}</section>`).join('')}<section class="story-takeaways" aria-labelledby="story-takeaways-title"><p class="eyebrow">WHAT WE TAKE FORWARD</p><h2 id="story-takeaways-title">${esc(l(story.takeaways.title))}</h2><p>${esc(l(story.takeaways.intro))}</p><ol>${story.takeaways.items.map(item=>`<li>${esc(l(item))}</li>`).join('')}</ol></section><div class="story-closing">${paragraphs(story.closing)}</div>${story.sources?.length?`<details class="sources"><summary>${esc(t('sources'))}</summary>${story.sources.map(source=>ext(source.url,l(source.label))).join('')}</details>`:''}<div class="about-actions">${link('/',l(story.backHome),'button button-outline')}</div></div></article>`;
+  const sections=story.sections.map((section,index)=>{
+    const gallery=section.filmGalleryId
+      ? renderFilmThumbnails(section.filmGalleryId,lang)
+      : section.gallery?.length ? photoGallery(section.gallery,{layout:section.galleryLayout}) : '';
+    const place=byId(section.placeLink?.id);
+    const placeLink=place
+      ? `<div class="film-place-reference">${link('/place/'+place.id,l(section.placeLink.label),'text-link')}</div>`
+      : '';
+    return `<section class="story-section" id="story-${esc(section.id)}"><p class="small-label">${String(index+1).padStart(2,'0')} / CiTEA WALK</p><h2>${esc(l(section.title))}</h2>${paragraphs(section.body)}${gallery}${placeLink}</section>`;
+  }).join('');
+  return `<article class="page-container story-page"><div class="breadcrumb">${link('/',l(story.backHome),'text-link','')}</div><header class="page-heading"><p class="eyebrow">SUNDAY TEA CLUB · AFTER THE WALK</p><h1>${esc(l(story.title))}</h1><p class="intro">${esc(l(story.subtitle))}</p></header><div class="story-body"><div class="story-intro">${paragraphs(story.intro)}</div>${sections}<section class="story-takeaways" aria-labelledby="story-takeaways-title"><p class="eyebrow">WHAT WE TAKE FORWARD</p><h2 id="story-takeaways-title">${esc(l(story.takeaways.title))}</h2><p>${esc(l(story.takeaways.intro))}</p><ol>${story.takeaways.items.map(item=>`<li>${esc(l(item))}</li>`).join('')}</ol></section><div class="story-closing">${paragraphs(story.closing)}</div>${story.sources?.length?`<details class="sources"><summary>${esc(t('sources'))}</summary>${story.sources.map(source=>ext(source.url,l(source.label))).join('')}</details>`:''}<div class="about-actions">${link('/',l(story.backHome),'button button-outline')}</div></div></article>`;
 }
 function home() {
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
