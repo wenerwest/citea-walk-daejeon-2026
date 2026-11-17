@@ -460,71 +460,71 @@
       "cn": "这趟旅程留下的十件事"
     },
     "intro": {
-      "ko": "참가자들에게 전해 들은 반응과 현장에서의 경험을 바탕으로, 운영자로서 기억하고 싶은 점들을 정리했습니다.",
-      "en": "These are the things we want to remember as organizers, drawn from reactions shared with us and our experience during the programme.",
-      "tw": "根據參加者與我們分享的感受，以及現場的經驗，整理出主辦團隊想記住的重點。",
-      "cn": "根据参加者与我们分享的感受，以及现场的经验，整理出主办团队想记住的重点。"
+      "ko": "참가자 설문 11건의 선택값과 중국어 서술형 답변을 바탕으로, 기억에 남은 경험과 다음 여행에 바라는 점을 정리했습니다. 관광 활성화 문항은 복수 선택이었습니다.",
+      "en": "These takeaways draw on 11 survey responses, including selections and written comments in Chinese. The question about improving tourism allowed multiple selections.",
+      "tw": "我們從 11 份參加者問卷的勾選結果與中文文字回答中，整理出令人印象深刻的體驗及對下次旅行的建議。觀光發展題可以複選。",
+      "cn": "我们从 11 份参与者问卷的勾选结果和中文文字回答中，整理出令人印象深刻的体验和对下次旅行的建议。旅游发展题可以多选。"
     },
     "items": [
       {
-        "ko": "가장 의외의 호평은 와인엑스포였습니다. 고민 끝에 특별히 포함한 축제가 좋은 기억으로 남았어요.",
-        "en": "The Wine Expo brought the most unexpected praise: a festival we debated including became a fond memory.",
-        "tw": "最出乎意料的好評來自葡萄酒博覽會。斟酌後特別加入的活動，成了美好回憶。",
-        "cn": "最出乎意料的好评来自葡萄酒博览会。斟酌后特别加入的活动，成了美好回忆。"
+        "ko": "지역 문화·역사 체험은 8건에서 선택됐습니다. 테미오래와 대전근현대사전시관을 둘러본 뒤 대전의 역사를 더 알아보고 싶어졌다는 답변도 있었습니다.",
+        "en": "Eight responses selected local culture and history experiences. One participant said visiting Temi Orae and the Daejeon Modern History Exhibition Hall made them want to learn more about the city’s history.",
+        "tw": "有 8 份問卷勾選在地文化與歷史體驗。也有人說，走訪 Temi Orae 近代官舍村與大田近現代史展示館後，更想深入認識大田的歷史。",
+        "cn": "有 8 份问卷选择了当地文化与历史体验。也有人说，参观 Temi Orae 近代官舍村和大田近现代史展示馆后，更想深入了解大田的历史。"
       },
       {
-        "ko": "이동이나 입장 대기에 변수가 생겨도 식사 시간이 밀리지 않도록 일정에 여유를 두어야 했습니다.",
-        "en": "We needed more room in the schedule to protect meal breaks if travel or queues took longer than expected.",
-        "tw": "行程應留一些彈性，才不會因交通或入場等候而壓縮用餐時間。",
-        "cn": "行程应留一些弹性，才不会因交通或入场等候而压缩用餐时间。"
+        "ko": "로컬 음식·베이커리 투어는 6건에서 선택됐습니다. 성심당의 빵과 박물관을 함께 경험한 점이 인상 깊었다는 의견이 있었습니다.",
+        "en": "Six responses selected local food and bakery tours. One participant especially enjoyed trying Sungsimdang’s bread and visiting its museum.",
+        "tw": "有 6 份問卷勾選在地美食與麵包店之旅。也有人對品嚐聖心堂麵包、參觀博物館的經驗印象深刻。",
+        "cn": "有 6 份问卷选择了当地美食与面包店之旅。也有人对品尝圣心堂面包、参观博物馆的经历印象深刻。"
       },
       {
-        "ko": "자유시간에는 여유가 필요했습니다. 특히 와인엑스포를 각자의 속도로 즐길 시간이 부족했어요.",
-        "en": "Free time needed more room, especially to explore the Wine Expo at everyone’s own pace.",
-        "tw": "自由時間需要更充裕，尤其是讓大家依自己的步調逛葡萄酒博覽會。",
-        "cn": "自由时间需要更充裕，尤其是让大家依自己的节奏逛葡萄酒博览会。"
+        "ko": "웰니스는 4건에서 선택됐습니다. 요가와 싱잉볼이 기억에 남았다는 답변이 있었고, 이런 체험에도 대전만의 이야기를 더해 달라는 의견이 나왔습니다.",
+        "en": "Four responses selected wellness. Participants mentioned yoga and singing bowls as highlights, and one suggested giving wellness activities a clearer connection to Daejeon.",
+        "tw": "有 4 份問卷勾選身心療癒體驗。有人對瑜伽與頌缽印象深刻，也有人希望這些體驗能多帶入大田在地的故事。",
+        "cn": "有 4 份问卷选择了身心疗愈体验。有人对瑜伽和颂钵印象深刻，也有人希望这些体验能更多融入大田本地的故事。"
       },
       {
-        "ko": "지원 취지에 맞는 중구 중심 구성이 원칙이었습니다. 와인엑스포는 축제 시기가 겹친 이번만의 특별한 선택이었어요.",
-        "en": "A Jung-gu focus remained the principle of the supported programme. The Wine Expo was a special exception because its dates coincided with our visit.",
-        "tw": "配合支持計畫的宗旨，以中區為中心仍是原則。葡萄酒博覽會是因檔期重合而作的特別安排。",
-        "cn": "配合支持计划的宗旨，以中区为中心仍是原则。葡萄酒博览会是因档期重合而作的特别安排。"
+        "ko": "와인엑스포를 흥미롭게 본 답변이 있었습니다. 엑스포 관람에 앞서 대전의 양조장과 지역 술 문화를 소개하면 더 좋겠다는 제안도 있었습니다.",
+        "en": "Some responses highlighted the Wine Expo. One suggested introducing Daejeon’s local producers and drinking traditions before the Expo visit.",
+        "tw": "問卷中有對葡萄酒博覽會的好評。也有人建議，逛展前可以先介紹大田的在地釀酒廠與飲酒文化。",
+        "cn": "问卷中有对葡萄酒博览会的好评。也有人建议，逛展前可以先介绍大田本地的酿酒厂与饮酒文化。"
       },
       {
-        "ko": "야외 일정은 날씨에 맞춰 조정할 수 있도록 시간 여유를 두는 것이 좋겠습니다.",
-        "en": "We should leave enough room in the schedule to adjust outdoor plans around the weather.",
-        "tw": "戶外行程需要留點時間彈性，才能配合天氣調整。",
-        "cn": "户外行程需要留点时间弹性，才能配合天气调整。"
+        "ko": "도보 일정에서는 주요 장소의 해설을 함께 듣고, 나머지는 각자 관심에 맞게 둘러볼 시간을 두자는 제안이 있었습니다. 식사 시간이 부족했다는 답변도 있었습니다.",
+        "en": "One suggestion was to guide the group through a few key stops, then give everyone time to explore on their own. Another response noted that meal breaks were too short.",
+        "tw": "有人建議，城市散步可以先一起聽幾個重點景點的導覽，再留時間讓大家依自己的興趣探索。也有人提到，用餐時間不夠。",
+        "cn": "有人建议，城市漫步可以先一起听几个重点景点的讲解，再留时间让大家按自己的兴趣探索。也有人提到，用餐时间不够。"
       },
       {
-        "ko": "단체 이동보다 자유로운 선택이 나을 때도 있었습니다. 목척시장 방문은 성심당 인근 자유시간으로 바꿨어요.",
-        "en": "Sometimes independent time worked better than another group stop: we replaced Mokcheok Market with free time near Sungsimdang.",
-        "tw": "有時自由活動比增加團體移動更合適。我們把木尺市場行程改為聖心堂附近的自由時間。",
-        "cn": "有时自由活动比增加团体移动更合适。我们把木尺市场行程改为圣心堂附近的自由时间。"
+        "ko": "교통·이동 편의는 7건에서 선택됐습니다. 개별 여행자가 대전을 둘러보기 쉽도록 관광버스나 자전거 여행 지도를 제공하자는 제안이 있었습니다.",
+        "en": "Seven responses selected easier transport. One suggestion was to offer sightseeing buses or cycling maps so independent travellers could get around Daejeon more easily.",
+        "tw": "有 7 份問卷勾選改善交通與移動便利性。也有人提議提供觀光巴士或自行車漫遊地圖，方便自由行旅客遊覽大田。",
+        "cn": "有 7 份问卷选择了改善交通和出行便利性。也有人提议提供观光巴士或自行车旅行地图，方便自由行游客游览大田。"
       },
       {
-        "ko": "촬영지에 대한 질문은 익숙한 건물을 다시 보게 했습니다. 함께 걸었던 공간을 드라마에서 발견하는 즐거움도 있었어요.",
-        "en": "Questions about filming locations offered a new way to see familiar buildings and recognize places from our walk on screen.",
-        "tw": "關於拍攝地的提問，讓熟悉的建築有了新面貌，也多了在劇中認出同行地點的樂趣。",
-        "cn": "关于拍摄地的提问，让熟悉的建筑有了新面貌，也多了在剧中认出同行地点的乐趣。"
+        "ko": "중국어 관광안내·해설과 중국어 지도·안내표지는 각각 5건에서 선택됐습니다. 체험 수업을 영어로 들을 수 있으면 좋겠다는 의견도 있었습니다.",
+        "en": "Chinese-language guides and interpretation received five selections, as did Chinese-language maps and signs. One participant also suggested offering activities in English.",
+        "tw": "中文旅遊導覽與解說、中文地圖與指標各有 5 份問卷勾選。也有人希望體驗課程能提供英語授課。",
+        "cn": "中文旅游导览与讲解、中文地图与指示牌各有 5 份问卷选择。也有人希望体验课程能提供英语授课。"
       },
       {
-        "ko": "하이킹은 여전히 함께하고 싶은 경험입니다. 도시의 전망뿐 아니라 대전의 생활 방식을 나누고 싶어요.",
-        "en": "Hiking is still an experience we want to share, for both the views and a taste of everyday life in Daejeon.",
-        "tw": "健行仍是想與大家分享的體驗，不只為了風景，也為了感受大田的日常。",
-        "cn": "徒步仍是想与大家分享的体验，不只为了风景，也为了感受大田的日常。"
+        "ko": "지역 주민과의 교류는 4건에서 선택됐습니다. 여행에서 만난 사람들과의 대화가 기억에 남았다는 답변과, 새 참가자가 합류할 때 짧게 자기소개를 나누자는 제안도 있었습니다.",
+        "en": "Four responses selected opportunities to meet local residents. One participant remembered the conversations they had on the trip, and another suggested brief introductions whenever new people joined the group.",
+        "tw": "有 4 份問卷勾選與在地居民交流。有人記得旅途中與人交談的收穫，也有人提議新成員加入時，可以簡單自我介紹。",
+        "cn": "有 4 份问卷选择了和当地居民交流。有人记得旅途中与人交谈的收获，也有人提议新成员加入时可以简单自我介绍。"
       },
       {
-        "ko": "여행 이후에도 대화는 이어졌습니다. 유성구청 미팅에서 디지털 노마드와 창업 커뮤니티의 연결을 논의했어요.",
-        "en": "The conversation continued after the trip, with a Yuseong-gu meeting about connecting digital nomads and the startup community.",
-        "tw": "旅行結束後，對話仍持續。在儒城區廳的會議中，我們討論數位遊牧者與創業社群的連結。",
-        "cn": "旅行结束后，对话仍持续。在儒城区厅的会议中，我们讨论数字游民与创业社群的连接。"
+        "ko": "한 응답에서는 과학도시 대전의 특성을 살려, 과학관이나 엑스포과학공원과 연계한 참여형 과학 체험을 제안했습니다.",
+        "en": "One participant suggested hands-on science activities in partnership with places such as the National Science Museum or Expo Science Park, building on Daejeon’s identity as a science city.",
+        "tw": "有一份問卷建議發揮大田作為科學城市的特色，與科學館或 Expo 科學公園合作，推出能親手參與的科學體驗。",
+        "cn": "有一份问卷建议发挥大田作为科学城市的特色，与科学馆或 Expo 科学公园合作，推出能亲手参与的科学体验。"
       },
       {
-        "ko": "12월에는 대전화교소학을 다룬 다큐멘터리 시사회에서 이번 여정을 함께한 분들을 다시 만나고 싶습니다.",
-        "en": "We hope to see some of you in December at the preview screening of our documentary about the Daejeon Overseas Chinese Primary School.",
-        "tw": "希望能在十二月的大田華僑小學紀錄片試映會上，再見到這次同行的朋友。",
-        "cn": "希望能在十二月的大田华侨小学纪录片试映会上，再见到这次同行的朋友。"
+        "ko": "대전 재방문 의향과 추천 의향은 두 문항 모두 11건에서 4점 또는 5점이었습니다.",
+        "en": "All 11 responses gave a score of 4 or 5 on both willingness to revisit Daejeon and willingness to recommend it.",
+        "tw": "再訪大田與推薦大田的意願這兩題，11 份問卷都給了 4 分或 5 分。",
+        "cn": "再访大田与推荐大田的意愿这两道题，11 份问卷都给出了 4 分或 5 分。"
       }
     ]
   },
